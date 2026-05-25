@@ -4,7 +4,7 @@
 
 ## 상태
 
-TODO
+DONE
 
 ---
 
@@ -81,94 +81,10 @@ data/raw/price/005930_20240101_20240131.csv
 
 ---
 
-# 구현 규칙
-
-현재 TASK는 다음 규칙을 따른다.
-
-- 작은 함수 유지
-- 단일 책임 유지
-- 하드코딩 최소화
-- 예외 무시 금지
-- 실패 시 명확한 오류 메시지 출력
-- 과도한 추상화 금지
-- DB 연결 금지
-- 수집 결과는 Raw Data로 저장
-
----
-
-# 예상 기능
-
-## collector.py
-
-역할:
-
-- 종목코드 입력
-- 시작일 입력
-- 종료일 입력
-- pykrx로 OHLCV 데이터 수집
-- DataFrame 반환
-- CSV 저장 함수 제공
-
-예상 함수:
-
-```text
-fetch_ohlcv(ticker, start_date, end_date)
-save_price_csv(df, ticker, start_date, end_date)
-```
-
----
-
-## run_sample.py
-
-역할:
-
-- 샘플 종목 기준 수집 실행
-- CSV 저장 확인
-- 실행 결과 출력
-
-샘플 기준:
-
-```text
-ticker: 005930
-start_date: 20240101
-end_date: 20240131
-```
-
----
-
-# 검증 항목
-
-현재 TASK 완료 전
-다음 항목을 반드시 검증한다.
-
-## 실행 검증
-
-- `run_sample.py` 실행 가능 여부
-- 삼성전자 `005930` 데이터 수집 가능 여부
-- CSV 파일 생성 여부
-
----
-
-## 데이터 검증
-
-- CSV 파일이 비어 있지 않은지 확인
-- 날짜 컬럼 또는 인덱스 확인
-- 시가 / 고가 / 저가 / 종가 / 거래량 데이터 확인
-
----
-
-## 구조 검증
-
-- `src/collectors/pykrx/` 구조 정상 여부
-- `data/raw/price/` 저장 여부
-- TASK 범위 외 파일 수정 여부 확인
-
----
-
 # 관련 Prompt
 
 ```text
-prompts/TASK-002/
+prompts/TASK-002/prompt-001.md
 ```
 
 ---
@@ -176,7 +92,7 @@ prompts/TASK-002/
 # 관련 Logs
 
 ```text
-logs/TASK-002/
+logs/TASK-002/result-001.md
 ```
 
 ---
@@ -191,20 +107,6 @@ logs/TASK-002/
 - 샘플 실행 성공
 - 결과 로그 작성 완료
 - TASK 범위 외 구현 없음
-
----
-
-# 완료 후 다음 TASK 후보
-
-현재 TASK 완료 후
-다음 작업 후보:
-
-- TASK-003-build-opendart-collector
-- TASK-004-build-news-collector
-- TASK-005-design-mariadb-schema
-
-단,
-DB 저장은 현재 TASK에서 구현하지 않는다.
 
 ---
 
