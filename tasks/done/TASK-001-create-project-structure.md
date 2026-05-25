@@ -73,7 +73,6 @@ alphafin-lte/
 
 ```text
 docs/
-├─ project/
 ├─ architecture/
 ├─ data/
 ├─ pipeline/
@@ -146,7 +145,7 @@ README.md
 AGENTS.md
 ```
 
-## docs/project/
+## project/
 
 ```text
 project-overview.md
