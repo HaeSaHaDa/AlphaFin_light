@@ -89,7 +89,28 @@ CREATE TABLE IF NOT EXISTS news_articles (
   COMMENT='뉴스 기사 데이터';
 
 -- ------------------------------------------------------------
--- 5. collection_logs  -  수집 실행 로그
+-- 5. document_chunks  -  문서 Chunk 데이터
+-- ------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS document_chunks (
+    id              BIGINT       NOT NULL AUTO_INCREMENT,
+    document_type   VARCHAR(30)  NOT NULL COMMENT '문서 유형 (news_article, disclosure)',
+    source_table    VARCHAR(50)  NOT NULL COMMENT '원본 테이블명',
+    source_id       BIGINT       NOT NULL COMMENT '원본 테이블 PK',
+    ticker          VARCHAR(20)  DEFAULT NULL COMMENT '종목코드',
+    chunk_index     INT          NOT NULL COMMENT 'Chunk 순번 (0부터)',
+    chunk_text      LONGTEXT     NOT NULL COMMENT 'Chunk 본문',
+    chunk_length    INT          NOT NULL COMMENT 'Chunk 문자 수',
+    metadata_json   LONGTEXT     DEFAULT NULL COMMENT 'Metadata JSON',
+    created_at      DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    UNIQUE KEY uq_chunk_source (source_table, source_id, chunk_index),
+    KEY idx_chunk_ticker (ticker),
+    KEY idx_chunk_doc_type (document_type)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+  COMMENT='문서 Chunk 데이터';
+
+-- ------------------------------------------------------------
+-- 6. collection_logs  -  수집 실행 로그
 -- ------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS collection_logs (
     id              BIGINT       NOT NULL AUTO_INCREMENT,
