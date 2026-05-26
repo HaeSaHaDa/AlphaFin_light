@@ -1,0 +1,56 @@
+{
+  "query": "삼성전자 반도체 전망 분석",
+  "retrieval_quality": {
+    "chunk_count": 5,
+    "score_stats": {
+      "min": 0.378289,
+      "max": 0.468261,
+      "avg": 0.416629,
+      "count": 5
+    },
+    "doc_type_distribution": {
+      "news_article": 4,
+      "disclosure": 1
+    },
+    "has_relevant": true
+  },
+  "context_usage": {
+    "referenced_count": 5,
+    "context_overlap": {
+      "overlap_count": 0,
+      "total_chunks": 5,
+      "overlap_ratio": 0.0
+    },
+    "usage_rating": "weak"
+  },
+  "analysis_quality": {
+    "has_bullish": true,
+    "has_bearish": true,
+    "has_risks": true,
+    "has_summary": true,
+    "bullish_count": 2,
+    "bearish_count": 2,
+    "risks_count": 2,
+    "structure_complete": true
+  },
+  "hallucination_risk": {
+    "risk_level": "low",
+    "reasons": [],
+    "assertive_phrases": []
+  },
+  "scores": {
+    "retrieval_scores": [
+      0.468261,
+      0.455456,
+      0.397624,
+      0.383513,
+      0.378289
+    ],
+    "score_stats": {
+      "min": 0.378289,
+      "max": 0.468261,
+      "avg": 0.416629,
+      "count": 5
+    }
+  }
+}
