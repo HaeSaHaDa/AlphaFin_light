@@ -110,7 +110,23 @@ CREATE TABLE IF NOT EXISTS document_chunks (
   COMMENT='문서 Chunk 데이터';
 
 -- ------------------------------------------------------------
--- 6. collection_logs  -  수집 실행 로그
+-- 6. document_embeddings  -  Chunk Embedding 벡터
+-- ------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS document_embeddings (
+    id                  BIGINT       NOT NULL AUTO_INCREMENT,
+    chunk_id            BIGINT       NOT NULL COMMENT 'document_chunks.id 참조',
+    embedding_model     VARCHAR(50)  NOT NULL COMMENT 'Embedding 모델명',
+    embedding_dimension INT          NOT NULL COMMENT 'Vector 차원 수',
+    embedding_vector    LONGTEXT     NOT NULL COMMENT 'Vector JSON 배열',
+    created_at          DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    UNIQUE KEY uq_emb_chunk_model (chunk_id, embedding_model),
+    KEY idx_emb_chunk_id (chunk_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+  COMMENT='Chunk Embedding 벡터';
+
+-- ------------------------------------------------------------
+-- 7. collection_logs  -  수집 실행 로그
 -- ------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS collection_logs (
     id              BIGINT       NOT NULL AUTO_INCREMENT,
