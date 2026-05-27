@@ -1,0 +1,86 @@
+[
+  {
+    "memory_type": "market_event",
+    "ticker": "005930",
+    "event_name": "AI 반도체 수출 증가로 인한 실적 개선 기대",
+    "event_summary": "AI 반도체 수출 증가로 인한 실적 개선 기대",
+    "related_news": [
+      1,
+      12,
+      2,
+      4
+    ],
+    "related_disclosures": [
+      16
+    ],
+    "event_date": "2026-05-27",
+    "impact_type": "positive",
+    "source_query": "삼성전자 반도체 전망 분석",
+    "timestamp": "2026-05-27 11:16:59",
+    "memory_layer": "short_term",
+    "importance_score": 0.4
+  },
+  {
+    "memory_type": "market_event",
+    "ticker": "005930",
+    "event_name": "성과급 지급으로 인한 직원 사기 증진 및 생산성 향상",
+    "event_summary": "성과급 지급으로 인한 직원 사기 증진 및 생산성 향상",
+    "related_news": [
+      1,
+      12,
+      2,
+      4
+    ],
+    "related_disclosures": [
+      16
+    ],
+    "event_date": "2026-05-27",
+    "impact_type": "positive",
+    "source_query": "삼성전자 반도체 전망 분석",
+    "timestamp": "2026-05-27 11:16:59",
+    "memory_layer": "short_term",
+    "importance_score": 0.1
+  },
+  {
+    "memory_type": "market_event",
+    "ticker": "005930",
+    "event_name": "K컬처 붐으로 인한 해외 시장에서의 한국 아이웨어 수요 증가",
+    "event_summary": "K컬처 붐으로 인한 해외 시장에서의 한국 아이웨어 수요 증가",
+    "related_news": [
+      9,
+      4,
+      10
+    ],
+    "related_disclosures": [
+      21,
+      22
+    ],
+    "event_date": "2026-05-27",
+    "impact_type": "positive",
+    "source_query": "HBM 시장 성장",
+    "timestamp": "2026-05-27 11:17:03",
+    "memory_layer": "short_term",
+    "importance_score": 0.2
+  },
+  {
+    "memory_type": "market_event",
+    "ticker": "005930",
+    "event_name": "젠틀몬스터와 같은 국내 브랜드의 해외 매장 확대 및 D2C 전략 강화",
+    "event_summary": "젠틀몬스터와 같은 국내 브랜드의 해외 매장 확대 및 D2C 전략 강화",
+    "related_news": [
+      9,
+      4,
+      10
+    ],
+    "related_disclosures": [
+      21,
+      22
+    ],
+    "event_date": "2026-05-27",
+    "impact_type": "positive",
+    "source_query": "HBM 시장 성장",
+    "timestamp": "2026-05-27 11:17:03",
+    "memory_layer": "short_term",
+    "importance_score": 0.1
+  }
+]

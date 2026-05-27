@@ -1,0 +1,70 @@
+{
+  "queries": [
+    "삼성전자 반도체 전망 분석",
+    "HBM 시장 성장"
+  ],
+  "saved_layers": [
+    {
+      "layer": "short_term",
+      "importance_score": 0.9,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 1
+    },
+    {
+      "layer": "short_term",
+      "importance_score": 0.4,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\default_short_term.json",
+      "memory_count": 1
+    },
+    {
+      "layer": "short_term",
+      "importance_score": 0.1,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\default_short_term.json",
+      "memory_count": 2
+    },
+    {
+      "layer": "short_term",
+      "importance_score": 1.0,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 2
+    },
+    {
+      "layer": "short_term",
+      "importance_score": 0.2,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\default_short_term.json",
+      "memory_count": 3
+    },
+    {
+      "layer": "short_term",
+      "importance_score": 0.1,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\default_short_term.json",
+      "memory_count": 4
+    }
+  ],
+  "layer_counts": {
+    "short_term": 6,
+    "mid_term": 0,
+    "long_term": 0
+  },
+  "retrieval_counts": {
+    "short_term": 2,
+    "mid_term": 0,
+    "long_term": 0
+  },
+  "layered_context_length": 296,
+  "enhanced_analysis": {
+    "bullish_factors": [
+      "AI 반도체 수출 증가로 긍정적인 실적 개선 예상",
+      "K컬처의 영향으로 HBM 시장의 해외 수요 증가"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성과 경쟁 심화",
+      "노조의 반발과 파업 우려로 인한 운영 리스크"
+    ],
+    "risks": [
+      "글로벌 경쟁과 정치적 불확실성",
+      "성과급 지급으로 인한 재무적 부담"
+    ],
+    "summary": "삼성전자의 반도체 부문은 AI 반도체 수출 증가와 HBM 시장의 해외 수요 증가로 긍정적인 성장 가능성을 보이고 있습니다. 그러나 반도체 산업의 불안정성과 노조의 파업 우려 등으로 인해 운영 리스크가 존재하며, 이러한 요소들이 향후 성과에 영향을 미칠 수 있습니다."
+  }
+}
