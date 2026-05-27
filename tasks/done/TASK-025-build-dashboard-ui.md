@@ -4,7 +4,24 @@
 
 ## 상태
 
-TODO
+DONE
+
+---
+
+# 완료 결과
+
+- dashboard-ui Next.js 15 Dashboard 구현 완료
+- 6개 API Viewer + Query Panel + Recharts 연동
+
+---
+
+# 관련 문서
+
+```text
+prompts/TASK-025/prompt-001.md
+logs/TASK-025/result-001.md
+dashboard-ui/README.md
+```
 
 ---
 
