@@ -1,0 +1,87 @@
+{
+  "trace_id": "20260527_123745",
+  "query": "삼성전자 반도체 전망 분석",
+  "ticker": "005930",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.72,
+    "reason": [
+      "AI 반도체 수출 증가로 인한 긍정적인 실적 개선 예상",
+      "노조의 반발과 파업 우려로 인한 운영 리스크",
+      "글로벌 경제 불황에 따른 수요 감소"
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 4.2,
+    "period_label": "1주 후",
+    "actual_direction": "up",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {
+    "confidence": 0.72,
+    "direction_correct": false,
+    "outcome": "low_confidence_miss",
+    "label": "보통 신뢰도 · 방향 불일치",
+    "is_high_confidence": false
+  },
+  "timeline": [
+    {
+      "period": "2024-01",
+      "signal": "bullish",
+      "display_label": "긍정",
+      "price_change_pct": 4.2
+    },
+    {
+      "period": "2024-02",
+      "signal": "neutral",
+      "display_label": "중립",
+      "price_change_pct": 0.8
+    },
+    {
+      "period": "2024-03",
+      "signal": "bearish",
+      "display_label": "부정",
+      "price_change_pct": -2.1
+    }
+  ],
+  "history": [
+    {
+      "period": "2024-01",
+      "signal": "bullish",
+      "display_label": "긍정",
+      "price_change_pct": 4.2,
+      "direction_correct": true,
+      "confidence": 0.72
+    },
+    {
+      "period": "2024-02",
+      "signal": "neutral",
+      "display_label": "중립",
+      "price_change_pct": 0.8,
+      "direction_correct": true,
+      "confidence": 0.72
+    },
+    {
+      "period": "2024-03",
+      "signal": "bearish",
+      "display_label": "부정",
+      "price_change_pct": -2.1,
+      "direction_correct": true,
+      "confidence": 0.72
+    }
+  ],
+  "metrics": {
+    "direction_accuracy": 1.0,
+    "hit_ratio_pct": 100.0,
+    "total_signals": 3,
+    "correct_count": 3
+  },
+  "confidence_summary": {
+    "avg_confidence": 0.72,
+    "high_confidence_hit_rate": 0.0,
+    "high_confidence_count": 0
+  }
+}

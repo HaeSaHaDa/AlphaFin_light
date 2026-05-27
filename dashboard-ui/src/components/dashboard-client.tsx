@@ -50,6 +50,9 @@ export function DashboardClient() {
           <Button variant="outline" size="sm" asChild>
             <Link href="/memory-timeline">시장 기억</Link>
           </Button>
+          <Button variant="outline" size="sm" asChild>
+            <Link href="/signal-evaluation">Signal 평가</Link>
+          </Button>
         </div>
       </div>
 

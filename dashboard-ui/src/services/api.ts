@@ -6,6 +6,7 @@ import type {
   StockChainData,
   TraceData,
 } from "@/types/dashboard";
+import type { SignalEvaluationData } from "@/types/signal-evaluation";
 
 const API_BASE =
   process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") ||
@@ -144,6 +145,10 @@ export async function loadDashboardData(traceId?: string | null) {
     trace.unified_result_summary.query = retrieval.query;
   }
   return { retrieval, reflection, memory, stockChain, trace, evaluation };
+}
+
+export function getSignal(traceId?: string | null) {
+  return fetchJson<SignalEvaluationData>(`/api/signal${suffix(traceId)}`);
 }
 
 export { API_BASE };
