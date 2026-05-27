@@ -1,0 +1,15 @@
+{
+  "memory_id": "event_memory_growth_investor_NVIDIA_실적_발표_2026-05-27_12:13:05",
+  "previous_layer": "short_term",
+  "current_layer": "mid_term",
+  "promotion_reason": [
+    "반복 등장 6회",
+    "importance_score 1.00 이상",
+    "Retrieval 재사용 3회",
+    "Reflection 언급됨",
+    "이벤트 진화: NVIDIA → 실적 → HBM → 수요"
+  ],
+  "importance_score": 1.0,
+  "evolution_stage": "trend_established",
+  "timestamp": "2026-05-27 12:13:05"
+}

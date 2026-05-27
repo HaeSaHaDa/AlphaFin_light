@@ -1,0 +1,158 @@
+[
+  {
+    "memory_id": "event_memory_growth_investor_NVIDIA_실적_발표_2026-05-27_11:51:24",
+    "query": "NVIDIA 실적 발표",
+    "importance_score": 0.375,
+    "importance_factors": {
+      "base_score": 0.375,
+      "market_impact": 0.24,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.12,
+      "event_impact": 0.25,
+      "reflection_boost": 0.05,
+      "character_weight": 0.05,
+      "raw_total": 1.085,
+      "reflection_mentions": 1
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "Retrieval 재사용 빈도 높음",
+      "핵심 키워드: NVIDIA"
+    ],
+    "retention_action": "high_retention",
+    "timestamp": "2026-05-27 11:51:24"
+  },
+  {
+    "memory_id": "event_memory_growth_investor_HBM_공급_부족_2026-05-27_11:51:24",
+    "query": "HBM 공급 부족",
+    "importance_score": 0.575,
+    "importance_factors": {
+      "base_score": 0.575,
+      "market_impact": 0.32,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.08,
+      "event_impact": 0.25,
+      "reflection_boost": 0.05,
+      "character_weight": 0.05,
+      "raw_total": 1.325,
+      "reflection_mentions": 1
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "Retrieval 재사용 빈도 높음",
+      "핵심 키워드: HBM"
+    ],
+    "retention_action": "high_retention",
+    "timestamp": "2026-05-27 11:51:24"
+  },
+  {
+    "memory_id": "analysis_memory_growth_investor_AI_메모리_시장_성장_2026-05-27_11:51:24",
+    "query": "AI 메모리 시장 성장",
+    "importance_score": 0.8,
+    "importance_factors": {
+      "base_score": 0.8,
+      "market_impact": 0.4,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.05,
+      "character_weight": 0.05,
+      "raw_total": 1.59,
+      "reflection_mentions": 1
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: HBM",
+      "핵심 키워드: AI 서버"
+    ],
+    "retention_action": "high_retention",
+    "timestamp": "2026-05-27 11:51:24"
+  },
+  {
+    "memory_id": "event_memory_growth_investor_NVIDIA_실적_발표_2026-05-27_12:01:10",
+    "query": "NVIDIA 실적 발표",
+    "importance_score": 0.375,
+    "importance_factors": {
+      "base_score": 0.375,
+      "market_impact": 0.24,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.12,
+      "event_impact": 0.25,
+      "reflection_boost": 0.05,
+      "character_weight": 0.05,
+      "raw_total": 1.085,
+      "reflection_mentions": 1
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "Retrieval 재사용 빈도 높음",
+      "핵심 키워드: NVIDIA"
+    ],
+    "retention_action": "high_retention",
+    "timestamp": "2026-05-27 12:01:10"
+  },
+  {
+    "memory_id": "event_memory_growth_investor_HBM_공급_부족_2026-05-27_12:01:10",
+    "query": "HBM 공급 부족",
+    "importance_score": 0.575,
+    "importance_factors": {
+      "base_score": 0.575,
+      "market_impact": 0.32,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.08,
+      "event_impact": 0.25,
+      "reflection_boost": 0.05,
+      "character_weight": 0.05,
+      "raw_total": 1.325,
+      "reflection_mentions": 1
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "Retrieval 재사용 빈도 높음",
+      "핵심 키워드: HBM"
+    ],
+    "retention_action": "high_retention",
+    "timestamp": "2026-05-27 12:01:10"
+  },
+  {
+    "memory_id": "analysis_memory_growth_investor_AI_메모리_시장_성장_2026-05-27_12:01:10",
+    "query": "AI 메모리 시장 성장",
+    "importance_score": 0.8,
+    "importance_factors": {
+      "base_score": 0.8,
+      "market_impact": 0.4,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.05,
+      "character_weight": 0.05,
+      "raw_total": 1.59,
+      "reflection_mentions": 1
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: HBM",
+      "핵심 키워드: AI 서버"
+    ],
+    "retention_action": "high_retention",
+    "timestamp": "2026-05-27 12:01:10"
+  }
+]

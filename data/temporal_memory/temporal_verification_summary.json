@@ -1,0 +1,12 @@
+{
+  "sample_queries": [
+    "NVIDIA 실적 발표",
+    "HBM 공급 부족",
+    "AI 산업 장기 성장"
+  ],
+  "promotions": 3,
+  "decay_performed": true,
+  "evolution_chain_steps": 2,
+  "temporal_context_len": 667,
+  "reflections_loaded": 1
+}

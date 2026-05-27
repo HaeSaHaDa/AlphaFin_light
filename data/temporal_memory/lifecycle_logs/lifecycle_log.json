@@ -1,0 +1,128 @@
+[
+  {
+    "action": "promote",
+    "memory_id": "event_memory_growth_investor_NVIDIA_실적_발표_2026-05-27_12:13:05",
+    "previous_layer": "short_term",
+    "current_layer": "mid_term",
+    "promotion_reason": [
+      "반복 등장 6회",
+      "importance_score 1.00 이상",
+      "Retrieval 재사용 3회",
+      "Reflection 언급됨",
+      "이벤트 진화: NVIDIA → 실적 → HBM → 수요"
+    ],
+    "importance_score": 1.0,
+    "timestamp": "2026-05-27 12:13:05"
+  },
+  {
+    "action": "promote",
+    "memory_id": "event_memory_growth_investor_HBM_공급_부족_2026-05-27_12:13:05",
+    "previous_layer": "short_term",
+    "current_layer": "mid_term",
+    "promotion_reason": [
+      "반복 등장 4회",
+      "importance_score 1.00 이상",
+      "Retrieval 재사용 2회",
+      "Reflection 언급됨",
+      "이벤트 진화: NVIDIA → 실적"
+    ],
+    "importance_score": 1.0,
+    "timestamp": "2026-05-27 12:13:05"
+  },
+  {
+    "action": "promote",
+    "memory_id": "analysis_memory_growth_investor_AI_산업_장기_성장_2026-05-27_12:13:05",
+    "previous_layer": "mid_term",
+    "current_layer": "long_term",
+    "promotion_reason": [
+      "반복 등장 2회",
+      "importance_score 1.00 이상",
+      "Retrieval 재사용 2회",
+      "Reflection 언급됨",
+      "이벤트 진화: AI → 서버 → 투자 → 장기 → 성장"
+    ],
+    "importance_score": 1.0,
+    "timestamp": "2026-05-27 12:13:05"
+  },
+  {
+    "action": "decay",
+    "memory_id": "event_memory_default_단기_루머_2026-05-27_12:13:05",
+    "previous_layer": "short_term",
+    "current_layer": "decayed",
+    "decay_reason": [
+      "재등장 없음",
+      "낮은 importance_score",
+      "Reflection 미등장",
+      "Retrieval 재사용 없음",
+      "importance 0.15 감소"
+    ],
+    "importance_score": 0.0,
+    "timestamp": "2026-05-27 12:13:05"
+  },
+  {
+    "action": "promote",
+    "memory_id": "event_memory_growth_investor_NVIDIA_실적_발표_2026-05-27_12:13:05",
+    "previous_layer": "short_term",
+    "current_layer": "mid_term",
+    "promotion_reason": [
+      "반복 등장 6회",
+      "importance_score 1.00 이상",
+      "Retrieval 재사용 3회",
+      "Reflection 언급됨",
+      "이벤트 진화: NVIDIA → 실적 → HBM → 수요"
+    ],
+    "importance_score": 1.0,
+    "timestamp": "2026-05-27 12:13:05"
+  },
+  {
+    "action": "promote",
+    "memory_id": "event_memory_growth_investor_HBM_공급_부족_2026-05-27_12:13:05",
+    "previous_layer": "short_term",
+    "current_layer": "mid_term",
+    "promotion_reason": [
+      "반복 등장 4회",
+      "importance_score 1.00 이상",
+      "Retrieval 재사용 2회",
+      "Reflection 언급됨",
+      "이벤트 진화: NVIDIA → 실적"
+    ],
+    "importance_score": 1.0,
+    "timestamp": "2026-05-27 12:13:06"
+  },
+  {
+    "action": "promote",
+    "memory_id": "analysis_memory_growth_investor_AI_산업_장기_성장_2026-05-27_12:13:05",
+    "previous_layer": "mid_term",
+    "current_layer": "long_term",
+    "promotion_reason": [
+      "반복 등장 2회",
+      "importance_score 1.00 이상",
+      "Retrieval 재사용 2회",
+      "Reflection 언급됨",
+      "이벤트 진화: AI → 서버 → 투자 → 장기 → 성장"
+    ],
+    "importance_score": 1.0,
+    "timestamp": "2026-05-27 12:13:06"
+  },
+  {
+    "action": "decay",
+    "memory_id": "event_memory_default_단기_루머_2026-05-27_12:13:05",
+    "previous_layer": "short_term",
+    "current_layer": "decayed",
+    "decay_reason": [
+      "재등장 없음",
+      "낮은 importance_score",
+      "Reflection 미등장",
+      "Retrieval 재사용 없음",
+      "importance 0.15 감소"
+    ],
+    "importance_score": 0.0,
+    "timestamp": "2026-05-27 12:13:06"
+  },
+  {
+    "action": "verification_complete",
+    "promotions": 3,
+    "decays": 1,
+    "timestamp": "2026-05-27 12:13:06"
+  }
+]

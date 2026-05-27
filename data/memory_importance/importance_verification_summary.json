@@ -1,0 +1,18 @@
+{
+  "sample_queries": [
+    "NVIDIA 실적 발표",
+    "HBM 공급 부족",
+    "AI 메모리 시장 성장"
+  ],
+  "ranked_top": {
+    "query": "NVIDIA 실적 발표",
+    "importance_score": 1.0
+  },
+  "ranked_bottom": {
+    "query": "단기 루머",
+    "importance_score": 0.0
+  },
+  "promote_count": 10,
+  "decay_count": 2,
+  "total_memories": 14
+}

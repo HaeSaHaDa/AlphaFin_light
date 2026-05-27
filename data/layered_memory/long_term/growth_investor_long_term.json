@@ -1,0 +1,49 @@
+[
+  {
+    "memory_type": "analysis_memory",
+    "memory_layer": "long_term",
+    "query": "AI 산업 장기 성장",
+    "persona": "growth_investor",
+    "summary": "AI 산업 장기 성장 구조 변화, AI 서버 투자 확대",
+    "bullish_factors": [
+      "AI 서버 투자 확대",
+      "구조적 성장"
+    ],
+    "bearish_factors": [
+      "규제 리스크"
+    ],
+    "risks": [
+      "경기 둔화"
+    ],
+    "timestamp": "2026-05-27 12:13:05",
+    "reuse_count": 2,
+    "appearance_count": 2,
+    "importance_score": 1.0,
+    "importance_factors": {
+      "base_score": 0.5,
+      "market_impact": 0.16,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.1,
+      "reuse_score": 0.08,
+      "event_impact": 0.25,
+      "reflection_boost": 0.05,
+      "character_weight": 0.05,
+      "raw_total": 1.19,
+      "reflection_mentions": 1
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "Retrieval 재사용 빈도 높음",
+      "장기 산업 영향 가능성"
+    ],
+    "reflection_mentions": 1,
+    "memory_id": "analysis_memory_growth_investor_AI_산업_장기_성장_2026-05-27_12:13:05",
+    "retention_action": "high_retention",
+    "temporal_boost": 0.24,
+    "evolution_stage": "structural_shift",
+    "previous_layer": "mid_term",
+    "promoted_at": "2026-05-27 12:13:06"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "seed_event": "AI 서버",
+  "affected_entities": [
+    {
+      "entity": "HBM",
+      "impact_score": 0.88,
+      "via": "AI 서버"
+    },
+    {
+      "entity": "삼성전자",
+      "impact_score": 0.624,
+      "via": "AI 서버 → HBM"
+    },
+    {
+      "entity": "SK하이닉스",
+      "impact_score": 0.6064,
+      "via": "AI 서버 → HBM"
+    },
+    {
+      "entity": "DRAM",
+      "impact_score": 0.58,
+      "via": "AI 서버 → HBM"
+    }
+  ],
+  "propagation_log": [
+    {
+      "seed": "AI 서버",
+      "source": "AI 서버",
+      "target": "HBM",
+      "relation_type": "demand_propagation",
+      "impact_score": 0.88,
+      "timestamp": "2026-05-27 12:20:38"
+    },
+    {
+      "seed": "AI 서버",
+      "source": "HBM",
+      "target": "삼성전자",
+      "relation_type": "supply",
+      "impact_score": 0.624,
+      "hop": 2,
+      "timestamp": "2026-05-27 12:20:38"
+    },
+    {
+      "seed": "AI 서버",
+      "source": "HBM",
+      "target": "SK하이닉스",
+      "relation_type": "supply",
+      "impact_score": 0.6064,
+      "hop": 2,
+      "timestamp": "2026-05-27 12:20:38"
+    },
+    {
+      "seed": "AI 서버",
+      "source": "HBM",
+      "target": "DRAM",
+      "relation_type": "product_link",
+      "impact_score": 0.58,
+      "hop": 2,
+      "timestamp": "2026-05-27 12:20:38"
+    }
+  ],
+  "total_affected": 4
+}

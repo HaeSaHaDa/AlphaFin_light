@@ -1,0 +1,12 @@
+{
+  "sample_queries": [
+    "NVIDIA GPU 수요 증가",
+    "HBM 공급 부족",
+    "AI 서버 투자 확대"
+  ],
+  "entity_count": 20,
+  "link_count": 37,
+  "propagation_paths": 25,
+  "ticker": "005930",
+  "timestamp": "2026-05-27 12:20:38"
+}

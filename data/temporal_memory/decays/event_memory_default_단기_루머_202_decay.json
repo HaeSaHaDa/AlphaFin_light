@@ -1,0 +1,16 @@
+{
+  "memory_id": "event_memory_default_단기_루머_2026-05-27_12:13:05",
+  "previous_layer": "short_term",
+  "current_layer": "decayed",
+  "decay_reason": [
+    "재등장 없음",
+    "낮은 importance_score",
+    "Reflection 미등장",
+    "Retrieval 재사용 없음",
+    "importance 0.15 감소"
+  ],
+  "importance_score": 0.0,
+  "previous_score": 0.15,
+  "decay_amount": 0.15,
+  "timestamp": "2026-05-27 12:13:06"
+}

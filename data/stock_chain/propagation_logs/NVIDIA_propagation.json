@@ -1,0 +1,35 @@
+{
+  "seed_event": "NVIDIA",
+  "affected_entities": [
+    {
+      "entity": "GPU",
+      "impact_score": 0.85,
+      "via": "NVIDIA"
+    },
+    {
+      "entity": "AI 서버",
+      "impact_score": 0.617,
+      "via": "NVIDIA → GPU"
+    }
+  ],
+  "propagation_log": [
+    {
+      "seed": "NVIDIA",
+      "source": "NVIDIA",
+      "target": "GPU",
+      "relation_type": "supply",
+      "impact_score": 0.85,
+      "timestamp": "2026-05-27 12:20:38"
+    },
+    {
+      "seed": "NVIDIA",
+      "source": "GPU",
+      "target": "AI 서버",
+      "relation_type": "demand_propagation",
+      "impact_score": 0.617,
+      "hop": 2,
+      "timestamp": "2026-05-27 12:20:38"
+    }
+  ],
+  "total_affected": 2
+}
