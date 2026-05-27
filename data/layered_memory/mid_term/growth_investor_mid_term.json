@@ -1,0 +1,10 @@
+[
+  {
+    "memory_type": "reflection",
+    "query": "삼성전자 반도체 전망 분석",
+    "persona": "growth_investor",
+    "summary": "분석은 삼성전자의 반도체 부문에 대한 긍정적인 전망을 제시하고 있으나, 하락 요인과 리스크에 대한 언급이 다소 부족합니다. 특히, 글로벌 시장의 경쟁 심화와 관련된 리스크가 더 구체적으로 다뤄질 필요가 있습니다.",
+    "memory_layer": "mid_term",
+    "importance_score": 0.175
+  }
+]
