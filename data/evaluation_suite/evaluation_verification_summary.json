@@ -1,0 +1,21 @@
+{
+  "sample_queries": [
+    "삼성전자 반도체 전망 분석",
+    "HBM 공급 부족 영향",
+    "AI 서버 투자 확대"
+  ],
+  "full_engine_scores": {
+    "retrieval_score": 0.8603,
+    "reasoning_score": 0.8111,
+    "reflection_score": 0.95,
+    "memory_score": 0.925,
+    "stock_chain_score": 0.9208,
+    "overall_score": 0.8865
+  },
+  "query_retrieval_scores": {
+    "삼성전자 반도체 전망 분석": 0.8603,
+    "HBM 공급 부족 영향": 0.7828,
+    "AI 서버 투자 확대": 0.7862
+  },
+  "trace_id": "20260527_123745"
+}

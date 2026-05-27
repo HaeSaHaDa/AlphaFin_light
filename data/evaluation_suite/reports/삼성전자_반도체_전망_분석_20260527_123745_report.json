@@ -1,0 +1,94 @@
+{
+  "trace_id": "20260527_123745",
+  "query": "삼성전자 반도체 전망 분석",
+  "persona": "growth_investor",
+  "ticker": "005930",
+  "scores": {
+    "retrieval_score": 0.8603,
+    "reasoning_score": 0.8111,
+    "reflection_score": 0.95,
+    "memory_score": 0.925,
+    "stock_chain_score": 0.9208,
+    "overall_score": 0.8865
+  },
+  "consistency": {
+    "consistency_score": 0.8822,
+    "checks_passed": 5,
+    "score_variance": 0.1389
+  },
+  "hallucination_risk": {
+    "risk_level": "low",
+    "risk_score": 0.25,
+    "reasons": [],
+    "overconfidence_detected": true
+  },
+  "details": {
+    "retrieval": {
+      "retrieval_score": 0.8603,
+      "factors": {
+        "relevance": 0.4683,
+        "chunk_diversity": 1.0,
+        "semantic_similarity": 0.8333,
+        "context_coverage": 1.0,
+        "retrieval_reuse_quality": 1.0
+      },
+      "chunk_count": 5,
+      "max_similarity": 0.4683
+    },
+    "reasoning": {
+      "reasoning_score": 0.8111,
+      "factors": {
+        "bullish_bearish_balance": 1.0,
+        "risk_coverage": 0.6667,
+        "evidence_consistency": 0.3,
+        "hallucination_component": 0.9,
+        "reasoning_trace_consistency": 1.0,
+        "structure_complete": 1.0
+      },
+      "hallucination_risk_level": "low"
+    },
+    "reflection": {
+      "reflection_score": 0.95,
+      "factors": {
+        "missing_risk_detection": 1.0,
+        "overconfidence_detection": 1.0,
+        "context_gap_detection": 1.0,
+        "reflection_usefulness": 0.8
+      },
+      "missing_risks_count": 5,
+      "overconfidence_detected": true
+    },
+    "memory": {
+      "memory_score": 0.925,
+      "factors": {
+        "importance_consistency": 1.0,
+        "temporal_consistency": 0.95,
+        "promotion_validity": 1.0,
+        "decay_validity": 0.8,
+        "retrieval_reuse_consistency": 0.8,
+        "temporal_action_valid": 1.0
+      },
+      "temporal_action": "promote",
+      "importance_score": 1.0,
+      "memory_layer": "short_term"
+    },
+    "stock_chain": {
+      "stock_chain_score": 0.9208,
+      "factors": {
+        "entity_consistency": 1.0,
+        "propagation_consistency": 1.0,
+        "relation_quality": 1.0,
+        "chain_continuity": 0.9,
+        "ticker_connection": 0.7042
+      },
+      "entity_count": 17,
+      "link_count": 71,
+      "propagation_paths": 315
+    }
+  },
+  "trace_summary": {
+    "step_count": 11,
+    "completed_at": "2026-05-27 12:37:59"
+  },
+  "evaluated_at": "2026-05-27 13:17:36"
+}
