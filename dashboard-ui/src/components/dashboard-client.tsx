@@ -47,6 +47,9 @@ export function DashboardClient() {
           <Button variant="outline" size="sm" asChild>
             <Link href="/event-graph">Event Graph</Link>
           </Button>
+          <Button variant="outline" size="sm" asChild>
+            <Link href="/memory-timeline">시장 기억</Link>
+          </Button>
         </div>
       </div>
 

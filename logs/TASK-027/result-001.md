@@ -53,3 +53,35 @@
 ### 최종 결과
 
 **OK**
+
+---
+
+## 추가 작업 — Dashboard Query Flow 수정 (2026-05-27)
+
+TASK-027 연장선으로 Dashboard의 `latest` 의존을 제거하고
+`query → trace_id` 기반 흐름으로 수정.
+
+### 변경 내용
+
+#### 백엔드
+| 파일 | 변경 |
+|------|------|
+| `src/dashboard_api/routes/engine.py` | 신규: `POST /api/engine/run` |
+| `src/dashboard_api/routes/memory.py` | 추가: `GET /api/memory/{trace_id}` |
+| `src/dashboard_api/routes/stock_chain.py` | 추가: `GET /api/stock-chain/{trace_id}` |
+| `src/dashboard_api/services/memory_service.py` | `fetch_memory_by_trace()` 추가 |
+| `src/dashboard_api/services/stock_chain_service.py` | `fetch_stock_chain_by_trace()` 추가 |
+| `src/dashboard_api/app.py` | engine 라우터 등록 |
+
+#### 프론트엔드
+| 파일 | 변경 |
+|------|------|
+| `dashboard-ui/src/services/api.ts` | `runEngine()` 추가, `getMemory`/`getStockChain` trace_id 기반 전환 |
+| `dashboard-ui/src/hooks/use-dashboard-data.ts` | `runAndLoad()`, `engineRunning` 추가 |
+| `dashboard-ui/src/components/query/query-input-panel.tsx` | Run Engine 버튼, ticker 자동 추론 |
+| `dashboard-ui/src/components/dashboard-client.tsx` | runAndLoad 연결 |
+
+### 검증
+- `npm run build`: 성공 (타입 에러 0)
+- `run_sample.py`: 모든 /api/*/latest 200 OK
+- latest API 의존 제거 (getMemory, getStockChain 포함) 완료
