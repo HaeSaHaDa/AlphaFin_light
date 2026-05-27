@@ -1,15 +1,13 @@
 {
-  "memory_id": "analysis_memory_growth_investor_AI_산업_장기_성장_2026-05-27_12:13:05",
-  "previous_layer": "mid_term",
-  "current_layer": "long_term",
+  "memory_id": "analysis_memory_growth_investor_삼성전자_반도체_전망_분석_2026-05-27_12:37:58",
+  "previous_layer": "short_term",
+  "current_layer": "mid_term",
   "promotion_reason": [
-    "반복 등장 2회",
     "importance_score 1.00 이상",
-    "Retrieval 재사용 2회",
     "Reflection 언급됨",
-    "이벤트 진화: AI → 서버 → 투자 → 장기 → 성장"
+    "이벤트 진화: NVIDIA → 실적"
   ],
   "importance_score": 1.0,
-  "evolution_stage": "structural_shift",
-  "timestamp": "2026-05-27 12:13:06"
+  "evolution_stage": "initial_event",
+  "timestamp": "2026-05-27 12:37:58"
 }

@@ -102,5 +102,57 @@
     ],
     "model": "gpt-4o-mini",
     "timestamp": "2026-05-27 11:03:27"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "삼성전자 반도체 전망 분석",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "AI 반도체 수출 증가로 인한 긍정적인 실적 개선 예상",
+      "HBM 및 DRAM 수요 증가로 시장 확대 가능성"
+    ],
+    "bearish_factors": [
+      "노조의 반발과 파업 우려로 인한 운영 리스크",
+      "글로벌 반도체 시장의 경쟁 심화"
+    ],
+    "risks": [
+      "글로벌 경제 불황에 따른 수요 감소",
+      "원자재 가격 상승으로 인한 생산 비용 증가"
+    ],
+    "summary": "삼성전자의 반도체 부문은 AI 반도체 수출 증가와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있습니다. 그러나 노조의 반발과 글로벌 경쟁 심화 등으로 인해 운영 리스크가 존재하며, 경제 불황과 원자재 가격 상승이 추가적인 부담 요인이 될 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 1,
+        "document_type": "news_article",
+        "score": 0.468261,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 12,
+        "document_type": "news_article",
+        "score": 0.455456,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 16,
+        "document_type": "disclosure",
+        "score": 0.397624,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 2,
+        "document_type": "news_article",
+        "score": 0.383513,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 4,
+        "document_type": "news_article",
+        "score": 0.378289,
+        "ticker": "005930"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 12:37:58"
   }
 ]

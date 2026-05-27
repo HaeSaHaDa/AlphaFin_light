@@ -124,5 +124,18 @@
     "promotions": 3,
     "decays": 1,
     "timestamp": "2026-05-27 12:13:06"
+  },
+  {
+    "action": "promote",
+    "memory_id": "analysis_memory_growth_investor_삼성전자_반도체_전망_분석_2026-05-27_12:37:58",
+    "previous_layer": "short_term",
+    "current_layer": "mid_term",
+    "promotion_reason": [
+      "importance_score 1.00 이상",
+      "Reflection 언급됨",
+      "이벤트 진화: NVIDIA → 실적"
+    ],
+    "importance_score": 1.0,
+    "timestamp": "2026-05-27 12:37:58"
   }
 ]
