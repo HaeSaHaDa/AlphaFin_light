@@ -62,6 +62,8 @@ export interface StockChainEntity {
   name: string;
   entity_type?: string;
   ticker?: string | null;
+  event_type?: string | null;
+  created_at?: string;
 }
 
 export interface StockChainLink {

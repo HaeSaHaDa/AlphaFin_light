@@ -31,9 +31,14 @@ export function DashboardNav({
       </div>
       <div className="flex flex-wrap items-center gap-2 text-xs">
         {showAnalysisLink && (
-          <Button variant="outline" size="sm" asChild>
-            <Link href="/analysis">Analysis Viewer →</Link>
-          </Button>
+          <>
+            <Button variant="outline" size="sm" asChild>
+              <Link href="/analysis">Analysis</Link>
+            </Button>
+            <Button variant="outline" size="sm" asChild>
+              <Link href="/event-graph">Event Graph</Link>
+            </Button>
+          </>
         )}
         <Badge variant="secondary">API: {apiBase}</Badge>
         {traceId && (

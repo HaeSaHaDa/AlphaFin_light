@@ -32,6 +32,7 @@ npm run dev
 
 - Overview Dashboard: http://localhost:3000
 - Retrieval & Analysis Viewer: http://localhost:3000/analysis
+- Event Graph Visualization: http://localhost:3000/event-graph
 
 ## API 연동
 

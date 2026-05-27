@@ -21,8 +21,10 @@ export function DashboardClient() {
     status,
     error,
     traceId,
+    engineRunning,
     loadLatest,
     loadByTraceId,
+    runAndLoad,
   } = useDashboardData();
 
   useEffect(() => {
@@ -38,15 +40,22 @@ export function DashboardClient() {
     <div className="mx-auto max-w-7xl space-y-4 p-4 md:p-6">
       <div className="flex flex-wrap items-start justify-between gap-2">
         <DashboardNav traceId={traceId} apiBase={API_BASE} />
-        <Button variant="outline" size="sm" asChild>
-          <Link href="/analysis">Retrieval &amp; Analysis Viewer →</Link>
-        </Button>
+        <div className="flex gap-2">
+          <Button variant="outline" size="sm" asChild>
+            <Link href="/analysis">Analysis</Link>
+          </Button>
+          <Button variant="outline" size="sm" asChild>
+            <Link href="/event-graph">Event Graph</Link>
+          </Button>
+        </div>
       </div>
 
       <QueryInputPanel
         status={status}
+        engineRunning={engineRunning}
         traceId={traceId}
         displayQuery={displayQuery}
+        onRunEngine={runAndLoad}
         onLoadLatest={loadLatest}
         onLoadByTraceId={loadByTraceId}
       />

@@ -48,12 +48,41 @@ export function getReflection(traceId?: string | null) {
   return fetchJson<ReflectionData>(`/api/reflection${suffix(traceId)}`);
 }
 
-export function getMemory() {
-  return fetchJson<MemoryData>("/api/memory/latest");
+export function getMemory(traceId?: string | null) {
+  return fetchJson<MemoryData>(`/api/memory${suffix(traceId)}`);
 }
 
-export function getStockChain() {
-  return fetchJson<StockChainData>("/api/stock-chain/latest");
+export function getStockChain(traceId?: string | null) {
+  return fetchJson<StockChainData>(`/api/stock-chain${suffix(traceId)}`);
+}
+
+export interface EngineRunResponse {
+  trace_id: string;
+  status: string;
+  query: string;
+}
+
+export async function runEngine(
+  query: string,
+  ticker = "005930",
+  persona = "growth_investor",
+): Promise<EngineRunResponse> {
+  const url = `${API_BASE}/api/engine/run`;
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ query, ticker, persona }),
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    const detail = await res.text().catch(() => "");
+    throw new ApiError(
+      detail || `Engine run failed: ${res.status}`,
+      res.status,
+      "/api/engine/run",
+    );
+  }
+  return res.json() as Promise<EngineRunResponse>;
 }
 
 export function getTrace(traceId?: string | null) {
@@ -102,8 +131,8 @@ export async function loadDashboardData(traceId?: string | null) {
     await Promise.all([
       getRetrieval(traceId),
       getReflection(traceId),
-      getMemory(),
-      getStockChain(),
+      getMemory(traceId),
+      getStockChain(traceId),
       getTrace(traceId),
       getEvaluation(traceId),
     ]);

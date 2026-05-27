@@ -10,6 +10,21 @@ import json
 from pathlib import Path
 
 
+def fetch_stock_chain_by_trace(trace_id: str) -> dict | None:
+    from .trace_service import get_unified_result_by_trace
+    result = get_unified_result_by_trace(trace_id)
+    if not result:
+        return None
+    chain = load_stock_chain_file(trace_id) or {}
+    return {
+        "trace_id": trace_id,
+        "query": result.get("query", ""),
+        "ticker": result.get("ticker", ""),
+        "summary": result.get("stock_chain", {}),
+        "chain": chain,
+    }
+
+
 def fetch_latest_stock_chain() -> dict | None:
     result = get_latest_unified_result()
     if not result:

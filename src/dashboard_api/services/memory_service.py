@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from .trace_service import (
     get_latest_unified_result,
+    get_unified_result_by_trace,
     load_layer_memories,
 )
 
@@ -20,6 +21,25 @@ def fetch_latest_memory() -> dict | None:
 
     return {
         "trace_id": result.get("trace_id", ""),
+        "query": result.get("query", ""),
+        "memory_updates": result.get("memory_updates", {}),
+        "temporal_result": result.get("temporal_result", {}),
+        "layered_memory": layers,
+        "layer_counts": {k: len(v) for k, v in layers.items()},
+    }
+
+
+def fetch_memory_by_trace(trace_id: str) -> dict | None:
+    result = get_unified_result_by_trace(trace_id)
+    if not result:
+        return None
+    layers = {
+        "short_term": load_layer_memories("short_term"),
+        "mid_term": load_layer_memories("mid_term"),
+        "long_term": load_layer_memories("long_term"),
+    }
+    return {
+        "trace_id": trace_id,
         "query": result.get("query", ""),
         "memory_updates": result.get("memory_updates", {}),
         "temporal_result": result.get("temporal_result", {}),
