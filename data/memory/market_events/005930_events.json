@@ -1,0 +1,116 @@
+[
+  {
+    "memory_type": "market_event",
+    "ticker": "005930",
+    "event_name": "AI 반도체 수출로 인한 실적 대박 예상",
+    "event_summary": "AI 반도체 수출로 인한 실적 대박 예상",
+    "related_news": [
+      1,
+      12,
+      2,
+      4
+    ],
+    "related_disclosures": [
+      16
+    ],
+    "event_date": "2026-05-27",
+    "impact_type": "positive",
+    "source_query": "삼성전자 반도체 전망 분석",
+    "timestamp": "2026-05-27 10:06:59"
+  },
+  {
+    "memory_type": "market_event",
+    "ticker": "005930",
+    "event_name": "삼성전자의 성과급 지급으로 인한 직원 사기 진작 및 생산성 향상",
+    "event_summary": "삼성전자의 성과급 지급으로 인한 직원 사기 진작 및 생산성 향상",
+    "related_news": [
+      1,
+      12,
+      2,
+      4
+    ],
+    "related_disclosures": [
+      16
+    ],
+    "event_date": "2026-05-27",
+    "impact_type": "positive",
+    "source_query": "삼성전자 반도체 전망 분석",
+    "timestamp": "2026-05-27 10:06:59"
+  },
+  {
+    "memory_type": "market_event",
+    "ticker": "005930",
+    "event_name": "노조의 반발과 내부 갈등으로 인한 운영 리스크",
+    "event_summary": "노조의 반발과 내부 갈등으로 인한 운영 리스크",
+    "related_news": [
+      1,
+      12,
+      2,
+      4
+    ],
+    "related_disclosures": [
+      16
+    ],
+    "event_date": "2026-05-27",
+    "impact_type": "negative",
+    "source_query": "삼성전자 반도체 전망 분석",
+    "timestamp": "2026-05-27 10:06:59"
+  },
+  {
+    "memory_type": "market_event",
+    "ticker": "005930",
+    "event_name": "비메모리 부문과 비반도체 부문에서의 불만으로 인한 지속적인 갈등 가능성",
+    "event_summary": "비메모리 부문과 비반도체 부문에서의 불만으로 인한 지속적인 갈등 가능성",
+    "related_news": [
+      1,
+      12,
+      2,
+      4
+    ],
+    "related_disclosures": [
+      16
+    ],
+    "event_date": "2026-05-27",
+    "impact_type": "negative",
+    "source_query": "삼성전자 반도체 전망 분석",
+    "timestamp": "2026-05-27 10:06:59"
+  },
+  {
+    "memory_type": "market_event",
+    "ticker": "005930",
+    "event_name": "글로벌 반도체 시장의 변동성과 경쟁 심화",
+    "event_summary": "글로벌 반도체 시장의 변동성과 경쟁 심화",
+    "related_news": [
+      1,
+      12,
+      2,
+      4
+    ],
+    "related_disclosures": [
+      16
+    ],
+    "event_date": "2026-05-27",
+    "impact_type": "negative",
+    "source_query": "삼성전자 반도체 전망 분석",
+    "timestamp": "2026-05-27 10:06:59"
+  },
+  {
+    "memory_type": "market_event",
+    "ticker": "005930",
+    "event_name": "정부의 정책 변화에 따른 세금 및 규제 리스크",
+    "event_summary": "정부의 정책 변화에 따른 세금 및 규제 리스크",
+    "related_news": [
+      1,
+      12,
+      2,
+      4
+    ],
+    "related_disclosures": [
+      16
+    ],
+    "event_date": "2026-05-27",
+    "impact_type": "negative",
+    "source_query": "삼성전자 반도체 전망 분석",
+    "timestamp": "2026-05-27 10:06:59"
+  }
+]
