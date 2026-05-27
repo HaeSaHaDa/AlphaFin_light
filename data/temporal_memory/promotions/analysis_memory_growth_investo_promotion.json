@@ -1,13 +1,12 @@
 {
-  "memory_id": "analysis_memory_growth_investor_삼성전자_반도체_전망_분석_2026-05-27_12:37:58",
+  "memory_id": "analysis_memory_growth_investor_현대자동차_전기차_전망_분석_2026-05-27_17:10:11",
   "previous_layer": "short_term",
   "current_layer": "mid_term",
   "promotion_reason": [
     "importance_score 1.00 이상",
-    "Reflection 언급됨",
-    "이벤트 진화: NVIDIA → 실적"
+    "Reflection 언급됨"
   ],
   "importance_score": 1.0,
   "evolution_stage": "initial_event",
-  "timestamp": "2026-05-27 12:37:58"
+  "timestamp": "2026-05-27 17:10:11"
 }

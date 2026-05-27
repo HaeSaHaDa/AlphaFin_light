@@ -12,27 +12,9 @@ interface QueryInputPanelProps {
   engineRunning: boolean;
   traceId: string | null;
   displayQuery?: string;
-  onRunEngine: (query: string, ticker: string) => void;
+  onRunEngine: (query: string) => void;
   onLoadLatest: () => void;
   onLoadByTraceId: (traceId: string) => void;
-}
-
-const TICKER_MAP: Record<string, string> = {
-  "삼성전자": "005930",
-  "SK하이닉스": "000660",
-  "현대자동차": "005380",
-  "LG에너지솔루션": "373220",
-  "카카오": "035720",
-  "네이버": "035420",
-  "셀트리온": "068270",
-  "POSCO홀딩스": "005490",
-};
-
-function guessTicker(query: string): string {
-  for (const [name, ticker] of Object.entries(TICKER_MAP)) {
-    if (query.includes(name)) return ticker;
-  }
-  return "005930";
 }
 
 export function QueryInputPanel({
@@ -52,8 +34,7 @@ export function QueryInputPanel({
   const handleRun = () => {
     const q = query.trim();
     if (!q) return;
-    const ticker = guessTicker(q);
-    onRunEngine(q, ticker);
+    onRunEngine(q);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -76,7 +57,7 @@ export function QueryInputPanel({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="예: 현대자동차 전기차 전망"
+            placeholder="예: 현대자동차 전기차 전망 (회사명 포함)"
             disabled={busy}
           />
         </div>
@@ -94,7 +75,7 @@ export function QueryInputPanel({
             ) : (
               <Zap className="h-4 w-4" />
             )}
-            {engineRunning ? "Engine 실행 중…" : "Run Engine"}
+            {engineRunning ? "수집·분석 중…" : "Run Engine"}
           </Button>
 
           {/* Latest Trace — 가장 최근 저장된 결과 조회 */}

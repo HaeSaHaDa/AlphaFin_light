@@ -9,7 +9,18 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 
-from .routes import retrieval, reflection, memory, stock_chain, trace, evaluation, engine, signal
+from .routes import (
+    retrieval,
+    reflection,
+    memory,
+    stock_chain,
+    trace,
+    evaluation,
+    engine,
+    signal,
+    company,
+    ingestion,
+)
 
 load_dotenv()
 
@@ -75,6 +86,8 @@ def register_routes(app: FastAPI) -> None:
     app.include_router(evaluation.router)
     app.include_router(engine.router)
     app.include_router(signal.router)
+    app.include_router(company.router)
+    app.include_router(ingestion.router)
     logger.info("API Route 등록 완료")
 
 

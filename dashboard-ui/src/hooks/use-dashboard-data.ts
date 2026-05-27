@@ -57,14 +57,14 @@ export function useDashboardData() {
    * query 변경 시 이전 결과를 초기화한다.
    */
   const runAndLoad = useCallback(
-    async (query: string, ticker = "005930") => {
+    async (query: string) => {
       setData(EMPTY);
       setTraceId(null);
       setError(null);
       setEngineRunning(true);
       setStatus("loading");
       try {
-        const resp = await runEngine(query, ticker);
+        const resp = await runEngine(query);
         setEngineRunning(false);
         await load(resp.trace_id);
       } catch (e) {

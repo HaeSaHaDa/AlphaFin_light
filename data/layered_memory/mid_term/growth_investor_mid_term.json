@@ -165,5 +165,84 @@
     "evolution_stage": "initial_event",
     "previous_layer": "short_term",
     "promoted_at": "2026-05-27 12:37:58"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "현대자동차 전기차 전망 분석",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "전기차 시장의 지속적인 성장과 수요 증가",
+      "AI 기술 발전에 따른 전기차 관련 신기술 개발 기회"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화로 인한 가격 압박",
+      "노조의 반발 및 파업 우려로 인한 운영 리스크"
+    ],
+    "risks": [
+      "정치적 불안정성으로 인한 수출 리스크",
+      "원자재 가격 상승으로 인한 생산 비용 증가"
+    ],
+    "summary": "현대자동차의 전기차 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으나, 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 4,
+        "document_type": "news_article",
+        "score": 0.280991,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 1,
+        "document_type": "news_article",
+        "score": 0.280859,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 12,
+        "document_type": "news_article",
+        "score": 0.273675,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 18,
+        "document_type": "disclosure",
+        "score": 0.248731,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 20,
+        "document_type": "disclosure",
+        "score": 0.239956,
+        "ticker": "005930"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 17:10:11",
+    "importance_score": 1.0,
+    "importance_factors": {
+      "base_score": 1.0,
+      "market_impact": 0.08,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.1,
+      "character_weight": 0.05,
+      "raw_total": 1.52,
+      "reflection_mentions": 2
+    },
+    "importance_reasons": [
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: 시장 성장"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 2,
+    "memory_id": "analysis_memory_growth_investor_현대자동차_전기차_전망_분석_2026-05-27_17:10:11",
+    "retention_action": "high_retention",
+    "memory_layer": "mid_term",
+    "temporal_boost": 0.0,
+    "evolution_stage": "initial_event",
+    "previous_layer": "short_term",
+    "promoted_at": "2026-05-27 17:10:11"
   }
 ]

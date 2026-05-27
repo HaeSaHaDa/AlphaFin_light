@@ -61,18 +61,57 @@ export interface EngineRunResponse {
   trace_id: string;
   status: string;
   query: string;
+  ticker?: string;
+}
+
+export interface IngestionRunResponse {
+  ticker: string;
+  company_name: string;
+  corp_code: string;
+  status: string;
+  documents: number;
+  chunks: number;
+  embeddings: number;
+}
+
+export interface CompanySearchItem {
+  company_name: string;
+  ticker: string;
+}
+
+export async function runIngestion(company: string, force = false) {
+  const url = `${API_BASE}/api/ingestion/run`;
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ company, force }),
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    const detail = await res.text().catch(() => "");
+    throw new ApiError(
+      detail || `Ingestion failed: ${res.status}`,
+      res.status,
+      "/api/ingestion/run",
+    );
+  }
+  return res.json() as Promise<IngestionRunResponse>;
+}
+
+export async function searchCompany(q: string) {
+  const path = `/api/company/search?q=${encodeURIComponent(q)}`;
+  return fetchJson<CompanySearchItem[]>(path);
 }
 
 export async function runEngine(
   query: string,
-  ticker = "005930",
   persona = "growth_investor",
 ): Promise<EngineRunResponse> {
   const url = `${API_BASE}/api/engine/run`;
   const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ query, ticker, persona }),
+    body: JSON.stringify({ query, persona }),
     cache: "no-store",
   });
   if (!res.ok) {
