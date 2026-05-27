@@ -1,0 +1,107 @@
+{
+  "persona": "growth_investor",
+  "persona_name": "Growth Investor",
+  "query": "삼성전자 반도체 전망 분석",
+  "bullish_factors": [
+    "AI 반도체 수출 증가로 인한 실적 개선 가능성",
+    "성과급 지급을 통한 직원 사기 증진 및 생산성 향상"
+  ],
+  "bearish_factors": [
+    "노조의 불만과 갈등으로 인한 생산 차질 우려",
+    "비메모리 부문과 비반도체 부문에서의 상대적 성과 저조"
+  ],
+  "risks": [
+    "글로벌 반도체 시장의 경쟁 심화",
+    "정치적 및 경제적 불안정성에 따른 공급망 리스크"
+  ],
+  "summary": "삼성전자의 반도체 부문은 AI 반도체 수출 증가로 실적 개선이 기대되지만, 노조 갈등과 비메모리 부문에서의 성과 저조가 리스크로 작용할 수 있습니다. 전반적으로 반도체 시장의 경쟁 심화와 정치적 불안정성이 성장 가능성에 영향을 미칠 수 있습니다.",
+  "referenced_chunks": [
+    {
+      "chunk_id": 1,
+      "document_type": "news_article",
+      "score": 0.468219,
+      "ticker": "005930"
+    },
+    {
+      "chunk_id": 12,
+      "document_type": "news_article",
+      "score": 0.455456,
+      "ticker": "005930"
+    },
+    {
+      "chunk_id": 16,
+      "document_type": "disclosure",
+      "score": 0.397565,
+      "ticker": "005930"
+    },
+    {
+      "chunk_id": 2,
+      "document_type": "news_article",
+      "score": 0.383444,
+      "ticker": "005930"
+    },
+    {
+      "chunk_id": 4,
+      "document_type": "news_article",
+      "score": 0.378268,
+      "ticker": "005930"
+    }
+  ],
+  "model": "gpt-4o-mini",
+  "evaluation": {
+    "query": "삼성전자 반도체 전망 분석",
+    "retrieval_quality": {
+      "chunk_count": 5,
+      "score_stats": {
+        "min": 0.378268,
+        "max": 0.468219,
+        "avg": 0.41659,
+        "count": 5
+      },
+      "doc_type_distribution": {
+        "news_article": 4,
+        "disclosure": 1
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 5,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 5,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.468219,
+        0.455456,
+        0.397565,
+        0.383444,
+        0.378268
+      ],
+      "score_stats": {
+        "min": 0.378268,
+        "max": 0.468219,
+        "avg": 0.41659,
+        "count": 5
+      }
+    }
+  }
+}

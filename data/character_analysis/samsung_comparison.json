@@ -1,0 +1,42 @@
+{
+  "query": "삼성전자 반도체 전망 분석",
+  "persona_count": 4,
+  "personas": [
+    {
+      "persona": "growth_investor",
+      "persona_name": "Growth Investor",
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "summary_preview": "삼성전자의 반도체 부문은 AI 반도체 수출 증가로 실적 개선이 기대되지만, 노조 갈등과 비메모리 부문에서의 성과 저조가 리스크로 작용할 수 있습",
+      "hallucination_risk": "low"
+    },
+    {
+      "persona": "value_investor",
+      "persona_name": "Value Investor",
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "summary_preview": "삼성전자는 AI 반도체 수출로 실적 개선이 기대되며, 성과급 지급으로 직원들의 사기가 증진될 것으로 보입니다. 그러나 노조의 반발과 비메모리 부",
+      "hallucination_risk": "low"
+    },
+    {
+      "persona": "risk_averse_analyst",
+      "persona_name": "Risk-Averse Analyst",
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "summary_preview": "삼성전자의 반도체 부문은 AI 반도체 수출 증가로 긍정적인 전망이 있으나, 노조의 반발과 글로벌 경쟁 심화로 인한 리스크가 존재합니다. 또한, ",
+      "hallucination_risk": "low"
+    },
+    {
+      "persona": "aggressive_trader",
+      "persona_name": "Aggressive Trader",
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "summary_preview": "삼성전자의 반도체 부문은 성과급 지급 결정으로 긍정적인 모멘텀을 얻고 있으며, AI 반도체 수출 증가로 실적 개선이 기대됩니다. 그러나 노조의 ",
+      "hallucination_risk": "low"
+    }
+  ]
+}
