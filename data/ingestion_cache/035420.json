@@ -1,0 +1,9 @@
+{
+  "ticker": "035420",
+  "company_name": "NAVER",
+  "status": "completed",
+  "documents": 140,
+  "chunks": 20,
+  "embeddings": 4,
+  "completed_at": "2026-05-27 20:34:20"
+}

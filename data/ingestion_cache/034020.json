@@ -1,0 +1,9 @@
+{
+  "ticker": "034020",
+  "company_name": "두산에너빌리티",
+  "status": "completed",
+  "documents": 43,
+  "chunks": 9,
+  "embeddings": 9,
+  "completed_at": "2026-05-28 09:39:28"
+}

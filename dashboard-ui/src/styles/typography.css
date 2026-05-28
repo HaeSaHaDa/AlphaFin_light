@@ -1,0 +1,20 @@
+/* AlphaFin LTE — Typography */
+.dashboard-title {
+  @apply text-2xl font-bold tracking-tight text-foreground md:text-3xl;
+}
+
+.dashboard-subtitle {
+  @apply text-sm text-muted-foreground md:text-base;
+}
+
+.dashboard-card-title {
+  @apply text-base font-semibold text-foreground md:text-lg;
+}
+
+.dashboard-body {
+  @apply text-sm leading-relaxed text-foreground/90;
+}
+
+.dashboard-caption {
+  @apply text-xs text-muted-foreground;
+}

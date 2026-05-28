@@ -16,7 +16,7 @@ export function DashboardSection({
   return (
     <section
       className={cn(
-        "rounded-xl border border-border/80 bg-card/40 p-4 shadow-sm md:p-6",
+        "report-card",
         className,
       )}
     >

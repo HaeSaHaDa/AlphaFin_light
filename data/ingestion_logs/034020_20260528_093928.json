@@ -1,0 +1,13 @@
+{
+  "ticker": "034020",
+  "company_name": "두산에너빌리티",
+  "corp_code": "00159695",
+  "status": "completed",
+  "documents": 43,
+  "chunks": 9,
+  "embeddings": 9,
+  "embeddings_created": 9,
+  "embeddings_skipped": 0,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

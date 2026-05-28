@@ -1,0 +1,9 @@
+{
+  "ticker": "005930",
+  "company_name": "삼성전자",
+  "status": "completed",
+  "documents": 140,
+  "chunks": 20,
+  "embeddings": 31,
+  "completed_at": "2026-05-27 19:35:28"
+}

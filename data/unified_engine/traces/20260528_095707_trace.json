@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260528_095707",
+  "query": "현대자동차 005380 로봇",
+  "persona": "growth_investor",
+  "ticker": "005380",
+  "started_at": "2026-05-28 09:57:07",
+  "completed_at": "2026-05-28 09:57:15",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "chunks=5",
+      "timestamp": "2026-05-28 09:57:07"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=827",
+      "timestamp": "2026-05-28 09:57:07"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=3647",
+      "timestamp": "2026-05-28 09:57:08"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-05-28 09:57:11"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=medium",
+      "timestamp": "2026-05-28 09:57:11"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 현대자동차의 전기차 부문에 대한 긍정적인 전망을 제시하고 있으나, 글로벌 경쟁과 내",
+      "timestamp": "2026-05-28 09:57:15"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-05-28 09:57:15"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.70",
+      "timestamp": "2026-05-28 09:57:15"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-05-28 09:57:15"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=18 rels=42",
+      "timestamp": "2026-05-28 09:57:15"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=53",
+      "timestamp": "2026-05-28 09:57:15"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 5,
+    "max_score": 0.145971
+  },
+  "reflection_summary": "분석은 현대자동차의 전기차 부문에 대한 긍정적인 전망을 제시하고 있으나, 글로벌 경쟁과 내부 리스크에 대한 언급이 다소 부족합니다. 또한, 리스크 요소가 충분히 다뤄지지 않아 균형 잡힌 시각이 부족합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

@@ -13,7 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className="dark">
-      <body>{children}</body>
+      <body className="min-h-screen bg-background text-foreground antialiased">
+        <div className="dashboard-root">{children}</div>
+      </body>
     </html>
   );
 }

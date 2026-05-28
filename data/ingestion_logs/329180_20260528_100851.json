@@ -1,0 +1,13 @@
+{
+  "ticker": "329180",
+  "company_name": "HD현대중공업",
+  "corp_code": "01390344",
+  "status": "completed",
+  "documents": 128,
+  "chunks": 43,
+  "embeddings": 29,
+  "embeddings_created": 29,
+  "embeddings_skipped": 14,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

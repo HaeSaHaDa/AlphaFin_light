@@ -1,0 +1,220 @@
+{
+  "trace_id": "20260527_203421",
+  "query": "NAVER",
+  "persona": "growth_investor",
+  "ticker": "035420",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "NAVER",
+    "bullish_factors": [
+      "AI 산업의 장기 성장 구조 변화",
+      "해외 시장에서의 K컬처 영향으로 인한 수요 증가"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성",
+      "글로벌 경쟁 심화"
+    ],
+    "risks": [
+      "기술 발전 속도에 따른 시장 변화 리스크",
+      "소비자 수요 변화에 따른 판매 감소 위험"
+    ],
+    "summary": "NAVER는 AI 산업의 성장과 K컬처의 해외 수요 증가로 긍정적인 성장 가능성을 보이고 있습니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화가 시장 확대에 부담을 줄 수 있는 요소로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 79,
+        "document_type": "disclosure",
+        "score": 0.237007,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 78,
+        "document_type": "disclosure",
+        "score": 0.207653,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 80,
+        "document_type": "disclosure",
+        "score": 0.189698,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 84,
+        "document_type": "disclosure",
+        "score": 0.055638,
+        "ticker": "035420"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "NAVER",
+    "retrieval_quality": {
+      "chunk_count": 4,
+      "score_stats": {
+        "min": 0.055638,
+        "max": 0.237007,
+        "avg": 0.172499,
+        "count": 4
+      },
+      "doc_type_distribution": {
+        "disclosure": 4
+      },
+      "has_relevant": false
+    },
+    "context_usage": {
+      "referenced_count": 4,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 4,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "medium",
+      "reasons": [
+        "평균 retrieval score 낮음: 0.1725"
+      ],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.237007,
+        0.207653,
+        0.189698,
+        0.055638
+      ],
+      "score_stats": {
+        "min": 0.055638,
+        "max": 0.237007,
+        "avg": 0.172499,
+        "count": 4
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "NAVER",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 NAVER의 성장 가능성을 긍정적으로 평가하고 있지만, 하락 요인과 리스크에 대한 설명이 다소 부족합니다. 특히, 글로벌 경쟁 심화와 반도체 산업의 불안정성에 대한 구체적인 영향 분석이 필요합니다.",
+    "missing_risks": [
+      "정책 변화에 따른 규제 리스크",
+      "환율 변동에 따른 수익성 영향",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "AI 산업과 K컬처의 긍정적인 전망에 대한 지나친 낙관"
+    ],
+    "context_gaps": [
+      "NAVER의 현재 시장 점유율 및 경쟁사 분석 부족",
+      "AI 및 K컬처 관련 구체적인 수치나 사례 부족",
+      "뉴스 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "하락 요인에 대한 구체적인 사례와 데이터 추가",
+      "경쟁사와의 비교 분석을 포함하여 시장 위치를 명확히 할 것"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 20:34:31"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "NAVER",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "AI 산업의 장기 성장 구조 변화",
+        "해외 시장에서의 K컬처 영향으로 인한 수요 증가"
+      ],
+      "bearish_factors": [
+        "반도체 산업의 불안정성",
+        "글로벌 경쟁 심화"
+      ],
+      "risks": [
+        "기술 발전 속도에 따른 시장 변화 리스크",
+        "소비자 수요 변화에 따른 판매 감소 위험"
+      ],
+      "summary": "NAVER는 AI 산업의 성장과 K컬처의 해외 수요 증가로 긍정적인 성장 가능성을 보이고 있습니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화가 시장 확대에 부담을 줄 수 있는 요소로 작용할 수 있습니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 79,
+          "document_type": "disclosure",
+          "score": 0.237007,
+          "ticker": "035420"
+        },
+        {
+          "chunk_id": 78,
+          "document_type": "disclosure",
+          "score": 0.207653,
+          "ticker": "035420"
+        },
+        {
+          "chunk_id": 80,
+          "document_type": "disclosure",
+          "score": 0.189698,
+          "ticker": "035420"
+        },
+        {
+          "chunk_id": 84,
+          "document_type": "disclosure",
+          "score": 0.055638,
+          "ticker": "035420"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-05-27 20:34:31"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.86,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 21
+    },
+    "importance": {
+      "importance_score": 0.86,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_NAVER_2026-05-27_20:34:31",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-05-27 20:34:31"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 16,
+    "relation_count": 24,
+    "query": "NAVER"
+  },
+  "stock_chain": {
+    "entity_count": 13,
+    "link_count": 35,
+    "propagation_paths": 21
+  },
+  "unified_context_length": 2608,
+  "retrieval_chunk_count": 4,
+  "completed_at": "2026-05-27 20:34:31"
+}

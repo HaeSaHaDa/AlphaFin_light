@@ -1,0 +1,233 @@
+{
+  "trace_id": "20260528_092050",
+  "query": "한미반도체 042700 HMM",
+  "persona": "growth_investor",
+  "ticker": "042700",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "한미반도체 042700 HMM",
+    "bullish_factors": [
+      "AI 반도체 수출 증가로 인한 시장 성장 가능성",
+      "HBM 수요 증가에 따른 반도체 산업의 긍정적인 전망"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성과 글로벌 경쟁 심화",
+      "소부장 관련 종목들의 하락세"
+    ],
+    "risks": [
+      "글로벌 경제 둔화로 인한 수요 감소",
+      "정책 변화에 따른 규제 리스크"
+    ],
+    "summary": "한미반도체는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으나, 반도체 산업의 불안정성과 경쟁 심화가 우려되는 상황입니다. 또한, 글로벌 경제 둔화와 정책 변화에 따른 리스크가 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 129,
+        "document_type": "news_article",
+        "score": 0.355023,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 130,
+        "document_type": "news_article",
+        "score": 0.343323,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 132,
+        "document_type": "news_article",
+        "score": 0.331835,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 137,
+        "document_type": "news_article",
+        "score": 0.279184,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 136,
+        "document_type": "news_article",
+        "score": 0.276425,
+        "ticker": "042700"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "한미반도체 042700 HMM",
+    "retrieval_quality": {
+      "chunk_count": 5,
+      "score_stats": {
+        "min": 0.276425,
+        "max": 0.355023,
+        "avg": 0.317158,
+        "count": 5
+      },
+      "doc_type_distribution": {
+        "news_article": 5
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 5,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 5,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.355023,
+        0.343323,
+        0.331835,
+        0.279184,
+        0.276425
+      ],
+      "score_stats": {
+        "min": 0.276425,
+        "max": 0.355023,
+        "avg": 0.317158,
+        "count": 5
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "한미반도체 042700 HMM",
+    "persona": "growth_investor",
+    "reflection_summary": "전체적으로 한미반도체에 대한 긍정적인 성장 가능성이 강조되었으나, 하락 요인과 리스크에 대한 분석이 다소 부족합니다. 특히, 산업의 불안정성과 경쟁 심화에 대한 구체적인 설명이 필요합니다.",
+    "missing_risks": [
+      "환율 변동에 따른 수익성 영향",
+      "기술 발전 속도에 따른 시장 변화 리스크",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "공급망 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "AI 반도체와 HBM 수요 증가에 대한 지나친 긍정적 전망"
+    ],
+    "context_gaps": [
+      "반도체 산업의 경쟁 상황에 대한 구체적인 데이터 부족",
+      "글로벌 경제 둔화의 구체적인 영향 분석 부족",
+      "공시 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "하락 요인에 대한 구체적인 사례 추가",
+      "리스크 항목에 대한 상세한 분석 및 데이터 제공"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 09:20:57"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "한미반도체 042700 HMM",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "AI 반도체 수출 증가로 인한 시장 성장 가능성",
+        "HBM 수요 증가에 따른 반도체 산업의 긍정적인 전망"
+      ],
+      "bearish_factors": [
+        "반도체 산업의 불안정성과 글로벌 경쟁 심화",
+        "소부장 관련 종목들의 하락세"
+      ],
+      "risks": [
+        "글로벌 경제 둔화로 인한 수요 감소",
+        "정책 변화에 따른 규제 리스크"
+      ],
+      "summary": "한미반도체는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으나, 반도체 산업의 불안정성과 경쟁 심화가 우려되는 상황입니다. 또한, 글로벌 경제 둔화와 정책 변화에 따른 리스크가 존재합니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 129,
+          "document_type": "news_article",
+          "score": 0.355023,
+          "ticker": "042700"
+        },
+        {
+          "chunk_id": 130,
+          "document_type": "news_article",
+          "score": 0.343323,
+          "ticker": "042700"
+        },
+        {
+          "chunk_id": 132,
+          "document_type": "news_article",
+          "score": 0.331835,
+          "ticker": "042700"
+        },
+        {
+          "chunk_id": 137,
+          "document_type": "news_article",
+          "score": 0.279184,
+          "ticker": "042700"
+        },
+        {
+          "chunk_id": 136,
+          "document_type": "news_article",
+          "score": 0.276425,
+          "ticker": "042700"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-05-28 09:20:57"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 1.0,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 23
+    },
+    "importance": {
+      "importance_score": 1.0,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_한미반도체_042700_HMM_2026-05-28_09:20:57",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "NVIDIA → 실적",
+        "HBM → 공급",
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-05-28 09:20:57"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 17,
+    "relation_count": 35,
+    "query": "한미반도체 042700 HMM"
+  },
+  "stock_chain": {
+    "entity_count": 15,
+    "link_count": 46,
+    "propagation_paths": 53
+  },
+  "unified_context_length": 4601,
+  "retrieval_chunk_count": 5,
+  "completed_at": "2026-05-28 09:20:57"
+}

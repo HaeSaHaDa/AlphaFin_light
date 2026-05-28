@@ -52,10 +52,16 @@ export function useAnalysisViewer() {
   const [error, setError] = useState<string | null>(null);
   const [traceId, setTraceId] = useState<string | null>(null);
 
-  const load = useCallback(async (id?: string | null) => {
+  const loadByTraceId = useCallback(async (id: string) => {
+    const target = id.trim();
+    if (!target) {
+      setData(EMPTY);
+      setTraceId(null);
+      setStatus("idle");
+      return;
+    }
     setStatus("loading");
     setError(null);
-    const target = id?.trim() || null;
     try {
       const [retrieval, reflection, traceRaw, evaluation] = await Promise.all([
         getRetrieval(target),
@@ -64,7 +70,7 @@ export function useAnalysisViewer() {
         getEvaluation(target),
       ]);
       const resolved =
-        evaluation?.trace_id || retrieval?.trace_id || target || "";
+        evaluation?.trace_id || retrieval?.trace_id || target;
       const trace = normalizeTraceById(
         traceRaw as TraceData | Record<string, unknown>,
         resolved,
@@ -78,7 +84,7 @@ export function useAnalysisViewer() {
         trace,
         evaluation,
       });
-      setTraceId(resolved || null);
+      setTraceId(resolved);
       setStatus("success");
     } catch (e) {
       const msg =
@@ -92,8 +98,5 @@ export function useAnalysisViewer() {
     }
   }, []);
 
-  const loadLatest = useCallback(() => load(null), [load]);
-  const loadByTraceId = useCallback((id: string) => load(id), [load]);
-
-  return { data, status, error, traceId, load, loadLatest, loadByTraceId };
+  return { data, status, error, traceId, loadByTraceId };
 }

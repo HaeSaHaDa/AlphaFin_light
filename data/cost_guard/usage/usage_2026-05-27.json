@@ -1,0 +1,47 @@
+{
+  "date": "2026-05-27",
+  "entries": [
+    {
+      "timestamp": "2026-05-27 19:24:33",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 183,
+      "meta": {
+        "ticker": "005380",
+        "count": 20
+      }
+    },
+    {
+      "timestamp": "2026-05-27 19:35:28",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 61,
+      "meta": {
+        "ticker": "005930",
+        "count": 8
+      }
+    },
+    {
+      "timestamp": "2026-05-27 20:34:20",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 49,
+      "meta": {
+        "ticker": "035420",
+        "count": 4
+      }
+    }
+  ],
+  "totals": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "embedding_tokens": 293,
+    "call_count": 3
+  }
+}

@@ -44,7 +44,7 @@ export function AccuracyPanel({ metrics, market }: AccuracyPanelProps) {
       </p>
 
       <div className="rounded-md border border-border bg-background/50 p-3 text-sm">
-        <p className="text-xs text-muted-foreground">실제 시장 변화 (샘플)</p>
+        <p className="text-xs text-muted-foreground">실제 시장 변화 (trace 기준)</p>
         <p className="mt-1 font-medium">
           {market.period_label}:{" "}
           <span

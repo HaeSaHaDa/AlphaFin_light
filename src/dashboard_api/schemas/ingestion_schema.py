@@ -17,4 +17,7 @@ class IngestionRunResponse(BaseModel):
     documents: int = 0
     chunks: int = 0
     embeddings: int = 0
+    embeddings_created: int = 0
+    embeddings_skipped: int = 0
+    skipped_collectors: list[str] = []
     error: str | None = None

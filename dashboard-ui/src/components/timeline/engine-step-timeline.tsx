@@ -5,16 +5,6 @@ import { CheckCircle2, Circle } from "lucide-react";
 import type { AnalysisLoadStatus } from "@/types/analysis";
 import type { TraceData } from "@/types/dashboard";
 
-const DEMO_FLOW = [
-  "retrieval",
-  "context assembly",
-  "reasoning",
-  "reflection",
-  "memory update",
-  "stock chain",
-  "evaluation",
-];
-
 interface EngineStepTimelineProps {
   trace: TraceData | null;
   status: AnalysisLoadStatus;
@@ -24,7 +14,7 @@ export function EngineStepTimeline({ trace, status }: EngineStepTimelineProps) {
   const steps = trace?.trace?.steps ?? [];
   const flow = trace?.pipeline_flow?.length
     ? mapPipelineLabels(trace.pipeline_flow)
-    : DEMO_FLOW;
+    : [];
 
   return (
     <PanelShell
@@ -34,6 +24,11 @@ export function EngineStepTimeline({ trace, status }: EngineStepTimelineProps) {
       empty={!trace}
       className="max-h-none"
     >
+      {flow.length === 0 && steps.length === 0 && (
+        <p className="text-xs text-muted-foreground">
+          trace pipeline 데이터가 없습니다.
+        </p>
+      )}
       <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
         {flow.map((step, i) => (
           <span key={step} className="flex items-center gap-1">

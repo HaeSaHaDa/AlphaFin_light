@@ -10,5 +10,7 @@ class StockChainResponse(BaseModel):
     trace_id: str = ""
     query: str = ""
     ticker: str = ""
+    center_name: str = ""
+    center_ticker: str = ""
     summary: dict[str, Any] = Field(default_factory=dict)
     chain: dict[str, Any] = Field(default_factory=dict)

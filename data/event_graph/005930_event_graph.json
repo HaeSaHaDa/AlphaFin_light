@@ -1,5 +1,5 @@
 {
-  "query": "현대자동차 전기차 전망 분석",
+  "query": "삼성전자 005930",
   "ticker": "005930",
   "nodes": [
     {
@@ -7,154 +7,133 @@
       "node_type": "company",
       "ticker": "005930",
       "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "SK하이닉스",
       "node_type": "company",
       "ticker": "000660",
       "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "NVIDIA",
       "node_type": "company",
       "ticker": "NVDA",
       "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "name": "엔비디아",
-      "node_type": "company",
-      "ticker": "NVDA",
-      "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "반도체",
       "node_type": "industry",
       "ticker": null,
       "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "메모리",
       "node_type": "industry",
       "ticker": null,
       "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "AI",
       "node_type": "industry",
       "ticker": null,
       "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "서버",
       "node_type": "industry",
       "ticker": null,
       "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "자동차",
       "node_type": "industry",
       "ticker": null,
       "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "HBM",
       "node_type": "product",
       "ticker": null,
       "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "DRAM",
       "node_type": "product",
       "ticker": null,
       "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "GPU",
       "node_type": "product",
       "ticker": null,
       "event_type": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "수요 증가",
       "node_type": "market_event",
       "ticker": null,
       "event_type": "demand_increase",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "수출 증가",
       "node_type": "market_event",
       "ticker": null,
       "event_type": "export_increase",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "name": "가격 상승",
-      "node_type": "market_event",
-      "ticker": null,
-      "event_type": "price_increase",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "name": "실적 개선",
-      "node_type": "market_event",
-      "ticker": null,
-      "event_type": "earnings_improvement",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "공급 부족",
       "node_type": "market_event",
       "ticker": null,
       "event_type": "supply_shortage",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "투자 확대",
       "node_type": "market_event",
       "ticker": null,
       "event_type": "investment_expansion",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "시장 성장",
       "node_type": "market_event",
       "ticker": null,
       "event_type": "market_growth",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "경쟁 심화",
       "node_type": "market_event",
       "ticker": null,
       "event_type": "competition_increase",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "기술 발전",
       "node_type": "market_event",
       "ticker": null,
       "event_type": "tech_advancement",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "name": "리스크",
       "node_type": "market_event",
       "ticker": null,
       "event_type": "risk",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     }
   ],
   "relations": [
@@ -165,7 +144,7 @@
       "confidence": 0.8,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "수요 증가",
@@ -174,7 +153,7 @@
       "confidence": 0.8,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "수요 증가",
@@ -183,7 +162,7 @@
       "confidence": 0.8,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "시장 성장",
@@ -192,7 +171,7 @@
       "confidence": 0.8,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "시장 성장",
@@ -201,7 +180,7 @@
       "confidence": 0.8,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "시장 성장",
@@ -210,7 +189,7 @@
       "confidence": 0.8,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "HBM",
@@ -219,7 +198,7 @@
       "confidence": 0.75,
       "source_ticker": null,
       "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "HBM",
@@ -228,7 +207,7 @@
       "confidence": 0.75,
       "source_ticker": null,
       "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "HBM",
@@ -237,16 +216,7 @@
       "confidence": 0.75,
       "source_ticker": null,
       "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "HBM",
-      "target": "엔비디아",
-      "relation_type": "benefit",
-      "confidence": 0.75,
-      "source_ticker": null,
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "DRAM",
@@ -255,7 +225,7 @@
       "confidence": 0.75,
       "source_ticker": null,
       "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "DRAM",
@@ -264,7 +234,7 @@
       "confidence": 0.75,
       "source_ticker": null,
       "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "DRAM",
@@ -273,16 +243,7 @@
       "confidence": 0.75,
       "source_ticker": null,
       "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "DRAM",
-      "target": "엔비디아",
-      "relation_type": "benefit",
-      "confidence": 0.75,
-      "source_ticker": null,
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "GPU",
@@ -291,7 +252,7 @@
       "confidence": 0.75,
       "source_ticker": null,
       "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "GPU",
@@ -300,7 +261,7 @@
       "confidence": 0.75,
       "source_ticker": null,
       "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "GPU",
@@ -309,52 +270,7 @@
       "confidence": 0.75,
       "source_ticker": null,
       "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "GPU",
-      "target": "엔비디아",
-      "relation_type": "benefit",
-      "confidence": 0.75,
-      "source_ticker": null,
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "가격 상승",
-      "target": "삼성전자",
-      "relation_type": "price_impact",
-      "confidence": 0.7,
-      "source_ticker": null,
-      "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "가격 상승",
-      "target": "SK하이닉스",
-      "relation_type": "price_impact",
-      "confidence": 0.7,
-      "source_ticker": null,
-      "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "가격 상승",
-      "target": "NVIDIA",
-      "relation_type": "price_impact",
-      "confidence": 0.7,
-      "source_ticker": null,
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "가격 상승",
-      "target": "엔비디아",
-      "relation_type": "price_impact",
-      "confidence": 0.7,
-      "source_ticker": null,
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "경쟁 심화",
@@ -363,7 +279,7 @@
       "confidence": 0.65,
       "source_ticker": null,
       "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "경쟁 심화",
@@ -372,7 +288,7 @@
       "confidence": 0.65,
       "source_ticker": null,
       "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "경쟁 심화",
@@ -381,16 +297,7 @@
       "confidence": 0.65,
       "source_ticker": null,
       "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "경쟁 심화",
-      "target": "엔비디아",
-      "relation_type": "risk_propagation",
-      "confidence": 0.65,
-      "source_ticker": null,
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "반도체",
@@ -399,7 +306,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "반도체",
@@ -408,7 +315,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "반도체",
@@ -417,16 +324,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "반도체",
-      "target": "엔비디아",
-      "relation_type": "impact",
-      "confidence": 0.7,
-      "source_ticker": null,
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "메모리",
@@ -435,7 +333,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "메모리",
@@ -444,7 +342,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "메모리",
@@ -453,16 +351,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "메모리",
-      "target": "엔비디아",
-      "relation_type": "impact",
-      "confidence": 0.7,
-      "source_ticker": null,
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "AI",
@@ -471,7 +360,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "AI",
@@ -480,7 +369,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "AI",
@@ -489,16 +378,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "AI",
-      "target": "엔비디아",
-      "relation_type": "impact",
-      "confidence": 0.7,
-      "source_ticker": null,
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "서버",
@@ -507,7 +387,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "서버",
@@ -516,7 +396,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "서버",
@@ -525,16 +405,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "서버",
-      "target": "엔비디아",
-      "relation_type": "impact",
-      "confidence": 0.7,
-      "source_ticker": null,
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "자동차",
@@ -543,7 +414,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "자동차",
@@ -552,7 +423,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "자동차",
@@ -561,16 +432,7 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "자동차",
-      "target": "엔비디아",
-      "relation_type": "impact",
-      "confidence": 0.7,
-      "source_ticker": null,
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "삼성전자",
@@ -579,7 +441,7 @@
       "confidence": 0.6,
       "source_ticker": "005930",
       "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "삼성전자",
@@ -588,16 +450,7 @@
       "confidence": 0.6,
       "source_ticker": "005930",
       "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "삼성전자",
-      "target": "엔비디아",
-      "relation_type": "competition",
-      "confidence": 0.6,
-      "source_ticker": "005930",
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "SK하이닉스",
@@ -606,7 +459,7 @@
       "confidence": 0.6,
       "source_ticker": "000660",
       "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "SK하이닉스",
@@ -615,16 +468,7 @@
       "confidence": 0.6,
       "source_ticker": "000660",
       "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "SK하이닉스",
-      "target": "엔비디아",
-      "relation_type": "competition",
-      "confidence": 0.6,
-      "source_ticker": "000660",
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "NVIDIA",
@@ -633,7 +477,7 @@
       "confidence": 0.6,
       "source_ticker": "NVDA",
       "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "NVIDIA",
@@ -642,61 +486,25 @@
       "confidence": 0.6,
       "source_ticker": "NVDA",
       "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
-      "source": "NVIDIA",
-      "target": "엔비디아",
-      "relation_type": "competition",
-      "confidence": 0.6,
-      "source_ticker": "NVDA",
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "엔비디아",
-      "target": "삼성전자",
-      "relation_type": "competition",
-      "confidence": 0.6,
-      "source_ticker": "NVDA",
-      "target_ticker": "005930",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "엔비디아",
-      "target": "SK하이닉스",
-      "relation_type": "competition",
-      "confidence": 0.6,
-      "source_ticker": "NVDA",
-      "target_ticker": "000660",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "엔비디아",
-      "target": "NVIDIA",
-      "relation_type": "competition",
-      "confidence": 0.6,
-      "source_ticker": "NVDA",
-      "target_ticker": "NVDA",
-      "created_at": "2026-05-27 17:10:11"
-    },
-    {
-      "source": "전기차 시장의 지속적인 성장과 수요 증가",
+      "source": "AI 반도체 수출 증가로 인한 매출 성장 가능성",
       "target": "삼성전자",
       "relation_type": "benefit",
       "confidence": 0.75,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
-      "source": "AI 기술 발전에 따른 전기차 관련 신기술 개발 기회",
+      "source": "HBM 수요 증가로 인한 시장 점유율 확대 기회",
       "target": "삼성전자",
       "relation_type": "benefit",
       "confidence": 0.75,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
       "source": "글로벌 경쟁 심화로 인한 가격 압박",
@@ -705,39 +513,39 @@
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
-      "source": "노조의 반발 및 파업 우려로 인한 운영 리스크",
+      "source": "노조의 반발로 인한 운영 리스크",
       "target": "삼성전자",
       "relation_type": "risk_propagation",
       "confidence": 0.7,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
-      "source": "정치적 불안정성으로 인한 수출 리스크",
+      "source": "반도체 산업의 불안정성",
       "target": "삼성전자",
       "relation_type": "risk_propagation",
       "confidence": 0.65,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     },
     {
-      "source": "원자재 가격 상승으로 인한 생산 비용 증가",
+      "source": "환율 변동에 따른 수익성 리스크",
       "target": "삼성전자",
       "relation_type": "risk_propagation",
       "confidence": 0.65,
       "source_ticker": null,
       "target_ticker": null,
-      "created_at": "2026-05-27 17:10:11"
+      "created_at": "2026-05-28 10:16:16"
     }
   ],
   "metadata": {
-    "node_count": 22,
-    "relation_count": 64,
-    "created_at": "2026-05-27 17:10:11"
+    "node_count": 19,
+    "relation_count": 45,
+    "created_at": "2026-05-28 10:16:16"
   }
 }

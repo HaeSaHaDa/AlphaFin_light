@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260528_093928",
+  "query": "두산에너빌리티 034020 SMR",
+  "persona": "growth_investor",
+  "ticker": "034020",
+  "started_at": "2026-05-28 09:39:28",
+  "completed_at": "2026-05-28 09:39:40",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "chunks=5",
+      "timestamp": "2026-05-28 09:39:28"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=4112",
+      "timestamp": "2026-05-28 09:39:28"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=4860",
+      "timestamp": "2026-05-28 09:39:28"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=3",
+      "timestamp": "2026-05-28 09:39:35"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-05-28 09:39:35"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "전체적으로 두산에너빌리티의 성장 가능성을 긍정적으로 평가하고 있지만, 일부 리스크가 충분히",
+      "timestamp": "2026-05-28 09:39:40"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-05-28 09:39:40"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.80",
+      "timestamp": "2026-05-28 09:39:40"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-05-28 09:39:40"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=19 rels=53",
+      "timestamp": "2026-05-28 09:39:40"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=63",
+      "timestamp": "2026-05-28 09:39:40"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 5,
+    "max_score": 0.467165
+  },
+  "reflection_summary": "전체적으로 두산에너빌리티의 성장 가능성을 긍정적으로 평가하고 있지만, 일부 리스크가 충분히 다루어지지 않았습니다. 또한, 분석에서 제공된 Context가 부족하여 신뢰성을 저하시킬 수 있습니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

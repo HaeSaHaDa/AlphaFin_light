@@ -1,10 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Loader2, Play, RefreshCw, Zap } from "lucide-react";
+import { Loader2, Play, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CompanyContextPanel } from "@/components/query/company-context-panel";
+import { useSearchTrigger } from "@/hooks/use-search-trigger";
+import type { CompanyResolveData, IngestionRunSummary } from "@/types/company";
 import type { LoadStatus } from "@/types/dashboard";
 
 interface QueryInputPanelProps {
@@ -12,9 +15,14 @@ interface QueryInputPanelProps {
   engineRunning: boolean;
   traceId: string | null;
   displayQuery?: string;
-  onRunEngine: (query: string) => void;
-  onLoadLatest: () => void;
+  companyContext?: CompanyResolveData | null;
+  ingestionSummary?: IngestionRunSummary | null;
+  onSearch: (query: string) => void;
   onLoadByTraceId: (traceId: string) => void;
+  onIngestUpdate?: (payload: {
+    company: CompanyResolveData;
+    ingestion: IngestionRunSummary | null;
+  }) => void;
 }
 
 export function QueryInputPanel({
@@ -22,111 +30,124 @@ export function QueryInputPanel({
   engineRunning,
   traceId,
   displayQuery,
-  onRunEngine,
-  onLoadLatest,
+  companyContext,
+  ingestionSummary,
+  onSearch,
   onLoadByTraceId,
+  onIngestUpdate,
 }: QueryInputPanelProps) {
-  const [query, setQuery] = useState("삼성전자 반도체 전망 분석");
+  const [query, setQuery] = useState("현대자동차 전기차 전망");
   const [traceInput, setTraceInput] = useState("");
 
-  const busy = status === "loading" || engineRunning;
+  const {
+    preview,
+    resolving,
+    ingesting,
+    error: searchError,
+    resetIngestKey,
+  } = useSearchTrigger(query, !engineRunning, onIngestUpdate);
 
-  const handleRun = () => {
+  const company = companyContext ?? preview;
+  const busy = status === "loading" || engineRunning || ingesting;
+
+  const handleSearch = () => {
     const q = query.trim();
     if (!q) return;
-    onRunEngine(q);
+    resetIngestKey();
+    onSearch(q);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") handleRun();
+    if (e.key === "Enter") handleSearch();
   };
 
   return (
     <Card className="border-primary/30 bg-card/80">
       <CardHeader>
-        <CardTitle>Query Input</CardTitle>
+        <CardTitle>종목 검색 · AI 분석</CardTitle>
         <p className="text-xs text-muted-foreground">
-          질문을 입력하고 <strong>Run Engine</strong>을 누르면 Unified Engine이 실행되고 결과가 갱신됩니다.
+          회사명이 포함된 검색어를 입력하면{" "}
+          <strong>종목 식별 → 뉴스·공시 수집 → embedding</strong>이 자동 실행됩니다.
+          Enter 또는 검색 버튼으로 AI 분석까지 진행합니다.
         </p>
       </CardHeader>
-      <CardContent className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end">
-        {/* 쿼리 입력 */}
-        <div className="min-w-[260px] flex-1 space-y-1">
-          <label className="text-xs text-muted-foreground">분석 질문</label>
-          <Input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            onKeyDown={handleKeyDown}
-            placeholder="예: 현대자동차 전기차 전망 (회사명 포함)"
-            disabled={busy}
-          />
-        </div>
-
-        {/* 버튼 그룹 */}
-        <div className="flex flex-wrap gap-2">
-          {/* Run Engine — 엔진 실행 후 trace_id 기반 로드 */}
-          <Button
-            type="button"
-            disabled={busy || !query.trim()}
-            onClick={handleRun}
-          >
-            {engineRunning ? (
-              <Loader2 className="h-4 w-4 animate-spin" />
-            ) : (
-              <Zap className="h-4 w-4" />
-            )}
-            {engineRunning ? "수집·분석 중…" : "Run Engine"}
-          </Button>
-
-          {/* Latest Trace — 가장 최근 저장된 결과 조회 */}
-          <Button
-            type="button"
-            variant="secondary"
-            disabled={busy}
-            onClick={onLoadLatest}
-          >
-            <RefreshCw className="h-4 w-4" />
-            Latest Trace
-          </Button>
-        </div>
-
-        {/* trace_id 직접 입력 */}
-        <div className="flex w-full flex-wrap items-end gap-2 sm:w-auto">
-          <div className="min-w-[160px] space-y-1">
-            <label className="text-xs text-muted-foreground">trace_id 직접 조회</label>
+      <CardContent className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end">
+          <div className="min-w-[260px] flex-1 space-y-1">
+            <label className="text-xs text-muted-foreground">검색·분석 질문</label>
             <Input
-              value={traceInput}
-              onChange={(e) => setTraceInput(e.target.value)}
-              placeholder={traceId ?? "20260527_123745"}
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="예: 현대자동차 전기차 전망"
               disabled={busy}
             />
           </div>
-          <Button
-            type="button"
-            variant="outline"
-            size="sm"
-            disabled={busy || !traceInput.trim()}
-            onClick={() => {
-              if (traceInput.trim()) onLoadByTraceId(traceInput.trim());
-            }}
-          >
-            <Play className="h-4 w-4" />
-            Load
-          </Button>
+
+          <div className="flex flex-wrap gap-2">
+            <Button
+              type="button"
+              disabled={busy || !query.trim()}
+              onClick={handleSearch}
+            >
+              {engineRunning ? (
+                <Loader2 className="h-4 w-4 animate-spin" />
+              ) : (
+                <Search className="h-4 w-4" />
+              )}
+              {engineRunning
+                ? "분석 중…"
+                : ingesting
+                  ? "수집·embedding 중…"
+                  : "검색 · 분석"}
+            </Button>
+          </div>
+
+          <div className="flex w-full flex-wrap items-end gap-2 sm:w-auto">
+            <div className="min-w-[160px] space-y-1">
+              <label className="text-xs text-muted-foreground">trace_id</label>
+              <Input
+                value={traceInput}
+                onChange={(e) => setTraceInput(e.target.value)}
+                placeholder={traceId ?? "20260527_123745"}
+                disabled={busy}
+              />
+            </div>
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              disabled={busy || !traceInput.trim()}
+              onClick={() => {
+                if (traceInput.trim()) onLoadByTraceId(traceInput.trim());
+              }}
+            >
+              <Play className="h-4 w-4" />
+              Load
+            </Button>
+          </div>
         </div>
 
-        {/* 현재 표시 중인 결과 정보 */}
+        {(resolving || ingesting) && !engineRunning && (
+          <p className="text-xs text-primary">
+            {resolving && !ingesting && "종목 식별 중…"}
+            {ingesting && "뉴스·공시 수집 및 embedding 생성 중… (기존 데이터는 재사용)"}
+          </p>
+        )}
+
+        <CompanyContextPanel
+          company={company}
+          ingestion={ingestionSummary}
+          loading={resolving && !company}
+          error={searchError}
+        />
+
         {displayQuery && (
-          <p className="w-full text-xs text-muted-foreground">
+          <p className="text-xs text-muted-foreground">
             표시 중:{" "}
-            <span className="text-foreground font-medium">{displayQuery}</span>
+            <span className="font-medium text-foreground">{displayQuery}</span>
             {traceId && (
               <span className="ml-2 font-mono opacity-60">({traceId})</span>
-            )}
-            {query.trim() !== displayQuery && (
-              <span className="ml-2 text-amber-400/90">
-                ← 입력 질문과 다름. Run Engine을 눌러 갱신하세요.
-              </span>
             )}
           </p>
         )}

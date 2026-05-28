@@ -1,0 +1,13 @@
+{
+  "ticker": "006400",
+  "company_name": "삼성SDI",
+  "corp_code": "00164779",
+  "status": "completed",
+  "documents": 0,
+  "chunks": 0,
+  "embeddings": 9,
+  "embeddings_created": 9,
+  "embeddings_skipped": 20,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

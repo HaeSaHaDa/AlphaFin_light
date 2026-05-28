@@ -1,0 +1,5 @@
+"""Ingestion / embedding 상한."""
+MAX_NEWS_PAGES = 1
+MAX_NEWS_DB_ROWS = 20
+MAX_CHUNK_ROWS = 100
+MAX_EMBED_BATCH = 50

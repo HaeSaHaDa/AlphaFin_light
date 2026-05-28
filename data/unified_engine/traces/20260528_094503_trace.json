@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260528_094503",
+  "query": "한국전력 015760 원자력",
+  "persona": "growth_investor",
+  "ticker": "015760",
+  "started_at": "2026-05-28 09:45:03",
+  "completed_at": "2026-05-28 09:45:12",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "chunks=5",
+      "timestamp": "2026-05-28 09:45:03"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=900",
+      "timestamp": "2026-05-28 09:45:03"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=3639",
+      "timestamp": "2026-05-28 09:45:03"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-05-28 09:45:06"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-05-28 09:45:06"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 한국전력의 성장 가능성과 리스크를 간략히 언급하고 있으나, 전반적으로 리스크 요소에",
+      "timestamp": "2026-05-28 09:45:12"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-05-28 09:45:12"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.70",
+      "timestamp": "2026-05-28 09:45:12"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-05-28 09:45:12"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=19 rels=45",
+      "timestamp": "2026-05-28 09:45:12"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=56",
+      "timestamp": "2026-05-28 09:45:12"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 5,
+    "max_score": 0.237484
+  },
+  "reflection_summary": "분석은 한국전력의 성장 가능성과 리스크를 간략히 언급하고 있으나, 전반적으로 리스크 요소에 대한 깊이 있는 논의가 부족합니다. 특히, 상승 요인과 하락 요인 간의 균형이 맞지 않아 과도한 낙관이 감지됩니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

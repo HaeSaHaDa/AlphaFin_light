@@ -1,0 +1,13 @@
+{
+  "ticker": "035420",
+  "company_name": "NAVER",
+  "corp_code": "00266961",
+  "status": "completed",
+  "documents": 140,
+  "chunks": 20,
+  "embeddings": 4,
+  "embeddings_created": 4,
+  "embeddings_skipped": 16,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

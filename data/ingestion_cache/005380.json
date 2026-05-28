@@ -1,0 +1,9 @@
+{
+  "ticker": "005380",
+  "company_name": "현대자동차",
+  "status": "completed",
+  "documents": 140,
+  "chunks": 20,
+  "embeddings": 20,
+  "completed_at": "2026-05-27 19:24:33"
+}

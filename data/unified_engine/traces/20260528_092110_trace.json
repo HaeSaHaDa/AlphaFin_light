@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260528_092110",
+  "query": "한미반도체 042700 HBM",
+  "persona": "growth_investor",
+  "ticker": "042700",
+  "started_at": "2026-05-28 09:21:10",
+  "completed_at": "2026-05-28 09:21:17",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "chunks=5",
+      "timestamp": "2026-05-28 09:21:10"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=2834",
+      "timestamp": "2026-05-28 09:21:10"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=5587",
+      "timestamp": "2026-05-28 09:21:10"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-05-28 09:21:14"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-05-28 09:21:14"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 한미반도체의 성장 가능성과 위험 요소를 적절히 언급하고 있으나, 일부 중요한 리스크",
+      "timestamp": "2026-05-28 09:21:17"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-05-28 09:21:17"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=1.00",
+      "timestamp": "2026-05-28 09:21:17"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-05-28 09:21:17"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=19 rels=45",
+      "timestamp": "2026-05-28 09:21:17"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=57",
+      "timestamp": "2026-05-28 09:21:17"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 5,
+    "max_score": 0.322429
+  },
+  "reflection_summary": "분석은 한미반도체의 성장 가능성과 위험 요소를 적절히 언급하고 있으나, 일부 중요한 리스크가 누락되어 있습니다. 또한, 과도한 낙관이 감지되며, 추가적인 맥락이 부족합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

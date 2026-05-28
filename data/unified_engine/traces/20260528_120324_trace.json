@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260528_120324",
+  "query": "삼성SDI 006400 미국",
+  "persona": "growth_investor",
+  "ticker": "006400",
+  "started_at": "2026-05-28 12:03:24",
+  "completed_at": "2026-05-28 12:03:34",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "chunks=5",
+      "timestamp": "2026-05-28 12:03:24"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=4394",
+      "timestamp": "2026-05-28 12:03:24"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=4867",
+      "timestamp": "2026-05-28 12:03:24"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-05-28 12:03:29"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-05-28 12:03:29"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 삼성SDI의 성장 가능성을 긍정적으로 평가하고 있으나, 일부 리스크가 누락되어 있습",
+      "timestamp": "2026-05-28 12:03:34"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-05-28 12:03:34"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.80",
+      "timestamp": "2026-05-28 12:03:34"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-05-28 12:03:34"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=19 rels=41",
+      "timestamp": "2026-05-28 12:03:34"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=51",
+      "timestamp": "2026-05-28 12:03:34"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 5,
+    "max_score": 0.363924
+  },
+  "reflection_summary": "분석은 삼성SDI의 성장 가능성을 긍정적으로 평가하고 있으나, 일부 리스크가 누락되어 있습니다. 또한, 과도한 낙관이 감지되며, Context 부족 영역이 존재합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

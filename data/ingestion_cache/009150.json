@@ -1,0 +1,9 @@
+{
+  "ticker": "009150",
+  "company_name": "삼성전기",
+  "status": "completed",
+  "documents": 75,
+  "chunks": 21,
+  "embeddings": 5,
+  "completed_at": "2026-05-28 10:30:56"
+}

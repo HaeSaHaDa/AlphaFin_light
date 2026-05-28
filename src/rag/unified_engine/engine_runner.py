@@ -29,6 +29,16 @@ PROJECT_ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_MODEL = "gpt-4o-mini"
 
 
+def _finalize_pipeline(state: dict) -> dict:
+    """Unified Result·Trace를 항상 저장한 뒤 반환한다 (Dashboard API 404 방지)."""
+    result = build_unified_result(state)
+    save_unified_result(result)
+    save_full_trace(state)
+    save_pipeline_log(state)
+    log_step(state, "result_save", "ok", f"trace_id={state['trace_id']}")
+    return result
+
+
 def _get_openai_client() -> OpenAI:
     load_dotenv(PROJECT_ROOT / ".env")
     return OpenAI(api_key=os.getenv("OPENAI_API_KEY", "").strip())
@@ -106,7 +116,28 @@ def run_unified_pipeline(
 
     if not chunks:
         log_step(state, "pipeline", "error", "Retrieval 결과 없음")
-        return build_unified_result(state)
+        state["analysis_result"] = {
+            "persona": persona,
+            "query": query,
+            "bullish_factors": [],
+            "bearish_factors": [],
+            "risks": [
+                "해당 종목의 embedding 데이터가 없어 검색할 수 없습니다. "
+                "ingestion을 실행하거나 발표 모드를 해제한 뒤 다시 시도해 주세요.",
+            ],
+            "summary": (
+                f"{ticker} 관련 문서를 찾지 못했습니다. "
+                "뉴스·공시 수집 및 embedding 생성이 필요합니다."
+            ),
+            "referenced_chunks": [],
+            "model": DEFAULT_MODEL,
+        }
+        state["evaluation_result"] = {
+            "retrieval_quality": {"score": 0, "note": "no_chunks"},
+            "context_usage": {},
+            "hallucination_risk": {"risk_level": "n/a"},
+        }
+        return _finalize_pipeline(state)
 
     state["chunks"] = chunks
 
@@ -230,12 +261,6 @@ def run_unified_pipeline(
     log_step(state, "stock_chain", "ok",
              f"links={len(chain.get('links', []))}")
 
-    # --- Save Results ---
-    result = build_unified_result(state)
-    save_unified_result(result)
-    save_full_trace(state)
-    save_pipeline_log(state)
-    log_step(state, "result_save", "ok", f"trace_id={state['trace_id']}")
-
+    result = _finalize_pipeline(state)
     logger.info("=== Unified Engine 완료  trace_id=%s ===", state["trace_id"])
     return result

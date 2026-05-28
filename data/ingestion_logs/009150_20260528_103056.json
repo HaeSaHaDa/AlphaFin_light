@@ -1,0 +1,13 @@
+{
+  "ticker": "009150",
+  "company_name": "삼성전기",
+  "corp_code": "00126362",
+  "status": "completed",
+  "documents": 75,
+  "chunks": 21,
+  "embeddings": 5,
+  "embeddings_created": 5,
+  "embeddings_skipped": 16,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

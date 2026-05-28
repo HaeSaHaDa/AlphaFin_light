@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260528_092050",
+  "query": "한미반도체 042700 HMM",
+  "persona": "growth_investor",
+  "ticker": "042700",
+  "started_at": "2026-05-28 09:20:50",
+  "completed_at": "2026-05-28 09:20:57",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "chunks=5",
+      "timestamp": "2026-05-28 09:20:50"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=2746",
+      "timestamp": "2026-05-28 09:20:50"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=4601",
+      "timestamp": "2026-05-28 09:20:50"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-05-28 09:20:54"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-05-28 09:20:54"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "전체적으로 한미반도체에 대한 긍정적인 성장 가능성이 강조되었으나, 하락 요인과 리스크에 대",
+      "timestamp": "2026-05-28 09:20:57"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-05-28 09:20:57"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=1.00",
+      "timestamp": "2026-05-28 09:20:57"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-05-28 09:20:57"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=17 rels=35",
+      "timestamp": "2026-05-28 09:20:57"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=46",
+      "timestamp": "2026-05-28 09:20:57"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 5,
+    "max_score": 0.355023
+  },
+  "reflection_summary": "전체적으로 한미반도체에 대한 긍정적인 성장 가능성이 강조되었으나, 하락 요인과 리스크에 대한 분석이 다소 부족합니다. 특히, 산업의 불안정성과 경쟁 심화에 대한 구체적인 설명이 필요합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

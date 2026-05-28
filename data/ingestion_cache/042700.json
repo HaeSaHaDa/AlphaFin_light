@@ -1,0 +1,9 @@
+{
+  "ticker": "042700",
+  "company_name": "한미반도체",
+  "status": "completed",
+  "documents": 144,
+  "chunks": 29,
+  "embeddings": 10,
+  "completed_at": "2026-05-28 09:20:50"
+}

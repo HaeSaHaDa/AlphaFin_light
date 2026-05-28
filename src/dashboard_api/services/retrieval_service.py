@@ -37,15 +37,9 @@ def _enrich_chunks(chunks: list[dict]) -> list[dict]:
                 f"[{doc_type}] chunk #{chunk_id}"
                 + (f" · {ticker}" if ticker else "")
             ),
-            "related_entity": ticker or unified_ticker_placeholder(doc_type),
+            "related_entity": ticker or "",
         })
     return enriched
-
-
-def unified_ticker_placeholder(doc_type: str) -> str:
-    if doc_type == "disclosure":
-        return "005930"
-    return "—"
 
 
 def _build_retrieval_payload(unified: dict) -> dict:
@@ -56,7 +50,7 @@ def _build_retrieval_payload(unified: dict) -> dict:
     return {
         "trace_id": unified.get("trace_id", ""),
         "query": unified.get("query", ""),
-        "ticker": unified.get("ticker", ""),
+        "ticker": unified.get("ticker", "") or "",
         "chunk_count": len(chunks) or unified.get("retrieval_chunk_count", 0),
         "chunks": chunks,
         "retrieval_quality": eval_result.get("retrieval_quality", {}),

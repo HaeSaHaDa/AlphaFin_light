@@ -9,6 +9,7 @@ export type GraphNodeData = {
   label: string;
   entityType?: string;
   ticker?: string | null;
+  isCenter?: boolean;
   highlighted?: boolean;
   selected?: boolean;
 };
@@ -22,7 +23,8 @@ function GraphNodeComponent({ data, selected }: NodeProps) {
       className={cn(
         "min-w-[120px] rounded-lg border-2 bg-card px-3 py-2 shadow-md transition-shadow",
         selected && "ring-2 ring-primary",
-        d.highlighted && "border-primary shadow-primary/30",
+        (d.isCenter || d.highlighted) && "border-primary shadow-primary/30",
+        d.isCenter && "ring-1 ring-primary/50",
       )}
       style={{ borderColor: d.highlighted || selected ? color : `${color}99` }}
     >

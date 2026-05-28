@@ -41,6 +41,8 @@ export interface EventGraphPayload {
   traceId: string;
   query: string;
   ticker: string;
+  centerName: string;
+  centerTicker: string;
   entities: GraphEntity[];
   links: GraphLink[];
   propagationPath: PropagationStep[];

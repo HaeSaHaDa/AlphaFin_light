@@ -478,5 +478,1815 @@
     "memory_id": "analysis_memory_growth_investor_현대자동차_전기차_전망_분석_2026-05-27_17:10:11",
     "retention_action": "high_retention",
     "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "현대자동차 전기차 전망",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "전기차 시장 성장 가능성",
+      "기술 발전에 따른 경쟁력 강화"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화",
+      "내부 리스크로 인한 운영 부담"
+    ],
+    "risks": [
+      "기술 발전 속도에 따른 기존 모델의 경쟁력 저하",
+      "환경 규제 강화로 인한 추가 비용 발생"
+    ],
+    "summary": "현대자동차의 전기차 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으나, 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다. 또한, 기술 발전 속도와 환경 규제 강화가 추가적인 리스크로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 19:25:00",
+    "importance_score": 0.7,
+    "importance_factors": {
+      "base_score": 0.7,
+      "market_impact": 0.08,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.0,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.02,
+      "reflection_mentions": 3
+    },
+    "importance_reasons": [
+      "Reflection에서 언급됨",
+      "핵심 키워드: 시장 성장"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 3,
+    "memory_id": "analysis_memory_growth_investor_현대자동차_전기차_전망_2026-05-27_19:25:00",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "현대자동차",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "전기차 부문 시장 성장과 기술 발전으로 긍정적인 전망",
+      "K컬처의 영향으로 해외 수요 증가 및 국내 브랜드의 해외 진출 활발"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화로 인한 운영 부담",
+      "전기차 충전 인프라 부족 및 원자재 가격 상승으로 인한 생산 비용 증가"
+    ],
+    "risks": [
+      "기술 발전에 따른 기존 모델의 경쟁력 저하",
+      "환경 규제 강화로 인한 추가 비용 발생"
+    ],
+    "summary": "현대자동차는 전기차 부문에서 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으나, 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다. 또한, 전기차 충전 인프라 부족과 원자재 가격 상승이 생산 비용에 영향을 미칠 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 19:26:59",
+    "importance_score": 0.9,
+    "importance_factors": {
+      "base_score": 0.9,
+      "market_impact": 0.08,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.47,
+      "reflection_mentions": 4
+    },
+    "importance_reasons": [
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: 시장 성장"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 4,
+    "memory_id": "analysis_memory_growth_investor_현대자동차_2026-05-27_19:26:59",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "현대자동차 전기차 전망",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "전기차 시장 성장과 기술 발전에 따른 긍정적인 전망",
+      "글로벌 전기차 수요 증가에 따른 시장 점유율 확대 가능성"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화로 인한 가격 압박",
+      "전기차 충전 인프라 부족으로 인한 판매 저조 우려"
+    ],
+    "risks": [
+      "환율 변동에 따른 수익성 영향",
+      "원자재 가격 상승으로 인한 생산 비용 증가"
+    ],
+    "summary": "현대자동차의 전기차 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으나, 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 19:27:21",
+    "importance_score": 0.9,
+    "importance_factors": {
+      "base_score": 0.9,
+      "market_impact": 0.08,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.47,
+      "reflection_mentions": 5
+    },
+    "importance_reasons": [
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: 시장 성장"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 5,
+    "memory_id": "analysis_memory_growth_investor_현대자동차_전기차_전망_2026-05-27_19:27:21",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "현대자동차",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "전기차 부문 시장 성장과 기술 발전",
+      "K컬처 영향으로 해외 수요 증가"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화",
+      "내부 리스크로 인한 운영 부담"
+    ],
+    "risks": [
+      "정책 변화에 따른 보조금 감소",
+      "전기차 충전 인프라 부족"
+    ],
+    "summary": "현대자동차는 전기차 부문에서 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으며, K컬처의 영향으로 해외 수요가 증가하고 있습니다. 그러나 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 19:34:47",
+    "importance_score": 0.8,
+    "importance_factors": {
+      "base_score": 0.8,
+      "market_impact": 0.16,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.45,
+      "reflection_mentions": 6
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: 시장 성장",
+      "핵심 키워드: 정책 변화"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 6,
+    "memory_id": "analysis_memory_growth_investor_현대자동차_2026-05-27_19:34:47",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "현대",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "전기차 부문 성장 가능성",
+      "AI 산업의 장기 성장 구조 변화"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화",
+      "내부 리스크 및 정책 변화"
+    ],
+    "risks": [
+      "환율 변동에 따른 수익성 영향",
+      "소비자 선호 변화에 따른 판매 감소 가능성"
+    ],
+    "summary": "현대자동차의 전기차 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으며, AI 산업의 성장도 긍정적인 요소로 작용할 수 있습니다. 그러나 글로벌 경쟁과 내부 리스크, 정책 변화 등은 운영에 부담을 줄 수 있는 요인으로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.126672,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.126672,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.126672,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.126672,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.126672,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 19:35:06",
+    "importance_score": 0.8,
+    "importance_factors": {
+      "base_score": 0.8,
+      "market_impact": 0.16,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.05,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.5,
+      "reflection_mentions": 7
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "장기 산업 영향 가능성",
+      "핵심 키워드: 시장 성장"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 7,
+    "memory_id": "analysis_memory_growth_investor_현대_2026-05-27_19:35:06",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "삼성전자",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "AI 반도체 수출 증가로 인한 반도체 부문 성장 가능성",
+      "HBM 수요 증가로 인한 시장 확대 기회"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화로 인한 운영 리스크",
+      "노조의 반발로 인한 생산성 저하 가능성"
+    ],
+    "risks": [
+      "반도체 산업의 불안정성",
+      "기술 발전 속도에 따른 경쟁력 저하"
+    ],
+    "summary": "삼성전자는 AI 반도체 수출 증가와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있습니다. 그러나 글로벌 경쟁 심화와 노조의 반발 등으로 인해 운영 리스크가 존재하며, 반도체 산업의 불안정성이 시장 성장에 부담을 줄 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 16,
+        "document_type": "disclosure",
+        "score": 0.491981,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 15,
+        "document_type": "disclosure",
+        "score": 0.472433,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 14,
+        "document_type": "disclosure",
+        "score": 0.46683,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 21,
+        "document_type": "disclosure",
+        "score": 0.450799,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 22,
+        "document_type": "disclosure",
+        "score": 0.450501,
+        "ticker": "005930"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 19:35:37",
+    "importance_score": 1.0,
+    "importance_factors": {
+      "base_score": 1.0,
+      "market_impact": 0.24,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.73,
+      "reflection_mentions": 8
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: HBM",
+      "핵심 키워드: 반도체"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 8,
+    "memory_id": "analysis_memory_growth_investor_삼성전자_2026-05-27_19:35:37",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "현대자동차",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "전기차 부문 시장 성장과 기술 발전",
+      "K컬처의 영향으로 해외 수요 증가"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화",
+      "내부 리스크로 인한 운영 부담"
+    ],
+    "risks": [
+      "기술 발전 속도에 따른 시장 경쟁력 저하",
+      "환경 규제 강화에 따른 추가 비용 발생 가능성"
+    ],
+    "summary": "현대자동차는 전기차 부문에서 시장 성장과 기술 발전의 긍정적인 전망을 보이고 있으나, 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다. 또한, 기술 발전 속도와 환경 규제 강화가 장기적인 리스크로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.132904,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 19:36:13",
+    "importance_score": 0.8,
+    "importance_factors": {
+      "base_score": 0.8,
+      "market_impact": 0.08,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.05,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.42,
+      "reflection_mentions": 9
+    },
+    "importance_reasons": [
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "장기 산업 영향 가능성",
+      "핵심 키워드: 시장 성장"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 9,
+    "memory_id": "analysis_memory_growth_investor_현대자동차_2026-05-27_19:36:13",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "현대자동차 전기차 전망",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "전기차 시장 성장과 기술 발전에 따른 수요 증가",
+      "글로벌 환경 규제 강화에 따른 전기차 수요 확대"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화로 인한 시장 점유율 압박",
+      "내부 리스크로 인한 운영 부담"
+    ],
+    "risks": [
+      "기술 발전 속도에 따른 경쟁력 저하",
+      "원자재 가격 변동에 따른 비용 증가"
+    ],
+    "summary": "현대자동차의 전기차 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으나, 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다. 전기차 수요는 환경 규제 강화로 더욱 확대될 가능성이 있지만, 경쟁 심화가 우려됩니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 20:25:22",
+    "importance_score": 0.8,
+    "importance_factors": {
+      "base_score": 0.8,
+      "market_impact": 0.08,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.37,
+      "reflection_mentions": 10
+    },
+    "importance_reasons": [
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: 시장 성장"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 10,
+    "memory_id": "analysis_memory_growth_investor_현대자동차_전기차_전망_2026-05-27_20:25:22",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "현대자동차 전기차 전망",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "전기차 시장 성장과 기술 발전",
+      "K컬처의 영향으로 해외 수요 증가"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화",
+      "전기차 충전 인프라 부족"
+    ],
+    "risks": [
+      "정책 변화에 따른 지원금 축소 위험",
+      "원자재 가격 변동에 따른 비용 증가"
+    ],
+    "summary": "현대자동차의 전기차 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으나, 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다. 또한, 전기차 충전 인프라 부족과 정책 변화에 따른 지원금 축소 위험이 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.119242,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 20:30:42",
+    "importance_score": 0.8,
+    "importance_factors": {
+      "base_score": 0.8,
+      "market_impact": 0.16,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.45,
+      "reflection_mentions": 11
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: 시장 성장",
+      "핵심 키워드: 정책 변화"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 11,
+    "memory_id": "analysis_memory_growth_investor_현대자동차_전기차_전망_2026-05-27_20:30:42",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "삼성전기",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "AI 반도체 수출 증가와 HBM 수요 증가로 긍정적인 성장 가능성",
+      "K컬처의 영향으로 해외 수요 증가 및 국내 브랜드의 해외 진출 활발"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성과 경쟁 심화",
+      "노조의 반발로 인한 운영 리스크"
+    ],
+    "risks": [
+      "글로벌 경쟁 심화로 인한 시장 점유율 감소 위험",
+      "정책 변화 및 경제 불확실성에 따른 수요 감소 가능성"
+    ],
+    "summary": "삼성전기는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으나, 반도체 산업의 불안정성과 글로벌 경쟁 심화가 리스크로 작용할 수 있습니다. 해외 시장 확대와 K컬처의 영향이 긍정적인 요소로 작용하고 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 16,
+        "document_type": "disclosure",
+        "score": 0.382447,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 23,
+        "document_type": "disclosure",
+        "score": 0.359268,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 21,
+        "document_type": "disclosure",
+        "score": 0.355021,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 22,
+        "document_type": "disclosure",
+        "score": 0.354341,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 15,
+        "document_type": "disclosure",
+        "score": 0.352983,
+        "ticker": "005930"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 20:31:05",
+    "importance_score": 1.0,
+    "importance_factors": {
+      "base_score": 1.0,
+      "market_impact": 0.24,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.73,
+      "reflection_mentions": 12
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: HBM",
+      "핵심 키워드: 반도체"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 12,
+    "memory_id": "analysis_memory_growth_investor_삼성전기_2026-05-27_20:31:05",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "NAVER",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "AI 산업의 장기 성장 구조 변화",
+      "해외 시장에서의 K컬처 영향으로 인한 수요 증가"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성",
+      "글로벌 경쟁 심화"
+    ],
+    "risks": [
+      "기술 발전 속도에 따른 시장 변화 리스크",
+      "소비자 수요 변화에 따른 판매 감소 위험"
+    ],
+    "summary": "NAVER는 AI 산업의 성장과 K컬처의 해외 수요 증가로 긍정적인 성장 가능성을 보이고 있습니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화가 시장 확대에 부담을 줄 수 있는 요소로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 79,
+        "document_type": "disclosure",
+        "score": 0.237007,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 78,
+        "document_type": "disclosure",
+        "score": 0.207653,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 80,
+        "document_type": "disclosure",
+        "score": 0.189698,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 84,
+        "document_type": "disclosure",
+        "score": 0.055638,
+        "ticker": "035420"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 20:34:31",
+    "importance_score": 0.86,
+    "importance_factors": {
+      "base_score": 0.86,
+      "market_impact": 0.08,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.05,
+      "reuse_score": 0.04,
+      "event_impact": 0.0,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.23,
+      "reflection_mentions": 13
+    },
+    "importance_reasons": [
+      "Reflection에서 언급됨",
+      "장기 산업 영향 가능성",
+      "핵심 키워드: 반도체"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 13,
+    "memory_id": "analysis_memory_growth_investor_NAVER_2026-05-27_20:34:31",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "삼성물산 028260 오늘",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "AI 시니어 리빙 솔루션 도입으로 고급 시니어 레지던스 시장에서의 경쟁력 강화",
+      "캐리비안 베이의 조기 가동으로 여름 시즌 수익 증가 기대"
+    ],
+    "bearish_factors": [
+      "고급 시니어 레지던스 시장의 경쟁 심화 가능성",
+      "AI 및 IoT 기술 도입에 따른 초기 투자 비용 증가"
+    ],
+    "risks": [
+      "시니어 시장의 수요 변동성",
+      "기술 발전 속도에 따른 시장 변화 리스크"
+    ],
+    "summary": "삼성물산은 AI 시니어 리빙 솔루션 도입을 통해 고급 시니어 레지던스 시장에서의 경쟁력을 강화하고 있으며, 캐리비안 베이의 조기 가동으로 여름 시즌 수익 증가가 기대됩니다. 그러나 시장 경쟁 심화와 기술 도입에 따른 초기 비용 증가 등의 리스크가 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 101,
+        "document_type": "news_article",
+        "score": 0.337374,
+        "ticker": "028260"
+      },
+      {
+        "chunk_id": 107,
+        "document_type": "news_article",
+        "score": 0.313649,
+        "ticker": "028260"
+      },
+      {
+        "chunk_id": 109,
+        "document_type": "disclosure",
+        "score": 0.312685,
+        "ticker": "028260"
+      },
+      {
+        "chunk_id": 105,
+        "document_type": "news_article",
+        "score": 0.302779,
+        "ticker": "028260"
+      },
+      {
+        "chunk_id": 97,
+        "document_type": "news_article",
+        "score": 0.300985,
+        "ticker": "028260"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 09:19:13",
+    "importance_score": 0.7,
+    "importance_factors": {
+      "base_score": 0.7,
+      "market_impact": 0.0,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.0,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 0.94,
+      "reflection_mentions": 14
+    },
+    "importance_reasons": [
+      "Reflection에서 언급됨"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 14,
+    "memory_id": "analysis_memory_growth_investor_삼성물산_028260_오늘_2026-05-28_09:19:13",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "한미반도체 042700 HMM",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "AI 반도체 수출 증가로 인한 시장 성장 가능성",
+      "HBM 수요 증가에 따른 반도체 산업의 긍정적인 전망"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성과 글로벌 경쟁 심화",
+      "소부장 관련 종목들의 하락세"
+    ],
+    "risks": [
+      "글로벌 경제 둔화로 인한 수요 감소",
+      "정책 변화에 따른 규제 리스크"
+    ],
+    "summary": "한미반도체는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으나, 반도체 산업의 불안정성과 경쟁 심화가 우려되는 상황입니다. 또한, 글로벌 경제 둔화와 정책 변화에 따른 리스크가 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 129,
+        "document_type": "news_article",
+        "score": 0.355023,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 130,
+        "document_type": "news_article",
+        "score": 0.343323,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 132,
+        "document_type": "news_article",
+        "score": 0.331835,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 137,
+        "document_type": "news_article",
+        "score": 0.279184,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 136,
+        "document_type": "news_article",
+        "score": 0.276425,
+        "ticker": "042700"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 09:20:57",
+    "importance_score": 1.0,
+    "importance_factors": {
+      "base_score": 1.0,
+      "market_impact": 0.32,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.0,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.56,
+      "reflection_mentions": 15
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Reflection에서 언급됨",
+      "핵심 키워드: HBM",
+      "핵심 키워드: 반도체",
+      "핵심 키워드: 시장 성장"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 15,
+    "memory_id": "analysis_memory_growth_investor_한미반도체_042700_HMM_2026-05-28_09:20:57",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "한미반도체 042700 HBM",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성",
+      "K컬처의 영향으로 해외 수요 증가 및 국내 브랜드의 해외 진출 활발"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성",
+      "글로벌 경쟁 심화"
+    ],
+    "risks": [
+      "정책 변화에 따른 규제 리스크",
+      "환율 변동에 따른 수익성 영향"
+    ],
+    "summary": "한미반도체는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으나, 반도체 산업의 불안정성과 글로벌 경쟁 심화가 우려되는 상황입니다. 또한, 정책 변화와 환율 변동이 수익성에 미치는 영향도 고려해야 합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 129,
+        "document_type": "news_article",
+        "score": 0.322429,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 130,
+        "document_type": "news_article",
+        "score": 0.309609,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 132,
+        "document_type": "news_article",
+        "score": 0.309073,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 137,
+        "document_type": "news_article",
+        "score": 0.267781,
+        "ticker": "042700"
+      },
+      {
+        "chunk_id": 131,
+        "document_type": "news_article",
+        "score": 0.250414,
+        "ticker": "042700"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 09:21:17",
+    "importance_score": 1.0,
+    "importance_factors": {
+      "base_score": 1.0,
+      "market_impact": 0.24,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.73,
+      "reflection_mentions": 16
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: HBM",
+      "핵심 키워드: 반도체"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 16,
+    "memory_id": "analysis_memory_growth_investor_한미반도체_042700_HBM_2026-05-28_09:21:17",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "두산에너빌리티 034020 SMR",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "SMR 전용 공장 건설로 생산 능력 확대",
+      "글로벌 SMR 기업과의 협업 강화",
+      "반도체 및 AI 관련 신사업으로 시장 확대 가능성"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성과 경쟁 심화",
+      "글로벌 경제 불확실성으로 인한 수요 변동"
+    ],
+    "risks": [
+      "기술 발전 속도에 따른 경쟁 우위 상실",
+      "공급망 문제로 인한 생산 차질"
+    ],
+    "summary": "두산에너빌리티는 SMR 및 반도체 관련 신사업을 통해 성장 가능성을 높이고 있으며, 생산 능력 확대와 글로벌 협업이 긍정적인 요소로 작용하고 있습니다. 그러나 반도체 산업의 불안정성과 기술 경쟁 심화 등 리스크도 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 165,
+        "document_type": "news_article",
+        "score": 0.467165,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 164,
+        "document_type": "news_article",
+        "score": 0.413146,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 160,
+        "document_type": "news_article",
+        "score": 0.349987,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 166,
+        "document_type": "news_article",
+        "score": 0.339091,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 163,
+        "document_type": "news_article",
+        "score": 0.327381,
+        "ticker": "034020"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 09:39:40",
+    "importance_score": 0.8,
+    "importance_factors": {
+      "base_score": 0.8,
+      "market_impact": 0.08,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.0,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.12,
+      "reflection_mentions": 17
+    },
+    "importance_reasons": [
+      "Reflection에서 언급됨",
+      "핵심 키워드: 반도체"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 17,
+    "memory_id": "analysis_memory_growth_investor_두산에너빌리티_034020_SMR_2026-05-28_09:39:40",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "한국전력 015760 원자력",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "원자력 에너지 수요 증가에 따른 매출 성장 가능성",
+      "신규 원자력 발전소 건설 및 기술 개발 기회"
+    ],
+    "bearish_factors": [
+      "정치적 리스크 및 규제 변화에 따른 운영 불확실성",
+      "중대재해 발생에 따른 이미지 손상 및 신뢰도 저하"
+    ],
+    "risks": [
+      "환율 변동에 따른 수익성 영향",
+      "기술 발전 속도에 따른 경쟁 우위 상실"
+    ],
+    "summary": "한국전력은 원자력 에너지 수요 증가와 신규 발전소 건설 기회로 인해 성장 가능성이 있지만, 정치적 리스크와 중대재해 발생 등으로 인해 운영에 불확실성이 존재합니다. 이러한 요소들은 장기적인 성장 동력에 영향을 미칠 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 172,
+        "document_type": "disclosure",
+        "score": 0.237484,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 179,
+        "document_type": "disclosure",
+        "score": 0.236756,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 181,
+        "document_type": "disclosure",
+        "score": 0.22916,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 182,
+        "document_type": "disclosure",
+        "score": 0.218097,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 183,
+        "document_type": "disclosure",
+        "score": 0.20829,
+        "ticker": "015760"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 09:42:54",
+    "importance_score": 0.7,
+    "importance_factors": {
+      "base_score": 0.7,
+      "market_impact": 0.0,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.05,
+      "reuse_score": 0.04,
+      "event_impact": 0.0,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 0.99,
+      "reflection_mentions": 18
+    },
+    "importance_reasons": [
+      "Reflection에서 언급됨",
+      "장기 산업 영향 가능성"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 18,
+    "memory_id": "analysis_memory_growth_investor_한국전력_015760_원자력_2026-05-28_09:42:54",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "한국전력 015760 원자력",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "원자력 에너지 수요 증가",
+      "신규 발전소 건설 기회"
+    ],
+    "bearish_factors": [
+      "정치적 리스크",
+      "중대재해 발생"
+    ],
+    "risks": [
+      "기후 변화에 따른 정책 변화 리스크",
+      "국제 원자력 규제 변화에 따른 영향"
+    ],
+    "summary": "한국전력은 원자력 에너지의 수요 증가와 신규 발전소 건설 기회를 통해 성장 가능성이 존재하지만, 정치적 리스크와 중대재해 발생 등으로 인해 운영에 불확실성이 존재합니다. 이러한 요소들은 장기적인 성장 동력에 영향을 미칠 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 172,
+        "document_type": "disclosure",
+        "score": 0.237484,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 179,
+        "document_type": "disclosure",
+        "score": 0.236756,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 181,
+        "document_type": "disclosure",
+        "score": 0.22916,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 182,
+        "document_type": "disclosure",
+        "score": 0.218097,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 183,
+        "document_type": "disclosure",
+        "score": 0.20829,
+        "ticker": "015760"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 09:45:12",
+    "importance_score": 0.7,
+    "importance_factors": {
+      "base_score": 0.7,
+      "market_impact": 0.08,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.05,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.32,
+      "reflection_mentions": 19
+    },
+    "importance_reasons": [
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "장기 산업 영향 가능성",
+      "핵심 키워드: 정책 변화"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 19,
+    "memory_id": "analysis_memory_growth_investor_한국전력_015760_원자력_2026-05-28_09:45:12",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "현대자동차 005380 로봇",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "전기차 부문에서의 시장 성장과 기술 발전",
+      "K컬처의 영향으로 해외 수요 증가"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화",
+      "내부 리스크가 운영에 부담"
+    ],
+    "risks": [
+      "반도체 산업의 불안정성",
+      "정치적 리스크 및 규제 변화"
+    ],
+    "summary": "현대자동차의 전기차 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으며, K컬처의 영향으로 해외 수요가 증가하고 있습니다. 그러나 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.145971,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.145971,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.145971,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.145971,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.145971,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 09:56:41",
+    "importance_score": 0.9,
+    "importance_factors": {
+      "base_score": 0.9,
+      "market_impact": 0.16,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.55,
+      "reflection_mentions": 20
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: 반도체",
+      "핵심 키워드: 시장 성장"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 20,
+    "memory_id": "analysis_memory_growth_investor_현대자동차_005380_로봇_2026-05-28_09:56:41",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "현대자동차 005380 로봇",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "전기차 부문에서의 시장 성장 가능성",
+      "기술 발전에 따른 경쟁력 강화"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화",
+      "내부 리스크로 인한 운영 부담"
+    ],
+    "risks": [
+      "원자재 가격 변동 리스크",
+      "환율 변동에 따른 수익성 영향"
+    ],
+    "summary": "현대자동차의 전기차 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으나, 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 가능성이 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.145971,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.145971,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.145971,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.145971,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.145971,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 09:57:15",
+    "importance_score": 0.7,
+    "importance_factors": {
+      "base_score": 0.7,
+      "market_impact": 0.08,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.27,
+      "reflection_mentions": 21
+    },
+    "importance_reasons": [
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: 시장 성장"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 21,
+    "memory_id": "analysis_memory_growth_investor_현대자동차_005380_로봇_2026-05-28_09:57:15",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "HD현대중공업 329180 수주",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "캐나다 잠수함 수주 프로젝트는 60조 원 규모로, 성공적인 수주 시 매출 및 이익 성장에 기여할 가능성이 큼.",
+      "한국의 잠수함 기술이 독일보다 우수하다는 평가가 있으며, 산업협력 제안으로 경쟁력을 높이고 있음."
+    ],
+    "bearish_factors": [
+      "수주 경쟁에서 독일 업체와의 치열한 경쟁이 있으며, 최종 결정이 불확실함.",
+      "캐나다의 정치적 및 경제적 상황에 따라 수주 결과가 영향을 받을 수 있음."
+    ],
+    "risks": [
+      "수주 실패 시 예상 매출 감소와 함께 기업 이미지에 부정적 영향.",
+      "글로벌 방산 시장의 변화와 경쟁 심화로 인한 장기적인 성장 불확실성."
+    ],
+    "summary": "HD현대중공업은 캐나다의 대형 잠수함 수주 프로젝트를 통해 매출 및 이익 성장을 기대할 수 있는 기회를 가지고 있습니다. 그러나 치열한 경쟁과 정치적 불확실성 등으로 인해 리스크 요소도 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 191,
+        "document_type": "news_article",
+        "score": 0.354919,
+        "ticker": "329180"
+      },
+      {
+        "chunk_id": 201,
+        "document_type": "news_article",
+        "score": 0.332564,
+        "ticker": "329180"
+      },
+      {
+        "chunk_id": 194,
+        "document_type": "news_article",
+        "score": 0.326459,
+        "ticker": "329180"
+      },
+      {
+        "chunk_id": 192,
+        "document_type": "news_article",
+        "score": 0.316635,
+        "ticker": "329180"
+      },
+      {
+        "chunk_id": 198,
+        "document_type": "news_article",
+        "score": 0.312583,
+        "ticker": "329180"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 10:09:07",
+    "importance_score": 0.6,
+    "importance_factors": {
+      "base_score": 0.6,
+      "market_impact": 0.0,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.05,
+      "reuse_score": 0.04,
+      "event_impact": 0.0,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 0.89,
+      "reflection_mentions": 22
+    },
+    "importance_reasons": [
+      "Reflection에서 언급됨",
+      "장기 산업 영향 가능성"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 22,
+    "memory_id": "analysis_memory_growth_investor_HD현대중공업_329180_수주_2026-05-28_10:09:07",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "SK하이닉스 000660 HBM",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "HBM 수요 증가로 인한 매출 성장 가능성",
+      "AI 산업의 장기 성장 구조 변화와 AI 서버 투자 확대"
+    ],
+    "bearish_factors": [
+      "글로벌 반도체 산업의 불안정성과 경쟁 심화",
+      "외국인 매도세로 인한 주가 약세"
+    ],
+    "risks": [
+      "글로벌 경제 둔화에 따른 수요 감소 리스크",
+      "노조의 반발로 인한 운영 리스크"
+    ],
+    "summary": "SK하이닉스는 HBM 수요 증가와 AI 산업의 성장으로 긍정적인 성장 가능성을 보이고 있으나, 글로벌 반도체 산업의 불안정성과 외국인 매도세로 인한 주가 약세가 우려되는 상황입니다. 또한, 운영 리스크와 글로벌 경제 둔화에 따른 수요 감소 리스크도 주의해야 합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 231,
+        "document_type": "news_article",
+        "score": 0.348495,
+        "ticker": "000660"
+      },
+      {
+        "chunk_id": 230,
+        "document_type": "news_article",
+        "score": 0.338774,
+        "ticker": "000660"
+      },
+      {
+        "chunk_id": 235,
+        "document_type": "news_article",
+        "score": 0.337502,
+        "ticker": "000660"
+      },
+      {
+        "chunk_id": 234,
+        "document_type": "news_article",
+        "score": 0.324763,
+        "ticker": "000660"
+      },
+      {
+        "chunk_id": 232,
+        "document_type": "news_article",
+        "score": 0.307843,
+        "ticker": "000660"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 10:14:29",
+    "importance_score": 1.0,
+    "importance_factors": {
+      "base_score": 1.0,
+      "market_impact": 0.32,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.05,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.86,
+      "reflection_mentions": 23
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "장기 산업 영향 가능성",
+      "핵심 키워드: HBM"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 23,
+    "memory_id": "analysis_memory_growth_investor_SK하이닉스_000660_HBM_2026-05-28_10:14:29",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "삼성전자 005930",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "AI 반도체 수출 증가로 인한 매출 성장 가능성",
+      "HBM 수요 증가로 인한 시장 점유율 확대 기회"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화로 인한 가격 압박",
+      "노조의 반발로 인한 운영 리스크"
+    ],
+    "risks": [
+      "반도체 산업의 불안정성",
+      "환율 변동에 따른 수익성 리스크"
+    ],
+    "summary": "삼성전자는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으나, 글로벌 경쟁과 노조의 반발로 인한 리스크가 존재합니다. 이러한 요소들은 매출 성장과 시장 점유율 확대에 영향을 미칠 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 16,
+        "document_type": "disclosure",
+        "score": 0.560089,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 23,
+        "document_type": "disclosure",
+        "score": 0.536251,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 15,
+        "document_type": "disclosure",
+        "score": 0.533547,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 22,
+        "document_type": "disclosure",
+        "score": 0.511854,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 21,
+        "document_type": "disclosure",
+        "score": 0.511673,
+        "ticker": "005930"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 10:16:16",
+    "importance_score": 1.0,
+    "importance_factors": {
+      "base_score": 1.0,
+      "market_impact": 0.16,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.25,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.65,
+      "reflection_mentions": 24
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Event Graph 연관 관계 존재",
+      "Reflection에서 언급됨",
+      "핵심 키워드: HBM",
+      "핵심 키워드: 반도체"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 24,
+    "memory_id": "analysis_memory_growth_investor_삼성전자_005930_2026-05-28_10:16:16",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "삼성전기 009150 반도체",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "AI 반도체 및 HBM 수요 증가로 인한 성장 가능성",
+      "K컬처의 영향으로 해외 수요 증가 및 국내 브랜드의 해외 진출 활발"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성",
+      "글로벌 경쟁 심화"
+    ],
+    "risks": [
+      "기술 혁신 실패로 인한 경쟁력 저하",
+      "정치적 불안정성으로 인한 수출 제한"
+    ],
+    "summary": "삼성전기는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으며, K컬처의 영향으로 해외 시장 확대가 기대됩니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화는 주요 리스크로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 236,
+        "document_type": "news_article",
+        "score": 0.281535,
+        "ticker": "009150"
+      },
+      {
+        "chunk_id": 251,
+        "document_type": "disclosure",
+        "score": 0.224004,
+        "ticker": "009150"
+      },
+      {
+        "chunk_id": 239,
+        "document_type": "disclosure",
+        "score": 0.190492,
+        "ticker": "009150"
+      },
+      {
+        "chunk_id": 241,
+        "document_type": "disclosure",
+        "score": 0.182148,
+        "ticker": "009150"
+      },
+      {
+        "chunk_id": 245,
+        "document_type": "disclosure",
+        "score": 0.157599,
+        "ticker": "009150"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 10:31:06",
+    "importance_score": 1.0,
+    "importance_factors": {
+      "base_score": 1.0,
+      "market_impact": 0.16,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.0,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.4,
+      "reflection_mentions": 25
+    },
+    "importance_reasons": [
+      "높은 시장 영향 키워드 포함",
+      "Reflection에서 언급됨",
+      "핵심 키워드: HBM",
+      "핵심 키워드: 반도체"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 25,
+    "memory_id": "analysis_memory_growth_investor_삼성전기_009150_반도체_2026-05-28_10:31:06",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "삼성SDI 006400 미국",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "이차전지 시장의 지속적인 성장과 ESS(에너지 저장 시스템) 수요 증가",
+      "삼성SDI의 기술력과 시장 점유율 확대 가능성"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화로 인한 가격 압박",
+      "원자재 가격 상승으로 인한 비용 증가"
+    ],
+    "risks": [
+      "환율 변동에 따른 수익성 저하",
+      "정치적 불안정성으로 인한 수출 제한"
+    ],
+    "summary": "삼성SDI는 이차전지 시장의 성장과 ESS 수요 증가로 긍정적인 성장 가능성을 보이고 있으며, 기술력과 시장 점유율 확대가 기대됩니다. 그러나 글로벌 경쟁 심화와 원자재 가격 상승 등의 리스크가 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 259,
+        "document_type": "news_article",
+        "score": 0.363924,
+        "ticker": "006400"
+      },
+      {
+        "chunk_id": 257,
+        "document_type": "news_article",
+        "score": 0.357517,
+        "ticker": "006400"
+      },
+      {
+        "chunk_id": 258,
+        "document_type": "news_article",
+        "score": 0.351934,
+        "ticker": "006400"
+      },
+      {
+        "chunk_id": 260,
+        "document_type": "news_article",
+        "score": 0.343286,
+        "ticker": "006400"
+      },
+      {
+        "chunk_id": 264,
+        "document_type": "news_article",
+        "score": 0.320921,
+        "ticker": "006400"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 12:03:34",
+    "importance_score": 0.8,
+    "importance_factors": {
+      "base_score": 0.8,
+      "market_impact": 0.0,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.0,
+      "reuse_score": 0.04,
+      "event_impact": 0.0,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.04,
+      "reflection_mentions": 26
+    },
+    "importance_reasons": [
+      "Reflection에서 언급됨"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 26,
+    "memory_id": "analysis_memory_growth_investor_삼성SDI_006400_미국_2026-05-28_12:03:34",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
   }
 ]

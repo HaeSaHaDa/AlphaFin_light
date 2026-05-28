@@ -2,8 +2,6 @@ import type { SignalEvaluationData } from "@/types/signal-evaluation";
 
 interface SignalSummaryCardProps {
   signal: SignalEvaluationData | null;
-  fallbackLabel?: string;
-  fallbackConfidence?: number;
 }
 
 const STYLE = {
@@ -12,14 +10,10 @@ const STYLE = {
   bearish: "border-red-500/40 bg-red-500/10 text-red-400",
 };
 
-export function SignalSummaryCard({
-  signal,
-  fallbackLabel = "중립",
-  fallbackConfidence = 0.5,
-}: SignalSummaryCardProps) {
+export function SignalSummaryCard({ signal }: SignalSummaryCardProps) {
   const current = signal?.current_signal;
-  const label = current?.display_label ?? fallbackLabel;
-  const conf = current?.confidence ?? fallbackConfidence;
+  const label = current?.display_label ?? "—";
+  const conf = current?.confidence ?? 0;
   const key = current?.signal ?? "neutral";
   const style = STYLE[key] ?? STYLE.neutral;
 

@@ -1,0 +1,232 @@
+{
+  "trace_id": "20260528_093928",
+  "query": "두산에너빌리티 034020 SMR",
+  "persona": "growth_investor",
+  "ticker": "034020",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "두산에너빌리티 034020 SMR",
+    "bullish_factors": [
+      "SMR 전용 공장 건설로 생산 능력 확대",
+      "글로벌 SMR 기업과의 협업 강화",
+      "반도체 및 AI 관련 신사업으로 시장 확대 가능성"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성과 경쟁 심화",
+      "글로벌 경제 불확실성으로 인한 수요 변동"
+    ],
+    "risks": [
+      "기술 발전 속도에 따른 경쟁 우위 상실",
+      "공급망 문제로 인한 생산 차질"
+    ],
+    "summary": "두산에너빌리티는 SMR 및 반도체 관련 신사업을 통해 성장 가능성을 높이고 있으며, 생산 능력 확대와 글로벌 협업이 긍정적인 요소로 작용하고 있습니다. 그러나 반도체 산업의 불안정성과 기술 경쟁 심화 등 리스크도 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 165,
+        "document_type": "news_article",
+        "score": 0.467165,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 164,
+        "document_type": "news_article",
+        "score": 0.413146,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 160,
+        "document_type": "news_article",
+        "score": 0.349987,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 166,
+        "document_type": "news_article",
+        "score": 0.339091,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 163,
+        "document_type": "news_article",
+        "score": 0.327381,
+        "ticker": "034020"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "두산에너빌리티 034020 SMR",
+    "retrieval_quality": {
+      "chunk_count": 5,
+      "score_stats": {
+        "min": 0.327381,
+        "max": 0.467165,
+        "avg": 0.379354,
+        "count": 5
+      },
+      "doc_type_distribution": {
+        "news_article": 5
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 5,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 5,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 3,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.467165,
+        0.413146,
+        0.349987,
+        0.339091,
+        0.327381
+      ],
+      "score_stats": {
+        "min": 0.327381,
+        "max": 0.467165,
+        "avg": 0.379354,
+        "count": 5
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "두산에너빌리티 034020 SMR",
+    "persona": "growth_investor",
+    "reflection_summary": "전체적으로 두산에너빌리티의 성장 가능성을 긍정적으로 평가하고 있지만, 일부 리스크가 충분히 다루어지지 않았습니다. 또한, 분석에서 제공된 Context가 부족하여 신뢰성을 저하시킬 수 있습니다.",
+    "missing_risks": [
+      "정치적 리스크 및 규제 변화",
+      "환율 변동에 따른 수익성 영향",
+      "기술 혁신에 대한 의존도 증가",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "SMR 및 반도체 관련 신사업의 성장 가능성을 지나치게 강조"
+    ],
+    "context_gaps": [
+      "시장 경쟁 상황에 대한 구체적인 데이터 부족",
+      "글로벌 경제 불확실성의 구체적인 영향 분석 부족",
+      "공시 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "리스크 항목을 더 포괄적으로 다루어야 함",
+      "시장 및 경쟁 분석에 대한 구체적인 데이터를 추가해야 함"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 09:39:40"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "두산에너빌리티 034020 SMR",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "SMR 전용 공장 건설로 생산 능력 확대",
+        "글로벌 SMR 기업과의 협업 강화",
+        "반도체 및 AI 관련 신사업으로 시장 확대 가능성"
+      ],
+      "bearish_factors": [
+        "반도체 산업의 불안정성과 경쟁 심화",
+        "글로벌 경제 불확실성으로 인한 수요 변동"
+      ],
+      "risks": [
+        "기술 발전 속도에 따른 경쟁 우위 상실",
+        "공급망 문제로 인한 생산 차질"
+      ],
+      "summary": "두산에너빌리티는 SMR 및 반도체 관련 신사업을 통해 성장 가능성을 높이고 있으며, 생산 능력 확대와 글로벌 협업이 긍정적인 요소로 작용하고 있습니다. 그러나 반도체 산업의 불안정성과 기술 경쟁 심화 등 리스크도 존재합니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 165,
+          "document_type": "news_article",
+          "score": 0.467165,
+          "ticker": "034020"
+        },
+        {
+          "chunk_id": 164,
+          "document_type": "news_article",
+          "score": 0.413146,
+          "ticker": "034020"
+        },
+        {
+          "chunk_id": 160,
+          "document_type": "news_article",
+          "score": 0.349987,
+          "ticker": "034020"
+        },
+        {
+          "chunk_id": 166,
+          "document_type": "news_article",
+          "score": 0.339091,
+          "ticker": "034020"
+        },
+        {
+          "chunk_id": 163,
+          "document_type": "news_article",
+          "score": 0.327381,
+          "ticker": "034020"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-05-28 09:39:40"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.8,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 25
+    },
+    "importance": {
+      "importance_score": 0.8,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_두산에너빌리티_034020_SMR_2026-05-28_09:39:40",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-05-28 09:39:40"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 19,
+    "relation_count": 53,
+    "query": "두산에너빌리티 034020 SMR"
+  },
+  "stock_chain": {
+    "entity_count": 15,
+    "link_count": 63,
+    "propagation_paths": 182
+  },
+  "unified_context_length": 4860,
+  "retrieval_chunk_count": 5,
+  "completed_at": "2026-05-28 09:39:40"
+}

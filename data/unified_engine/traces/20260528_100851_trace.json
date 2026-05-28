@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260528_100851",
+  "query": "HD현대중공업 329180 수주",
+  "persona": "growth_investor",
+  "ticker": "329180",
+  "started_at": "2026-05-28 10:08:51",
+  "completed_at": "2026-05-28 10:09:07",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "chunks=5",
+      "timestamp": "2026-05-28 10:08:51"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=4262",
+      "timestamp": "2026-05-28 10:08:51"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=4848",
+      "timestamp": "2026-05-28 10:08:51"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-05-28 10:08:59"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-05-28 10:08:59"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 HD현대중공업의 수주 기회와 리스크를 잘 설명하고 있으나, 과도한 낙관이 감지됩니다",
+      "timestamp": "2026-05-28 10:09:07"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-05-28 10:09:07"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.60",
+      "timestamp": "2026-05-28 10:09:07"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-05-28 10:09:07"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=16 rels=24",
+      "timestamp": "2026-05-28 10:09:07"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=35",
+      "timestamp": "2026-05-28 10:09:07"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 5,
+    "max_score": 0.354919
+  },
+  "reflection_summary": "분석은 HD현대중공업의 수주 기회와 리스크를 잘 설명하고 있으나, 과도한 낙관이 감지됩니다. 특히, 수주 성공에 대한 기대감이 지나치게 강조된 반면, 리스크에 대한 깊이 있는 분석이 부족합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

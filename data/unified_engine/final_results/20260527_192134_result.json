@@ -1,0 +1,40 @@
+{
+  "trace_id": "20260527_192134",
+  "query": "현대자동차 전기차 전망",
+  "persona": "growth_investor",
+  "ticker": "005380",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "현대자동차 전기차 전망",
+    "bullish_factors": [],
+    "bearish_factors": [],
+    "risks": [
+      "해당 종목의 embedding 데이터가 없어 검색할 수 없습니다. ingestion을 실행하거나 발표 모드를 해제한 뒤 다시 시도해 주세요."
+    ],
+    "summary": "005380 관련 문서를 찾지 못했습니다. 뉴스·공시 수집 및 embedding 생성이 필요합니다.",
+    "referenced_chunks": [],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "retrieval_quality": {
+      "score": 0,
+      "note": "no_chunks"
+    },
+    "context_usage": {},
+    "hallucination_risk": {
+      "risk_level": "n/a"
+    }
+  },
+  "reflection_result": {},
+  "memory_updates": {
+    "analysis_memory": null,
+    "layered_memory": null,
+    "importance": null
+  },
+  "temporal_result": null,
+  "event_graph": null,
+  "stock_chain": null,
+  "unified_context_length": 0,
+  "retrieval_chunk_count": 0,
+  "completed_at": "2026-05-27 19:21:36"
+}

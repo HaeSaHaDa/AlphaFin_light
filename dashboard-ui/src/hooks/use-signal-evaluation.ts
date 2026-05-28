@@ -9,9 +9,10 @@ export function useSignalEvaluation(traceId?: string | null) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
 
-  const load = useCallback(async (id?: string | null) => {
+  const load = useCallback(async (id: string) => {
     setStatus("loading");
     setError(null);
+    setData(null);
     try {
       const result = await getSignal(id);
       setData(result);
@@ -23,8 +24,23 @@ export function useSignalEvaluation(traceId?: string | null) {
   }, []);
 
   useEffect(() => {
-    load(traceId);
+    const id = traceId?.trim();
+    if (!id) {
+      setData(null);
+      setStatus("idle");
+      setError(null);
+      return;
+    }
+    load(id);
   }, [load, traceId]);
 
-  return { data, status, error, reload: () => load(traceId) };
+  return {
+    data,
+    status,
+    error,
+    reload: () => {
+      const id = traceId?.trim();
+      if (id) return load(id);
+    },
+  };
 }

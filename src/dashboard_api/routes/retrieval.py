@@ -12,13 +12,11 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/retrieval", tags=["retrieval"])
 
 
-@router.get("/latest", response_model=RetrievalResponse)
-def get_latest_retrieval() -> RetrievalResponse:
-    data = fetch_latest_retrieval()
-    if not data:
-        raise HTTPException(status_code=404, detail="Retrieval 데이터 없음")
-    logger.info("GET /api/retrieval/latest  trace_id=%s", data.get("trace_id"))
-    return RetrievalResponse(**data)
+@router.get("/latest")
+def get_latest_retrieval_disabled() -> None:
+    from .latest_guard import reject_latest_usage
+
+    reject_latest_usage()
 
 
 @router.get("/{trace_id}", response_model=RetrievalResponse)

@@ -56,29 +56,23 @@ def get_latest_trace() -> dict | None:
 
 
 def find_evaluation_report(trace_id: str) -> dict | None:
-    if not EVAL_REPORTS.exists():
+    """trace_id 일치 report만 (latest fallback 제거)."""
+    if not trace_id or not EVAL_REPORTS.exists():
         return None
     for fp in EVAL_REPORTS.glob("*_report.json"):
         data = load_json_file(fp)
         if isinstance(data, dict) and data.get("trace_id") == trace_id:
             return data
-    files = sorted(EVAL_REPORTS.glob("*_report.json"), reverse=True)
-    if files:
-        data = load_json_file(files[0])
-        return data if isinstance(data, dict) else None
     return None
 
 
 def load_stock_chain_file(trace_id: str) -> dict | None:
+    """해당 trace_id chain만 (다른 종목 chain fallback 제거)."""
+    if not trace_id:
+        return None
     path = STOCK_CHAIN_DIR / f"{trace_id}_chain.json"
     data = load_json_file(path)
-    if isinstance(data, dict):
-        return data
-    for fp in sorted(STOCK_CHAIN_DIR.glob("*_chain.json"), reverse=True):
-        data = load_json_file(fp)
-        if isinstance(data, dict):
-            return data
-    return None
+    return data if isinstance(data, dict) else None
 
 
 def load_layer_memories(layer: str) -> list[dict]:

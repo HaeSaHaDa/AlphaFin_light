@@ -12,16 +12,11 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/evaluation", tags=["evaluation"])
 
 
-@router.get("/latest", response_model=EvaluationResponse)
-def get_latest_evaluation() -> EvaluationResponse:
-    data = fetch_latest_evaluation()
-    if not data:
-        raise HTTPException(status_code=404, detail="Evaluation 데이터 없음")
-    logger.info(
-        "GET /api/evaluation/latest  overall=%s",
-        data.get("overall_score"),
-    )
-    return EvaluationResponse(**{k: v for k, v in data.items() if k != "full_report"})
+@router.get("/latest")
+def get_latest_evaluation_disabled() -> None:
+    from .latest_guard import reject_latest_usage
+
+    reject_latest_usage()
 
 
 @router.get("/{trace_id}", response_model=EvaluationResponse)

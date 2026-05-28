@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260528_103056",
+  "query": "삼성전기 009150 반도체",
+  "persona": "growth_investor",
+  "ticker": "009150",
+  "started_at": "2026-05-28 10:30:56",
+  "completed_at": "2026-05-28 10:31:06",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "chunks=5",
+      "timestamp": "2026-05-28 10:30:56"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=1553",
+      "timestamp": "2026-05-28 10:30:56"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=3584",
+      "timestamp": "2026-05-28 10:30:56"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-05-28 10:31:00"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-05-28 10:31:00"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 삼성전기의 성장 가능성을 긍정적으로 평가하고 있으나, 리스크 요소가 충분히 다뤄지지",
+      "timestamp": "2026-05-28 10:31:06"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-05-28 10:31:06"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=1.00",
+      "timestamp": "2026-05-28 10:31:06"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-05-28 10:31:06"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=17 rels=35",
+      "timestamp": "2026-05-28 10:31:06"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=45",
+      "timestamp": "2026-05-28 10:31:06"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 5,
+    "max_score": 0.281535
+  },
+  "reflection_summary": "분석은 삼성전기의 성장 가능성을 긍정적으로 평가하고 있으나, 리스크 요소가 충분히 다뤄지지 않았습니다. 특히, 글로벌 경쟁 심화와 산업 불안정성 외에도 추가적인 리스크가 존재할 수 있습니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

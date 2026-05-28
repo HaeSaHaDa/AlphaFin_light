@@ -1,0 +1,229 @@
+{
+  "trace_id": "20260528_100851",
+  "query": "HD현대중공업 329180 수주",
+  "persona": "growth_investor",
+  "ticker": "329180",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "HD현대중공업 329180 수주",
+    "bullish_factors": [
+      "캐나다 잠수함 수주 프로젝트는 60조 원 규모로, 성공적인 수주 시 매출 및 이익 성장에 기여할 가능성이 큼.",
+      "한국의 잠수함 기술이 독일보다 우수하다는 평가가 있으며, 산업협력 제안으로 경쟁력을 높이고 있음."
+    ],
+    "bearish_factors": [
+      "수주 경쟁에서 독일 업체와의 치열한 경쟁이 있으며, 최종 결정이 불확실함.",
+      "캐나다의 정치적 및 경제적 상황에 따라 수주 결과가 영향을 받을 수 있음."
+    ],
+    "risks": [
+      "수주 실패 시 예상 매출 감소와 함께 기업 이미지에 부정적 영향.",
+      "글로벌 방산 시장의 변화와 경쟁 심화로 인한 장기적인 성장 불확실성."
+    ],
+    "summary": "HD현대중공업은 캐나다의 대형 잠수함 수주 프로젝트를 통해 매출 및 이익 성장을 기대할 수 있는 기회를 가지고 있습니다. 그러나 치열한 경쟁과 정치적 불확실성 등으로 인해 리스크 요소도 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 191,
+        "document_type": "news_article",
+        "score": 0.354919,
+        "ticker": "329180"
+      },
+      {
+        "chunk_id": 201,
+        "document_type": "news_article",
+        "score": 0.332564,
+        "ticker": "329180"
+      },
+      {
+        "chunk_id": 194,
+        "document_type": "news_article",
+        "score": 0.326459,
+        "ticker": "329180"
+      },
+      {
+        "chunk_id": 192,
+        "document_type": "news_article",
+        "score": 0.316635,
+        "ticker": "329180"
+      },
+      {
+        "chunk_id": 198,
+        "document_type": "news_article",
+        "score": 0.312583,
+        "ticker": "329180"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "HD현대중공업 329180 수주",
+    "retrieval_quality": {
+      "chunk_count": 5,
+      "score_stats": {
+        "min": 0.312583,
+        "max": 0.354919,
+        "avg": 0.328632,
+        "count": 5
+      },
+      "doc_type_distribution": {
+        "news_article": 5
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 5,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 5,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.354919,
+        0.332564,
+        0.326459,
+        0.316635,
+        0.312583
+      ],
+      "score_stats": {
+        "min": 0.312583,
+        "max": 0.354919,
+        "avg": 0.328632,
+        "count": 5
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "HD현대중공업 329180 수주",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 HD현대중공업의 수주 기회와 리스크를 잘 설명하고 있으나, 과도한 낙관이 감지됩니다. 특히, 수주 성공에 대한 기대감이 지나치게 강조된 반면, 리스크에 대한 깊이 있는 분석이 부족합니다.",
+    "missing_risks": [
+      "글로벌 경제 불황에 따른 방산 예산 축소 가능성",
+      "기술적 문제 발생 시 수주 지연 또는 취소 위험",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "캐나다 잠수함 수주가 성공적으로 이루어질 것이라는 전제에 대한 과도한 신뢰"
+    ],
+    "context_gaps": [
+      "캐나다 정부의 방산 정책 변화 가능성",
+      "HD현대중공업의 과거 수주 성과 및 실패 사례",
+      "공시 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "리스크 요소에 대한 보다 구체적인 분석 추가",
+      "경쟁업체의 최근 동향 및 전략 분석 포함"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 10:09:07"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "HD현대중공업 329180 수주",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "캐나다 잠수함 수주 프로젝트는 60조 원 규모로, 성공적인 수주 시 매출 및 이익 성장에 기여할 가능성이 큼.",
+        "한국의 잠수함 기술이 독일보다 우수하다는 평가가 있으며, 산업협력 제안으로 경쟁력을 높이고 있음."
+      ],
+      "bearish_factors": [
+        "수주 경쟁에서 독일 업체와의 치열한 경쟁이 있으며, 최종 결정이 불확실함.",
+        "캐나다의 정치적 및 경제적 상황에 따라 수주 결과가 영향을 받을 수 있음."
+      ],
+      "risks": [
+        "수주 실패 시 예상 매출 감소와 함께 기업 이미지에 부정적 영향.",
+        "글로벌 방산 시장의 변화와 경쟁 심화로 인한 장기적인 성장 불확실성."
+      ],
+      "summary": "HD현대중공업은 캐나다의 대형 잠수함 수주 프로젝트를 통해 매출 및 이익 성장을 기대할 수 있는 기회를 가지고 있습니다. 그러나 치열한 경쟁과 정치적 불확실성 등으로 인해 리스크 요소도 존재합니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 191,
+          "document_type": "news_article",
+          "score": 0.354919,
+          "ticker": "329180"
+        },
+        {
+          "chunk_id": 201,
+          "document_type": "news_article",
+          "score": 0.332564,
+          "ticker": "329180"
+        },
+        {
+          "chunk_id": 194,
+          "document_type": "news_article",
+          "score": 0.326459,
+          "ticker": "329180"
+        },
+        {
+          "chunk_id": 192,
+          "document_type": "news_article",
+          "score": 0.316635,
+          "ticker": "329180"
+        },
+        {
+          "chunk_id": 198,
+          "document_type": "news_article",
+          "score": 0.312583,
+          "ticker": "329180"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-05-28 10:09:07"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.6,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 30
+    },
+    "importance": {
+      "importance_score": 0.6,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_HD현대중공업_329180_수주_2026-05-28_10:09:07",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-05-28 10:09:07"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 16,
+    "relation_count": 24,
+    "query": "HD현대중공업 329180 수주"
+  },
+  "stock_chain": {
+    "entity_count": 13,
+    "link_count": 35,
+    "propagation_paths": 21
+  },
+  "unified_context_length": 4848,
+  "retrieval_chunk_count": 5,
+  "completed_at": "2026-05-28 10:09:07"
+}

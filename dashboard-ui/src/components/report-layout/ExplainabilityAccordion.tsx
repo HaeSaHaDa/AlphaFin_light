@@ -40,7 +40,7 @@ function SignalAccordionBody({ signal }: { signal: SignalEvaluationData | null }
         </div>
       </div>
       <p className="text-xs text-muted-foreground">
-        실제 시장 변화(샘플):{" "}
+        실제 시장 변화:{" "}
         {signal.market_comparison.price_change_pct >= 0 ? "+" : ""}
         {signal.market_comparison.price_change_pct}% ·{" "}
         {signal.market_comparison.direction_correct ? "방향 일치" : "방향 불일치"}
@@ -72,24 +72,32 @@ export function ExplainabilityAccordion({
           <AnalysisFlowPanel trace={data.trace} />
         </CollapsibleSection>
 
-        <CollapsibleSection title="AI가 참고한 자료" defaultOpen={false}>
-          <RetrievalViewer data={data.retrieval} status={status} />
-        </CollapsibleSection>
+        <div id="section-retrieval" className="scroll-mt-24">
+          <CollapsibleSection title="AI가 참고한 자료" defaultOpen={false}>
+            <RetrievalViewer data={data.retrieval} status={status} />
+          </CollapsibleSection>
+        </div>
 
-        <CollapsibleSection title="AI 자기 검토" defaultOpen={false}>
-          <ReflectionViewer data={data.reflection} status={status} />
-        </CollapsibleSection>
+        <div id="section-reflection" className="scroll-mt-24">
+          <CollapsibleSection title="AI 자기 검토" defaultOpen={false}>
+            <ReflectionViewer data={data.reflection} status={status} />
+          </CollapsibleSection>
+        </div>
 
-        <CollapsibleSection title="시장 기억 변화" defaultOpen={false}>
-          <MemoryTimelineViewer data={data.memory} status={status} />
+        <div id="section-memory" className="scroll-mt-24">
+          <CollapsibleSection title="시장 기억 변화" defaultOpen={false}>
+            <MemoryTimelineViewer data={data.memory} status={status} />
           <Button variant="ghost" size="sm" className="mt-2 h-auto px-0 text-primary" asChild>
             <Link href={memoryHref}>시장 기억 타임라인 전체 보기</Link>
           </Button>
-        </CollapsibleSection>
+          </CollapsibleSection>
+        </div>
 
-        <CollapsibleSection title="분석 신뢰도" defaultOpen={false}>
-          <EvaluationScorePanel data={data.evaluation} status={status} />
-        </CollapsibleSection>
+        <div id="section-evaluation" className="scroll-mt-24">
+          <CollapsibleSection title="분석 신뢰도" defaultOpen={false}>
+            <EvaluationScorePanel data={data.evaluation} status={status} />
+          </CollapsibleSection>
+        </div>
 
         <CollapsibleSection title="Signal 평가" defaultOpen={false}>
           <SignalAccordionBody signal={signal} />

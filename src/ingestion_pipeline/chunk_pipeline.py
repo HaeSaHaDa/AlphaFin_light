@@ -5,6 +5,8 @@ import logging
 import sys
 from pathlib import Path
 
+from src.cost_guard.limits import MAX_CHUNK_ROWS, MAX_NEWS_DB_ROWS
+
 logger = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -20,8 +22,8 @@ def _fetch_news(ticker: str) -> list[dict]:
         with conn.cursor() as cur:
             cur.execute(
                 "SELECT id, ticker, title, content, source, url, published_at "
-                "FROM news_articles WHERE ticker = %s ORDER BY id DESC LIMIT 20",
-                (ticker,),
+                "FROM news_articles WHERE ticker = %s ORDER BY id DESC LIMIT %s",
+                (ticker, MAX_NEWS_DB_ROWS),
             )
             return cur.fetchall()
     finally:
@@ -105,6 +107,10 @@ def run_chunking(ticker: str) -> int:
 
     if not db_rows:
         return 0
+
+    if len(db_rows) > MAX_CHUNK_ROWS:
+        db_rows = db_rows[:MAX_CHUNK_ROWS]
+        logger.info("chunk 상한 적용  max=%d", MAX_CHUNK_ROWS)
 
     inserted = insert_document_chunks(db_rows)
     logger.info("chunking 완료  ticker=%s  rows=%d inserted=%d", ticker, len(db_rows), inserted)

@@ -1,0 +1,24 @@
+/* AlphaFin LTE — Report layout */
+.report-card {
+  @apply rounded-xl border border-border/80 bg-card/50 p-4 shadow-md backdrop-blur-sm md:p-6;
+}
+
+.report-card-muted {
+  @apply rounded-lg border border-border/60 bg-muted/30 p-3;
+}
+
+.report-section-grid {
+  @apply grid gap-4 lg:grid-cols-2;
+}
+
+.report-factor-list li {
+  @apply border-b border-border/40 py-2 text-sm last:border-0;
+}
+
+.report-header {
+  @apply space-y-2 border-b border-border/50 pb-6;
+}
+
+.report-badge {
+  @apply inline-flex items-center rounded-full bg-primary/15 px-2.5 py-0.5 text-xs font-medium text-primary;
+}

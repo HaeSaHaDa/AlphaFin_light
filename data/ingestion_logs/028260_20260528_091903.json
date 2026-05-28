@@ -1,0 +1,13 @@
+{
+  "ticker": "028260",
+  "company_name": "삼성물산",
+  "corp_code": "00149655",
+  "status": "completed",
+  "documents": 129,
+  "chunks": 32,
+  "embeddings": 28,
+  "embeddings_created": 28,
+  "embeddings_skipped": 4,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

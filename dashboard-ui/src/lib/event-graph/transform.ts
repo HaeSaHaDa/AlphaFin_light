@@ -8,21 +8,7 @@ import type {
   TemporalEvent,
 } from "@/types/event-graph";
 import type { StockChainData } from "@/types/dashboard";
-
-const DEMO_PROPAGATION: PropagationStep[] = [
-  { source: "NVIDIA", target: "GPU", relation_type: "supply", impact_score: 0.85 },
-  { source: "GPU", target: "AI 서버", relation_type: "demand_propagation", impact_score: 0.82 },
-  { source: "AI 서버", target: "HBM", relation_type: "demand_propagation", impact_score: 0.88 },
-  { source: "HBM", target: "삼성전자", relation_type: "supply", impact_score: 0.8 },
-  { source: "HBM", target: "DRAM", relation_type: "product_link", impact_score: 0.75 },
-  { source: "DRAM", target: "dram price", relation_type: "price_impact", impact_score: 0.72 },
-];
-
-const DEMO_TEMPORAL: TemporalEvent[] = [
-  { period: "2024-01", label: "NVIDIA 실적 발표", relation: "earnings_release" },
-  { period: "2024-02", label: "HBM 공급 부족 심화", relation: "supply_shortage" },
-  { period: "2024-03", label: "DRAM 가격 상승", relation: "price_increase" },
-];
+import { buildTickerCentricChain } from "@/lib/ticker-centric-chain";
 
 const ENTITY_COLORS: Record<string, string> = {
   company: "#3b82f6",
@@ -40,59 +26,56 @@ export function entityColor(type?: string): string {
 export function buildPayloadFromStockChain(
   data: StockChainData,
   traceCompletedAt?: string,
+  retrievalChunks?: Array<{
+    document_type?: string;
+    chunk_id?: number;
+    score?: number;
+    ticker?: string;
+  }>,
 ): EventGraphPayload {
-  const chain = data.chain ?? {};
-  const entities: GraphEntity[] = (chain.entities ?? []).map((e) => ({
-    ...e,
-    id: e.name,
-  }));
-  const links: GraphLink[] = (chain.links ?? []).map((l, i) => ({
-    ...l,
-    id: `e-${i}-${l.source}-${l.target}`,
-  }));
-
-  const propagationPath = extractPropagationPath(links) ?? DEMO_PROPAGATION;
+  const centered = buildTickerCentricChain(data, retrievalChunks);
+  const propagationPath =
+    extractPropagationPath(centered.links, centered.centerName) ?? [];
   const temporalEvents = buildTemporalEvents(traceCompletedAt);
 
   return {
     traceId: data.trace_id,
     query: data.query,
     ticker: data.ticker,
-    entities,
-    links,
+    centerName: data.center_name || centered.centerName,
+    centerTicker: data.center_ticker || centered.centerTicker,
+    entities: centered.entities,
+    links: centered.links,
     propagationPath,
     temporalEvents,
   };
 }
 
-function extractPropagationPath(links: GraphLink[]): PropagationStep[] | null {
-  const preferred = ["NVIDIA", "GPU", "AI 서버", "HBM", "삼성전자", "DRAM"];
-  const steps: PropagationStep[] = [];
-  for (let i = 0; i < preferred.length - 1; i++) {
-    const link = links.find(
-      (l) =>
-        l.source === preferred[i] &&
-        (l.target === preferred[i + 1] ||
-          l.target.toLowerCase().includes(preferred[i + 1].toLowerCase())),
-    );
-    if (link) {
-      steps.push({
-        source: link.source,
-        target: link.target,
-        relation_type: link.relation_type ?? "propagation",
-        impact_score: link.impact_score ?? 0,
-      });
-    }
-  }
-  return steps.length >= 3 ? steps : null;
+function extractPropagationPath(
+  links: GraphLink[],
+  centerName: string,
+): PropagationStep[] | null {
+  if (!links.length || !centerName) return null;
+  const fromCenter = links.filter(
+    (l) => l.source === centerName || l.target === centerName,
+  );
+  const pool = fromCenter.length ? fromCenter : links;
+  const sorted = [...pool].sort(
+    (a, b) => (b.impact_score ?? 0) - (a.impact_score ?? 0),
+  );
+  return sorted.slice(0, 8).map((l) => ({
+    source: l.source,
+    target: l.target,
+    relation_type: l.relation_type ?? "propagation",
+    impact_score: l.impact_score ?? 0,
+  }));
 }
 
 function buildTemporalEvents(completedAt?: string): TemporalEvent[] {
-  if (!completedAt) return DEMO_TEMPORAL;
+  if (!completedAt) return [];
   const base = completedAt.slice(0, 7);
   return [
     { period: base, label: "Engine trace · retrieval", relation: "retrieval" },
-    ...DEMO_TEMPORAL,
   ];
 }
 
@@ -141,11 +124,16 @@ export function toFlowElements(
   entities: GraphEntity[],
   links: GraphLink[],
   filters: EventGraphFilters,
+  centerName: string,
 ): { nodes: Node[]; edges: Edge[] } {
   const highlight = new Set(
     filters.highlightEntities.map((h) => h.toLowerCase()),
   );
-  const positions = layoutNodes(entities, links);
+  const rootName =
+    centerName ||
+    entities.find((e) => e.is_center)?.name ||
+    "";
+  const positions = layoutNodes(entities, links, rootName);
 
   const nodes: Node[] = entities.map((e) => ({
     id: e.id,
@@ -155,8 +143,10 @@ export function toFlowElements(
       label: e.name,
       entityType: e.entity_type,
       ticker: e.ticker,
+      isCenter: Boolean(e.is_center),
       highlighted:
-        highlight.size > 0 && highlight.has(e.name.toLowerCase()),
+        e.is_center ||
+        (highlight.size > 0 && highlight.has(e.name.toLowerCase())),
     },
   }));
 
@@ -191,12 +181,16 @@ function edgeStroke(score?: number): string {
 function layoutNodes(
   entities: GraphEntity[],
   links: GraphLink[],
+  centerName: string,
 ): Map<string, { x: number; y: number }> {
-  const seeds = ["NVIDIA", "삼성전자", "HBM"];
   const root =
-    seeds.find((s) => entities.some((e) => e.name === s)) ??
-    entities[0]?.name ??
+    centerName ||
+    entities.find((e) => e.is_center)?.name ||
+    entities.find((e) => e.ticker)?.name ||
     "";
+  if (!root) {
+    return new Map();
+  }
 
   const adj = new Map<string, string[]>();
   links.forEach((l) => {

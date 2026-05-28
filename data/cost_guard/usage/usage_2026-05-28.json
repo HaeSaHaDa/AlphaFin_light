@@ -1,0 +1,107 @@
+{
+  "date": "2026-05-28",
+  "entries": [
+    {
+      "timestamp": "2026-05-28 09:19:03",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 1472,
+      "meta": {
+        "ticker": "028260",
+        "count": 28
+      }
+    },
+    {
+      "timestamp": "2026-05-28 09:20:50",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 1271,
+      "meta": {
+        "ticker": "042700",
+        "count": 10
+      }
+    },
+    {
+      "timestamp": "2026-05-28 09:39:28",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 1486,
+      "meta": {
+        "ticker": "034020",
+        "count": 9
+      }
+    },
+    {
+      "timestamp": "2026-05-28 09:42:46",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 93,
+      "meta": {
+        "ticker": "015760",
+        "count": 9
+      }
+    },
+    {
+      "timestamp": "2026-05-28 10:08:51",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 3695,
+      "meta": {
+        "ticker": "329180",
+        "count": 29
+      }
+    },
+    {
+      "timestamp": "2026-05-28 10:14:16",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 984,
+      "meta": {
+        "ticker": "000660",
+        "count": 6
+      }
+    },
+    {
+      "timestamp": "2026-05-28 10:30:56",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 211,
+      "meta": {
+        "ticker": "009150",
+        "count": 5
+      }
+    },
+    {
+      "timestamp": "2026-05-28 12:03:24",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 1457,
+      "meta": {
+        "ticker": "006400",
+        "count": 9
+      }
+    }
+  ],
+  "totals": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "embedding_tokens": 10669,
+    "call_count": 8
+  }
+}

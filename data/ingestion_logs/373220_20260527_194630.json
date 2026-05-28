@@ -1,0 +1,15 @@
+{
+  "ticker": "373220",
+  "company_name": "LG에너지솔루션",
+  "corp_code": "01515323",
+  "status": "partial",
+  "documents": 0,
+  "chunks": 0,
+  "embeddings": 0,
+  "embeddings_created": 0,
+  "embeddings_skipped": 0,
+  "skipped_collectors": [
+    "chunk"
+  ],
+  "presentation_mode": false
+}

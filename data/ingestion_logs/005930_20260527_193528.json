@@ -1,0 +1,11 @@
+{
+  "ticker": "005930",
+  "company_name": "삼성전자",
+  "corp_code": "00126380",
+  "status": "completed",
+  "documents": 140,
+  "chunks": 20,
+  "embeddings": 31,
+  "embeddings_created": 8,
+  "presentation_mode": false
+}

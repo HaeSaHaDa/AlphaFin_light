@@ -1,0 +1,29 @@
+{
+  "trace_id": "20260527_191902",
+  "query": "현대자동차 전망",
+  "persona": "growth_investor",
+  "ticker": "005380",
+  "started_at": "2026-05-27 19:19:02",
+  "completed_at": "2026-05-27 19:19:04",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "warn",
+      "summary": "chunks=0",
+      "timestamp": "2026-05-27 19:19:04"
+    },
+    {
+      "step": "pipeline",
+      "status": "error",
+      "summary": "Retrieval 결과 없음",
+      "timestamp": "2026-05-27 19:19:04"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 0,
+    "max_score": 0
+  },
+  "reflection_summary": "",
+  "temporal_action": "",
+  "stock_chain_links": 0
+}

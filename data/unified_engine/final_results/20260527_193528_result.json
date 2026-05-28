@@ -1,0 +1,234 @@
+{
+  "trace_id": "20260527_193528",
+  "query": "삼성전자",
+  "persona": "growth_investor",
+  "ticker": "005930",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "삼성전자",
+    "bullish_factors": [
+      "AI 반도체 수출 증가로 인한 반도체 부문 성장 가능성",
+      "HBM 수요 증가로 인한 시장 확대 기회"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화로 인한 운영 리스크",
+      "노조의 반발로 인한 생산성 저하 가능성"
+    ],
+    "risks": [
+      "반도체 산업의 불안정성",
+      "기술 발전 속도에 따른 경쟁력 저하"
+    ],
+    "summary": "삼성전자는 AI 반도체 수출 증가와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있습니다. 그러나 글로벌 경쟁 심화와 노조의 반발 등으로 인해 운영 리스크가 존재하며, 반도체 산업의 불안정성이 시장 성장에 부담을 줄 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 16,
+        "document_type": "disclosure",
+        "score": 0.491981,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 15,
+        "document_type": "disclosure",
+        "score": 0.472433,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 14,
+        "document_type": "disclosure",
+        "score": 0.46683,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 21,
+        "document_type": "disclosure",
+        "score": 0.450799,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 22,
+        "document_type": "disclosure",
+        "score": 0.450501,
+        "ticker": "005930"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "삼성전자",
+    "retrieval_quality": {
+      "chunk_count": 5,
+      "score_stats": {
+        "min": 0.450501,
+        "max": 0.491981,
+        "avg": 0.466509,
+        "count": 5
+      },
+      "doc_type_distribution": {
+        "disclosure": 5
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 5,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 5,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.491981,
+        0.472433,
+        0.46683,
+        0.450799,
+        0.450501
+      ],
+      "score_stats": {
+        "min": 0.450501,
+        "max": 0.491981,
+        "avg": 0.466509,
+        "count": 5
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "삼성전자",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 삼성전자의 성장 가능성과 리스크를 균형 있게 다루고 있으나, 일부 중요한 리스크가 누락되었습니다. 또한, 전반적인 맥락이 부족하여 분석의 깊이가 떨어집니다.",
+    "missing_risks": [
+      "글로벌 경제 불확실성",
+      "원자재 가격 변동에 따른 비용 증가",
+      "정치적 리스크",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": false,
+    "overconfidence_reasons": [],
+    "context_gaps": [
+      "삼성전자의 경쟁사 분석",
+      "AI 반도체 시장의 글로벌 동향",
+      "노조 반발의 구체적 사례",
+      "뉴스 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "리스크 항목에 더 많은 세부 사항 추가",
+      "경쟁사와의 비교 분석 포함",
+      "시장 동향에 대한 보다 구체적인 데이터 제공"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 19:35:37"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "삼성전자",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "AI 반도체 수출 증가로 인한 반도체 부문 성장 가능성",
+        "HBM 수요 증가로 인한 시장 확대 기회"
+      ],
+      "bearish_factors": [
+        "글로벌 경쟁 심화로 인한 운영 리스크",
+        "노조의 반발로 인한 생산성 저하 가능성"
+      ],
+      "risks": [
+        "반도체 산업의 불안정성",
+        "기술 발전 속도에 따른 경쟁력 저하"
+      ],
+      "summary": "삼성전자는 AI 반도체 수출 증가와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있습니다. 그러나 글로벌 경쟁 심화와 노조의 반발 등으로 인해 운영 리스크가 존재하며, 반도체 산업의 불안정성이 시장 성장에 부담을 줄 수 있습니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 16,
+          "document_type": "disclosure",
+          "score": 0.491981,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 15,
+          "document_type": "disclosure",
+          "score": 0.472433,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 14,
+          "document_type": "disclosure",
+          "score": 0.46683,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 21,
+          "document_type": "disclosure",
+          "score": 0.450799,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 22,
+          "document_type": "disclosure",
+          "score": 0.450501,
+          "ticker": "005930"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-05-27 19:35:37"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 1.0,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 16
+    },
+    "importance": {
+      "importance_score": 1.0,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_삼성전자_2026-05-27_19:35:37",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "NVIDIA → 실적",
+        "HBM → 공급",
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-05-27 19:35:37"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 21,
+    "relation_count": 51,
+    "query": "삼성전자"
+  },
+  "stock_chain": {
+    "entity_count": 17,
+    "link_count": 62,
+    "propagation_paths": 95
+  },
+  "unified_context_length": 4499,
+  "retrieval_chunk_count": 5,
+  "completed_at": "2026-05-27 19:35:37"
+}

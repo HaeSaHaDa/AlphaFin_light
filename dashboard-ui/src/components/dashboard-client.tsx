@@ -1,22 +1,24 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Alert } from "@/components/ui/alert";
 import { Skeleton } from "@/components/ui/skeleton";
 import { DashboardNav } from "@/components/layout/dashboard-nav";
-import { QueryInputPanel } from "@/components/query/query-input-panel";
+import { QueryExecutionPanel } from "@/components/company-selector/QueryExecutionPanel";
 import { MarketReportHeader } from "@/components/report-layout/MarketReportHeader";
-import { SignalSummaryCard } from "@/components/report-layout/SignalSummaryCard";
 import { BullishFactorsPanel } from "@/components/report-layout/BullishFactorsPanel";
 import { RiskFactorsPanel } from "@/components/report-layout/RiskFactorsPanel";
-import { RelatedNewsPanel } from "@/components/report-layout/RelatedNewsPanel";
-import { MarketImpactPanel } from "@/components/report-layout/MarketImpactPanel";
 import { ExplainabilityAccordion } from "@/components/report-layout/ExplainabilityAccordion";
-import { useDashboardData } from "@/hooks/use-dashboard-data";
-import { useSignalEvaluation } from "@/hooks/use-signal-evaluation";
-import { API_BASE } from "@/services/api";
+import { RuntimeSignalPanel } from "@/components/runtime-panels/RuntimeSignalPanel";
+import { RuntimeNewsPanel } from "@/components/runtime-panels/RuntimeNewsPanel";
+import { RuntimeMarketGraphPanel } from "@/components/runtime-panels/RuntimeMarketGraphPanel";
+import { StickyRuntimeHeader } from "@/components/runtime-header/StickyRuntimeHeader";
+import { useDashboardRuntime } from "@/runtime-state/runtime-query-context";
+import { traceQueryHref } from "@/runtime-state/runtime-trace-store";
+import { API_BASE, getRuntimeStatus } from "@/services/api";
+import type { RuntimeStatusPayload } from "@/types/market-graph";
 
 function getAnalysisFactors(retrieval: { analysis?: Record<string, unknown> } | null) {
   const a = retrieval?.analysis ?? {};
@@ -32,18 +34,32 @@ export function DashboardClient() {
     data,
     status,
     error,
+    warning,
     traceId,
     engineRunning,
-    loadLatest,
+    companyContext,
     loadByTraceId,
-    runAndLoad,
-  } = useDashboardData();
+    runQuerySelected,
+    selectedTicker,
+    companyName,
+    loadingMessage,
+    signal,
+    phase,
+  } = useDashboardRuntime();
 
-  const { data: signalData } = useSignalEvaluation(traceId);
+  const [runtimeStatus, setRuntimeStatus] = useState<RuntimeStatusPayload | null>(
+    null,
+  );
 
   useEffect(() => {
-    loadLatest();
-  }, [loadLatest]);
+    if (!traceId) {
+      setRuntimeStatus(null);
+      return;
+    }
+    getRuntimeStatus(traceId)
+      .then(setRuntimeStatus)
+      .catch(() => setRuntimeStatus(null));
+  }, [traceId, engineRunning, phase]);
 
   const displayQuery =
     data.evaluation?.query ||
@@ -51,75 +67,133 @@ export function DashboardClient() {
     data.reflection?.query;
 
   const { bullish, bearish, risks } = getAnalysisFactors(data.retrieval);
-  const loading = status === "loading" || engineRunning;
+
+  const loading =
+    phase === "running_query" ||
+    phase === "loading_panels" ||
+    status === "loading" ||
+    engineRunning;
+
+  const displayCompany =
+    companyName ||
+    companyContext?.company_name ||
+    runtimeStatus?.company_name ||
+    "";
 
   return (
-    <div className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
-      <div className="flex flex-wrap items-start justify-between gap-2">
+    <div className="dashboard-shell">
+      <div className="dashboard-nav-row">
         <DashboardNav traceId={traceId} apiBase={API_BASE} showAnalysisLink={false} />
         <div className="flex flex-wrap gap-2">
           <Button variant="outline" size="sm" asChild>
-            <Link href="/analysis">상세 분석</Link>
+            <Link href={traceQueryHref("/analysis", traceId)}>상세 분석</Link>
           </Button>
           <Button variant="outline" size="sm" asChild>
-            <Link href="/event-graph">시장 연결 구조</Link>
+            <Link href={traceQueryHref("/event-graph", traceId)}>시장 연결 구조</Link>
           </Button>
           <Button variant="outline" size="sm" asChild>
-            <Link href="/memory-timeline">시장 기억</Link>
+            <Link href={traceQueryHref("/memory-timeline", traceId)}>시장 기억</Link>
           </Button>
           <Button variant="outline" size="sm" asChild>
-            <Link href="/signal-evaluation">Signal 평가</Link>
+            <Link href={traceQueryHref("/signal-evaluation", traceId)}>Signal 평가</Link>
           </Button>
         </div>
       </div>
 
-      <QueryInputPanel
+      <StickyRuntimeHeader
+        companyName={displayCompany}
+        ticker={selectedTicker ?? runtimeStatus?.ticker ?? ""}
+        traceId={traceId}
+        runtimeStatus={runtimeStatus}
+        engineRunning={engineRunning}
+        phase={phase}
+      />
+
+      <QueryExecutionPanel
         status={status}
         engineRunning={engineRunning}
         traceId={traceId}
         displayQuery={displayQuery}
-        onRunEngine={runAndLoad}
-        onLoadLatest={loadLatest}
+        selectedTicker={selectedTicker}
+        companyContext={companyContext}
+        onRunQuery={runQuerySelected}
         onLoadByTraceId={loadByTraceId}
       />
 
-      {error && (
-        <Alert variant="destructive">
-          <p className="font-medium">API 연동 실패</p>
-          <p className="mt-1 text-xs opacity-90">{error}</p>
-          <p className="mt-2 text-xs opacity-75">
-            Backend: uvicorn src.dashboard_api.app:app --host 0.0.0.0 --port 8000
+      {loading && loadingMessage && (
+        <Alert className="border-primary/40 bg-primary/10">
+          <p className="text-sm font-medium">{loadingMessage}</p>
+          <p className="mt-1 text-xs text-muted-foreground">
+            모든 패널이 동일 traceId 기준으로 동기화됩니다.
+            {traceId && (
+              <span className="ml-2 font-mono">trace: {traceId}</span>
+            )}
           </p>
         </Alert>
       )}
 
-      <MarketReportHeader query={displayQuery} traceId={traceId} />
+      {warning && (
+        <Alert className="border-amber-500/50 bg-amber-500/10 text-amber-100">
+          <p className="font-medium">분석 데이터 부족</p>
+          <p className="mt-1 text-xs opacity-90">{warning}</p>
+        </Alert>
+      )}
+
+      {error && status === "error" && (
+        <Alert variant="destructive">
+          <p className="font-medium">Runtime 오류</p>
+          <p className="mt-1 text-xs opacity-90">{error}</p>
+          <p className="mt-1 text-xs opacity-75">
+            sample/latest fallback 없음 — trace_id 기준 payload만 표시합니다.
+          </p>
+        </Alert>
+      )}
+
+      {!traceId && phase === "idle" && (
+        <Alert className="border-border bg-muted/30">
+          <p className="text-sm">
+            자동완성에서 종목을 선택하고 키워드를 입력한 뒤{" "}
+            <strong>분석 실행</strong>을 누르세요.
+            실행 후 모든 패널이 동일 <strong>traceId</strong>로 갱신됩니다.
+          </p>
+        </Alert>
+      )}
+
+      <div id="section-summary" className="scroll-mt-24">
+        <MarketReportHeader query={displayQuery} traceId={traceId} />
+      </div>
 
       {loading ? (
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="dashboard-grid-3">
           <Skeleton className="h-40 rounded-xl" />
           <Skeleton className="h-40 rounded-xl" />
           <Skeleton className="h-40 rounded-xl" />
         </div>
       ) : (
         <>
-          <div className="grid gap-4 md:grid-cols-3">
-            <SignalSummaryCard signal={signalData} />
+          <div className="dashboard-grid-3">
+            <RuntimeSignalPanel
+              traceId={traceId}
+              status={status}
+              signal={signal}
+            />
             <BullishFactorsPanel factors={bullish} />
             <RiskFactorsPanel risks={risks} bearishFactors={bearish} />
           </div>
 
-          <RelatedNewsPanel chunks={data.retrieval?.chunks ?? []} />
+          <div id="section-news" className="scroll-mt-24">
+            <RuntimeNewsPanel
+              traceId={traceId}
+              status={status}
+              retrieval={data.retrieval}
+            />
+          </div>
 
-          <MarketImpactPanel
-            data={data.stockChain}
-            status={status}
-            traceId={traceId}
-          />
+          <RuntimeMarketGraphPanel traceId={traceId} status={status} />
 
           <ExplainabilityAccordion
             data={data}
-            signal={signalData}
+            signal={signal}
             status={status}
             traceId={traceId}
           />

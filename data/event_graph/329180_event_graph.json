@@ -1,0 +1,341 @@
+{
+  "query": "HD현대중공업 329180 수주",
+  "ticker": "329180",
+  "nodes": [
+    {
+      "name": "삼성전자",
+      "node_type": "company",
+      "ticker": "005930",
+      "event_type": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "NVIDIA",
+      "node_type": "company",
+      "ticker": "NVDA",
+      "event_type": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "반도체",
+      "node_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "메모리",
+      "node_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "AI",
+      "node_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "서버",
+      "node_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "자동차",
+      "node_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "HBM",
+      "node_type": "product",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "수요 증가",
+      "node_type": "market_event",
+      "ticker": null,
+      "event_type": "demand_increase",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "수출 증가",
+      "node_type": "market_event",
+      "ticker": null,
+      "event_type": "export_increase",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "공급 부족",
+      "node_type": "market_event",
+      "ticker": null,
+      "event_type": "supply_shortage",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "투자 확대",
+      "node_type": "market_event",
+      "ticker": null,
+      "event_type": "investment_expansion",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "시장 성장",
+      "node_type": "market_event",
+      "ticker": null,
+      "event_type": "market_growth",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "경쟁 심화",
+      "node_type": "market_event",
+      "ticker": null,
+      "event_type": "competition_increase",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "기술 발전",
+      "node_type": "market_event",
+      "ticker": null,
+      "event_type": "tech_advancement",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "name": "리스크",
+      "node_type": "market_event",
+      "ticker": null,
+      "event_type": "risk",
+      "created_at": "2026-05-28 10:09:07"
+    }
+  ],
+  "relations": [
+    {
+      "source": "수요 증가",
+      "target": "HBM",
+      "relation_type": "demand_increase",
+      "confidence": 0.8,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "시장 성장",
+      "target": "HBM",
+      "relation_type": "demand_increase",
+      "confidence": 0.8,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "HBM",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "confidence": 0.75,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "HBM",
+      "target": "NVIDIA",
+      "relation_type": "benefit",
+      "confidence": 0.75,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "경쟁 심화",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "confidence": 0.65,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "경쟁 심화",
+      "target": "NVIDIA",
+      "relation_type": "risk_propagation",
+      "confidence": 0.65,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "반도체",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "반도체",
+      "target": "NVIDIA",
+      "relation_type": "impact",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "메모리",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "메모리",
+      "target": "NVIDIA",
+      "relation_type": "impact",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "AI",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "AI",
+      "target": "NVIDIA",
+      "relation_type": "impact",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "서버",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "서버",
+      "target": "NVIDIA",
+      "relation_type": "impact",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "자동차",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "자동차",
+      "target": "NVIDIA",
+      "relation_type": "impact",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "삼성전자",
+      "target": "NVIDIA",
+      "relation_type": "competition",
+      "confidence": 0.6,
+      "source_ticker": "005930",
+      "target_ticker": "NVDA",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "NVIDIA",
+      "target": "삼성전자",
+      "relation_type": "competition",
+      "confidence": 0.6,
+      "source_ticker": "NVDA",
+      "target_ticker": "005930",
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "캐나다 잠수함 수주 프로젝트는 60조 원 규모로, 성공적인 수주 시 매출",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "confidence": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "한국의 잠수함 기술이 독일보다 우수하다는 평가가 있으며, 산업협력 제안으",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "confidence": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "수주 경쟁에서 독일 업체와의 치열한 경쟁이 있으며, 최종 결정이 불확실함",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "캐나다의 정치적 및 경제적 상황에 따라 수주 결과가 영향을 받을 수 있음",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "confidence": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "수주 실패 시 예상 매출 감소와 함께 기업 이미지에 부정적 영향.",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "confidence": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 10:09:07"
+    },
+    {
+      "source": "글로벌 방산 시장의 변화와 경쟁 심화로 인한 장기적인 성장 불확실성.",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "confidence": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 10:09:07"
+    }
+  ],
+  "metadata": {
+    "node_count": 16,
+    "relation_count": 24,
+    "created_at": "2026-05-28 10:09:07"
+  }
+}

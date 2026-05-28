@@ -22,7 +22,7 @@ export function MarketImpactPanel({
   return (
     <DashboardSection
       title="시장 연결 구조"
-      description="기업·산업·이벤트 간 영향 흐름 — NVIDIA → HBM → 삼성전자 등"
+      description="선택 종목(trace) 기준 기업·산업·이벤트 영향 흐름"
     >
       <div className="mb-4 flex flex-wrap justify-end gap-2">
         <Button variant="outline" size="sm" asChild>

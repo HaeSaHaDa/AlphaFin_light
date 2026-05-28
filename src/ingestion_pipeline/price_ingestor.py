@@ -2,26 +2,23 @@
 from __future__ import annotations
 
 import logging
-import sys
 from datetime import datetime, timedelta
 from pathlib import Path
+
+from ._import_helpers import load_collector_module, load_db_store
 
 logger = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 PYKRX_DIR = PROJECT_ROOT / "src" / "collectors" / "pykrx"
-DB_DIR = PROJECT_ROOT / "src" / "common" / "db"
 
 
 def ingest_prices(ticker: str, days: int = 60) -> int:
     """최근 주가를 stock_prices에 저장한다."""
-    if str(PYKRX_DIR) not in sys.path:
-        sys.path.insert(0, str(PYKRX_DIR))
-    if str(DB_DIR) not in sys.path:
-        sys.path.insert(0, str(DB_DIR))
-
-    from collector import fetch_ohlcv  # type: ignore[import]
-    from store import insert_stock_prices  # type: ignore[import]
+    pykrx_collector = load_collector_module(PYKRX_DIR, "pykrx")
+    store = load_db_store()
+    fetch_ohlcv = pykrx_collector.fetch_ohlcv
+    insert_stock_prices = store.insert_stock_prices
 
     end = datetime.now()
     start = end - timedelta(days=days)

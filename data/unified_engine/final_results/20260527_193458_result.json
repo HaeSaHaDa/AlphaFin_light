@@ -1,0 +1,233 @@
+{
+  "trace_id": "20260527_193458",
+  "query": "현대",
+  "persona": "growth_investor",
+  "ticker": "005380",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "현대",
+    "bullish_factors": [
+      "전기차 부문 성장 가능성",
+      "AI 산업의 장기 성장 구조 변화"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화",
+      "내부 리스크 및 정책 변화"
+    ],
+    "risks": [
+      "환율 변동에 따른 수익성 영향",
+      "소비자 선호 변화에 따른 판매 감소 가능성"
+    ],
+    "summary": "현대자동차의 전기차 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으며, AI 산업의 성장도 긍정적인 요소로 작용할 수 있습니다. 그러나 글로벌 경쟁과 내부 리스크, 정책 변화 등은 운영에 부담을 줄 수 있는 요인으로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.126672,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.126672,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.126672,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.126672,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.126672,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "현대",
+    "retrieval_quality": {
+      "chunk_count": 5,
+      "score_stats": {
+        "min": 0.126672,
+        "max": 0.126672,
+        "avg": 0.126672,
+        "count": 5
+      },
+      "doc_type_distribution": {
+        "disclosure": 5
+      },
+      "has_relevant": false
+    },
+    "context_usage": {
+      "referenced_count": 5,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 5,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "medium",
+      "reasons": [
+        "평균 retrieval score 낮음: 0.1267"
+      ],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.126672,
+        0.126672,
+        0.126672,
+        0.126672,
+        0.126672
+      ],
+      "score_stats": {
+        "min": 0.126672,
+        "max": 0.126672,
+        "avg": 0.126672,
+        "count": 5
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "현대",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 현대자동차의 전기차 부문과 AI 산업의 긍정적인 전망을 강조하고 있으나, 글로벌 경쟁과 내부 리스크에 대한 언급이 다소 일반적이며 구체성이 부족합니다. 또한, 리스크 요소에 대한 심층적인 분석이 부족하여 전체적인 균형이 결여되어 있습니다.",
+    "missing_risks": [
+      "기술 발전 속도에 따른 시장 경쟁력 저하",
+      "환경 규제 강화에 따른 추가 비용 발생 가능성",
+      "금리 변동 리스크",
+      "규제 변동 리스크",
+      "공급망 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "전기차와 AI 산업의 성장 가능성에 대한 지나친 긍정적 전망"
+    ],
+    "context_gaps": [
+      "전기차 시장 내 경쟁사 분석 부족",
+      "정책 변화에 대한 구체적인 사례와 그 영향 분석 부족",
+      "뉴스 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "리스크 요소에 대한 구체적인 사례와 수치적 분석 추가",
+      "경쟁사 분석을 통해 현대의 상대적 위치를 명확히 제시"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-27 19:35:06"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "현대",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "전기차 부문 성장 가능성",
+        "AI 산업의 장기 성장 구조 변화"
+      ],
+      "bearish_factors": [
+        "글로벌 경쟁 심화",
+        "내부 리스크 및 정책 변화"
+      ],
+      "risks": [
+        "환율 변동에 따른 수익성 영향",
+        "소비자 선호 변화에 따른 판매 감소 가능성"
+      ],
+      "summary": "현대자동차의 전기차 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으며, AI 산업의 성장도 긍정적인 요소로 작용할 수 있습니다. 그러나 글로벌 경쟁과 내부 리스크, 정책 변화 등은 운영에 부담을 줄 수 있는 요인으로 작용할 수 있습니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 24,
+          "document_type": "disclosure",
+          "score": 0.126672,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 25,
+          "document_type": "disclosure",
+          "score": 0.126672,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 26,
+          "document_type": "disclosure",
+          "score": 0.126672,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 27,
+          "document_type": "disclosure",
+          "score": 0.126672,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 28,
+          "document_type": "disclosure",
+          "score": 0.126672,
+          "ticker": "005380"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-05-27 19:35:06"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.8,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 15
+    },
+    "importance": {
+      "importance_score": 0.8,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_현대_2026-05-27_19:35:06",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-05-27 19:35:06"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 20,
+    "relation_count": 48,
+    "query": "현대"
+  },
+  "stock_chain": {
+    "entity_count": 17,
+    "link_count": 59,
+    "propagation_paths": 95
+  },
+  "unified_context_length": 3487,
+  "retrieval_chunk_count": 5,
+  "completed_at": "2026-05-27 19:35:06"
+}

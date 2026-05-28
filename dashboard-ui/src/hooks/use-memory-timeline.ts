@@ -61,9 +61,10 @@ export function useMemoryTimeline(traceId?: string | null) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
 
-  const load = useCallback(async (id?: string | null) => {
+  const load = useCallback(async (id: string) => {
     setStatus("loading");
     setError(null);
+    setNodes([]);
     try {
       const data = await getMemory(id);
       setNodes(buildNodes(data));
@@ -76,8 +77,25 @@ export function useMemoryTimeline(traceId?: string | null) {
   }, []);
 
   useEffect(() => {
-    load(traceId);
+    const id = traceId?.trim();
+    if (!id) {
+      setNodes([]);
+      setQuery("");
+      setStatus("idle");
+      setError(null);
+      return;
+    }
+    load(id);
   }, [load, traceId]);
 
-  return { nodes, query, status, error, reload: () => load(traceId) };
+  return {
+    nodes,
+    query,
+    status,
+    error,
+    reload: () => {
+      const id = traceId?.trim();
+      if (id) return load(id);
+    },
+  };
 }

@@ -1,0 +1,13 @@
+{
+  "ticker": "042700",
+  "company_name": "한미반도체",
+  "corp_code": "00111722",
+  "status": "completed",
+  "documents": 144,
+  "chunks": 29,
+  "embeddings": 10,
+  "embeddings_created": 10,
+  "embeddings_skipped": 19,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

@@ -1,0 +1,229 @@
+{
+  "trace_id": "20260528_094246",
+  "query": "한국전력 015760 원자력",
+  "persona": "growth_investor",
+  "ticker": "015760",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "한국전력 015760 원자력",
+    "bullish_factors": [
+      "원자력 에너지 수요 증가에 따른 매출 성장 가능성",
+      "신규 원자력 발전소 건설 및 기술 개발 기회"
+    ],
+    "bearish_factors": [
+      "정치적 리스크 및 규제 변화에 따른 운영 불확실성",
+      "중대재해 발생에 따른 이미지 손상 및 신뢰도 저하"
+    ],
+    "risks": [
+      "환율 변동에 따른 수익성 영향",
+      "기술 발전 속도에 따른 경쟁 우위 상실"
+    ],
+    "summary": "한국전력은 원자력 에너지 수요 증가와 신규 발전소 건설 기회로 인해 성장 가능성이 있지만, 정치적 리스크와 중대재해 발생 등으로 인해 운영에 불확실성이 존재합니다. 이러한 요소들은 장기적인 성장 동력에 영향을 미칠 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 172,
+        "document_type": "disclosure",
+        "score": 0.237484,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 179,
+        "document_type": "disclosure",
+        "score": 0.236756,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 181,
+        "document_type": "disclosure",
+        "score": 0.22916,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 182,
+        "document_type": "disclosure",
+        "score": 0.218097,
+        "ticker": "015760"
+      },
+      {
+        "chunk_id": 183,
+        "document_type": "disclosure",
+        "score": 0.20829,
+        "ticker": "015760"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "한국전력 015760 원자력",
+    "retrieval_quality": {
+      "chunk_count": 5,
+      "score_stats": {
+        "min": 0.20829,
+        "max": 0.237484,
+        "avg": 0.225957,
+        "count": 5
+      },
+      "doc_type_distribution": {
+        "disclosure": 5
+      },
+      "has_relevant": false
+    },
+    "context_usage": {
+      "referenced_count": 5,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 5,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.237484,
+        0.236756,
+        0.22916,
+        0.218097,
+        0.20829
+      ],
+      "score_stats": {
+        "min": 0.20829,
+        "max": 0.237484,
+        "avg": 0.225957,
+        "count": 5
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "한국전력 015760 원자력",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 한국전력의 성장 가능성과 리스크를 균형 있게 다루고 있지만, 일부 중요한 리스크가 누락되어 있습니다. 또한, 정치적 리스크와 중대재해 발생에 대한 비관적인 측면이 충분히 강조되지 않았습니다.",
+    "missing_risks": [
+      "기후 변화에 따른 정책 변화 리스크",
+      "국제 원자력 규제 변화에 따른 영향",
+      "금리 변동 리스크",
+      "규제 변동 리스크",
+      "공급망 리스크"
+    ],
+    "overconfidence_detected": false,
+    "overconfidence_reasons": [],
+    "context_gaps": [
+      "한국전력의 재무 상태 및 과거 실적에 대한 정보 부족",
+      "원자력 발전소 건설 일정 및 비용에 대한 구체적인 데이터 부족",
+      "뉴스 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "정치적 리스크와 중대재해 발생에 대한 구체적인 사례 추가",
+      "한국전력의 경쟁사 분석을 포함하여 시장 위치를 명확히 할 것"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 09:42:54"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "한국전력 015760 원자력",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "원자력 에너지 수요 증가에 따른 매출 성장 가능성",
+        "신규 원자력 발전소 건설 및 기술 개발 기회"
+      ],
+      "bearish_factors": [
+        "정치적 리스크 및 규제 변화에 따른 운영 불확실성",
+        "중대재해 발생에 따른 이미지 손상 및 신뢰도 저하"
+      ],
+      "risks": [
+        "환율 변동에 따른 수익성 영향",
+        "기술 발전 속도에 따른 경쟁 우위 상실"
+      ],
+      "summary": "한국전력은 원자력 에너지 수요 증가와 신규 발전소 건설 기회로 인해 성장 가능성이 있지만, 정치적 리스크와 중대재해 발생 등으로 인해 운영에 불확실성이 존재합니다. 이러한 요소들은 장기적인 성장 동력에 영향을 미칠 수 있습니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 172,
+          "document_type": "disclosure",
+          "score": 0.237484,
+          "ticker": "015760"
+        },
+        {
+          "chunk_id": 179,
+          "document_type": "disclosure",
+          "score": 0.236756,
+          "ticker": "015760"
+        },
+        {
+          "chunk_id": 181,
+          "document_type": "disclosure",
+          "score": 0.22916,
+          "ticker": "015760"
+        },
+        {
+          "chunk_id": 182,
+          "document_type": "disclosure",
+          "score": 0.218097,
+          "ticker": "015760"
+        },
+        {
+          "chunk_id": 183,
+          "document_type": "disclosure",
+          "score": 0.20829,
+          "ticker": "015760"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-05-28 09:42:54"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.7,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 26
+    },
+    "importance": {
+      "importance_score": 0.7,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_한국전력_015760_원자력_2026-05-28_09:42:54",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "AI → 서버"
+      ],
+      "long_term_signal": true,
+      "evolution_stage": "structural_shift",
+      "tracked_at": "2026-05-28 09:42:54"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 16,
+    "relation_count": 24,
+    "query": "한국전력 015760 원자력"
+  },
+  "stock_chain": {
+    "entity_count": 13,
+    "link_count": 35,
+    "propagation_paths": 21
+  },
+  "unified_context_length": 2754,
+  "retrieval_chunk_count": 5,
+  "completed_at": "2026-05-28 09:42:54"
+}

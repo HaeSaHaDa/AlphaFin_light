@@ -13,13 +13,13 @@ const ENTITY_TYPES: { value: EntityTypeFilter; label: string }[] = [
   { value: "price_change", label: "가격" },
 ];
 
-const HIGHLIGHT_PRESETS = ["NVIDIA", "HBM", "삼성전자", "SK하이닉스", "AI 서버"];
-
 interface GraphToolbarProps {
   filters: EventGraphFilters;
   onChange: (next: Partial<EventGraphFilters>) => void;
   onRefresh: () => void;
   loading?: boolean;
+  /** runtime stock-chain entities — 하드코드 프리셋 대신 사용 */
+  highlightOptions?: string[];
 }
 
 export function GraphToolbar({
@@ -27,6 +27,7 @@ export function GraphToolbar({
   onChange,
   onRefresh,
   loading,
+  highlightOptions = [],
 }: GraphToolbarProps) {
   return (
     <div className="flex flex-col gap-3 rounded-lg border border-border bg-card/80 p-3">
@@ -71,9 +72,10 @@ export function GraphToolbar({
           </Button>
         ))}
       </div>
+      {highlightOptions.length > 0 && (
       <div className="flex flex-wrap gap-1">
         <span className="self-center text-[10px] text-muted-foreground">Highlight:</span>
-        {HIGHLIGHT_PRESETS.map((name) => (
+        {highlightOptions.map((name) => (
           <Button
             key={name}
             type="button"
@@ -95,6 +97,7 @@ export function GraphToolbar({
           </Button>
         ))}
       </div>
+      )}
     </div>
   );
 }

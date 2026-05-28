@@ -44,7 +44,7 @@ export function EventGraph({
   const graphData = useMemo(() => {
     if (!payload) return { nodes: [], edges: [] };
     const { entities, links } = applyFilters(payload, filters);
-    return toFlowElements(entities, links, filters);
+    return toFlowElements(entities, links, filters, payload.centerName);
   }, [payload, filters]);
 
   useEffect(() => {

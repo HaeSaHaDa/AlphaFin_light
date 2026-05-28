@@ -1,9 +1,11 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useActiveTrace } from "@/hooks/use-active-trace";
+import { RuntimeTraceBanner } from "@/components/runtime-panels/RuntimeTraceBanner";
 import Link from "next/link";
 import { Loader2, AlertTriangle, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PresentationModeToggle } from "@/components/layout/presentation-mode-toggle";
 import { SignalPanel } from "@/components/signal-evaluation/SignalPanel";
 import { SignalHistory } from "@/components/signal-evaluation/SignalHistory";
 import { SignalTimeline } from "@/components/signal-evaluation/SignalTimeline";
@@ -13,12 +15,13 @@ import { EvaluationSummary } from "@/components/signal-evaluation/EvaluationSumm
 import { useSignalEvaluation } from "@/hooks/use-signal-evaluation";
 
 export function SignalEvaluationViewerClient() {
-  const params = useSearchParams();
-  const traceId = params.get("trace_id") || null;
+  const { traceId } = useActiveTrace();
   const { data, status, error, reload } = useSignalEvaluation(traceId);
 
   return (
     <div className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
+      <RuntimeTraceBanner />
+
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
         <div>
           <h1 className="text-xl font-bold">AI Signal 평가</h1>
@@ -26,7 +29,8 @@ export function SignalEvaluationViewerClient() {
             AI 시장 관점 · 방향 예측 정확도 · 예측 적중률
           </p>
         </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <PresentationModeToggle />
           <Button variant="outline" size="sm" asChild>
             <Link href="/">Dashboard</Link>
           </Button>
@@ -36,6 +40,13 @@ export function SignalEvaluationViewerClient() {
           </Button>
         </div>
       </div>
+
+      {!traceId && status === "idle" && (
+        <div className="rounded-lg border border-dashed border-border p-6 text-center text-sm text-muted-foreground">
+          trace_id가 없습니다. Dashboard에서 분석 실행 후 접속하거나 URL에{" "}
+          <code className="text-xs">?trace_id=...</code> 를 추가하세요.
+        </div>
+      )}
 
       {status === "loading" && (
         <div className="flex justify-center py-20">

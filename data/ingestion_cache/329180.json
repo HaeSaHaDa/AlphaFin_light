@@ -1,0 +1,9 @@
+{
+  "ticker": "329180",
+  "company_name": "HD현대중공업",
+  "status": "completed",
+  "documents": 128,
+  "chunks": 43,
+  "embeddings": 29,
+  "completed_at": "2026-05-28 10:08:51"
+}

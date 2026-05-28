@@ -1,0 +1,11 @@
+{
+  "ticker": "005380",
+  "company_name": "현대자동차",
+  "corp_code": "00164742",
+  "status": "completed",
+  "documents": 140,
+  "chunks": 20,
+  "embeddings": 20,
+  "embeddings_created": 20,
+  "presentation_mode": false
+}

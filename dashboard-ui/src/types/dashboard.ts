@@ -62,6 +62,7 @@ export interface StockChainEntity {
   name: string;
   entity_type?: string;
   ticker?: string | null;
+  is_center?: boolean;
   event_type?: string | null;
   created_at?: string;
 }
@@ -77,6 +78,8 @@ export interface StockChainData {
   trace_id: string;
   query: string;
   ticker: string;
+  center_name?: string;
+  center_ticker?: string;
   summary: Record<string, unknown>;
   chain: {
     entities?: StockChainEntity[];

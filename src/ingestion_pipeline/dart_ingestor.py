@@ -2,26 +2,23 @@
 from __future__ import annotations
 
 import logging
-import sys
 from datetime import datetime, timedelta
 from pathlib import Path
+
+from ._import_helpers import load_collector_module, load_db_store
 
 logger = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DART_DIR = PROJECT_ROOT / "src" / "collectors" / "opendart"
-DB_DIR = PROJECT_ROOT / "src" / "common" / "db"
 
 
 def ingest_dart(corp_code: str, ticker: str, days: int = 180) -> int:
     """공시 목록을 조회해 dart_disclosures에 저장한다."""
-    if str(DART_DIR) not in sys.path:
-        sys.path.insert(0, str(DART_DIR))
-    if str(DB_DIR) not in sys.path:
-        sys.path.insert(0, str(DB_DIR))
-
-    from collector import fetch_disclosures  # type: ignore[import]
-    from store import insert_dart_disclosures  # type: ignore[import]
+    dart_collector = load_collector_module(DART_DIR, "opendart")
+    store = load_db_store()
+    fetch_disclosures = dart_collector.fetch_disclosures
+    insert_dart_disclosures = store.insert_dart_disclosures
 
     end = datetime.now()
     start = end - timedelta(days=days)

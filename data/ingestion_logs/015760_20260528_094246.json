@@ -1,0 +1,13 @@
+{
+  "ticker": "015760",
+  "company_name": "한국전력",
+  "corp_code": "00159193",
+  "status": "completed",
+  "documents": 77,
+  "chunks": 20,
+  "embeddings": 9,
+  "embeddings_created": 9,
+  "embeddings_skipped": 11,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

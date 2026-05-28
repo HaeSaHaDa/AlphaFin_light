@@ -5,40 +5,43 @@ import logging
 
 from fastapi import APIRouter, HTTPException
 
-from ..services.trace_service import get_latest_trace, get_trace_by_id, get_latest_unified_result
+from ..services.trace_service import (
+    get_latest_trace,
+    get_trace_by_id,
+    get_latest_unified_result,
+    get_unified_result_by_trace,
+)
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/trace", tags=["trace"])
 
 
 @router.get("/latest")
-def get_latest_trace_api() -> dict:
-    trace = get_latest_trace()
-    result = get_latest_unified_result()
-    if not trace and not result:
-        raise HTTPException(status_code=404, detail="Trace 데이터 없음")
+def get_latest_trace_disabled() -> None:
+    from .latest_guard import reject_latest_usage
 
-    payload = {
-        "trace": trace or {},
-        "unified_result_summary": {
-            "trace_id": (result or {}).get("trace_id", ""),
-            "query": (result or {}).get("query", ""),
-            "completed_at": (result or {}).get("completed_at", ""),
-        },
-        "pipeline_flow": [
-            "retrieval", "context_assembly", "character_analysis",
-            "evaluation", "reflection", "memory_save", "importance_update",
-            "temporal_tracking", "event_graph", "stock_chain", "result_save",
-        ],
-    }
-    logger.info("GET /api/trace/latest")
-    return payload
+    reject_latest_usage()
 
 
 @router.get("/{trace_id}")
 def get_trace_by_id_api(trace_id: str) -> dict:
     trace = get_trace_by_id(trace_id)
-    if not trace:
-        raise HTTPException(status_code=404, detail=f"trace_id={trace_id} 없음")
-    logger.info("GET /api/trace/%s  steps=%d", trace_id, len(trace.get("steps", [])))
-    return trace
+    if trace:
+        logger.info(
+            "GET /api/trace/%s  steps=%d", trace_id, len(trace.get("steps", [])),
+        )
+        return trace
+
+    unified = get_unified_result_by_trace(trace_id)
+    if unified:
+        logger.info("GET /api/trace/%s  (trace file 없음, unified summary)", trace_id)
+        return {
+            "trace_id": trace_id,
+            "query": unified.get("query", ""),
+            "steps": [],
+            "retrieval_summary": {
+                "chunk_count": unified.get("retrieval_chunk_count", 0),
+            },
+        }
+
+    raise HTTPException(status_code=404, detail=f"trace_id={trace_id} 없음")

@@ -11,17 +11,35 @@ from pathlib import Path
 
 
 def fetch_stock_chain_by_trace(trace_id: str) -> dict | None:
+    from .ticker_centric_chain import build_ticker_centric_chain
     from .trace_service import get_unified_result_by_trace
+
     result = get_unified_result_by_trace(trace_id)
     if not result:
         return None
-    chain = load_stock_chain_file(trace_id) or {}
+    chain_file = load_stock_chain_file(trace_id) or {}
+    ticker = (result.get("ticker") or "").strip()
+    query = result.get("query") or ""
+    analysis = result.get("analysis_result") or {}
+    chunks = analysis.get("referenced_chunks") or []
+
+    centered = build_ticker_centric_chain(
+        chain_file,
+        ticker,
+        query,
+        retrieval_chunks=chunks,
+    )
     return {
         "trace_id": trace_id,
-        "query": result.get("query", ""),
-        "ticker": result.get("ticker", ""),
+        "query": query,
+        "ticker": ticker,
+        "center_name": centered.get("center_name", ""),
+        "center_ticker": centered.get("center_ticker", ticker),
         "summary": result.get("stock_chain", {}),
-        "chain": chain,
+        "chain": {
+            "entities": centered["entities"],
+            "links": centered["links"],
+        },
     }
 
 
@@ -60,9 +78,6 @@ def fetch_stock_chain_by_ticker(ticker: str) -> dict | None:
                 break
 
     if not chains:
-        latest = fetch_latest_stock_chain()
-        if latest and latest.get("ticker") == ticker:
-            return latest
         return None
 
     return {

@@ -1,20 +1,22 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useActiveTrace } from "@/hooks/use-active-trace";
+import { RuntimeTraceBanner } from "@/components/runtime-panels/RuntimeTraceBanner";
 import { Loader2, AlertTriangle, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PresentationModeToggle } from "@/components/layout/presentation-mode-toggle";
 import { MemoryTimeline } from "@/components/memory-timeline/MemoryTimeline";
 import { useMemoryTimeline } from "@/hooks/use-memory-timeline";
 
 export function MemoryTimelineViewerClient() {
-  const params = useSearchParams();
-  const traceId = params.get("trace_id") || null;
+  const { traceId } = useActiveTrace();
 
   const { nodes, query, status, error, reload } = useMemoryTimeline(traceId);
 
   return (
     <div className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
-      {/* 헤더 */}
+      <RuntimeTraceBanner />
+
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
         <div>
           <h1 className="text-xl font-bold">시장 기억 타임라인</h1>
@@ -22,7 +24,8 @@ export function MemoryTimelineViewerClient() {
             AI가 기억하는 시장 이슈의 생성 · 승격 · 소멸 흐름
           </p>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <PresentationModeToggle />
           {traceId && (
             <span className="rounded border border-border px-2 py-1 font-mono text-xs text-muted-foreground">
               trace: {traceId}
@@ -34,6 +37,12 @@ export function MemoryTimelineViewerClient() {
           </Button>
         </div>
       </div>
+
+      {!traceId && status === "idle" && (
+        <div className="rounded-lg border border-dashed border-border p-6 text-center text-sm text-muted-foreground">
+          trace_id가 없습니다. Dashboard에서 분석을 실행한 뒤 이 페이지로 이동하세요.
+        </div>
+      )}
 
       {/* 로딩 */}
       {status === "loading" && (

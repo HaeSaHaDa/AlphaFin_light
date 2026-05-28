@@ -2,20 +2,18 @@
 from __future__ import annotations
 
 import logging
-import sys
-from pathlib import Path
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-from src.company_resolver.company_resolver import resolve_company
-from src.ingestion_pipeline.ingestion_runner import run_ingestion_for_company
+from src.runtime_flow.runtime_query_runner import run_runtime_query
+
+from ..schemas.company_schema import CompanyResolveResponse, DisclosurePreview, TickerStats
+from ..schemas.engine_schema import EngineRunResponse, IngestionRunSummary
+from ..services.company_service import resolve_company_query
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/engine", tags=["engine"])
-
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
-ENGINE_DIR = PROJECT_ROOT / "src" / "rag" / "unified_engine"
 
 
 class EngineRunRequest(BaseModel):
@@ -25,65 +23,49 @@ class EngineRunRequest(BaseModel):
     skip_ingestion: bool = False
 
 
-class EngineRunResponse(BaseModel):
-    trace_id: str
-    status: str = "completed"
-    query: str = ""
-    ticker: str = ""
-
-
-def _run_engine(req: EngineRunRequest, ticker: str) -> dict:
-    engine_dir = str(ENGINE_DIR)
-    if engine_dir not in sys.path:
-        sys.path.insert(0, engine_dir)
-
-    try:
-        from engine_runner import run_unified_pipeline  # type: ignore[import]
-    except ImportError as exc:
-        raise HTTPException(
-            status_code=500,
-            detail=f"engine_runner import 실패: {exc}",
-        ) from exc
-
-    try:
-        return run_unified_pipeline(
-            query=req.query,
-            persona=req.persona,
-            ticker=ticker,
-        )
-    except Exception as exc:
-        logger.exception("Unified Engine 실행 오류  query=%s", req.query)
-        raise HTTPException(
-            status_code=500,
-            detail=f"Engine 실행 오류: {exc}",
-        ) from exc
-
-
 @router.post("/run", response_model=EngineRunResponse)
 def run_engine(req: EngineRunRequest) -> EngineRunResponse:
-    """회사 식별 → ingestion → Unified Engine 실행."""
+    """Runtime Query: Resolver → Ingestion → Retrieval → Engine → Trace."""
     logger.info("POST /api/engine/run  query=%s", req.query)
 
-    resolved = resolve_company(req.query)
-    if resolved is None and not req.ticker:
-        raise HTTPException(
-            status_code=400,
-            detail="질문에서 회사를 식별할 수 없습니다. 회사명을 포함해 주세요.",
-        )
+    rt = run_runtime_query(
+        req.query,
+        persona=req.persona,
+        skip_ingestion=req.skip_ingestion,
+    )
+    if rt.get("status") == "failed":
+        raise HTTPException(status_code=400, detail=rt.get("error", "실행 실패"))
 
-    ticker = req.ticker or (resolved.ticker if resolved else "")
-    if resolved and not req.skip_ingestion:
-        run_ingestion_for_company(resolved)
-
-    result = _run_engine(req, ticker)
-    trace_id = result.get("trace_id", "")
+    trace_id = rt.get("trace_id", "")
     if not trace_id:
         raise HTTPException(status_code=500, detail="trace_id 생성 실패")
 
-    logger.info("Engine 완료  trace_id=%s  ticker=%s", trace_id, ticker)
+    company_resp: CompanyResolveResponse | None = None
+    resolve_data = resolve_company_query(req.query, prefetch=False)
+    if resolve_data:
+        if rt.get("stats"):
+            resolve_data["stats"] = rt["stats"]
+        company_resp = CompanyResolveResponse(**resolve_data)
+
+    ing = rt.get("ingestion") or {}
+    ingestion_summary = IngestionRunSummary(
+        status=ing.get("status", ""),
+        documents=int(ing.get("documents", 0)),
+        chunks=int(ing.get("chunks", 0)),
+        embeddings=int(ing.get("embeddings", 0)),
+        embeddings_created=int(ing.get("embeddings_created", 0)),
+        embeddings_skipped=int(ing.get("embeddings_skipped", 0)),
+        skipped_collectors=ing.get("skipped_collectors", []),
+    )
+
+    for line in rt.get("runtime_logs", []):
+        logger.info("runtime  %s", line)
+
     return EngineRunResponse(
         trace_id=trace_id,
-        status="completed",
+        status=rt.get("status", "completed"),
         query=req.query,
-        ticker=ticker,
+        ticker=rt.get("ticker", ""),
+        company=company_resp,
+        ingestion=ingestion_summary,
     )

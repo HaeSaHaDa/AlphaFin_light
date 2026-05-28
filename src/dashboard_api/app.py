@@ -6,6 +6,8 @@ import os
 import time
 
 from dotenv import load_dotenv
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -20,6 +22,12 @@ from .routes import (
     signal,
     company,
     ingestion,
+    cost,
+    cache,
+    presentation,
+    runtime,
+    query,
+    market_graph,
 )
 
 load_dotenv()
@@ -31,6 +39,18 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+@asynccontextmanager
+async def _lifespan(app: FastAPI):
+    try:
+        from src.company_master.kospi200_loader import load_kospi200_companies
+
+        n = load_kospi200_companies(sync_companies_table=False)
+        logger.info("company_master startup load  rows=%d", n)
+    except Exception:
+        logger.exception("company_master startup load 실패")
+    yield
+
+
 def create_app() -> FastAPI:
     """FastAPI 앱을 생성하고 Route를 등록한다."""
     app = FastAPI(
@@ -39,6 +59,7 @@ def create_app() -> FastAPI:
         version="1.0.0",
         docs_url="/docs",
         redoc_url="/redoc",
+        lifespan=_lifespan,
     )
 
     app.add_middleware(
@@ -88,6 +109,12 @@ def register_routes(app: FastAPI) -> None:
     app.include_router(signal.router)
     app.include_router(company.router)
     app.include_router(ingestion.router)
+    app.include_router(cost.router)
+    app.include_router(cache.router)
+    app.include_router(presentation.router)
+    app.include_router(runtime.router)
+    app.include_router(query.router)
+    app.include_router(market_graph.router)
     logger.info("API Route 등록 완료")
 
 

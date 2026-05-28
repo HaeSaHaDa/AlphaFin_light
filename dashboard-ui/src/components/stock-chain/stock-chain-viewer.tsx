@@ -23,6 +23,12 @@ export function StockChainViewer({ data, status }: StockChainViewerProps) {
       {data && (
         <div className="space-y-3">
           <div className="flex flex-wrap gap-2 text-xs">
+            {(data.center_name || data.center_ticker) && (
+              <Badge variant="default" className="font-medium">
+                중심: {data.center_name || "—"}
+                {data.center_ticker ? ` / ${data.center_ticker}` : ""}
+              </Badge>
+            )}
             <Badge variant="secondary">
               entities:{" "}
               {(data.summary?.entity_count as number) ??
@@ -47,7 +53,7 @@ function ChainGraph({ links }: { links: StockChainLink[] }) {
   if (!links.length) {
     return (
       <p className="text-center text-xs text-muted-foreground">
-        NVIDIA → HBM → 삼성전자 → DRAM
+        이 trace에 대한 Stock Chain 연결이 없습니다. 분석 실행 후 다시 확인하세요.
       </p>
     );
   }
@@ -86,26 +92,20 @@ function ChainGraph({ links }: { links: StockChainLink[] }) {
 
 function pickDisplayLinks(data: StockChainData | null): StockChainLink[] {
   const all = data?.chain?.links ?? [];
-  const preferred = ["NVIDIA", "HBM", "삼성전자", "DRAM", "GPU"];
-  const picked: StockChainLink[] = [];
-  const used = new Set<string>();
+  if (!all.length) return [];
 
-  for (const name of preferred) {
-    const link = all.find(
-      (l) =>
-        l.source === name ||
-        l.target === name ||
-        l.source.includes(name) ||
-        l.target.includes(name),
-    );
-    if (link && !used.has(`${link.source}-${link.target}`)) {
-      picked.push(link);
-      used.add(`${link.source}-${link.target}`);
-    }
-  }
+  const entities = data?.chain?.entities ?? [];
+  const center =
+    entities.find((e) => e.is_center)?.name ||
+    data?.center_name ||
+    entities.find((e) => e.ticker === data?.ticker?.trim())?.name ||
+    "";
 
-  if (picked.length >= 2) return picked.slice(0, 4);
-  return all
-    .filter((l) => (l.impact_score ?? 0) >= 0.75)
-    .slice(0, 4);
+  const links = center
+    ? all.filter((l) => l.source === center || l.target === center)
+    : all;
+
+  return [...links]
+    .sort((a, b) => (b.impact_score ?? 0) - (a.impact_score ?? 0))
+    .slice(0, 6);
 }

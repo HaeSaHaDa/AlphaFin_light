@@ -12,16 +12,11 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/signal", tags=["signal"])
 
 
-@router.get("/latest", response_model=SignalResponse)
-def get_latest_signal() -> SignalResponse:
-    data = fetch_latest_signal()
-    if not data:
-        raise HTTPException(status_code=404, detail="Signal 데이터 없음")
-    logger.info(
-        "GET /api/signal/latest  signal=%s",
-        data.get("current_signal", {}).get("signal"),
-    )
-    return SignalResponse(**data)
+@router.get("/latest")
+def get_latest_signal_disabled() -> None:
+    from .latest_guard import reject_latest_usage
+
+    reject_latest_usage()
 
 
 @router.get("/{trace_id}", response_model=SignalResponse)
