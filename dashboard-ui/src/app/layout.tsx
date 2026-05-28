@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { AppProviders } from "./providers";
+import { RuntimeShellLayout } from "@/layout/runtime-shell/RuntimeShellLayout";
 
 export const metadata: Metadata = {
   title: "AlphaFin LTE Dashboard",
@@ -14,7 +16,11 @@ export default function RootLayout({
   return (
     <html lang="ko" className="dark">
       <body className="min-h-screen bg-background text-foreground antialiased">
-        <div className="dashboard-root">{children}</div>
+        <AppProviders>
+          <div className="dashboard-root">
+            <RuntimeShellLayout>{children}</RuntimeShellLayout>
+          </div>
+        </AppProviders>
       </body>
     </html>
   );

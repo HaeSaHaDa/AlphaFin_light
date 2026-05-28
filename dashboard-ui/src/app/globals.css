@@ -83,6 +83,30 @@
     @apply sticky top-0 z-50 -mx-4 border-b border-border/80 bg-background/95 px-4 py-3 backdrop-blur-md md:-mx-6 md:px-6;
   }
 
+  .runtime-shell-root {
+    @apply flex h-screen min-h-screen flex-col overflow-hidden;
+  }
+
+  .runtime-shell-header {
+    @apply sticky top-0 z-50 border-b border-border/80 bg-background/95 px-4 py-3 shadow-sm backdrop-blur-md md:px-6;
+  }
+
+  .runtime-shell-body {
+    @apply grid min-h-0 flex-1 grid-cols-1 overflow-hidden md:grid-cols-[auto_1fr];
+  }
+
+  .runtime-shell-sidebar {
+    @apply hidden h-full overflow-y-auto border-r border-border/70 bg-card/40 px-2 py-3 md:block;
+  }
+
+  .runtime-shell-workspace {
+    @apply min-h-0 overflow-y-auto p-2 md:p-3;
+  }
+
+  .runtime-shell-footer {
+    @apply z-40 border-t border-border/70 bg-background/90 px-4 py-1.5 backdrop-blur-sm;
+  }
+
   .report-card-muted {
     @apply rounded-lg border border-border/60 bg-muted/30 p-3;
   }

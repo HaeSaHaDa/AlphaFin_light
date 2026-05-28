@@ -1,0 +1,13 @@
+{
+  "ticker": "012450",
+  "company_name": "한화에어로스페이스",
+  "corp_code": "00126566",
+  "status": "completed",
+  "documents": 141,
+  "chunks": 20,
+  "embeddings": 9,
+  "embeddings_created": 9,
+  "embeddings_skipped": 11,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

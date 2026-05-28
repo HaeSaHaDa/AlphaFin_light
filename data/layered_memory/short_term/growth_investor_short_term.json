@@ -2288,5 +2288,80 @@
     "memory_id": "analysis_memory_growth_investor_삼성SDI_006400_미국_2026-05-28_12:03:34",
     "retention_action": "high_retention",
     "memory_layer": "short_term"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "한화에어로스페이스 012450 전쟁",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "AI 산업의 장기 성장 구조 변화에 따른 수요 증가",
+      "해외 시장 진출 기회 확대"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성과 경쟁 심화",
+      "글로벌 경제 불확실성"
+    ],
+    "risks": [
+      "정치적 불안정성으로 인한 수출 제한",
+      "기술 혁신 실패로 인한 경쟁력 저하"
+    ],
+    "summary": "한화에어로스페이스는 AI 산업의 성장과 해외 시장 진출 기회를 통해 긍정적인 성장 가능성을 보이고 있습니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화는 하락 요인으로 작용할 수 있으며, 정치적 불안정성과 기술 혁신 실패는 리스크로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 328,
+        "document_type": "disclosure",
+        "score": 0.183037,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 322,
+        "document_type": "disclosure",
+        "score": 0.139474,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 327,
+        "document_type": "disclosure",
+        "score": 0.135665,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 323,
+        "document_type": "disclosure",
+        "score": 0.129719,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 324,
+        "document_type": "disclosure",
+        "score": 0.129719,
+        "ticker": "012450"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 12:33:57",
+    "importance_score": 0.9,
+    "importance_factors": {
+      "base_score": 0.9,
+      "market_impact": 0.08,
+      "low_importance_penalty": 0.0,
+      "long_term_industry": 0.05,
+      "reuse_score": 0.04,
+      "event_impact": 0.0,
+      "reflection_boost": 0.15,
+      "character_weight": 0.05,
+      "raw_total": 1.27,
+      "reflection_mentions": 27
+    },
+    "importance_reasons": [
+      "Reflection에서 언급됨",
+      "장기 산업 영향 가능성",
+      "핵심 키워드: 반도체"
+    ],
+    "reuse_count": 1,
+    "reflection_mentions": 27,
+    "memory_id": "analysis_memory_growth_investor_한화에어로스페이스_012450_전쟁_2026-05-28_12:33:57",
+    "retention_action": "high_retention",
+    "memory_layer": "short_term"
   }
 ]

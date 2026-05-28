@@ -12,11 +12,6 @@
       "via": "HBM → 삼성전자"
     },
     {
-      "entity": "SK하이닉스",
-      "impact_score": 0.4,
-      "via": "HBM → 삼성전자"
-    },
-    {
       "entity": "NVIDIA",
       "impact_score": 0.4,
       "via": "HBM → 삼성전자"
@@ -25,16 +20,6 @@
       "entity": "SK하이닉스",
       "impact_score": 0.78,
       "via": "HBM"
-    },
-    {
-      "entity": "삼성전자",
-      "impact_score": 0.388,
-      "via": "HBM → SK하이닉스"
-    },
-    {
-      "entity": "NVIDIA",
-      "impact_score": 0.388,
-      "via": "HBM → SK하이닉스"
     },
     {
       "entity": "DRAM",
@@ -55,11 +40,6 @@
       "entity": "삼성전자",
       "impact_score": 0.37,
       "via": "HBM → NVIDIA"
-    },
-    {
-      "entity": "SK하이닉스",
-      "impact_score": 0.37,
-      "via": "HBM → NVIDIA"
     }
   ],
   "propagation_log": [
@@ -69,7 +49,7 @@
       "target": "삼성전자",
       "relation_type": "supply",
       "impact_score": 0.8,
-      "timestamp": "2026-05-28 12:03:34"
+      "timestamp": "2026-05-28 12:33:57"
     },
     {
       "seed": "HBM",
@@ -78,16 +58,7 @@
       "relation_type": "industry_link",
       "impact_score": 0.48,
       "hop": 2,
-      "timestamp": "2026-05-28 12:03:34"
-    },
-    {
-      "seed": "HBM",
-      "source": "삼성전자",
-      "target": "SK하이닉스",
-      "relation_type": "competition",
-      "impact_score": 0.4,
-      "hop": 2,
-      "timestamp": "2026-05-28 12:03:34"
+      "timestamp": "2026-05-28 12:33:57"
     },
     {
       "seed": "HBM",
@@ -96,7 +67,7 @@
       "relation_type": "competition",
       "impact_score": 0.4,
       "hop": 2,
-      "timestamp": "2026-05-28 12:03:34"
+      "timestamp": "2026-05-28 12:33:57"
     },
     {
       "seed": "HBM",
@@ -104,25 +75,7 @@
       "target": "SK하이닉스",
       "relation_type": "supply",
       "impact_score": 0.78,
-      "timestamp": "2026-05-28 12:03:34"
-    },
-    {
-      "seed": "HBM",
-      "source": "SK하이닉스",
-      "target": "삼성전자",
-      "relation_type": "competition",
-      "impact_score": 0.388,
-      "hop": 2,
-      "timestamp": "2026-05-28 12:03:34"
-    },
-    {
-      "seed": "HBM",
-      "source": "SK하이닉스",
-      "target": "NVIDIA",
-      "relation_type": "competition",
-      "impact_score": 0.388,
-      "hop": 2,
-      "timestamp": "2026-05-28 12:03:34"
+      "timestamp": "2026-05-28 12:33:57"
     },
     {
       "seed": "HBM",
@@ -130,7 +83,7 @@
       "target": "DRAM",
       "relation_type": "product_link",
       "impact_score": 0.75,
-      "timestamp": "2026-05-28 12:03:34"
+      "timestamp": "2026-05-28 12:33:57"
     },
     {
       "seed": "HBM",
@@ -138,7 +91,7 @@
       "target": "NVIDIA",
       "relation_type": "benefit",
       "impact_score": 0.75,
-      "timestamp": "2026-05-28 12:03:34"
+      "timestamp": "2026-05-28 12:33:57"
     },
     {
       "seed": "HBM",
@@ -147,7 +100,7 @@
       "relation_type": "supply",
       "impact_score": 0.5575,
       "hop": 2,
-      "timestamp": "2026-05-28 12:03:34"
+      "timestamp": "2026-05-28 12:33:57"
     },
     {
       "seed": "HBM",
@@ -156,17 +109,8 @@
       "relation_type": "competition",
       "impact_score": 0.37,
       "hop": 2,
-      "timestamp": "2026-05-28 12:03:34"
-    },
-    {
-      "seed": "HBM",
-      "source": "NVIDIA",
-      "target": "SK하이닉스",
-      "relation_type": "competition",
-      "impact_score": 0.37,
-      "hop": 2,
-      "timestamp": "2026-05-28 12:03:34"
+      "timestamp": "2026-05-28 12:33:57"
     }
   ],
-  "total_affected": 12
+  "total_affected": 8
 }

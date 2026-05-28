@@ -96,12 +96,24 @@
         "ticker": "006400",
         "count": 9
       }
+    },
+    {
+      "timestamp": "2026-05-28 12:33:41",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 125,
+      "meta": {
+        "ticker": "012450",
+        "count": 9
+      }
     }
   ],
   "totals": {
     "prompt_tokens": 0,
     "completion_tokens": 0,
-    "embedding_tokens": 10669,
-    "call_count": 8
+    "embedding_tokens": 10794,
+    "call_count": 9
   }
 }

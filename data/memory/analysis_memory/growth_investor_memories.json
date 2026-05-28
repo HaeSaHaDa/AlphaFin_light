@@ -1449,5 +1449,57 @@
     ],
     "model": "gpt-4o-mini",
     "timestamp": "2026-05-28 12:03:34"
+  },
+  {
+    "memory_type": "analysis_memory",
+    "query": "한화에어로스페이스 012450 전쟁",
+    "persona": "growth_investor",
+    "bullish_factors": [
+      "AI 산업의 장기 성장 구조 변화에 따른 수요 증가",
+      "해외 시장 진출 기회 확대"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성과 경쟁 심화",
+      "글로벌 경제 불확실성"
+    ],
+    "risks": [
+      "정치적 불안정성으로 인한 수출 제한",
+      "기술 혁신 실패로 인한 경쟁력 저하"
+    ],
+    "summary": "한화에어로스페이스는 AI 산업의 성장과 해외 시장 진출 기회를 통해 긍정적인 성장 가능성을 보이고 있습니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화는 하락 요인으로 작용할 수 있으며, 정치적 불안정성과 기술 혁신 실패는 리스크로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 328,
+        "document_type": "disclosure",
+        "score": 0.183037,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 322,
+        "document_type": "disclosure",
+        "score": 0.139474,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 327,
+        "document_type": "disclosure",
+        "score": 0.135665,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 323,
+        "document_type": "disclosure",
+        "score": 0.129719,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 324,
+        "document_type": "disclosure",
+        "score": 0.129719,
+        "ticker": "012450"
+      }
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 12:33:57"
   }
 ]

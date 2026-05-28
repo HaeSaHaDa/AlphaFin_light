@@ -85,6 +85,20 @@ export function getRuntimeStatus(traceId: string) {
   );
 }
 
+export interface RuntimeContextPayload {
+  trace_id: string;
+  ticker: string;
+  company_name: string;
+  status: string;
+  label?: string;
+}
+
+export function getRuntimeContext(traceId: string) {
+  const id = traceId.trim();
+  const q = id ? `?trace_id=${encodeURIComponent(id)}` : "";
+  return fetchJson<RuntimeContextPayload>(`/api/runtime/context${q}`);
+}
+
 export function getMarketInsight(traceId: string) {
   return fetchJson<MarketInsightPayload>(
     requireTracePath(traceId, "/api/market-insight"),

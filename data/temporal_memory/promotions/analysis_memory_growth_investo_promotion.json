@@ -1,12 +1,13 @@
 {
-  "memory_id": "analysis_memory_growth_investor_삼성SDI_006400_미국_2026-05-28_12:03:34",
+  "memory_id": "analysis_memory_growth_investor_한화에어로스페이스_012450_전쟁_2026-05-28_12:33:57",
   "previous_layer": "short_term",
   "current_layer": "mid_term",
   "promotion_reason": [
-    "importance_score 0.80 이상",
-    "Reflection 언급됨"
+    "importance_score 0.90 이상",
+    "Reflection 언급됨",
+    "이벤트 진화: AI → 서버"
   ],
-  "importance_score": 0.8,
+  "importance_score": 0.9,
   "evolution_stage": "initial_event",
-  "timestamp": "2026-05-28 12:03:34"
+  "timestamp": "2026-05-28 12:33:57"
 }

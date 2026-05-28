@@ -1,0 +1,233 @@
+{
+  "trace_id": "20260528_123342",
+  "query": "한화에어로스페이스 012450 전쟁",
+  "persona": "growth_investor",
+  "ticker": "012450",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "한화에어로스페이스 012450 전쟁",
+    "bullish_factors": [
+      "AI 산업의 장기 성장 구조 변화에 따른 수요 증가",
+      "해외 시장 진출 기회 확대"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성과 경쟁 심화",
+      "글로벌 경제 불확실성"
+    ],
+    "risks": [
+      "정치적 불안정성으로 인한 수출 제한",
+      "기술 혁신 실패로 인한 경쟁력 저하"
+    ],
+    "summary": "한화에어로스페이스는 AI 산업의 성장과 해외 시장 진출 기회를 통해 긍정적인 성장 가능성을 보이고 있습니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화는 하락 요인으로 작용할 수 있으며, 정치적 불안정성과 기술 혁신 실패는 리스크로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 328,
+        "document_type": "disclosure",
+        "score": 0.183037,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 322,
+        "document_type": "disclosure",
+        "score": 0.139474,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 327,
+        "document_type": "disclosure",
+        "score": 0.135665,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 323,
+        "document_type": "disclosure",
+        "score": 0.129719,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 324,
+        "document_type": "disclosure",
+        "score": 0.129719,
+        "ticker": "012450"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "한화에어로스페이스 012450 전쟁",
+    "retrieval_quality": {
+      "chunk_count": 5,
+      "score_stats": {
+        "min": 0.129719,
+        "max": 0.183037,
+        "avg": 0.143523,
+        "count": 5
+      },
+      "doc_type_distribution": {
+        "disclosure": 5
+      },
+      "has_relevant": false
+    },
+    "context_usage": {
+      "referenced_count": 5,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 5,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "medium",
+      "reasons": [
+        "평균 retrieval score 낮음: 0.1435"
+      ],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.183037,
+        0.139474,
+        0.135665,
+        0.129719,
+        0.129719
+      ],
+      "score_stats": {
+        "min": 0.129719,
+        "max": 0.183037,
+        "avg": 0.143523,
+        "count": 5
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "한화에어로스페이스 012450 전쟁",
+    "persona": "growth_investor",
+    "reflection_summary": "한화에어로스페이스에 대한 분석은 성장 가능성을 강조하고 있으나, 리스크 요소에 대한 언급이 부족합니다. 특히, 글로벌 경제 불확실성과 기술 혁신 실패 외에 추가적인 리스크 요인들이 고려되지 않았습니다.",
+    "missing_risks": [
+      "환율 변동에 따른 수익성 저하",
+      "자원 가격 상승으로 인한 원가 부담",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "AI 산업의 성장 가능성에 대한 지나친 긍정적 전망"
+    ],
+    "context_gaps": [
+      "AI 산업의 구체적인 성장 전망 및 수치적 데이터 부족",
+      "한화에어로스페이스의 경쟁사 분석 부족",
+      "뉴스 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "리스크 요소를 보다 포괄적으로 분석하고 추가적인 리스크를 포함할 것",
+      "AI 산업의 성장 전망에 대한 구체적인 데이터와 비교 분석을 제공할 것"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 12:33:57"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "한화에어로스페이스 012450 전쟁",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "AI 산업의 장기 성장 구조 변화에 따른 수요 증가",
+        "해외 시장 진출 기회 확대"
+      ],
+      "bearish_factors": [
+        "반도체 산업의 불안정성과 경쟁 심화",
+        "글로벌 경제 불확실성"
+      ],
+      "risks": [
+        "정치적 불안정성으로 인한 수출 제한",
+        "기술 혁신 실패로 인한 경쟁력 저하"
+      ],
+      "summary": "한화에어로스페이스는 AI 산업의 성장과 해외 시장 진출 기회를 통해 긍정적인 성장 가능성을 보이고 있습니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화는 하락 요인으로 작용할 수 있으며, 정치적 불안정성과 기술 혁신 실패는 리스크로 작용할 수 있습니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 328,
+          "document_type": "disclosure",
+          "score": 0.183037,
+          "ticker": "012450"
+        },
+        {
+          "chunk_id": 322,
+          "document_type": "disclosure",
+          "score": 0.139474,
+          "ticker": "012450"
+        },
+        {
+          "chunk_id": 327,
+          "document_type": "disclosure",
+          "score": 0.135665,
+          "ticker": "012450"
+        },
+        {
+          "chunk_id": 323,
+          "document_type": "disclosure",
+          "score": 0.129719,
+          "ticker": "012450"
+        },
+        {
+          "chunk_id": 324,
+          "document_type": "disclosure",
+          "score": 0.129719,
+          "ticker": "012450"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-05-28 12:33:57"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.9,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 35
+    },
+    "importance": {
+      "importance_score": 0.9,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_한화에어로스페이스_012450_전쟁_2026-05-28_12:33:57",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-05-28 12:33:57"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 18,
+    "relation_count": 28,
+    "query": "한화에어로스페이스 012450 전쟁"
+  },
+  "stock_chain": {
+    "entity_count": 14,
+    "link_count": 39,
+    "propagation_paths": 21
+  },
+  "unified_context_length": 2858,
+  "retrieval_chunk_count": 5,
+  "completed_at": "2026-05-28 12:33:57"
+}

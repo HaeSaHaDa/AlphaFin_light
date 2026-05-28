@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import logging
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 
 from src.runtime_flow.dashboard_response_builder import build_dashboard_bundle
@@ -45,3 +45,28 @@ def get_runtime_dashboard(trace_id: str) -> dict:
         raise HTTPException(status_code=404, detail="Dashboard 데이터 없음")
     logger.info("GET /api/runtime/dashboard/%s  ticker=%s", trace_id, bundle.get("ticker"))
     return bundle
+
+
+@router.get("/context")
+def get_runtime_context(trace_id: str = Query("", description="현재 trace_id")) -> dict:
+    """Persistent shell용 최소 runtime context."""
+    tid = trace_id.strip()
+    if not tid:
+        return {
+            "trace_id": "",
+            "ticker": "",
+            "company_name": "",
+            "status": "idle",
+        }
+    from ..services.market_graph_service import fetch_runtime_status  # noqa: PLC0415
+
+    status = fetch_runtime_status(tid)
+    if not status:
+        raise HTTPException(status_code=404, detail=f"trace_id={tid} 없음")
+    return {
+        "trace_id": tid,
+        "ticker": status.get("ticker", ""),
+        "company_name": status.get("company_name", ""),
+        "status": status.get("phase", "runtime_active"),
+        "label": status.get("label", "Runtime Active"),
+    }
