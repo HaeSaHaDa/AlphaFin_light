@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "ticker": "066570",
+  "fetched": 73,
+  "upserted": 73,
+  "body_fetched": 1,
+  "body_failed": 0,
+  "body_chars": 46038,
+  "chunks": 144,
+  "body_documents": 1,
+  "embedded": 144,
+  "body_cache_version": 1,
+  "updated_at": "2026-06-10T10:40:53.740903"
+}

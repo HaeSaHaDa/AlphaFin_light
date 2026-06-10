@@ -34,6 +34,16 @@ def resolve_company(text: str) -> ResolvedCompany | None:
     ticker_match = re.search(r"\b(\d{6})\b", text)
     if ticker_match:
         ticker = ticker_match.group(1)
+        from src.company_master.company_master_repository import get_by_ticker
+
+        master = get_by_ticker(ticker)
+        if master and master.get("corp_code"):
+            return ResolvedCompany(
+                company_name=master.get("company_name", ""),
+                ticker=ticker,
+                corp_code=master.get("corp_code", ""),
+                market=master.get("market", "KOSPI"),
+            )
         corp = corp_code_for_ticker(ticker)
         if corp:
             for rec in COMPANY_REGISTRY:

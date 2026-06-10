@@ -1,0 +1,13 @@
+{
+  "ticker": "034220",
+  "company_name": "LG디스플레이",
+  "corp_code": "00105873",
+  "status": "completed",
+  "documents": 94,
+  "chunks": 26,
+  "embeddings": 9,
+  "embeddings_created": 9,
+  "embeddings_skipped": 17,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

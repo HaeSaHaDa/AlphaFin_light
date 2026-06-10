@@ -1,44 +1,57 @@
 "use client";
 
-export interface RuntimeSection {
-  id: string;
-  label: string;
-}
-
-const DEFAULT_SECTIONS: RuntimeSection[] = [
-  { id: "section-summary", label: "요약" },
-  { id: "section-news", label: "뉴스" },
-  { id: "section-graph", label: "그래프" },
-  { id: "section-memory", label: "메모리" },
-  { id: "section-evaluation", label: "평가" },
-  { id: "section-reflection", label: "Reflection" },
-  { id: "section-retrieval", label: "Retrieval" },
-];
+import { useEffect, useState } from "react";
+import { getDashboardSectionNav } from "@/ui/visual-priority";
+import { cn } from "@/lib/utils";
 
 export function scrollToSection(sectionId: string) {
   const el = document.getElementById(sectionId);
   if (!el) return;
-  const top = el.getBoundingClientRect().top + window.scrollY - 72;
-  window.scrollTo({ top, behavior: "smooth" });
+  const nextHash = `#${sectionId}`;
+  if (window.location.hash !== nextHash) {
+    window.history.pushState(null, "", nextHash);
+  }
+  el.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-interface Props {
-  sections?: RuntimeSection[];
-}
+export function RuntimeSectionNav() {
+  const sections = getDashboardSectionNav();
+  const [activeId, setActiveId] = useState(sections[0]?.id ?? "");
 
-export function RuntimeSectionNav({ sections = DEFAULT_SECTIONS }: Props) {
+  useEffect(() => {
+    const onScroll = () => {
+      let current = sections[0]?.id ?? "";
+      for (const s of sections) {
+        const el = document.getElementById(s.id);
+        if (!el) continue;
+        if (el.getBoundingClientRect().top <= 120) {
+          current = s.id;
+        }
+      }
+      setActiveId(current);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [sections]);
+
   return (
     <nav className="flex flex-wrap gap-1" aria-label="Dashboard sections">
-      {sections.map((s) => (
-        <button
-          key={s.id}
-          type="button"
-          onClick={() => scrollToSection(s.id)}
-          className="rounded-md border border-border/80 bg-card/80 px-2.5 py-1 text-xs text-muted-foreground transition-colors hover:border-primary/50 hover:text-foreground"
-        >
-          {s.label}
-        </button>
-      ))}
+      {sections.map((s) => {
+        const active = activeId === s.id;
+        return (
+          <button
+            key={s.id}
+            type="button"
+            onClick={() => scrollToSection(s.id)}
+            className={cn(
+              active ? "dash-section-nav-btn-active" : "dash-section-nav-btn",
+            )}
+          >
+            {s.label}
+          </button>
+        );
+      })}
     </nav>
   );
 }

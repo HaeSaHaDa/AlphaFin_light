@@ -1,0 +1,503 @@
+{
+  "trace_id": "20260609_165256",
+  "query": "삼성화재 000810",
+  "persona": "growth_investor",
+  "ticker": "000810",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "삼성화재 000810",
+    "bullish_factors": [
+      "삼성전자 지분 보유로 인한 간접적 수익 가능성",
+      "외국인 투자자의 적극적인 매수세"
+    ],
+    "bearish_factors": [
+      "반도체 시장의 경쟁 심화",
+      "글로벌 경제 불확실성"
+    ],
+    "risks": [
+      "환율 변동에 따른 수익성 리스크",
+      "공급망 문제로 인한 생산 차질 리스크"
+    ],
+    "summary": "삼성화재는 삼성전자 지분 보유로 인해 외국인 투자자들의 관심을 받고 있으며, 이는 성장 가능성을 높이는 요소로 작용하고 있습니다. 그러나 반도체 시장의 경쟁 심화와 글로벌 경제의 불확실성이 리스크로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 490,
+        "document_type": "disclosure",
+        "score": 0.283275,
+        "ticker": "000810"
+      },
+      {
+        "chunk_id": 489,
+        "document_type": "disclosure",
+        "score": 0.276766,
+        "ticker": "000810"
+      },
+      {
+        "chunk_id": 486,
+        "document_type": "disclosure",
+        "score": 0.270834,
+        "ticker": "000810"
+      },
+      {
+        "chunk_id": 487,
+        "document_type": "disclosure",
+        "score": 0.270834,
+        "ticker": "000810"
+      },
+      {
+        "chunk_id": 472,
+        "document_type": "news_article",
+        "score": 0.346681,
+        "ticker": "000810"
+      },
+      {
+        "chunk_id": 471,
+        "document_type": "news_article",
+        "score": 0.291585,
+        "ticker": "000810"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "삼성화재 000810",
+    "retrieval_quality": {
+      "chunk_count": 6,
+      "score_stats": {
+        "min": 0.270834,
+        "max": 0.346681,
+        "avg": 0.289996,
+        "count": 6
+      },
+      "doc_type_distribution": {
+        "disclosure": 4,
+        "news_article": 2
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 6,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 6,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.283275,
+        0.276766,
+        0.270834,
+        0.270834,
+        0.346681,
+        0.291585
+      ],
+      "score_stats": {
+        "min": 0.270834,
+        "max": 0.346681,
+        "avg": 0.289996,
+        "count": 6
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "삼성화재 000810",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 삼성화재의 성장 가능성과 리스크를 간략하게 언급하고 있으나, 리스크 요소가 충분히 다루어지지 않았습니다. 특히, 외부 요인에 대한 분석이 부족하여 전체적인 맥락이 약해 보입니다.",
+    "missing_risks": [
+      "자산 가격 변동 리스크",
+      "규제 변화에 따른 리스크",
+      "경쟁사의 기술 발전 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크",
+      "지정학적 리스크"
+    ],
+    "overconfidence_detected": false,
+    "overconfidence_reasons": [],
+    "context_gaps": [
+      "삼성화재의 사업 모델 및 재무 상태에 대한 정보 부족",
+      "외국인 투자자 매수세의 지속 가능성에 대한 분석 부족",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "리스크 항목을 더 구체적으로 나열하고 설명할 것",
+      "삼성화재의 재무 상태 및 사업 모델에 대한 추가 정보를 포함할 것"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-06-09 16:53:12"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "삼성화재 000810",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "삼성전자 지분 보유로 인한 간접적 수익 가능성",
+        "외국인 투자자의 적극적인 매수세"
+      ],
+      "bearish_factors": [
+        "반도체 시장의 경쟁 심화",
+        "글로벌 경제 불확실성"
+      ],
+      "risks": [
+        "환율 변동에 따른 수익성 리스크",
+        "공급망 문제로 인한 생산 차질 리스크"
+      ],
+      "summary": "삼성화재는 삼성전자 지분 보유로 인해 외국인 투자자들의 관심을 받고 있으며, 이는 성장 가능성을 높이는 요소로 작용하고 있습니다. 그러나 반도체 시장의 경쟁 심화와 글로벌 경제의 불확실성이 리스크로 작용할 수 있습니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 490,
+          "document_type": "disclosure",
+          "ticker": "000810",
+          "score": 0.283275,
+          "merge_score": 0.4983,
+          "source_priority": "HIGH",
+          "source": "document_chunks",
+          "chunk_text": "계열금융회사의약관에의한금융거래-[유가증권-채권] 계열금융회사의약관에의한금융거래-[유가증권-채권]",
+          "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-15\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"계열금융회사의약관에의한금융거래-[유가증권-채권]\", \"receipt_no\": \"20260115000272\", \"corp_code\": \"00126256\"}"
+        },
+        {
+          "chunk_id": 489,
+          "document_type": "disclosure",
+          "ticker": "000810",
+          "score": 0.276766,
+          "merge_score": 0.4937,
+          "source_priority": "HIGH",
+          "source": "document_chunks",
+          "chunk_text": "계열금융회사의약관에의한금융거래-[유가증권-수익증권] 계열금융회사의약관에의한금융거래-[유가증권-수익증권]",
+          "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-15\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"계열금융회사의약관에의한금융거래-[유가증권-수익증권]\", \"receipt_no\": \"20260115000260\", \"corp_code\": \"00126256\"}"
+        },
+        {
+          "chunk_id": 486,
+          "document_type": "disclosure",
+          "ticker": "000810",
+          "score": 0.270834,
+          "merge_score": 0.4896,
+          "source_priority": "HIGH",
+          "source": "document_chunks",
+          "chunk_text": "[기재정정]특수관계인과의수익증권거래 [기재정정]특수관계인과의수익증권거래",
+          "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]특수관계인과의수익증권거래\", \"receipt_no\": \"20260106000158\", \"corp_code\": \"00126256\"}"
+        },
+        {
+          "chunk_id": 487,
+          "document_type": "disclosure",
+          "ticker": "000810",
+          "score": 0.270834,
+          "merge_score": 0.4896,
+          "source_priority": "HIGH",
+          "source": "document_chunks",
+          "chunk_text": "[기재정정]특수관계인과의수익증권거래 [기재정정]특수관계인과의수익증권거래",
+          "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]특수관계인과의수익증권거래\", \"receipt_no\": \"20260106000160\", \"corp_code\": \"00126256\"}"
+        },
+        {
+          "chunk_id": 472,
+          "document_type": "news_article",
+          "ticker": "000810",
+          "score": 0.346681,
+          "merge_score": 0.4377,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "평가다. 외국인의 적극적인 매수세 덕분에 파두는 최근 3개월간 주가가 112. 84% 올랐다. 삼성전자 지분을 1. 5% 보유하고 있는 삼성화재도 외국인의 순매수 상위권에 들었다. 4일 기준 삼성전자 시가총액이 2055조원이라는 점을 감안하면, 보유 지분 가치만 30조8000억원에 달한다. 삼성화재 전체 시총(32조6000억원)에 버금가는 규모다. SK하이닉스의 주가가 상승할 때 모회사인 SK스퀘어가 덩달아 오른 것과 비슷한 현상이다. 임희연 신한투자증권 연구원은 “삼성전자 지분 가치를 고려할 시 삼성화재 주가는 과도한 저평가 국면에 있다”고 했다. 4일 기준 삼성화재 종가는 73만원으로 3개월 전보다 55. 98% 상승했다. 엔비디아 공급 모멘텀을 지닌 두산도 외국인 투자자의 선택을 받았다. 두산은 자체 사업 매출의 대부분이 동박적층판(CCL)을 생산하는 전자BG 사업부인데, 최근 이를 통해 엔비디아 밸류체인에 편입됐다. 롯데에너지머티리얼즈로부터 회로박을 공급받은 두산전자BG가 CCL을 제조하고, 이수페타시스가 이를 기반으로 인쇄회로기판(PCB)을 제작해 최종적으로 엔비디아에 납품하는 구조다. 두산은 이를 위해 태국 등 해외 공장 증설이라는 승부수도 던졌다. 이 밖에도 현금배당 강화, 잔여 자사주 전량 소각 등 주주환원 정책도 두산의 매력적인 투자 포인트로 꼽힌다. ◇외국인은 왜 코스피를 파나 외국인 투자자가 이들에 눈을 돌린 건 반도체 주도주가 단기간 안에 급등하면서 쏠림 현상이 극심해졌기 때문이다. 코스피 시가총액 1, 2위인 삼성전자와 SK하이닉스는 올해 들어 주가가 각각 193%, 284% 급등했다.",
+          "metadata_json": "{\"ticker\": \"000810\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:05:13\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"삼전닉스 40조원 던진 외국인…반도체 수혜주로 갈아탔다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296718?sid=101\"}"
+        },
+        {
+          "chunk_id": 471,
+          "document_type": "news_article",
+          "ticker": "000810",
+          "score": 0.291585,
+          "merge_score": 0.3991,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "삼전닉스 40조원 던진 외국인…반도체 수혜주로 갈아탔다\n 반도체 투톱 40조원 순매도 AI 랠리 덕 본 저평가주에 눈독 팹리스 기업 파두 순매수 1위 삼성화재·두산에도 간접투자 주도주 쏠림 심해지자 비중 조정 외인 코스피 보유비중은 최고치 한경DB 51조4621억원. 지난달 외국인 투자자가 코스피에서 순매도한 주식 규모다. 이 중 79%(40조8569억원)가 삼성전자와 SK하이닉스 등 반도체 투톱에 쏠렸다. 두 종목이 올해 들어 가파르게 오르자 포트폴리오 비중 조정을 위해 차익 실현에 나선 것이다. 그 대신 외국인은 반도체 소부장(소재·부품·장비)과 삼전닉스의 지분을 가진 회사 등 ‘반도체 간접 투자’로 눈을 돌리고 있다. 인공지능(AI) 랠리의 수혜를 입으면서도 아직 주가가 덜 오른 종목 중심으로 집중 매수하는 모양새다. ◇AI 랠리 수혜주 담는 외국인 한국거래소와 넥스트레이드에 따르면 외국인 투자자는 지난달부터 이달 3일까지 코스피·코스닥을 통틀어 파두를 가장 많이 사들였다. 순매수액은 5126억원이다. 코스닥에 상장한 반도체 팹리스 기업 파두는 데이터 처리에 필수적인 기업형 SSD(eSSD) 낸드 컨트롤러를 설계·공급하는 역할이다. AI 붐의 직접적인 수혜를 받고 있는 데다, 전력 소모와 발열을 낮춘 제품 기술력으로 경쟁사 대비 우위를 점하고 있다는 평가다. 외국인의 적극적인 매수세 덕분에 파두는 최근 3개월간 주가가 112. 84% 올랐다. 삼성전자 지분을 1. 5% 보유하고 있는 삼성화재도 외국인의 순매수 상위권에 들었다.",
+          "metadata_json": "{\"ticker\": \"000810\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:05:13\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"삼전닉스 40조원 던진 외국인…반도체 수혜주로 갈아탔다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296718?sid=101\"}"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-06-09 16:53:12"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.7,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 10
+    },
+    "importance": {
+      "importance_score": 0.7,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_삼성화재_000810_2026-06-09_16:53:12",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-06-09 16:53:12"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 17,
+    "relation_count": 37,
+    "query": "삼성화재 000810"
+  },
+  "stock_chain": {
+    "entity_count": 11,
+    "link_count": 37,
+    "propagation_paths": 68
+  },
+  "unified_context_length": 4133,
+  "retrieval_chunk_count": 6,
+  "runtime_context": {
+    "trace_id": "20260609_165256",
+    "ticker": "000810",
+    "query": "삼성화재 000810",
+    "news_chunks": [
+      {
+        "chunk_id": 472,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "평가다. 외국인의 적극적인 매수세 덕분에 파두는 최근 3개월간 주가가 112. 84% 올랐다. 삼성전자 지분을 1. 5% 보유하고 있는 삼성화재도 외국인의 순매수 상위권에 들었다. 4일 기준 삼성전자 시가총액이 2055조원이라는 점을 감안하면, 보유 지분 가치만 30조8000억원에 달한다. 삼성화재 전체 시총(32조6000억원)에 버금가는 규모다. SK하이닉스의 주가가 상승할 때 모회사인 SK스퀘어가 덩달아 오른 것과 비슷한 현상이다. 임희연 신한투자증권 연구원은 “삼성전자 지분 가치를 고려할 시 삼성화재 주가는 과도한 저평가 국면에 있다”고 했다. 4일 기준 삼성화재 종가는 73만원으로 3개월 전보다 55. 98% 상승했다. 엔비디아 공급 모멘텀을 지닌 두산도 외국인 투자자의 선택을 받았다. 두산은 자체 사업 매출의 대부분이 동박적층판(CCL)을 생산하는 전자BG 사업부인데, 최근 이를 통해 엔비디아 밸류체인에 편입됐다. 롯데에너지머티리얼즈로부터 회로박을 공급받은 두산전자BG가 CCL을 제조하고, 이수페타시스가 이를 기반으로 인쇄회로기판(PCB)을 제작해 최종적으로 엔비디아에 납품하는 구조다. 두산은 이를 위해 태국 등 해외 공장 증설이라는 승부수도 던졌다. 이 밖에도 현금배당 강화, 잔여 자사주 전량 소각 등 주주환원 정책도 두산의 매력적인 투자 포인트로 꼽힌다. ◇외국인은 왜 코스피를 파나 외국인 투자자가 이들에 눈을 돌린 건 반도체 주도주가 단기간 안에 급등하면서 쏠림 현상이 극심해졌기 때문이다. 코스피 시가총액 1, 2위인 삼성전자와 SK하이닉스는 올해 들어 주가가 각각 193%, 284% 급등했다.",
+        "chunk_length": 800,
+        "ticker": "000810",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 73,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:05:13\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"삼전닉스 40조원 던진 외국인…반도체 수혜주로 갈아탔다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296718?sid=101\"}",
+        "score": 0.346681,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 471,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "삼전닉스 40조원 던진 외국인…반도체 수혜주로 갈아탔다\n 반도체 투톱 40조원 순매도 AI 랠리 덕 본 저평가주에 눈독 팹리스 기업 파두 순매수 1위 삼성화재·두산에도 간접투자 주도주 쏠림 심해지자 비중 조정 외인 코스피 보유비중은 최고치 한경DB 51조4621억원. 지난달 외국인 투자자가 코스피에서 순매도한 주식 규모다. 이 중 79%(40조8569억원)가 삼성전자와 SK하이닉스 등 반도체 투톱에 쏠렸다. 두 종목이 올해 들어 가파르게 오르자 포트폴리오 비중 조정을 위해 차익 실현에 나선 것이다. 그 대신 외국인은 반도체 소부장(소재·부품·장비)과 삼전닉스의 지분을 가진 회사 등 ‘반도체 간접 투자’로 눈을 돌리고 있다. 인공지능(AI) 랠리의 수혜를 입으면서도 아직 주가가 덜 오른 종목 중심으로 집중 매수하는 모양새다. ◇AI 랠리 수혜주 담는 외국인 한국거래소와 넥스트레이드에 따르면 외국인 투자자는 지난달부터 이달 3일까지 코스피·코스닥을 통틀어 파두를 가장 많이 사들였다. 순매수액은 5126억원이다. 코스닥에 상장한 반도체 팹리스 기업 파두는 데이터 처리에 필수적인 기업형 SSD(eSSD) 낸드 컨트롤러를 설계·공급하는 역할이다. AI 붐의 직접적인 수혜를 받고 있는 데다, 전력 소모와 발열을 낮춘 제품 기술력으로 경쟁사 대비 우위를 점하고 있다는 평가다. 외국인의 적극적인 매수세 덕분에 파두는 최근 3개월간 주가가 112. 84% 올랐다. 삼성전자 지분을 1. 5% 보유하고 있는 삼성화재도 외국인의 순매수 상위권에 들었다.",
+        "chunk_length": 756,
+        "ticker": "000810",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 73,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:05:13\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"삼전닉스 40조원 던진 외국인…반도체 수혜주로 갈아탔다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296718?sid=101\"}",
+        "score": 0.291585,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 490,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "계열금융회사의약관에의한금융거래-[유가증권-채권] 계열금융회사의약관에의한금융거래-[유가증권-채권]",
+        "chunk_length": 53,
+        "ticker": "000810",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 1412,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-15\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"계열금융회사의약관에의한금융거래-[유가증권-채권]\", \"receipt_no\": \"20260115000272\", \"corp_code\": \"00126256\"}",
+        "score": 0.283275,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 489,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "계열금융회사의약관에의한금융거래-[유가증권-수익증권] 계열금융회사의약관에의한금융거래-[유가증권-수익증권]",
+        "chunk_length": 57,
+        "ticker": "000810",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 1413,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-15\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"계열금융회사의약관에의한금융거래-[유가증권-수익증권]\", \"receipt_no\": \"20260115000260\", \"corp_code\": \"00126256\"}",
+        "score": 0.276766,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 486,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]특수관계인과의수익증권거래 [기재정정]특수관계인과의수익증권거래",
+        "chunk_length": 39,
+        "ticker": "000810",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 1416,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]특수관계인과의수익증권거래\", \"receipt_no\": \"20260106000158\", \"corp_code\": \"00126256\"}",
+        "score": 0.270834,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 487,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]특수관계인과의수익증권거래 [기재정정]특수관계인과의수익증권거래",
+        "chunk_length": 39,
+        "ticker": "000810",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 1415,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]특수관계인과의수익증권거래\", \"receipt_no\": \"20260106000160\", \"corp_code\": \"00126256\"}",
+        "score": 0.270834,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      }
+    ],
+    "disclosure_chunks": [],
+    "merged_evidence": [
+      {
+        "chunk_id": 490,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "계열금융회사의약관에의한금융거래-[유가증권-채권] 계열금융회사의약관에의한금융거래-[유가증권-채권]",
+        "chunk_length": 53,
+        "ticker": "000810",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 1412,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-15\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"계열금융회사의약관에의한금융거래-[유가증권-채권]\", \"receipt_no\": \"20260115000272\", \"corp_code\": \"00126256\"}",
+        "score": 0.283275,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4983,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 489,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "계열금융회사의약관에의한금융거래-[유가증권-수익증권] 계열금융회사의약관에의한금융거래-[유가증권-수익증권]",
+        "chunk_length": 57,
+        "ticker": "000810",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 1413,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-15\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"계열금융회사의약관에의한금융거래-[유가증권-수익증권]\", \"receipt_no\": \"20260115000260\", \"corp_code\": \"00126256\"}",
+        "score": 0.276766,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4937,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 486,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]특수관계인과의수익증권거래 [기재정정]특수관계인과의수익증권거래",
+        "chunk_length": 39,
+        "ticker": "000810",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 1416,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]특수관계인과의수익증권거래\", \"receipt_no\": \"20260106000158\", \"corp_code\": \"00126256\"}",
+        "score": 0.270834,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4896,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 487,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]특수관계인과의수익증권거래 [기재정정]특수관계인과의수익증권거래",
+        "chunk_length": 39,
+        "ticker": "000810",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 1415,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"opendart\", \"published_at\": \"2026-01-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]특수관계인과의수익증권거래\", \"receipt_no\": \"20260106000160\", \"corp_code\": \"00126256\"}",
+        "score": 0.270834,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4896,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 472,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "평가다. 외국인의 적극적인 매수세 덕분에 파두는 최근 3개월간 주가가 112. 84% 올랐다. 삼성전자 지분을 1. 5% 보유하고 있는 삼성화재도 외국인의 순매수 상위권에 들었다. 4일 기준 삼성전자 시가총액이 2055조원이라는 점을 감안하면, 보유 지분 가치만 30조8000억원에 달한다. 삼성화재 전체 시총(32조6000억원)에 버금가는 규모다. SK하이닉스의 주가가 상승할 때 모회사인 SK스퀘어가 덩달아 오른 것과 비슷한 현상이다. 임희연 신한투자증권 연구원은 “삼성전자 지분 가치를 고려할 시 삼성화재 주가는 과도한 저평가 국면에 있다”고 했다. 4일 기준 삼성화재 종가는 73만원으로 3개월 전보다 55. 98% 상승했다. 엔비디아 공급 모멘텀을 지닌 두산도 외국인 투자자의 선택을 받았다. 두산은 자체 사업 매출의 대부분이 동박적층판(CCL)을 생산하는 전자BG 사업부인데, 최근 이를 통해 엔비디아 밸류체인에 편입됐다. 롯데에너지머티리얼즈로부터 회로박을 공급받은 두산전자BG가 CCL을 제조하고, 이수페타시스가 이를 기반으로 인쇄회로기판(PCB)을 제작해 최종적으로 엔비디아에 납품하는 구조다. 두산은 이를 위해 태국 등 해외 공장 증설이라는 승부수도 던졌다. 이 밖에도 현금배당 강화, 잔여 자사주 전량 소각 등 주주환원 정책도 두산의 매력적인 투자 포인트로 꼽힌다. ◇외국인은 왜 코스피를 파나 외국인 투자자가 이들에 눈을 돌린 건 반도체 주도주가 단기간 안에 급등하면서 쏠림 현상이 극심해졌기 때문이다. 코스피 시가총액 1, 2위인 삼성전자와 SK하이닉스는 올해 들어 주가가 각각 193%, 284% 급등했다.",
+        "chunk_length": 800,
+        "ticker": "000810",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 73,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:05:13\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"삼전닉스 40조원 던진 외국인…반도체 수혜주로 갈아탔다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296718?sid=101\"}",
+        "score": 0.346681,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4377,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 471,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "삼전닉스 40조원 던진 외국인…반도체 수혜주로 갈아탔다\n 반도체 투톱 40조원 순매도 AI 랠리 덕 본 저평가주에 눈독 팹리스 기업 파두 순매수 1위 삼성화재·두산에도 간접투자 주도주 쏠림 심해지자 비중 조정 외인 코스피 보유비중은 최고치 한경DB 51조4621억원. 지난달 외국인 투자자가 코스피에서 순매도한 주식 규모다. 이 중 79%(40조8569억원)가 삼성전자와 SK하이닉스 등 반도체 투톱에 쏠렸다. 두 종목이 올해 들어 가파르게 오르자 포트폴리오 비중 조정을 위해 차익 실현에 나선 것이다. 그 대신 외국인은 반도체 소부장(소재·부품·장비)과 삼전닉스의 지분을 가진 회사 등 ‘반도체 간접 투자’로 눈을 돌리고 있다. 인공지능(AI) 랠리의 수혜를 입으면서도 아직 주가가 덜 오른 종목 중심으로 집중 매수하는 모양새다. ◇AI 랠리 수혜주 담는 외국인 한국거래소와 넥스트레이드에 따르면 외국인 투자자는 지난달부터 이달 3일까지 코스피·코스닥을 통틀어 파두를 가장 많이 사들였다. 순매수액은 5126억원이다. 코스닥에 상장한 반도체 팹리스 기업 파두는 데이터 처리에 필수적인 기업형 SSD(eSSD) 낸드 컨트롤러를 설계·공급하는 역할이다. AI 붐의 직접적인 수혜를 받고 있는 데다, 전력 소모와 발열을 낮춘 제품 기술력으로 경쟁사 대비 우위를 점하고 있다는 평가다. 외국인의 적극적인 매수세 덕분에 파두는 최근 3개월간 주가가 112. 84% 올랐다. 삼성전자 지분을 1. 5% 보유하고 있는 삼성화재도 외국인의 순매수 상위권에 들었다.",
+        "chunk_length": 756,
+        "ticker": "000810",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 73,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000810\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:05:13\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"삼전닉스 40조원 던진 외국인…반도체 수혜주로 갈아탔다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296718?sid=101\"}",
+        "score": 0.291585,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3991,
+        "source_priority": "MEDIUM"
+      }
+    ],
+    "reasoning_context": [
+      "[공시] chunk #490",
+      "[공시] chunk #489",
+      "[공시] chunk #486",
+      "[공시] chunk #487",
+      "[뉴스] chunk #472",
+      "[뉴스] chunk #471"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 4,
+      "NEWS": 2,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "failed",
+    "has_disclosure": true,
+    "disclosure_priority": "HIGH"
+  },
+  "completed_at": "2026-06-09 16:53:12"
+}

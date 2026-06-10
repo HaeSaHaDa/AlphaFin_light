@@ -1,0 +1,506 @@
+{
+  "trace_id": "20260610_092407",
+  "query": "두산에너빌리티 034020",
+  "persona": "growth_investor",
+  "ticker": "034020",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "두산에너빌리티 034020",
+    "ticker": "034020",
+    "bullish_factors": [
+      "SMR 전용 공장 건설 및 생산 능력 확대 계획",
+      "반도체 시장 성장에 따른 신규 CCL 공장 설립 및 AI 인프라 관련 사업 확장"
+    ],
+    "bearish_factors": [
+      "전반적인 시장 약세와 외부 경제 요인에 따른 불확실성",
+      "기타 산업 부문에서의 하락세가 전체 주가에 미치는 영향"
+    ],
+    "risks": [
+      "글로벌 경제 둔화로 인한 수요 감소 가능성",
+      "신기술 개발 및 상용화에 따른 높은 초기 투자 비용"
+    ],
+    "summary": "두산에너빌리티는 SMR 및 반도체 관련 사업에서의 확장을 통해 성장 가능성을 높이고 있으며, AI 인프라와 관련된 사업에도 진출하고 있습니다. 그러나 전반적인 시장 약세와 외부 경제 요인으로 인한 리스크가 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 165,
+        "document_type": "news_article",
+        "score": 0.392613,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 164,
+        "document_type": "news_article",
+        "score": 0.366551,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 160,
+        "document_type": "news_article",
+        "score": 0.300505,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 166,
+        "document_type": "news_article",
+        "score": 0.29107,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 161,
+        "document_type": "news_article",
+        "score": 0.283072,
+        "ticker": "034020"
+      },
+      {
+        "chunk_id": 163,
+        "document_type": "news_article",
+        "score": 0.280866,
+        "ticker": "034020"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "두산에너빌리티 034020",
+    "retrieval_quality": {
+      "chunk_count": 6,
+      "score_stats": {
+        "min": 0.280866,
+        "max": 0.392613,
+        "avg": 0.319113,
+        "count": 6
+      },
+      "doc_type_distribution": {
+        "news_article": 6
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 6,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 6,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.392613,
+        0.366551,
+        0.300505,
+        0.29107,
+        0.283072,
+        0.280866
+      ],
+      "score_stats": {
+        "min": 0.280866,
+        "max": 0.392613,
+        "avg": 0.319113,
+        "count": 6
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "두산에너빌리티 034020",
+    "ticker": "034020",
+    "persona": "growth_investor",
+    "reflection_summary": "두산에너빌리티에 대한 분석은 성장 가능성을 강조하고 있지만, 시장 약세와 외부 경제 요인에 대한 리스크를 충분히 반영하지 못하고 있습니다. 전반적으로 과도한 낙관이 감지됩니다.",
+    "missing_risks": [
+      "경쟁 심화로 인한 시장 점유율 감소 가능성",
+      "정치적 불안정성에 따른 사업 환경 변화",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "경쟁 심화 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "SMR 및 반도체 시장의 성장 가능성에 대한 지나친 기대"
+    ],
+    "context_gaps": [
+      "두산에너빌리티의 재무 건전성 및 과거 실적에 대한 정보 부족",
+      "AI 인프라 사업의 시장 경쟁력에 대한 분석 부족",
+      "공시 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "리스크 분석을 보다 포괄적으로 수행하여 다양한 외부 요인을 고려할 것",
+      "경쟁사 분석 및 시장 동향에 대한 추가 정보를 포함할 것"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-06-10 09:24:21"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "두산에너빌리티 034020",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "SMR 전용 공장 건설 및 생산 능력 확대 계획",
+        "반도체 시장 성장에 따른 신규 CCL 공장 설립 및 AI 인프라 관련 사업 확장"
+      ],
+      "bearish_factors": [
+        "전반적인 시장 약세와 외부 경제 요인에 따른 불확실성",
+        "기타 산업 부문에서의 하락세가 전체 주가에 미치는 영향"
+      ],
+      "risks": [
+        "글로벌 경제 둔화로 인한 수요 감소 가능성",
+        "신기술 개발 및 상용화에 따른 높은 초기 투자 비용"
+      ],
+      "summary": "두산에너빌리티는 SMR 및 반도체 관련 사업에서의 확장을 통해 성장 가능성을 높이고 있으며, AI 인프라와 관련된 사업에도 진출하고 있습니다. 그러나 전반적인 시장 약세와 외부 경제 요인으로 인한 리스크가 존재합니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 165,
+          "document_type": "news_article",
+          "ticker": "034020",
+          "score": 0.392613,
+          "merge_score": 0.4698,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "원으로 기존 원전 대비 안전하고 안정적으로 전력을 생산할 수 있는 SMR이 주목받으면서다. 두산에너빌리티는 2031년 완공을 목표로 경남 창원에 SMR 전용 공장을 건설하고 있다. 총 8068억원을 투입해 SMR 기자재 생산 능력을 기존 6기에서 20기 수준까지 확대한다는 계획이다. 두산에너빌리티는 글로벌 SMR 기업인 뉴스케일파워와 엑스에너지, 테라파워와의 협업도 더욱 공고히할 예정이다. 김민표(오른쪽) 두산로보틱스 대표와 매디슨 황 엔비디아 수석 이사가 대화를 나누고 있다. [두산 제공] 데이터센터 전력원으로 떠오르고 있는 가스터빈의 생산능력도 키우고 있다. 두산에너빌리티는 현재까지 미국 고객사와 총 12기의 가스터빈을 수주하는 데 성공했다. 향후 늘어날 수요에 대응하기 위해 기존 8기에서 12기로 생산 능력을 늘릴 예정이다. 두산은 수소연료전지의 미국 진출도 추진하고 있다. 최근 미국 빅테크 기업들이 전력원 중 하나로 수소연료전지를 채택하는 사례가 늘어나면서 두산 제품에 대한 수주 기대감도 높아지고 있다. 실제 두산 수소연료전지인 인산형 수소연료전지(PAFC)는 최근 글로벌 빅테크로부터 기술·품질 검증을 완료했다. 이번 검증으로 두산 PAFC가 데이터센터에 설치될 정도로 기술이 뛰어나다는 점을 인정받았다. 스마트팩토리 핵심 요소인 로봇 경쟁력을 키우기 위해서도 팔을 걷어붙이고 있다. 그룹 로봇 계열사인 두산로보틱스는 지난달 엔비디아와 협력해 산업 현장에 적용할 수 있는 로봇 설루션을 선보인다고 밝혔다.",
+          "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 3, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}"
+        },
+        {
+          "chunk_id": 164,
+          "document_type": "news_article",
+          "ticker": "034020",
+          "score": 0.366551,
+          "merge_score": 0.4516,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "포춘비즈니스인사이트는 글로벌 반도체 시장 규모가 지난해 6597억달러(993조원)에서 연평균 10. 6% 성장, 2034년 1조4771억달러(2223조원)에 이를 것으로 전망했다. 자연스레 반도체 제조 과정에 필요한 소재 등의 수요는 늘어나게 된다. 두산은 시장 흐름에 발맞춰 태국에 1800억원을 투자해 CCL 신규 공장을 지을 계획이다. 양산 목표 시기는 2028년이다. 향후 수요 추이에 맞춰 단계별 증설을 추진할 예정이다. 신규 설립되는 태국 공장에서는 AI 인프라용 고성능 CCL을 주력으로 생산한다는 방침이다. 두산테스나는 지난달 1909억원을 투자해 반도체 테스트 장비를 양수한다고 밝혔다. 시황에 따라 착공 시기를 조율했던 평택 제2공장 신규시설 투자도 재개한다. 투자금액은 2303억원으로 완공 목표 시기는 내년 11월이다. AI 설루션 기업 발판 마련 두산에너빌리티가 개발하고 제작한 380MW급 가스터빈 제품. [두산에너빌리티 제공] 두산은 이번 사업 재편을 기반으로 AI 설루션 기업으로서의 입지를 다질 계획이다. 반도체은 물론 소형모듈원전(SMR)과 로봇 등 AI 관련 사업 경쟁력을 극대화, 고객사들에 AI 인프라 조성에 필요한 설루션을 일괄적으로 제공하는 것이다. 우선 SMR 분야에서 과감한 투자를 이어가고 있다. 막대한 전기가 소요되는 AI 인프라의 발전원으로 기존 원전 대비 안전하고 안정적으로 전력을 생산할 수 있는 SMR이 주목받으면서다. 두산에너빌리티는 2031년 완공을 목표로 경남 창원에 SMR 전용 공장을 건설하고 있다.",
+          "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}"
+        },
+        {
+          "chunk_id": 160,
+          "document_type": "news_article",
+          "ticker": "034020",
+          "score": 0.300505,
+          "merge_score": 0.4054,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "74. 73에 각각 마감했다. 이날 유가증권시장에서는 업종별로 운송·창고(0. 16%), 음식료·담배(0. 14%)가 소폭 오르고 있으며, 나머지는 전반적으로 약세를 기록 중이다. 기계·장비(-2. 42%), 건설(-1. 85%), 종이·목재(-1. 32%), 전기·가스(-0. 98%) 등은 내리고 있다. 매매주체별로 외국인과 기관은 각각 1조3837억원, 499억원씩 순매도 중이다. 개인은 홀로 1조4009억원 순매수하고 있다. 시가총액 상위 종목들은 희비가 엇갈리고 있다. 특히 시총 1, 2위이자 국내 반도체 투톱인 삼성전자와 SK하이닉스가 각각 -2. 44%, -3. 43%씩 내리며 지수 전반의 하방 압력을 키우고 있다. 전날 삼성전자와 SK하이닉스가 각각 2. 68%와 9. 31%씩 급등한 데 따른 차익실현 압박이 큰 상황인 데다, 간밤 미국 증시에서 반도체주가 쉬어가는 모습을 보인 것이 주가에 영향을 미친 것으로 보인다. 이 외 SK스퀘어(-4. 0%), HD현대중공업(-2. 28%), 삼성생명(-0. 99%)도 약세를 보이고 있다. 현대차(2. 50%), 삼성전기(0. 49%), LG에너지솔루션(12. 26%), 두산에너빌리티(0. 92%), 기아(2. 85%)는 강세다. 코스닥은 전일 대비 17. 80포인트(1. 57%) 내린 1115. 33에 거래되고 있다. 코스닥에선 매매주체별로 개인과 기관이 각각 1844억원, 95억원씩 순매수 중이다. 외국인은 홀로 1750억원 순매도하고 있다. 코스닥 상위 10개 종목 중 에코프로비엠(2. 81%), HLB(0. 39%)는 오르고 있다. 알테오젠(-2.",
+          "metadata_json": "{\"ticker\": \"034020\", \"source\": \"매일경제\", \"published_at\": \"2026-05-28 09:29:12\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"“어젠 사상 최고치, 오늘은 왜 이래”…오르락내리락 코스피, 전망은?\", \"url\": \"https://n.news.naver.com/mnews/article/009/0005686031?sid=101\"}"
+        },
+        {
+          "chunk_id": 166,
+          "document_type": "news_article",
+          "ticker": "034020",
+          "score": 0.29107,
+          "merge_score": 0.3987,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "소인 로봇 경쟁력을 키우기 위해서도 팔을 걷어붙이고 있다. 그룹 로봇 계열사인 두산로보틱스는 지난달 엔비디아와 협력해 산업 현장에 적용할 수 있는 로봇 설루션을 선보인다고 밝혔다. 내년에는 에이전틱 로봇 운영체제 기반의 지능형 로봇 설루션, 2028년에는 산업용 휴머노이드 제품을 차례로 선보일 계획이다. 글로벌 시장에서의 입지를 넓히기 위해 현재 북미, 독일 2곳에서 운영 중인 해외 지사를 일본, 동남아시아 등에도 세우는 방안을 검토 중이다.",
+          "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 4, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}"
+        },
+        {
+          "chunk_id": 161,
+          "document_type": "news_article",
+          "ticker": "034020",
+          "score": 0.283072,
+          "merge_score": 0.3932,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "5억원씩 순매수 중이다. 외국인은 홀로 1750억원 순매도하고 있다. 코스닥 상위 10개 종목 중 에코프로비엠(2. 81%), HLB(0. 39%)는 오르고 있다. 알테오젠(-2. 85%), 주성엔지니어링(-1. 53%), 코오롱티슈진(-3. 62%), 삼천당제약(-1. 56%), 리노공업(-3. 51%), 펩트론(-0. 70%)은 하락세다. 레인보우로보틱스는 전일과 같은 가격에 거래 중이다. 이날 서울외환시장에서 달러당 원화값은 전일 대비 2. 8원 내린 1504. 0원에 주간거래를 시작했다.",
+          "metadata_json": "{\"ticker\": \"034020\", \"source\": \"매일경제\", \"published_at\": \"2026-05-28 09:29:12\", \"chunk_index\": 3, \"document_type\": \"news_article\", \"title\": \"“어젠 사상 최고치, 오늘은 왜 이래”…오르락내리락 코스피, 전망은?\", \"url\": \"https://n.news.naver.com/mnews/article/009/0005686031?sid=101\"}"
+        },
+        {
+          "chunk_id": 163,
+          "document_type": "news_article",
+          "ticker": "034020",
+          "score": 0.280866,
+          "merge_score": 0.3916,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "보유한 SK실트론 지분 29. 4%도 인수할 예정이다. 추후 별도 계약을 맺고 연내 SK실트론 지분 100% 인수를 마무리할 예정이다. 총 계약 규모는 5조원대인 것으로 알려졌다. 변수로 자리잡았던 SK실트론의 실리콘카바이드(SiC) 웨이퍼 사업은 청산할 것으로 알려졌다. SK실트론은 반도체 칩 제조에 필요한 반도체용 웨이퍼를 생산하는 기업이다. 12인치 웨이퍼 기준 세계 시장 점유율 3위다. 이번 인수로 두산은 웨이퍼 제조(SK실트론)와 반도체 칩을 연결하는 인쇄회로기판(PCB)의 핵심 소재인 CCL(두산 전자BG), 후공정 테스트(두산테스나)를 아우르는 반도체 수직 계열화를 구축하게 됐다. 그룹 사업 포트폴리오도 두산에너빌리티 중심의 청정에너지와 두산밥캣·두산로보틱스의 스마트머신, 그리고 반도체로 재편된다. 박정원(오른쪽) 두산그룹 회장이 경기도 안성 두산테스나 사업장에서 반도체 웨이퍼 테스트 과정을 살펴보고 있다. [두산 제공] 두산은 일찌감치 반도체를 미래 먹거리로 낙점, 관련 사업 경쟁력을 강화하는 데 집중했다. 대표적으로 CCL 기술력을 고도화, 글로벌 1위 그래픽처리장치(GPU) 기업인 엔비디아에 제품을 공급하는 데 성공했다. 두산이 반도체 사업에 공을 들이는 건 성장 가능성이 크기 때문이다. 글로벌 빅테크 기업들이 데이터센터 등 AI 인프라 투자를 진행할수록 반도체 수요는 급증할 수밖에 없다. 시장조사기관 포춘비즈니스인사이트는 글로벌 반도체 시장 규모가 지난해 6597억달러(993조원)에서 연평균 10. 6% 성장, 2034년 1조4771억달러(2223조원)에 이를 것으로 전망했다.",
+          "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-06-10 09:24:21"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.9,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 10
+    },
+    "importance": {
+      "importance_score": 0.9,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_두산에너빌리티_034020_2026-06-10_09:24:21",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-06-10 09:24:21"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 8,
+    "relation_count": 21,
+    "query": "두산에너빌리티 034020"
+  },
+  "stock_chain": {
+    "entity_count": 6,
+    "link_count": 21,
+    "propagation_paths": 33
+  },
+  "unified_context_length": 3107,
+  "retrieval_chunk_count": 6,
+  "runtime_context": {
+    "trace_id": "20260610_092407",
+    "ticker": "034020",
+    "query": "두산에너빌리티 034020",
+    "news_chunks": [
+      {
+        "chunk_id": 165,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "원으로 기존 원전 대비 안전하고 안정적으로 전력을 생산할 수 있는 SMR이 주목받으면서다. 두산에너빌리티는 2031년 완공을 목표로 경남 창원에 SMR 전용 공장을 건설하고 있다. 총 8068억원을 투입해 SMR 기자재 생산 능력을 기존 6기에서 20기 수준까지 확대한다는 계획이다. 두산에너빌리티는 글로벌 SMR 기업인 뉴스케일파워와 엑스에너지, 테라파워와의 협업도 더욱 공고히할 예정이다. 김민표(오른쪽) 두산로보틱스 대표와 매디슨 황 엔비디아 수석 이사가 대화를 나누고 있다. [두산 제공] 데이터센터 전력원으로 떠오르고 있는 가스터빈의 생산능력도 키우고 있다. 두산에너빌리티는 현재까지 미국 고객사와 총 12기의 가스터빈을 수주하는 데 성공했다. 향후 늘어날 수요에 대응하기 위해 기존 8기에서 12기로 생산 능력을 늘릴 예정이다. 두산은 수소연료전지의 미국 진출도 추진하고 있다. 최근 미국 빅테크 기업들이 전력원 중 하나로 수소연료전지를 채택하는 사례가 늘어나면서 두산 제품에 대한 수주 기대감도 높아지고 있다. 실제 두산 수소연료전지인 인산형 수소연료전지(PAFC)는 최근 글로벌 빅테크로부터 기술·품질 검증을 완료했다. 이번 검증으로 두산 PAFC가 데이터센터에 설치될 정도로 기술이 뛰어나다는 점을 인정받았다. 스마트팩토리 핵심 요소인 로봇 경쟁력을 키우기 위해서도 팔을 걷어붙이고 있다. 그룹 로봇 계열사인 두산로보틱스는 지난달 엔비디아와 협력해 산업 현장에 적용할 수 있는 로봇 설루션을 선보인다고 밝혔다.",
+        "chunk_length": 742,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 32,
+        "chunk_index": 3,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 3, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}",
+        "score": 0.392613,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 164,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "포춘비즈니스인사이트는 글로벌 반도체 시장 규모가 지난해 6597억달러(993조원)에서 연평균 10. 6% 성장, 2034년 1조4771억달러(2223조원)에 이를 것으로 전망했다. 자연스레 반도체 제조 과정에 필요한 소재 등의 수요는 늘어나게 된다. 두산은 시장 흐름에 발맞춰 태국에 1800억원을 투자해 CCL 신규 공장을 지을 계획이다. 양산 목표 시기는 2028년이다. 향후 수요 추이에 맞춰 단계별 증설을 추진할 예정이다. 신규 설립되는 태국 공장에서는 AI 인프라용 고성능 CCL을 주력으로 생산한다는 방침이다. 두산테스나는 지난달 1909억원을 투자해 반도체 테스트 장비를 양수한다고 밝혔다. 시황에 따라 착공 시기를 조율했던 평택 제2공장 신규시설 투자도 재개한다. 투자금액은 2303억원으로 완공 목표 시기는 내년 11월이다. AI 설루션 기업 발판 마련 두산에너빌리티가 개발하고 제작한 380MW급 가스터빈 제품. [두산에너빌리티 제공] 두산은 이번 사업 재편을 기반으로 AI 설루션 기업으로서의 입지를 다질 계획이다. 반도체은 물론 소형모듈원전(SMR)과 로봇 등 AI 관련 사업 경쟁력을 극대화, 고객사들에 AI 인프라 조성에 필요한 설루션을 일괄적으로 제공하는 것이다. 우선 SMR 분야에서 과감한 투자를 이어가고 있다. 막대한 전기가 소요되는 AI 인프라의 발전원으로 기존 원전 대비 안전하고 안정적으로 전력을 생산할 수 있는 SMR이 주목받으면서다. 두산에너빌리티는 2031년 완공을 목표로 경남 창원에 SMR 전용 공장을 건설하고 있다.",
+        "chunk_length": 763,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 32,
+        "chunk_index": 2,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}",
+        "score": 0.366551,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 160,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "74. 73에 각각 마감했다. 이날 유가증권시장에서는 업종별로 운송·창고(0. 16%), 음식료·담배(0. 14%)가 소폭 오르고 있으며, 나머지는 전반적으로 약세를 기록 중이다. 기계·장비(-2. 42%), 건설(-1. 85%), 종이·목재(-1. 32%), 전기·가스(-0. 98%) 등은 내리고 있다. 매매주체별로 외국인과 기관은 각각 1조3837억원, 499억원씩 순매도 중이다. 개인은 홀로 1조4009억원 순매수하고 있다. 시가총액 상위 종목들은 희비가 엇갈리고 있다. 특히 시총 1, 2위이자 국내 반도체 투톱인 삼성전자와 SK하이닉스가 각각 -2. 44%, -3. 43%씩 내리며 지수 전반의 하방 압력을 키우고 있다. 전날 삼성전자와 SK하이닉스가 각각 2. 68%와 9. 31%씩 급등한 데 따른 차익실현 압박이 큰 상황인 데다, 간밤 미국 증시에서 반도체주가 쉬어가는 모습을 보인 것이 주가에 영향을 미친 것으로 보인다. 이 외 SK스퀘어(-4. 0%), HD현대중공업(-2. 28%), 삼성생명(-0. 99%)도 약세를 보이고 있다. 현대차(2. 50%), 삼성전기(0. 49%), LG에너지솔루션(12. 26%), 두산에너빌리티(0. 92%), 기아(2. 85%)는 강세다. 코스닥은 전일 대비 17. 80포인트(1. 57%) 내린 1115. 33에 거래되고 있다. 코스닥에선 매매주체별로 개인과 기관이 각각 1844억원, 95억원씩 순매수 중이다. 외국인은 홀로 1750억원 순매도하고 있다. 코스닥 상위 10개 종목 중 에코프로비엠(2. 81%), HLB(0. 39%)는 오르고 있다. 알테오젠(-2.",
+        "chunk_length": 799,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 33,
+        "chunk_index": 2,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"매일경제\", \"published_at\": \"2026-05-28 09:29:12\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"“어젠 사상 최고치, 오늘은 왜 이래”…오르락내리락 코스피, 전망은?\", \"url\": \"https://n.news.naver.com/mnews/article/009/0005686031?sid=101\"}",
+        "score": 0.300505,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 166,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "소인 로봇 경쟁력을 키우기 위해서도 팔을 걷어붙이고 있다. 그룹 로봇 계열사인 두산로보틱스는 지난달 엔비디아와 협력해 산업 현장에 적용할 수 있는 로봇 설루션을 선보인다고 밝혔다. 내년에는 에이전틱 로봇 운영체제 기반의 지능형 로봇 설루션, 2028년에는 산업용 휴머노이드 제품을 차례로 선보일 계획이다. 글로벌 시장에서의 입지를 넓히기 위해 현재 북미, 독일 2곳에서 운영 중인 해외 지사를 일본, 동남아시아 등에도 세우는 방안을 검토 중이다.",
+        "chunk_length": 249,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 32,
+        "chunk_index": 4,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 4, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}",
+        "score": 0.29107,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 161,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "5억원씩 순매수 중이다. 외국인은 홀로 1750억원 순매도하고 있다. 코스닥 상위 10개 종목 중 에코프로비엠(2. 81%), HLB(0. 39%)는 오르고 있다. 알테오젠(-2. 85%), 주성엔지니어링(-1. 53%), 코오롱티슈진(-3. 62%), 삼천당제약(-1. 56%), 리노공업(-3. 51%), 펩트론(-0. 70%)은 하락세다. 레인보우로보틱스는 전일과 같은 가격에 거래 중이다. 이날 서울외환시장에서 달러당 원화값은 전일 대비 2. 8원 내린 1504. 0원에 주간거래를 시작했다.",
+        "chunk_length": 279,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 33,
+        "chunk_index": 3,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"매일경제\", \"published_at\": \"2026-05-28 09:29:12\", \"chunk_index\": 3, \"document_type\": \"news_article\", \"title\": \"“어젠 사상 최고치, 오늘은 왜 이래”…오르락내리락 코스피, 전망은?\", \"url\": \"https://n.news.naver.com/mnews/article/009/0005686031?sid=101\"}",
+        "score": 0.283072,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 163,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "보유한 SK실트론 지분 29. 4%도 인수할 예정이다. 추후 별도 계약을 맺고 연내 SK실트론 지분 100% 인수를 마무리할 예정이다. 총 계약 규모는 5조원대인 것으로 알려졌다. 변수로 자리잡았던 SK실트론의 실리콘카바이드(SiC) 웨이퍼 사업은 청산할 것으로 알려졌다. SK실트론은 반도체 칩 제조에 필요한 반도체용 웨이퍼를 생산하는 기업이다. 12인치 웨이퍼 기준 세계 시장 점유율 3위다. 이번 인수로 두산은 웨이퍼 제조(SK실트론)와 반도체 칩을 연결하는 인쇄회로기판(PCB)의 핵심 소재인 CCL(두산 전자BG), 후공정 테스트(두산테스나)를 아우르는 반도체 수직 계열화를 구축하게 됐다. 그룹 사업 포트폴리오도 두산에너빌리티 중심의 청정에너지와 두산밥캣·두산로보틱스의 스마트머신, 그리고 반도체로 재편된다. 박정원(오른쪽) 두산그룹 회장이 경기도 안성 두산테스나 사업장에서 반도체 웨이퍼 테스트 과정을 살펴보고 있다. [두산 제공] 두산은 일찌감치 반도체를 미래 먹거리로 낙점, 관련 사업 경쟁력을 강화하는 데 집중했다. 대표적으로 CCL 기술력을 고도화, 글로벌 1위 그래픽처리장치(GPU) 기업인 엔비디아에 제품을 공급하는 데 성공했다. 두산이 반도체 사업에 공을 들이는 건 성장 가능성이 크기 때문이다. 글로벌 빅테크 기업들이 데이터센터 등 AI 인프라 투자를 진행할수록 반도체 수요는 급증할 수밖에 없다. 시장조사기관 포춘비즈니스인사이트는 글로벌 반도체 시장 규모가 지난해 6597억달러(993조원)에서 연평균 10. 6% 성장, 2034년 1조4771억달러(2223조원)에 이를 것으로 전망했다.",
+        "chunk_length": 793,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 32,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}",
+        "score": 0.280866,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      }
+    ],
+    "disclosure_chunks": [],
+    "merged_evidence": [
+      {
+        "chunk_id": 165,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "원으로 기존 원전 대비 안전하고 안정적으로 전력을 생산할 수 있는 SMR이 주목받으면서다. 두산에너빌리티는 2031년 완공을 목표로 경남 창원에 SMR 전용 공장을 건설하고 있다. 총 8068억원을 투입해 SMR 기자재 생산 능력을 기존 6기에서 20기 수준까지 확대한다는 계획이다. 두산에너빌리티는 글로벌 SMR 기업인 뉴스케일파워와 엑스에너지, 테라파워와의 협업도 더욱 공고히할 예정이다. 김민표(오른쪽) 두산로보틱스 대표와 매디슨 황 엔비디아 수석 이사가 대화를 나누고 있다. [두산 제공] 데이터센터 전력원으로 떠오르고 있는 가스터빈의 생산능력도 키우고 있다. 두산에너빌리티는 현재까지 미국 고객사와 총 12기의 가스터빈을 수주하는 데 성공했다. 향후 늘어날 수요에 대응하기 위해 기존 8기에서 12기로 생산 능력을 늘릴 예정이다. 두산은 수소연료전지의 미국 진출도 추진하고 있다. 최근 미국 빅테크 기업들이 전력원 중 하나로 수소연료전지를 채택하는 사례가 늘어나면서 두산 제품에 대한 수주 기대감도 높아지고 있다. 실제 두산 수소연료전지인 인산형 수소연료전지(PAFC)는 최근 글로벌 빅테크로부터 기술·품질 검증을 완료했다. 이번 검증으로 두산 PAFC가 데이터센터에 설치될 정도로 기술이 뛰어나다는 점을 인정받았다. 스마트팩토리 핵심 요소인 로봇 경쟁력을 키우기 위해서도 팔을 걷어붙이고 있다. 그룹 로봇 계열사인 두산로보틱스는 지난달 엔비디아와 협력해 산업 현장에 적용할 수 있는 로봇 설루션을 선보인다고 밝혔다.",
+        "chunk_length": 742,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 32,
+        "chunk_index": 3,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 3, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}",
+        "score": 0.392613,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4698,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 164,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "포춘비즈니스인사이트는 글로벌 반도체 시장 규모가 지난해 6597억달러(993조원)에서 연평균 10. 6% 성장, 2034년 1조4771억달러(2223조원)에 이를 것으로 전망했다. 자연스레 반도체 제조 과정에 필요한 소재 등의 수요는 늘어나게 된다. 두산은 시장 흐름에 발맞춰 태국에 1800억원을 투자해 CCL 신규 공장을 지을 계획이다. 양산 목표 시기는 2028년이다. 향후 수요 추이에 맞춰 단계별 증설을 추진할 예정이다. 신규 설립되는 태국 공장에서는 AI 인프라용 고성능 CCL을 주력으로 생산한다는 방침이다. 두산테스나는 지난달 1909억원을 투자해 반도체 테스트 장비를 양수한다고 밝혔다. 시황에 따라 착공 시기를 조율했던 평택 제2공장 신규시설 투자도 재개한다. 투자금액은 2303억원으로 완공 목표 시기는 내년 11월이다. AI 설루션 기업 발판 마련 두산에너빌리티가 개발하고 제작한 380MW급 가스터빈 제품. [두산에너빌리티 제공] 두산은 이번 사업 재편을 기반으로 AI 설루션 기업으로서의 입지를 다질 계획이다. 반도체은 물론 소형모듈원전(SMR)과 로봇 등 AI 관련 사업 경쟁력을 극대화, 고객사들에 AI 인프라 조성에 필요한 설루션을 일괄적으로 제공하는 것이다. 우선 SMR 분야에서 과감한 투자를 이어가고 있다. 막대한 전기가 소요되는 AI 인프라의 발전원으로 기존 원전 대비 안전하고 안정적으로 전력을 생산할 수 있는 SMR이 주목받으면서다. 두산에너빌리티는 2031년 완공을 목표로 경남 창원에 SMR 전용 공장을 건설하고 있다.",
+        "chunk_length": 763,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 32,
+        "chunk_index": 2,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}",
+        "score": 0.366551,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4516,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 160,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "74. 73에 각각 마감했다. 이날 유가증권시장에서는 업종별로 운송·창고(0. 16%), 음식료·담배(0. 14%)가 소폭 오르고 있으며, 나머지는 전반적으로 약세를 기록 중이다. 기계·장비(-2. 42%), 건설(-1. 85%), 종이·목재(-1. 32%), 전기·가스(-0. 98%) 등은 내리고 있다. 매매주체별로 외국인과 기관은 각각 1조3837억원, 499억원씩 순매도 중이다. 개인은 홀로 1조4009억원 순매수하고 있다. 시가총액 상위 종목들은 희비가 엇갈리고 있다. 특히 시총 1, 2위이자 국내 반도체 투톱인 삼성전자와 SK하이닉스가 각각 -2. 44%, -3. 43%씩 내리며 지수 전반의 하방 압력을 키우고 있다. 전날 삼성전자와 SK하이닉스가 각각 2. 68%와 9. 31%씩 급등한 데 따른 차익실현 압박이 큰 상황인 데다, 간밤 미국 증시에서 반도체주가 쉬어가는 모습을 보인 것이 주가에 영향을 미친 것으로 보인다. 이 외 SK스퀘어(-4. 0%), HD현대중공업(-2. 28%), 삼성생명(-0. 99%)도 약세를 보이고 있다. 현대차(2. 50%), 삼성전기(0. 49%), LG에너지솔루션(12. 26%), 두산에너빌리티(0. 92%), 기아(2. 85%)는 강세다. 코스닥은 전일 대비 17. 80포인트(1. 57%) 내린 1115. 33에 거래되고 있다. 코스닥에선 매매주체별로 개인과 기관이 각각 1844억원, 95억원씩 순매수 중이다. 외국인은 홀로 1750억원 순매도하고 있다. 코스닥 상위 10개 종목 중 에코프로비엠(2. 81%), HLB(0. 39%)는 오르고 있다. 알테오젠(-2.",
+        "chunk_length": 799,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 33,
+        "chunk_index": 2,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"매일경제\", \"published_at\": \"2026-05-28 09:29:12\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"“어젠 사상 최고치, 오늘은 왜 이래”…오르락내리락 코스피, 전망은?\", \"url\": \"https://n.news.naver.com/mnews/article/009/0005686031?sid=101\"}",
+        "score": 0.300505,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4054,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 166,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "소인 로봇 경쟁력을 키우기 위해서도 팔을 걷어붙이고 있다. 그룹 로봇 계열사인 두산로보틱스는 지난달 엔비디아와 협력해 산업 현장에 적용할 수 있는 로봇 설루션을 선보인다고 밝혔다. 내년에는 에이전틱 로봇 운영체제 기반의 지능형 로봇 설루션, 2028년에는 산업용 휴머노이드 제품을 차례로 선보일 계획이다. 글로벌 시장에서의 입지를 넓히기 위해 현재 북미, 독일 2곳에서 운영 중인 해외 지사를 일본, 동남아시아 등에도 세우는 방안을 검토 중이다.",
+        "chunk_length": 249,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 32,
+        "chunk_index": 4,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 4, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}",
+        "score": 0.29107,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3987,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 161,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "5억원씩 순매수 중이다. 외국인은 홀로 1750억원 순매도하고 있다. 코스닥 상위 10개 종목 중 에코프로비엠(2. 81%), HLB(0. 39%)는 오르고 있다. 알테오젠(-2. 85%), 주성엔지니어링(-1. 53%), 코오롱티슈진(-3. 62%), 삼천당제약(-1. 56%), 리노공업(-3. 51%), 펩트론(-0. 70%)은 하락세다. 레인보우로보틱스는 전일과 같은 가격에 거래 중이다. 이날 서울외환시장에서 달러당 원화값은 전일 대비 2. 8원 내린 1504. 0원에 주간거래를 시작했다.",
+        "chunk_length": 279,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 33,
+        "chunk_index": 3,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"매일경제\", \"published_at\": \"2026-05-28 09:29:12\", \"chunk_index\": 3, \"document_type\": \"news_article\", \"title\": \"“어젠 사상 최고치, 오늘은 왜 이래”…오르락내리락 코스피, 전망은?\", \"url\": \"https://n.news.naver.com/mnews/article/009/0005686031?sid=101\"}",
+        "score": 0.283072,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3932,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 163,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "보유한 SK실트론 지분 29. 4%도 인수할 예정이다. 추후 별도 계약을 맺고 연내 SK실트론 지분 100% 인수를 마무리할 예정이다. 총 계약 규모는 5조원대인 것으로 알려졌다. 변수로 자리잡았던 SK실트론의 실리콘카바이드(SiC) 웨이퍼 사업은 청산할 것으로 알려졌다. SK실트론은 반도체 칩 제조에 필요한 반도체용 웨이퍼를 생산하는 기업이다. 12인치 웨이퍼 기준 세계 시장 점유율 3위다. 이번 인수로 두산은 웨이퍼 제조(SK실트론)와 반도체 칩을 연결하는 인쇄회로기판(PCB)의 핵심 소재인 CCL(두산 전자BG), 후공정 테스트(두산테스나)를 아우르는 반도체 수직 계열화를 구축하게 됐다. 그룹 사업 포트폴리오도 두산에너빌리티 중심의 청정에너지와 두산밥캣·두산로보틱스의 스마트머신, 그리고 반도체로 재편된다. 박정원(오른쪽) 두산그룹 회장이 경기도 안성 두산테스나 사업장에서 반도체 웨이퍼 테스트 과정을 살펴보고 있다. [두산 제공] 두산은 일찌감치 반도체를 미래 먹거리로 낙점, 관련 사업 경쟁력을 강화하는 데 집중했다. 대표적으로 CCL 기술력을 고도화, 글로벌 1위 그래픽처리장치(GPU) 기업인 엔비디아에 제품을 공급하는 데 성공했다. 두산이 반도체 사업에 공을 들이는 건 성장 가능성이 크기 때문이다. 글로벌 빅테크 기업들이 데이터센터 등 AI 인프라 투자를 진행할수록 반도체 수요는 급증할 수밖에 없다. 시장조사기관 포춘비즈니스인사이트는 글로벌 반도체 시장 규모가 지난해 6597억달러(993조원)에서 연평균 10. 6% 성장, 2034년 1조4771억달러(2223조원)에 이를 것으로 전망했다.",
+        "chunk_length": 793,
+        "ticker": "034020",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 32,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"034020\", \"source\": \"헤럴드경제\", \"published_at\": \"2026-05-28 09:30:08\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"5兆 투입으로 ‘반도체 삼각편대’ 완성…중공업 넘어 신사업 날개 [두산, SK실트론 인수]\", \"url\": \"https://n.news.naver.com/mnews/article/016/0002649067?sid=101\"}",
+        "score": 0.280866,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3916,
+        "source_priority": "MEDIUM"
+      }
+    ],
+    "reasoning_context": [
+      "[뉴스] chunk #165",
+      "[뉴스] chunk #164",
+      "[뉴스] chunk #160",
+      "[뉴스] chunk #166",
+      "[뉴스] chunk #161",
+      "[뉴스] chunk #163"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 0,
+      "NEWS": 6,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "failed",
+    "has_disclosure": false,
+    "disclosure_priority": "NONE"
+  },
+  "completed_at": "2026-06-10 09:24:21"
+}

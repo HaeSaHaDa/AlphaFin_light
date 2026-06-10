@@ -4,10 +4,12 @@ import {
   createContext,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
   useState,
   type ReactNode,
 } from "react";
+import { useSearchParams } from "next/navigation";
 import { ApiError, runQuery } from "@/services/api";
 import type { CompanyResolveData } from "@/types/company";
 import type { LoadStatus } from "@/types/dashboard";
@@ -39,9 +41,8 @@ const RuntimeQueryContext = createContext<RuntimeQueryContextValue | null>(
 );
 
 export function RuntimeQueryProvider({ children }: { children: ReactNode }) {
-  const [state, setState] = useState<RuntimeTraceState>(
-    createInitialRuntimeState,
-  );
+  const searchParams = useSearchParams();
+  const [state, setState] = useState<RuntimeTraceState>(createInitialRuntimeState);
   const [companyContext, setCompanyContext] =
     useState<CompanyResolveData | null>(null);
   const [engineRunning, setEngineRunning] = useState(false);
@@ -50,23 +51,14 @@ export function RuntimeQueryProvider({ children }: { children: ReactNode }) {
     setState((s) => beginPanelLoad(s));
     try {
       const bundle = await loadRuntimePanels(traceId);
-      setState((s) => {
-        const next = applyPanelBundle(s, {
+      setState((s) =>
+        applyPanelBundle(s, {
           traceId: bundle.traceId,
           data: bundle.data,
           signal: bundle.signal,
           runtimeQuery,
-        });
-        if (next.traceId && next.selectedTicker) {
-          saveRuntimeSession({
-            traceId: next.traceId,
-            ticker: next.selectedTicker,
-            companyName: next.companyName ?? "",
-            runtimeQuery: runtimeQuery ?? next.runtimeQuery ?? "",
-          });
-        }
-        return next;
-      });
+        }),
+      );
     } catch (e) {
       const msg =
         e instanceof ApiError
@@ -96,20 +88,47 @@ export function RuntimeQueryProvider({ children }: { children: ReactNode }) {
         warning: null,
       }));
       await loadPanels(id);
-      const session = loadRuntimeSession();
-      if (session?.traceId === id) {
-        saveRuntimeSession(session);
-      } else {
-        saveRuntimeSession({
-          traceId: id,
-          ticker: "",
-          companyName: "",
-          runtimeQuery: "",
-        });
-      }
     },
     [loadPanels],
   );
+
+  const urlTraceId = searchParams.get("trace_id")?.trim() || null;
+
+  useEffect(() => {
+    if (!state.traceId || (!state.selectedTicker && !state.companyName)) return;
+    saveRuntimeSession({
+      traceId: state.traceId,
+      ticker: state.selectedTicker ?? "",
+      companyName: state.companyName ?? "",
+      runtimeQuery: state.runtimeQuery ?? "",
+    });
+  }, [
+    state.traceId,
+    state.selectedTicker,
+    state.companyName,
+    state.runtimeQuery,
+  ]);
+
+  useEffect(() => {
+    const session = loadRuntimeSession();
+    const targetTraceId = urlTraceId || session?.traceId || null;
+    if (!targetTraceId) return;
+    const sessionMatches = session?.traceId === targetTraceId;
+    setState((s) => {
+      if (s.traceId === targetTraceId && s.panelStatus !== "idle") return s;
+      return {
+        ...s,
+        traceId: targetTraceId,
+        selectedTicker: sessionMatches ? session?.ticker || null : null,
+        companyName: sessionMatches ? session?.companyName || null : null,
+        runtimeQuery: sessionMatches ? session?.runtimeQuery || null : null,
+      };
+    });
+    void loadPanels(
+      targetTraceId,
+      sessionMatches ? session?.runtimeQuery : undefined,
+    );
+  }, [urlTraceId, loadPanels]);
 
   const runQuerySelected = useCallback(
     async (payload: {
@@ -143,6 +162,13 @@ export function RuntimeQueryProvider({ children }: { children: ReactNode }) {
           }));
           return;
         }
+
+        saveRuntimeSession({
+          traceId: resp.trace_id,
+          ticker: payload.ticker,
+          companyName: payload.company,
+          runtimeQuery: resp.runtime_query ?? "",
+        });
 
         if (resp.status === "partial") {
           setState((s) => ({
@@ -211,6 +237,7 @@ export function useDashboardRuntime() {
     engineRunning: r.engineRunning,
     companyContext: r.companyContext,
     selectedTicker: r.selectedTicker,
+    companyName: r.companyName,
     runQuerySelected: r.runQuerySelected,
     loadByTraceId: r.loadByTraceId,
     loadingMessage: r.loadingMessage,

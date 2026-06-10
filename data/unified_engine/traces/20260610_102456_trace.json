@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260610_102456",
+  "query": "SK???? 000660 ???? ???? TSMC ????",
+  "persona": "growth_investor",
+  "ticker": "000660",
+  "started_at": "2026-06-10 10:24:56",
+  "completed_at": "2026-06-10 10:25:07",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=6 disclosure=0",
+      "timestamp": "2026-06-10 10:24:56"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=4759",
+      "timestamp": "2026-06-10 10:24:56"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=3126",
+      "timestamp": "2026-06-10 10:24:56"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-10 10:25:01"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-10 10:25:01"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 SK하이닉스의 성장 가능성과 시장 약세를 균형 있게 다루고 있으나, 리스크 요소가 ",
+      "timestamp": "2026-06-10 10:25:07"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-10 10:25:07"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.80",
+      "timestamp": "2026-06-10 10:25:07"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-10 10:25:07"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=6 rels=18",
+      "timestamp": "2026-06-10 10:25:07"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=18",
+      "timestamp": "2026-06-10 10:25:07"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 6,
+    "max_score": 0.328254
+  },
+  "reflection_summary": "분석은 SK하이닉스의 성장 가능성과 시장 약세를 균형 있게 다루고 있으나, 리스크 요소가 다소 부족하게 언급되었습니다. 특히, 외부 요인에 대한 심층적인 분석이 필요합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

@@ -30,7 +30,7 @@ COMPANY_REGISTRY: list[CompanyRecord] = [
     {
         "company_name": "SK하이닉스",
         "ticker": "000660",
-        "corp_code": "00181751",
+        "corp_code": "00164779",
         "market": "KOSPI",
         "aliases": ["하이닉스", "sk하이닉스", "sk hynix"],
     },

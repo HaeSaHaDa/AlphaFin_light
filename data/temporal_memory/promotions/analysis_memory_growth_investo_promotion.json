@@ -1,13 +1,16 @@
 {
-  "memory_id": "analysis_memory_growth_investor_한화에어로스페이스_012450_전쟁_2026-05-28_12:33:57",
+  "memory_id": "analysis_memory_growth_investor_SK하이닉스_000660_HBM_2026-06-10_10:58:32",
   "previous_layer": "short_term",
   "current_layer": "mid_term",
-  "promotion_reason": [
-    "importance_score 0.90 이상",
-    "Reflection 언급됨",
-    "이벤트 진화: AI → 서버"
+  "removed_from_layers": [
+    "short_term"
   ],
-  "importance_score": 0.9,
+  "promotion_reason": [
+    "importance_score 1.00 이상",
+    "Reflection 언급됨",
+    "이벤트 진화: HBM → 공급"
+  ],
+  "importance_score": 1.0,
   "evolution_stage": "initial_event",
-  "timestamp": "2026-05-28 12:33:57"
+  "timestamp": "2026-06-10 10:58:32"
 }

@@ -12,30 +12,38 @@ logger = logging.getLogger(__name__)
 def retrieve_short_term_memories(
     query: str,
     max_results: int = 3,
+    ticker: str | None = None,
+    memory_type: str | None = None,
 ) -> list[dict]:
     """Short-term Memory를 query 기반으로 조회한다."""
-    return _retrieve_layer("short_term", query, max_results)
+    return _retrieve_layer("short_term", query, max_results, ticker, memory_type)
 
 
 def retrieve_mid_term_memories(
     query: str,
     max_results: int = 3,
+    ticker: str | None = None,
+    memory_type: str | None = None,
 ) -> list[dict]:
     """Mid-term Memory를 query 기반으로 조회한다."""
-    return _retrieve_layer("mid_term", query, max_results)
+    return _retrieve_layer("mid_term", query, max_results, ticker, memory_type)
 
 
 def retrieve_long_term_memories(
     query: str,
     max_results: int = 3,
+    ticker: str | None = None,
+    memory_type: str | None = None,
 ) -> list[dict]:
     """Long-term Memory를 query 기반으로 조회한다."""
-    return _retrieve_layer("long_term", query, max_results)
+    return _retrieve_layer("long_term", query, max_results, ticker, memory_type)
 
 
 def retrieve_all_layers(
     query: str,
     max_per_layer: int = 2,
+    ticker: str | None = None,
+    memory_type: str | None = None,
 ) -> dict[str, list[dict]]:
     """전체 Layer에서 query 기반으로 Memory를 조회한다.
 
@@ -43,9 +51,15 @@ def retrieve_all_layers(
         {"short_term": [...], "mid_term": [...], "long_term": [...]}
     """
     return {
-        "short_term": retrieve_short_term_memories(query, max_per_layer),
-        "mid_term": retrieve_mid_term_memories(query, max_per_layer),
-        "long_term": retrieve_long_term_memories(query, max_per_layer),
+        "short_term": retrieve_short_term_memories(
+            query, max_per_layer, ticker, memory_type
+        ),
+        "mid_term": retrieve_mid_term_memories(
+            query, max_per_layer, ticker, memory_type
+        ),
+        "long_term": retrieve_long_term_memories(
+            query, max_per_layer, ticker, memory_type
+        ),
     }
 
 
@@ -106,6 +120,8 @@ def _retrieve_layer(
     layer: str,
     query: str,
     max_results: int,
+    ticker: str | None = None,
+    memory_type: str | None = None,
 ) -> list[dict]:
     """특정 Layer에서 keyword 매칭 기반으로 Memory를 조회한다."""
     memories = load_layer_memories(layer)
@@ -116,6 +132,10 @@ def _retrieve_layer(
 
     scored: list[tuple[float, dict]] = []
     for mem in memories:
+        if ticker and not _matches_ticker(mem, ticker):
+            continue
+        if memory_type and mem.get("memory_type") != memory_type:
+            continue
         mem_text = " ".join([
             mem.get("query", ""),
             mem.get("summary", ""),
@@ -148,3 +168,20 @@ def _retrieve_layer(
         layer, query[:20], len(results),
     )
     return results
+
+
+def _matches_ticker(item: dict, ticker: str) -> bool:
+    normalized = str(ticker).strip()
+    if not normalized:
+        return True
+    if str(item.get("ticker") or "").strip() == normalized:
+        return True
+    if normalized in str(item.get("query") or ""):
+        return True
+    if normalized in str(item.get("source_query") or ""):
+        return True
+    return any(
+        str(ref.get("ticker") or "").strip() == normalized
+        for ref in item.get("referenced_chunks", [])
+        if isinstance(ref, dict)
+    )

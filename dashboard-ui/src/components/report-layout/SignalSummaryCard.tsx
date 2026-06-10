@@ -20,7 +20,7 @@ export function SignalSummaryCard({ signal }: SignalSummaryCardProps) {
   return (
     <div className={`rounded-xl border p-5 ${style}`}>
       <p className="text-xs text-muted-foreground">현재 관점</p>
-      <p className="mt-1 text-3xl font-bold">{label}</p>
+      <p className="dash-metric-value mt-1">{label}</p>
       <div className="mt-4">
         <p className="text-xs text-muted-foreground">분석 신뢰도</p>
         <p className="text-2xl font-semibold">{Math.round(conf * 100)}%</p>

@@ -1,0 +1,503 @@
+{
+  "trace_id": "20260609_172043",
+  "query": "LG디스플레이 034220",
+  "persona": "growth_investor",
+  "ticker": "034220",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "LG디스플레이 034220",
+    "bullish_factors": [
+      "LG디스플레이는 AI 및 클라우드 데이터센터 구축과 관련된 기술 발전에 참여할 가능성이 있음",
+      "LG그룹의 전반적인 기술력과 시장 지배력을 바탕으로 새로운 시장 기회를 모색할 수 있음"
+    ],
+    "bearish_factors": [
+      "LG디스플레이의 주가는 최근 하락세를 보이며 시장에서 부진한 성과를 나타내고 있음",
+      "LG전자의 급락과 같은 그룹 내 다른 주식의 하락이 LG디스플레이에도 부정적인 영향을 미칠 수 있음"
+    ],
+    "risks": [
+      "글로벌 반도체 시장의 변동성과 경쟁 심화로 인한 수익성 저하 리스크",
+      "신기술 도입 및 시장 확장에 따른 초기 투자 비용 증가"
+    ],
+    "summary": "LG디스플레이는 AI 및 클라우드 데이터센터와 같은 신기술 분야에서 성장 가능성을 보이고 있으나, 최근 주가 하락과 그룹 내 다른 주식의 부진이 부정적인 영향을 미칠 수 있다. 또한, 글로벌 반도체 시장의 변동성과 경쟁 심화가 리스크로 작용할 수 있다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 512,
+        "document_type": "disclosure",
+        "score": 0.257959,
+        "ticker": "034220"
+      },
+      {
+        "chunk_id": 497,
+        "document_type": "news_article",
+        "score": 0.345416,
+        "ticker": "034220"
+      },
+      {
+        "chunk_id": 495,
+        "document_type": "news_article",
+        "score": 0.310736,
+        "ticker": "034220"
+      },
+      {
+        "chunk_id": 494,
+        "document_type": "news_article",
+        "score": 0.301336,
+        "ticker": "034220"
+      },
+      {
+        "chunk_id": 496,
+        "document_type": "news_article",
+        "score": 0.289749,
+        "ticker": "034220"
+      },
+      {
+        "chunk_id": 498,
+        "document_type": "news_article",
+        "score": 0.28828,
+        "ticker": "034220"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "LG디스플레이 034220",
+    "retrieval_quality": {
+      "chunk_count": 6,
+      "score_stats": {
+        "min": 0.257959,
+        "max": 0.345416,
+        "avg": 0.298913,
+        "count": 6
+      },
+      "doc_type_distribution": {
+        "disclosure": 1,
+        "news_article": 5
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 6,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 6,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.257959,
+        0.345416,
+        0.310736,
+        0.301336,
+        0.289749,
+        0.28828
+      ],
+      "score_stats": {
+        "min": 0.257959,
+        "max": 0.345416,
+        "avg": 0.298913,
+        "count": 6
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "LG디스플레이 034220",
+    "ticker": "",
+    "persona": "growth_investor",
+    "reflection_summary": "LG디스플레이에 대한 분석은 성장 가능성과 하락 요인을 잘 제시하고 있으나, 리스크 요소와 Context 부족이 눈에 띈다. 전반적으로 균형 잡힌 시각이 필요하지만, 추가적인 리스크 식별이 요구된다.",
+    "missing_risks": [
+      "글로벌 경제 불확실성에 따른 수요 감소 리스크",
+      "기술 발전 속도에 따른 경쟁사 대비 뒤처질 가능성",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": false,
+    "overconfidence_reasons": [],
+    "context_gaps": [
+      "LG디스플레이의 재무 상태 및 과거 실적에 대한 구체적인 데이터 부족",
+      "AI 및 클라우드 데이터센터 시장의 성장 전망에 대한 구체적인 수치나 예측 부족",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "리스크 항목을 더욱 구체화하여 다양한 시나리오를 고려할 것",
+      "시장 및 경쟁 분석을 통해 LG디스플레이의 위치를 명확히 할 것"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-06-09 17:20:59"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "LG디스플레이 034220",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "LG디스플레이는 AI 및 클라우드 데이터센터 구축과 관련된 기술 발전에 참여할 가능성이 있음",
+        "LG그룹의 전반적인 기술력과 시장 지배력을 바탕으로 새로운 시장 기회를 모색할 수 있음"
+      ],
+      "bearish_factors": [
+        "LG디스플레이의 주가는 최근 하락세를 보이며 시장에서 부진한 성과를 나타내고 있음",
+        "LG전자의 급락과 같은 그룹 내 다른 주식의 하락이 LG디스플레이에도 부정적인 영향을 미칠 수 있음"
+      ],
+      "risks": [
+        "글로벌 반도체 시장의 변동성과 경쟁 심화로 인한 수익성 저하 리스크",
+        "신기술 도입 및 시장 확장에 따른 초기 투자 비용 증가"
+      ],
+      "summary": "LG디스플레이는 AI 및 클라우드 데이터센터와 같은 신기술 분야에서 성장 가능성을 보이고 있으나, 최근 주가 하락과 그룹 내 다른 주식의 부진이 부정적인 영향을 미칠 수 있다. 또한, 글로벌 반도체 시장의 변동성과 경쟁 심화가 리스크로 작용할 수 있다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 512,
+          "document_type": "disclosure",
+          "ticker": "034220",
+          "score": 0.257959,
+          "merge_score": 0.4806,
+          "source_priority": "HIGH",
+          "source": "document_chunks",
+          "chunk_text": "[기재정정]결산실적공시예고(안내공시)               [기재정정]결산실적공시예고(안내공시)",
+          "metadata_json": "{\"ticker\": \"034220\", \"source\": \"opendart\", \"published_at\": \"2026-01-27\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]결산실적공시예고(안내공시)              \", \"receipt_no\": \"20260127800633\", \"corp_code\": \"00105873\"}"
+        },
+        {
+          "chunk_id": 497,
+          "document_type": "news_article",
+          "ticker": "034220",
+          "score": 0.345416,
+          "merge_score": 0.4368,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "LG그룹주와 로봇주 등도 대체로 하락했다. 지주사인 LG는 1. 14% 내린 11만2천600원으로 장을 마쳤고, LG전자와 LG씨엔에스는 각각 7. 46%와 7. 04% 급락했다. 두산로보틱스(-8. 33%)도 주가가 큰 폭으로 하락했다. 다만 LG디스플레이는 0. 36% 내리는데 그쳤으며 LG이노텍은 3. 84% 상승했다. 엔비디아와 AI 클라우드 공동 추진에 합의, 엔비디아의 AI 인프라 플랫폼 'DSX'를 기반으로 AI 전용 데이터센터 구축을 추진하기로 한 SK텔레콤(+1. 31%)과, 수혜주로 거론되는 SK네트웍스(+0. 85%)도 강보합을 보였다. 한편, 황 CEO는 닷새간의 방한 일정을 마치고 이날 출국했다. 이번 방한에서 SK하이닉스와의 다년간 파트너십을 비롯, 네이버, SK텔레콤과의 AI 인프라 협력까지 굵직한 성과를 잇따라 내놓은 그는 방한 성과에 대해 \"매우 좋은 미팅을 가졌고 매우 좋은 파트너십도 발표했다\"고 말했다. hwangch@yna. co. kr",
+          "metadata_json": "{\"ticker\": \"034220\", \"source\": \"연합뉴스\", \"published_at\": \"2026-06-09 16:11:27\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"[특징주] 젠슨 황 출국에 네이버·LG전자 등 동반 급락(종합)\", \"url\": \"https://n.news.naver.com/mnews/article/001/0016128893?sid=101\"}"
+        },
+        {
+          "chunk_id": 495,
+          "document_type": "news_article",
+          "ticker": "034220",
+          "score": 0.310736,
+          "merge_score": 0.4125,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "9680원, 후성은 17. 33% 오른 1만 3200원, 미래에셋생명(085620)은 14. 52% 상승한 2만 4050원, 한화생명은 11. 62% 오른 5090원에 거래됐다. 태양금속(004100)도 7. 58% 상승했고 LG헬로비전(037560), 디아이씨(092200), 한온시스템(018880), 동양(001520), SK증권(001510)도 오름세를 나타냈다. 반면 SK네트웍스는 거래량 1위에도 5. 79% 하락했고, LG디스플레이(034220)는 3. 21%, 흥아해운(003280)은 1. 22%, 삼성중공업(010140)은 0. 96%, 티웨이홀딩스(004870)는 0. 71%, 대우건설(047040)은 0. 49% 각각 내렸다. 시가총액 상위주의 방향도 엇갈렸다. 삼성전자의 시가총액은 1810조 8848억원, SK하이닉스는 1487조 4098억원으로 집계됐고, NAVER와 LG전자는 각각 39조 6891억원, 38조 5222억원 수준이었다. 밸류에이션 측면에서는 SK하이닉스의 PER이 20. 16배, ROE가 44. 15%로 수익성이 두드러졌고, 삼성전자는 PER 25. 04배, ROE 10. 85%를 기록했다. 반면 적자 또는 수익성 부담이 반영된 종목들은 음수 PER을 나타내며 종목별 차별화가 이어졌다. 이날 코스피 거래상위 종목군은 반도체와 일부 금융주, 소재주의 강세가 부각된 반면 플랫폼과 전기전자 일부 종목은 차익실현성 매물에 밀리는 모습이다. [서울신문과 MetaVX의 생성형 AI가 함께 작성한 기사입니다]",
+          "metadata_json": "{\"ticker\": \"034220\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 13:08:13\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]코스피 거래상위 혼조…SK하이닉스·삼성전자 강세, NAVER·LG전자 약세\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650831?sid=101\"}"
+        },
+        {
+          "chunk_id": 494,
+          "document_type": "news_article",
+          "ticker": "034220",
+          "score": 0.301336,
+          "merge_score": 0.4059,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "[서울데이터랩]코스피 거래상위 혼조…SK하이닉스·삼성전자 강세, NAVER·LG전자 약세\n 9일 오후 12시 30분 기준 코스피 거래상위 종목은 업종과 종목별로 주가 흐름이 엇갈리는 혼조 양상을 나타냈다. 거래량 상위권에서는 SK네트웍스(001740)가 4093만 7677주로 가장 활발한 손바뀜을 보였고, 삼성전자(005930), 한화생명(088350), 후성(093370), 광전자(017900) 등이 뒤를 이었다. 거래대금 기준으로는 SK하이닉스(000660)가 5조 6745억 7100만원으로 가장 많았고 삼성전자 4조 2477억 1100만원, NAVER(035420) 1조 3485억 1600만원, LG전자(066570) 8394억 3900만원 순으로 대형 기술주에 자금이 집중됐다. 대형 반도체주는 강세가 두드러졌다. 삼성전자는 30만 9750원으로 전일 대비 4. 82% 상승했고, SK하이닉스는 208만 7000원으로 9. 21% 올랐다. 두 종목은 각각 1386만 9199주, 277만 4105주의 거래량을 기록하면서 지수 영향력이 큰 대표주로서 시장 관심을 끌었다. 반면 인터넷과 전자 대표주는 부진했다. NAVER는 25만 3000원으로 9. 32% 하락했고, LG전자는 23만 6500원으로 11. 75% 급락해 대조적인 흐름을 보였다. 중소형주 가운데서는 개별 종목 장세가 뚜렷했다. 광전자는 24. 74% 급등한 9680원, 후성은 17. 33% 오른 1만 3200원, 미래에셋생명(085620)은 14. 52% 상승한 2만 4050원, 한화생명은 11. 62% 오른 5090원에 거래됐다.",
+          "metadata_json": "{\"ticker\": \"034220\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 13:08:13\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]코스피 거래상위 혼조…SK하이닉스·삼성전자 강세, NAVER·LG전자 약세\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650831?sid=101\"}"
+        },
+        {
+          "chunk_id": 496,
+          "document_type": "news_article",
+          "ticker": "034220",
+          "score": 0.289749,
+          "merge_score": 0.3978,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "[특징주] 젠슨 황 출국에 네이버·LG전자 등 동반 급락(종합)\n 이해진 네이버 의장과 인사하는 젠슨 황 (성남=연합뉴스) 홍기원 기자 = 젠슨 황 엔비디아 최고경영자(CEO)가 8일 경기도 성남시 네이버 1784 사옥을 방문해 이해진 네이버 의장과 인사하고 있다. 2026. 6. 8 xanadu@yna. co. kr (서울=연합뉴스) 황철환 기자 = 젠슨 황 엔비디아 최고경영자(CEO)의 방한을 계기로 주가가 요동쳤던 네이버와 LG 그룹주 등 관련 종목 다수가 9일 큰 폭으로 하락한 채 거래를 마쳤다. 이날 유가증권시장에서 네이버(NAVER)는 전장보다 7. 89% 내린 25만7천원에 마감했다. 2. 51% 오른 28만6천원으로 출발한 네이버는 개장하자마자 급격히 상승분을 반납한 뒤 하락 전환해 한때 12. 90% 내린 24만3천원까지 밀리는 모습을 보였다. 젠슨 황 엔비디아 최고경영자(CEO)의 방한을 계기로 엔비디아와의 협력이 부각되며 전날 9. 02% 급등하는 등 최근 수일간 강세를 이어온 데 따른 차익실현 매물이 일시에 출회됐을 가능성이 있어 보인다. 네이버와 엔비디아는 8일 글로벌 인공지능(AI) 팩토리 공동 사업에 합의하고 2027년 55MW(메가와트) 규모 인프라 가동을 시작으로 AI 인프라 사업을 단계적으로 확대한다고 밝혔다. 황 CEO의 방한을 앞두고 일찌감치 급등하다 이달 초부터 상승세가 꺾이는 흐름을 보이던 LG그룹주와 로봇주 등도 대체로 하락했다. 지주사인 LG는 1. 14% 내린 11만2천600원으로 장을 마쳤고, LG전자와 LG씨엔에스는 각각 7. 46%와 7. 04% 급락했다.",
+          "metadata_json": "{\"ticker\": \"034220\", \"source\": \"연합뉴스\", \"published_at\": \"2026-06-09 16:11:27\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"[특징주] 젠슨 황 출국에 네이버·LG전자 등 동반 급락(종합)\", \"url\": \"https://n.news.naver.com/mnews/article/001/0016128893?sid=101\"}"
+        },
+        {
+          "chunk_id": 498,
+          "document_type": "news_article",
+          "ticker": "034220",
+          "score": 0.28828,
+          "merge_score": 0.3968,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "젠슨 황 방한 효과 하루 만에 반전…네이버·LG전자 등 동반 급락\n ▲ 젠슨 황 엔비디아 최고경영자(CEO)가 방한 일정을 마친 뒤 9일 서울김포비즈니스항공센터를 통해 출국하며 손을 흔들고 있다. 연합뉴스 젠슨 황의 방한을 계기로 급등했던 AI 관련 종목들이 9일 일제히 약세를 보이며 차익실현 매물이 쏟아졌다. 이날 유가증권시장에서 NAVER는 전 거래일보다 7. 89% 하락한 25만7000원에 거래를 마쳤다. 네이버는 장 초반 2. 51% 오른 28만6000원으로 출발했지만 상승폭을 반납한 뒤 하락 전환했다. 장중 한때 12. 90% 내린 24만3000원까지 밀리기도 했다. 네이버는 전날 엔비디아와의 인공지능(AI) 협력 기대감에 9. 02% 급등하는 등 최근 강세를 이어왔지만, 단기 급등에 따른 차익실현 매물이 집중된 것으로 풀이된다. 네이버와 NVIDIA는 지난 8일 글로벌 AI 팩토리 공동 사업 추진에 합의했다. 양사는 2027년 55MW 규모 AI 인프라 가동을 시작으로 관련 사업을 단계적으로 확대할 계획이라고 밝혔다. 젠슨 황 CEO 방한 수혜주로 주목받았던 LG그룹 계열사들도 대부분 하락 마감했다. LG는 1. 14% 내린 11만2600원에 거래를 마쳤고, LG전자는 7. 46%, LG CNS는 7. 04% 각각 하락했다. 로봇 관련주인 두산로보틱스도 8. 33% 급락했다. 반면 LG디스플레이는 0. 36% 하락에 그쳤고, LG이노텍은 3. 84% 상승하며 상대적으로 선방했다. 엔비디아와 AI 클라우드 사업 협력을 추진 중인 SK텔레콤은 1. 31% 상승했다.",
+          "metadata_json": "{\"ticker\": \"034220\", \"source\": \"강원도민일보\", \"published_at\": \"2026-06-09 16:25:10\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"젠슨 황 방한 효과 하루 만에 반전…네이버·LG전자 등 동반 급락\", \"url\": \"https://n.news.naver.com/mnews/article/654/0000184707?sid=101\"}"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-06-09 17:20:59"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.8,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 10
+    },
+    "importance": {
+      "importance_score": 0.8,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_LG디스플레이_034220_2026-06-09_17:20:59",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-06-09 17:20:59"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 10,
+    "relation_count": 24,
+    "query": "LG디스플레이 034220"
+  },
+  "stock_chain": {
+    "entity_count": 6,
+    "link_count": 24,
+    "propagation_paths": 33
+  },
+  "unified_context_length": 3107,
+  "retrieval_chunk_count": 6,
+  "runtime_context": {
+    "trace_id": "20260609_172043",
+    "ticker": "034220",
+    "query": "LG디스플레이 034220",
+    "news_chunks": [
+      {
+        "chunk_id": 497,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "LG그룹주와 로봇주 등도 대체로 하락했다. 지주사인 LG는 1. 14% 내린 11만2천600원으로 장을 마쳤고, LG전자와 LG씨엔에스는 각각 7. 46%와 7. 04% 급락했다. 두산로보틱스(-8. 33%)도 주가가 큰 폭으로 하락했다. 다만 LG디스플레이는 0. 36% 내리는데 그쳤으며 LG이노텍은 3. 84% 상승했다. 엔비디아와 AI 클라우드 공동 추진에 합의, 엔비디아의 AI 인프라 플랫폼 'DSX'를 기반으로 AI 전용 데이터센터 구축을 추진하기로 한 SK텔레콤(+1. 31%)과, 수혜주로 거론되는 SK네트웍스(+0. 85%)도 강보합을 보였다. 한편, 황 CEO는 닷새간의 방한 일정을 마치고 이날 출국했다. 이번 방한에서 SK하이닉스와의 다년간 파트너십을 비롯, 네이버, SK텔레콤과의 AI 인프라 협력까지 굵직한 성과를 잇따라 내놓은 그는 방한 성과에 대해 \"매우 좋은 미팅을 가졌고 매우 좋은 파트너십도 발표했다\"고 말했다. hwangch@yna. co. kr",
+        "chunk_length": 494,
+        "ticker": "034220",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 76,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"연합뉴스\", \"published_at\": \"2026-06-09 16:11:27\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"[특징주] 젠슨 황 출국에 네이버·LG전자 등 동반 급락(종합)\", \"url\": \"https://n.news.naver.com/mnews/article/001/0016128893?sid=101\"}",
+        "score": 0.345416,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 495,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "9680원, 후성은 17. 33% 오른 1만 3200원, 미래에셋생명(085620)은 14. 52% 상승한 2만 4050원, 한화생명은 11. 62% 오른 5090원에 거래됐다. 태양금속(004100)도 7. 58% 상승했고 LG헬로비전(037560), 디아이씨(092200), 한온시스템(018880), 동양(001520), SK증권(001510)도 오름세를 나타냈다. 반면 SK네트웍스는 거래량 1위에도 5. 79% 하락했고, LG디스플레이(034220)는 3. 21%, 흥아해운(003280)은 1. 22%, 삼성중공업(010140)은 0. 96%, 티웨이홀딩스(004870)는 0. 71%, 대우건설(047040)은 0. 49% 각각 내렸다. 시가총액 상위주의 방향도 엇갈렸다. 삼성전자의 시가총액은 1810조 8848억원, SK하이닉스는 1487조 4098억원으로 집계됐고, NAVER와 LG전자는 각각 39조 6891억원, 38조 5222억원 수준이었다. 밸류에이션 측면에서는 SK하이닉스의 PER이 20. 16배, ROE가 44. 15%로 수익성이 두드러졌고, 삼성전자는 PER 25. 04배, ROE 10. 85%를 기록했다. 반면 적자 또는 수익성 부담이 반영된 종목들은 음수 PER을 나타내며 종목별 차별화가 이어졌다. 이날 코스피 거래상위 종목군은 반도체와 일부 금융주, 소재주의 강세가 부각된 반면 플랫폼과 전기전자 일부 종목은 차익실현성 매물에 밀리는 모습이다. [서울신문과 MetaVX의 생성형 AI가 함께 작성한 기사입니다]",
+        "chunk_length": 756,
+        "ticker": "034220",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 77,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 13:08:13\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]코스피 거래상위 혼조…SK하이닉스·삼성전자 강세, NAVER·LG전자 약세\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650831?sid=101\"}",
+        "score": 0.310736,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 494,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[서울데이터랩]코스피 거래상위 혼조…SK하이닉스·삼성전자 강세, NAVER·LG전자 약세\n 9일 오후 12시 30분 기준 코스피 거래상위 종목은 업종과 종목별로 주가 흐름이 엇갈리는 혼조 양상을 나타냈다. 거래량 상위권에서는 SK네트웍스(001740)가 4093만 7677주로 가장 활발한 손바뀜을 보였고, 삼성전자(005930), 한화생명(088350), 후성(093370), 광전자(017900) 등이 뒤를 이었다. 거래대금 기준으로는 SK하이닉스(000660)가 5조 6745억 7100만원으로 가장 많았고 삼성전자 4조 2477억 1100만원, NAVER(035420) 1조 3485억 1600만원, LG전자(066570) 8394억 3900만원 순으로 대형 기술주에 자금이 집중됐다. 대형 반도체주는 강세가 두드러졌다. 삼성전자는 30만 9750원으로 전일 대비 4. 82% 상승했고, SK하이닉스는 208만 7000원으로 9. 21% 올랐다. 두 종목은 각각 1386만 9199주, 277만 4105주의 거래량을 기록하면서 지수 영향력이 큰 대표주로서 시장 관심을 끌었다. 반면 인터넷과 전자 대표주는 부진했다. NAVER는 25만 3000원으로 9. 32% 하락했고, LG전자는 23만 6500원으로 11. 75% 급락해 대조적인 흐름을 보였다. 중소형주 가운데서는 개별 종목 장세가 뚜렷했다. 광전자는 24. 74% 급등한 9680원, 후성은 17. 33% 오른 1만 3200원, 미래에셋생명(085620)은 14. 52% 상승한 2만 4050원, 한화생명은 11. 62% 오른 5090원에 거래됐다.",
+        "chunk_length": 792,
+        "ticker": "034220",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 77,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 13:08:13\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]코스피 거래상위 혼조…SK하이닉스·삼성전자 강세, NAVER·LG전자 약세\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650831?sid=101\"}",
+        "score": 0.301336,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 496,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[특징주] 젠슨 황 출국에 네이버·LG전자 등 동반 급락(종합)\n 이해진 네이버 의장과 인사하는 젠슨 황 (성남=연합뉴스) 홍기원 기자 = 젠슨 황 엔비디아 최고경영자(CEO)가 8일 경기도 성남시 네이버 1784 사옥을 방문해 이해진 네이버 의장과 인사하고 있다. 2026. 6. 8 xanadu@yna. co. kr (서울=연합뉴스) 황철환 기자 = 젠슨 황 엔비디아 최고경영자(CEO)의 방한을 계기로 주가가 요동쳤던 네이버와 LG 그룹주 등 관련 종목 다수가 9일 큰 폭으로 하락한 채 거래를 마쳤다. 이날 유가증권시장에서 네이버(NAVER)는 전장보다 7. 89% 내린 25만7천원에 마감했다. 2. 51% 오른 28만6천원으로 출발한 네이버는 개장하자마자 급격히 상승분을 반납한 뒤 하락 전환해 한때 12. 90% 내린 24만3천원까지 밀리는 모습을 보였다. 젠슨 황 엔비디아 최고경영자(CEO)의 방한을 계기로 엔비디아와의 협력이 부각되며 전날 9. 02% 급등하는 등 최근 수일간 강세를 이어온 데 따른 차익실현 매물이 일시에 출회됐을 가능성이 있어 보인다. 네이버와 엔비디아는 8일 글로벌 인공지능(AI) 팩토리 공동 사업에 합의하고 2027년 55MW(메가와트) 규모 인프라 가동을 시작으로 AI 인프라 사업을 단계적으로 확대한다고 밝혔다. 황 CEO의 방한을 앞두고 일찌감치 급등하다 이달 초부터 상승세가 꺾이는 흐름을 보이던 LG그룹주와 로봇주 등도 대체로 하락했다. 지주사인 LG는 1. 14% 내린 11만2천600원으로 장을 마쳤고, LG전자와 LG씨엔에스는 각각 7. 46%와 7. 04% 급락했다.",
+        "chunk_length": 798,
+        "ticker": "034220",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 76,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"연합뉴스\", \"published_at\": \"2026-06-09 16:11:27\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"[특징주] 젠슨 황 출국에 네이버·LG전자 등 동반 급락(종합)\", \"url\": \"https://n.news.naver.com/mnews/article/001/0016128893?sid=101\"}",
+        "score": 0.289749,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 498,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "젠슨 황 방한 효과 하루 만에 반전…네이버·LG전자 등 동반 급락\n ▲ 젠슨 황 엔비디아 최고경영자(CEO)가 방한 일정을 마친 뒤 9일 서울김포비즈니스항공센터를 통해 출국하며 손을 흔들고 있다. 연합뉴스 젠슨 황의 방한을 계기로 급등했던 AI 관련 종목들이 9일 일제히 약세를 보이며 차익실현 매물이 쏟아졌다. 이날 유가증권시장에서 NAVER는 전 거래일보다 7. 89% 하락한 25만7000원에 거래를 마쳤다. 네이버는 장 초반 2. 51% 오른 28만6000원으로 출발했지만 상승폭을 반납한 뒤 하락 전환했다. 장중 한때 12. 90% 내린 24만3000원까지 밀리기도 했다. 네이버는 전날 엔비디아와의 인공지능(AI) 협력 기대감에 9. 02% 급등하는 등 최근 강세를 이어왔지만, 단기 급등에 따른 차익실현 매물이 집중된 것으로 풀이된다. 네이버와 NVIDIA는 지난 8일 글로벌 AI 팩토리 공동 사업 추진에 합의했다. 양사는 2027년 55MW 규모 AI 인프라 가동을 시작으로 관련 사업을 단계적으로 확대할 계획이라고 밝혔다. 젠슨 황 CEO 방한 수혜주로 주목받았던 LG그룹 계열사들도 대부분 하락 마감했다. LG는 1. 14% 내린 11만2600원에 거래를 마쳤고, LG전자는 7. 46%, LG CNS는 7. 04% 각각 하락했다. 로봇 관련주인 두산로보틱스도 8. 33% 급락했다. 반면 LG디스플레이는 0. 36% 하락에 그쳤고, LG이노텍은 3. 84% 상승하며 상대적으로 선방했다. 엔비디아와 AI 클라우드 사업 협력을 추진 중인 SK텔레콤은 1. 31% 상승했다.",
+        "chunk_length": 779,
+        "ticker": "034220",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 75,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"강원도민일보\", \"published_at\": \"2026-06-09 16:25:10\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"젠슨 황 방한 효과 하루 만에 반전…네이버·LG전자 등 동반 급락\", \"url\": \"https://n.news.naver.com/mnews/article/654/0000184707?sid=101\"}",
+        "score": 0.28828,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 512,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]결산실적공시예고(안내공시)               [기재정정]결산실적공시예고(안내공시)",
+        "chunk_length": 55,
+        "ticker": "034220",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 1468,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"opendart\", \"published_at\": \"2026-01-27\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]결산실적공시예고(안내공시)              \", \"receipt_no\": \"20260127800633\", \"corp_code\": \"00105873\"}",
+        "score": 0.257959,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      }
+    ],
+    "disclosure_chunks": [],
+    "merged_evidence": [
+      {
+        "chunk_id": 512,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]결산실적공시예고(안내공시)               [기재정정]결산실적공시예고(안내공시)",
+        "chunk_length": 55,
+        "ticker": "034220",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 1468,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"opendart\", \"published_at\": \"2026-01-27\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]결산실적공시예고(안내공시)              \", \"receipt_no\": \"20260127800633\", \"corp_code\": \"00105873\"}",
+        "score": 0.257959,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4806,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 497,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "LG그룹주와 로봇주 등도 대체로 하락했다. 지주사인 LG는 1. 14% 내린 11만2천600원으로 장을 마쳤고, LG전자와 LG씨엔에스는 각각 7. 46%와 7. 04% 급락했다. 두산로보틱스(-8. 33%)도 주가가 큰 폭으로 하락했다. 다만 LG디스플레이는 0. 36% 내리는데 그쳤으며 LG이노텍은 3. 84% 상승했다. 엔비디아와 AI 클라우드 공동 추진에 합의, 엔비디아의 AI 인프라 플랫폼 'DSX'를 기반으로 AI 전용 데이터센터 구축을 추진하기로 한 SK텔레콤(+1. 31%)과, 수혜주로 거론되는 SK네트웍스(+0. 85%)도 강보합을 보였다. 한편, 황 CEO는 닷새간의 방한 일정을 마치고 이날 출국했다. 이번 방한에서 SK하이닉스와의 다년간 파트너십을 비롯, 네이버, SK텔레콤과의 AI 인프라 협력까지 굵직한 성과를 잇따라 내놓은 그는 방한 성과에 대해 \"매우 좋은 미팅을 가졌고 매우 좋은 파트너십도 발표했다\"고 말했다. hwangch@yna. co. kr",
+        "chunk_length": 494,
+        "ticker": "034220",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 76,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"연합뉴스\", \"published_at\": \"2026-06-09 16:11:27\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"[특징주] 젠슨 황 출국에 네이버·LG전자 등 동반 급락(종합)\", \"url\": \"https://n.news.naver.com/mnews/article/001/0016128893?sid=101\"}",
+        "score": 0.345416,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4368,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 495,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "9680원, 후성은 17. 33% 오른 1만 3200원, 미래에셋생명(085620)은 14. 52% 상승한 2만 4050원, 한화생명은 11. 62% 오른 5090원에 거래됐다. 태양금속(004100)도 7. 58% 상승했고 LG헬로비전(037560), 디아이씨(092200), 한온시스템(018880), 동양(001520), SK증권(001510)도 오름세를 나타냈다. 반면 SK네트웍스는 거래량 1위에도 5. 79% 하락했고, LG디스플레이(034220)는 3. 21%, 흥아해운(003280)은 1. 22%, 삼성중공업(010140)은 0. 96%, 티웨이홀딩스(004870)는 0. 71%, 대우건설(047040)은 0. 49% 각각 내렸다. 시가총액 상위주의 방향도 엇갈렸다. 삼성전자의 시가총액은 1810조 8848억원, SK하이닉스는 1487조 4098억원으로 집계됐고, NAVER와 LG전자는 각각 39조 6891억원, 38조 5222억원 수준이었다. 밸류에이션 측면에서는 SK하이닉스의 PER이 20. 16배, ROE가 44. 15%로 수익성이 두드러졌고, 삼성전자는 PER 25. 04배, ROE 10. 85%를 기록했다. 반면 적자 또는 수익성 부담이 반영된 종목들은 음수 PER을 나타내며 종목별 차별화가 이어졌다. 이날 코스피 거래상위 종목군은 반도체와 일부 금융주, 소재주의 강세가 부각된 반면 플랫폼과 전기전자 일부 종목은 차익실현성 매물에 밀리는 모습이다. [서울신문과 MetaVX의 생성형 AI가 함께 작성한 기사입니다]",
+        "chunk_length": 756,
+        "ticker": "034220",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 77,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 13:08:13\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]코스피 거래상위 혼조…SK하이닉스·삼성전자 강세, NAVER·LG전자 약세\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650831?sid=101\"}",
+        "score": 0.310736,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4125,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 494,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[서울데이터랩]코스피 거래상위 혼조…SK하이닉스·삼성전자 강세, NAVER·LG전자 약세\n 9일 오후 12시 30분 기준 코스피 거래상위 종목은 업종과 종목별로 주가 흐름이 엇갈리는 혼조 양상을 나타냈다. 거래량 상위권에서는 SK네트웍스(001740)가 4093만 7677주로 가장 활발한 손바뀜을 보였고, 삼성전자(005930), 한화생명(088350), 후성(093370), 광전자(017900) 등이 뒤를 이었다. 거래대금 기준으로는 SK하이닉스(000660)가 5조 6745억 7100만원으로 가장 많았고 삼성전자 4조 2477억 1100만원, NAVER(035420) 1조 3485억 1600만원, LG전자(066570) 8394억 3900만원 순으로 대형 기술주에 자금이 집중됐다. 대형 반도체주는 강세가 두드러졌다. 삼성전자는 30만 9750원으로 전일 대비 4. 82% 상승했고, SK하이닉스는 208만 7000원으로 9. 21% 올랐다. 두 종목은 각각 1386만 9199주, 277만 4105주의 거래량을 기록하면서 지수 영향력이 큰 대표주로서 시장 관심을 끌었다. 반면 인터넷과 전자 대표주는 부진했다. NAVER는 25만 3000원으로 9. 32% 하락했고, LG전자는 23만 6500원으로 11. 75% 급락해 대조적인 흐름을 보였다. 중소형주 가운데서는 개별 종목 장세가 뚜렷했다. 광전자는 24. 74% 급등한 9680원, 후성은 17. 33% 오른 1만 3200원, 미래에셋생명(085620)은 14. 52% 상승한 2만 4050원, 한화생명은 11. 62% 오른 5090원에 거래됐다.",
+        "chunk_length": 792,
+        "ticker": "034220",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 77,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 13:08:13\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]코스피 거래상위 혼조…SK하이닉스·삼성전자 강세, NAVER·LG전자 약세\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650831?sid=101\"}",
+        "score": 0.301336,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4059,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 496,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[특징주] 젠슨 황 출국에 네이버·LG전자 등 동반 급락(종합)\n 이해진 네이버 의장과 인사하는 젠슨 황 (성남=연합뉴스) 홍기원 기자 = 젠슨 황 엔비디아 최고경영자(CEO)가 8일 경기도 성남시 네이버 1784 사옥을 방문해 이해진 네이버 의장과 인사하고 있다. 2026. 6. 8 xanadu@yna. co. kr (서울=연합뉴스) 황철환 기자 = 젠슨 황 엔비디아 최고경영자(CEO)의 방한을 계기로 주가가 요동쳤던 네이버와 LG 그룹주 등 관련 종목 다수가 9일 큰 폭으로 하락한 채 거래를 마쳤다. 이날 유가증권시장에서 네이버(NAVER)는 전장보다 7. 89% 내린 25만7천원에 마감했다. 2. 51% 오른 28만6천원으로 출발한 네이버는 개장하자마자 급격히 상승분을 반납한 뒤 하락 전환해 한때 12. 90% 내린 24만3천원까지 밀리는 모습을 보였다. 젠슨 황 엔비디아 최고경영자(CEO)의 방한을 계기로 엔비디아와의 협력이 부각되며 전날 9. 02% 급등하는 등 최근 수일간 강세를 이어온 데 따른 차익실현 매물이 일시에 출회됐을 가능성이 있어 보인다. 네이버와 엔비디아는 8일 글로벌 인공지능(AI) 팩토리 공동 사업에 합의하고 2027년 55MW(메가와트) 규모 인프라 가동을 시작으로 AI 인프라 사업을 단계적으로 확대한다고 밝혔다. 황 CEO의 방한을 앞두고 일찌감치 급등하다 이달 초부터 상승세가 꺾이는 흐름을 보이던 LG그룹주와 로봇주 등도 대체로 하락했다. 지주사인 LG는 1. 14% 내린 11만2천600원으로 장을 마쳤고, LG전자와 LG씨엔에스는 각각 7. 46%와 7. 04% 급락했다.",
+        "chunk_length": 798,
+        "ticker": "034220",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 76,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"연합뉴스\", \"published_at\": \"2026-06-09 16:11:27\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"[특징주] 젠슨 황 출국에 네이버·LG전자 등 동반 급락(종합)\", \"url\": \"https://n.news.naver.com/mnews/article/001/0016128893?sid=101\"}",
+        "score": 0.289749,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3978,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 498,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "젠슨 황 방한 효과 하루 만에 반전…네이버·LG전자 등 동반 급락\n ▲ 젠슨 황 엔비디아 최고경영자(CEO)가 방한 일정을 마친 뒤 9일 서울김포비즈니스항공센터를 통해 출국하며 손을 흔들고 있다. 연합뉴스 젠슨 황의 방한을 계기로 급등했던 AI 관련 종목들이 9일 일제히 약세를 보이며 차익실현 매물이 쏟아졌다. 이날 유가증권시장에서 NAVER는 전 거래일보다 7. 89% 하락한 25만7000원에 거래를 마쳤다. 네이버는 장 초반 2. 51% 오른 28만6000원으로 출발했지만 상승폭을 반납한 뒤 하락 전환했다. 장중 한때 12. 90% 내린 24만3000원까지 밀리기도 했다. 네이버는 전날 엔비디아와의 인공지능(AI) 협력 기대감에 9. 02% 급등하는 등 최근 강세를 이어왔지만, 단기 급등에 따른 차익실현 매물이 집중된 것으로 풀이된다. 네이버와 NVIDIA는 지난 8일 글로벌 AI 팩토리 공동 사업 추진에 합의했다. 양사는 2027년 55MW 규모 AI 인프라 가동을 시작으로 관련 사업을 단계적으로 확대할 계획이라고 밝혔다. 젠슨 황 CEO 방한 수혜주로 주목받았던 LG그룹 계열사들도 대부분 하락 마감했다. LG는 1. 14% 내린 11만2600원에 거래를 마쳤고, LG전자는 7. 46%, LG CNS는 7. 04% 각각 하락했다. 로봇 관련주인 두산로보틱스도 8. 33% 급락했다. 반면 LG디스플레이는 0. 36% 하락에 그쳤고, LG이노텍은 3. 84% 상승하며 상대적으로 선방했다. 엔비디아와 AI 클라우드 사업 협력을 추진 중인 SK텔레콤은 1. 31% 상승했다.",
+        "chunk_length": 779,
+        "ticker": "034220",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 75,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"034220\", \"source\": \"강원도민일보\", \"published_at\": \"2026-06-09 16:25:10\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"젠슨 황 방한 효과 하루 만에 반전…네이버·LG전자 등 동반 급락\", \"url\": \"https://n.news.naver.com/mnews/article/654/0000184707?sid=101\"}",
+        "score": 0.28828,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3968,
+        "source_priority": "MEDIUM"
+      }
+    ],
+    "reasoning_context": [
+      "[공시] chunk #512",
+      "[뉴스] chunk #497",
+      "[뉴스] chunk #495",
+      "[뉴스] chunk #494",
+      "[뉴스] chunk #496",
+      "[뉴스] chunk #498"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 1,
+      "NEWS": 5,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "failed",
+    "has_disclosure": true,
+    "disclosure_priority": "HIGH"
+  },
+  "completed_at": "2026-06-09 17:20:59"
+}

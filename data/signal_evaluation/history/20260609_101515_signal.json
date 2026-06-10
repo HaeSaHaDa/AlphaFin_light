@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260609_101515",
+  "query": "현대자동차 전기차 전망",
+  "ticker": "005380",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [],
+    "bullish_count": 0,
+    "bearish_count": 0
+  },
+  "market_outcome": {
+    "price_change_pct": 0.5,
+    "period_label": "1주 후 (샘플)",
+    "actual_direction": "flat",
+    "direction_correct": true
+  },
+  "confidence_evaluation": {
+    "confidence": 0.55,
+    "direction_correct": true,
+    "outcome": "low_confidence_success",
+    "label": "보통 신뢰도 · 방향 일치",
+    "is_high_confidence": false
+  },
+  "timeline": [
+    {
+      "period": "2024-01",
+      "signal": "bullish",
+      "display_label": "긍정",
+      "price_change_pct": 4.2
+    },
+    {
+      "period": "2024-02",
+      "signal": "neutral",
+      "display_label": "중립",
+      "price_change_pct": 0.8
+    },
+    {
+      "period": "2024-03",
+      "signal": "bearish",
+      "display_label": "부정",
+      "price_change_pct": -2.1
+    }
+  ],
+  "history": [
+    {
+      "period": "2024-01",
+      "signal": "bullish",
+      "display_label": "긍정",
+      "price_change_pct": 4.2,
+      "direction_correct": true,
+      "confidence": 0.55
+    },
+    {
+      "period": "2024-02",
+      "signal": "neutral",
+      "display_label": "중립",
+      "price_change_pct": 0.8,
+      "direction_correct": true,
+      "confidence": 0.55
+    },
+    {
+      "period": "2024-03",
+      "signal": "bearish",
+      "display_label": "부정",
+      "price_change_pct": -2.1,
+      "direction_correct": true,
+      "confidence": 0.55
+    }
+  ],
+  "metrics": {
+    "direction_accuracy": 1.0,
+    "hit_ratio_pct": 100.0,
+    "total_signals": 3,
+    "correct_count": 3
+  },
+  "confidence_summary": {
+    "avg_confidence": 0.55,
+    "high_confidence_hit_rate": 0.0,
+    "high_confidence_count": 0
+  }
+}

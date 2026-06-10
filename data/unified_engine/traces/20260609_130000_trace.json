@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260609_130000",
+  "query": "현대글로비스 086280",
+  "persona": "growth_investor",
+  "ticker": "086280",
+  "started_at": "2026-06-09 13:00:00",
+  "completed_at": "2026-06-09 13:00:11",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=6 disclosure=3",
+      "timestamp": "2026-06-09 13:00:00"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=2988",
+      "timestamp": "2026-06-09 13:00:00"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=4587",
+      "timestamp": "2026-06-09 13:00:00"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-09 13:00:07"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-09 13:00:07"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 현대글로비스의 성장 가능성을 긍정적으로 평가하고 있으나, 리스크 요소에 대한 언급이",
+      "timestamp": "2026-06-09 13:00:11"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-09 13:00:11"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.60",
+      "timestamp": "2026-06-09 13:00:11"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-09 13:00:11"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=16 rels=24",
+      "timestamp": "2026-06-09 13:00:11"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=24",
+      "timestamp": "2026-06-09 13:00:11"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 6,
+    "max_score": 0.373121
+  },
+  "reflection_summary": "분석은 현대글로비스의 성장 가능성을 긍정적으로 평가하고 있으나, 리스크 요소에 대한 언급이 부족하여 균형 잡힌 시각이 결여되어 있습니다. 특히, 과도한 낙관이 감지되며, 추가적인 리스크 요인과 맥락이 필요합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

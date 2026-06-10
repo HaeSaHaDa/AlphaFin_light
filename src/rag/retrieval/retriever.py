@@ -15,6 +15,7 @@ sys.path.insert(0, str(EMBEDDING_MODULE))
 from connection import get_connection  # noqa: E402
 from embedder import generate_embedding, DEFAULT_MODEL  # noqa: E402
 from similarity import cosine_similarity, rank_similar_chunks  # noqa: E402
+from freshness import rank_with_freshness  # noqa: E402
 
 logger = logging.getLogger(__name__)
 
@@ -158,7 +159,7 @@ def filter_chunks_by_metadata(
             continue
 
         pub = meta.get("published_at", "")
-        if date_from and pub and pub < date_from:
+        if date_from and (not pub or pub < date_from):
             continue
         if date_to and pub and pub > date_to:
             continue
@@ -226,6 +227,9 @@ def retrieve_similar_chunks(
 
     if meta_filters:
         ranked = filter_chunks_by_metadata(ranked, meta_filters)
+
+    if (db_filters.get("document_type") or "") == "news_article":
+        ranked = rank_with_freshness(ranked)
 
     results = ranked[:top_k]
 

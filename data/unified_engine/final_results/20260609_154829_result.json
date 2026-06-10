@@ -1,0 +1,428 @@
+{
+  "trace_id": "20260609_154829",
+  "query": "삼성전기 009150 MLCC",
+  "persona": "growth_investor",
+  "ticker": "009150",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "삼성전기 009150 MLCC",
+    "bullish_factors": [
+      "AI 반도체 및 HBM 수요 증가로 인한 매출 성장 가능성",
+      "K컬처의 영향으로 해외 시장 확대 기대"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성",
+      "글로벌 경쟁 심화"
+    ],
+    "risks": [
+      "노조의 반발로 인한 운영 리스크",
+      "기술 발전 속도에 따른 시장 변화"
+    ],
+    "summary": "삼성전기는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으며, K컬처의 영향으로 해외 시장 확대가 기대됩니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화는 주의해야 할 요소입니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 251,
+        "document_type": "disclosure",
+        "score": 0.212626,
+        "ticker": "009150"
+      },
+      {
+        "chunk_id": 245,
+        "document_type": "disclosure",
+        "score": 0.19016,
+        "ticker": "009150"
+      },
+      {
+        "chunk_id": 241,
+        "document_type": "disclosure",
+        "score": 0.184087,
+        "ticker": "009150"
+      },
+      {
+        "chunk_id": 239,
+        "document_type": "disclosure",
+        "score": 0.14982,
+        "ticker": "009150"
+      },
+      {
+        "chunk_id": 236,
+        "document_type": "news_article",
+        "score": 0.293523,
+        "ticker": "009150"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "삼성전기 009150 MLCC",
+    "retrieval_quality": {
+      "chunk_count": 5,
+      "score_stats": {
+        "min": 0.14982,
+        "max": 0.293523,
+        "avg": 0.206043,
+        "count": 5
+      },
+      "doc_type_distribution": {
+        "disclosure": 4,
+        "news_article": 1
+      },
+      "has_relevant": false
+    },
+    "context_usage": {
+      "referenced_count": 5,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 5,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.212626,
+        0.19016,
+        0.184087,
+        0.14982,
+        0.293523
+      ],
+      "score_stats": {
+        "min": 0.14982,
+        "max": 0.293523,
+        "avg": 0.206043,
+        "count": 5
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "삼성전기 009150 MLCC",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 삼성전기의 성장 가능성을 긍정적으로 평가하고 있으나, 하락 요인과 리스크에 대한 언급이 다소 제한적입니다. 전반적으로 과도한 낙관이 감지되며, 추가적인 리스크 요소가 필요합니다.",
+    "missing_risks": [
+      "글로벌 경제 불확실성",
+      "원자재 가격 변동 리스크",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "AI 반도체 및 HBM 수요 증가에 대한 지나친 긍정적 전망"
+    ],
+    "context_gaps": [
+      "AI 반도체 시장의 경쟁 상황",
+      "K컬처의 해외 시장 확대에 대한 구체적인 데이터",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "하락 요인 및 리스크를 보다 구체적으로 분석할 것",
+      "시장 변화에 대한 예측 및 대응 전략을 포함할 것"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-06-09 15:48:44"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "삼성전기 009150 MLCC",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "AI 반도체 및 HBM 수요 증가로 인한 매출 성장 가능성",
+        "K컬처의 영향으로 해외 시장 확대 기대"
+      ],
+      "bearish_factors": [
+        "반도체 산업의 불안정성",
+        "글로벌 경쟁 심화"
+      ],
+      "risks": [
+        "노조의 반발로 인한 운영 리스크",
+        "기술 발전 속도에 따른 시장 변화"
+      ],
+      "summary": "삼성전기는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으며, K컬처의 영향으로 해외 시장 확대가 기대됩니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화는 주의해야 할 요소입니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 251,
+          "document_type": "disclosure",
+          "score": 0.212626,
+          "ticker": "009150"
+        },
+        {
+          "chunk_id": 245,
+          "document_type": "disclosure",
+          "score": 0.19016,
+          "ticker": "009150"
+        },
+        {
+          "chunk_id": 241,
+          "document_type": "disclosure",
+          "score": 0.184087,
+          "ticker": "009150"
+        },
+        {
+          "chunk_id": 239,
+          "document_type": "disclosure",
+          "score": 0.14982,
+          "ticker": "009150"
+        },
+        {
+          "chunk_id": 236,
+          "document_type": "news_article",
+          "score": 0.293523,
+          "ticker": "009150"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-06-09 15:48:44"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 1.0,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 10
+    },
+    "importance": {
+      "importance_score": 1.0,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_삼성전기_009150_MLCC_2026-06-09_15:48:44",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "NVIDIA → 실적",
+        "HBM → 공급",
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-06-09 15:48:44"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 19,
+    "relation_count": 48,
+    "query": "삼성전기 009150 MLCC"
+  },
+  "stock_chain": {
+    "entity_count": 14,
+    "link_count": 48,
+    "propagation_paths": 102
+  },
+  "unified_context_length": 3964,
+  "retrieval_chunk_count": 5,
+  "runtime_context": {
+    "trace_id": "20260609_154829",
+    "ticker": "009150",
+    "query": "삼성전기 009150 MLCC",
+    "news_chunks": [
+      {
+        "chunk_id": 236,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "신한자산운용 AI반도체톱2플러스 순자산 3조5천억원 돌파\n\n[신한자산운용 'SOL AI반도체톱2플러스' 순자산 3조5천억원 돌파 (신한자산운용 제공=연합뉴스)]\n신한자산운용은 ‘SOL AI반도체TOP2플러스’ 상장지수펀드(ETF) 순자산이 3조5천억원을 넘어섰다고 오늘(28일) 밝혔습니다.\nSOL AI반도체TOP2플러스는 지난 3월 17일 110억원 규모로 상장한 이후 전날 기준 순자산 3조5천억원을 달성했습니다. 개인 투자자 누적 순매수액은 1조9천729억원을 기록했습니다.\n이 ETF는 ‘에프앤가이드 AI반도체 TOP2 플러스 지수’를 기초지수로 하며, SK하이닉스(시가총액 기준 구성비중 26.46%), 삼성전기(23.28%), 삼성전자(17.78%), SK스퀘어(16.18%) 등을 담고 있습니다.\n신한자산운용 김정현 ETF사업그룹장은 “삼성전자와 SK하이닉스라는 국내 대표 메모리 반도체 기업을 중심으로 SK스퀘어, 삼성전기 등을 함께 편입해 고대역폭 메모리(HBM), 고성능 메모리, 인공지능(AI) 서버용 기판·적층세라믹커패시터(MLCC) 등 AI 반도체 가치사슬의 핵심 성장 동력을 포트폴리오에 반영한 점이 차별화 요소”라고 설명했습니다.\n당신의 제보가 뉴스로 만들어집니다.\nSBS Biz는 여러분의 제보를 기다리고 있습니다.\n홈페이지 = https://url.kr/9pghjn",
+        "chunk_length": 669,
+        "ticker": "009150",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 44,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"009150\", \"source\": \"SBS Biz\", \"published_at\": \"2026-05-28 10:26:12\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"신한자산운용 AI반도체톱2플러스 순자산 3조5천억원 돌파\", \"url\": \"https://n.news.naver.com/mnews/article/374/0000512667?sid=101\"}",
+        "score": 0.293523,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 251,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "수시공시의무관련사항(공정공시)               수시공시의무관련사항(공정공시)",
+        "chunk_length": 47,
+        "ticker": "009150",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 675,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"009150\", \"source\": \"opendart\", \"published_at\": \"2026-02-19\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"수시공시의무관련사항(공정공시)              \", \"receipt_no\": \"20260219800385\", \"corp_code\": \"00126362\"}",
+        "score": 0.212626,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 245,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "투자판단관련주요경영사항               투자판단관련주요경영사항",
+        "chunk_length": 39,
+        "ticker": "009150",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 681,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"009150\", \"source\": \"opendart\", \"published_at\": \"2026-01-30\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"투자판단관련주요경영사항              \", \"receipt_no\": \"20260130800516\", \"corp_code\": \"00126362\"}",
+        "score": 0.19016,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 241,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]금전대여결정               [기재정정]금전대여결정",
+        "chunk_length": 39,
+        "ticker": "009150",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 685,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"009150\", \"source\": \"opendart\", \"published_at\": \"2025-12-18\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]금전대여결정              \", \"receipt_no\": \"20251218800030\", \"corp_code\": \"00126362\"}",
+        "score": 0.184087,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 239,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "조회공시요구(풍문또는보도)에대한답변(미확정)               조회공시요구(풍문또는보도)에대한답변(미확정)",
+        "chunk_length": 63,
+        "ticker": "009150",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 687,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"009150\", \"source\": \"opendart\", \"published_at\": \"2025-12-03\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"조회공시요구(풍문또는보도)에대한답변(미확정)              \", \"receipt_no\": \"20251203800441\", \"corp_code\": \"00126362\"}",
+        "score": 0.14982,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      }
+    ],
+    "disclosure_chunks": [],
+    "merged_evidence": [
+      {
+        "chunk_id": 251,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "수시공시의무관련사항(공정공시)               수시공시의무관련사항(공정공시)",
+        "chunk_length": 47,
+        "ticker": "009150",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 675,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"009150\", \"source\": \"opendart\", \"published_at\": \"2026-02-19\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"수시공시의무관련사항(공정공시)              \", \"receipt_no\": \"20260219800385\", \"corp_code\": \"00126362\"}",
+        "score": 0.212626,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4488,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 245,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "투자판단관련주요경영사항               투자판단관련주요경영사항",
+        "chunk_length": 39,
+        "ticker": "009150",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 681,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"009150\", \"source\": \"opendart\", \"published_at\": \"2026-01-30\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"투자판단관련주요경영사항              \", \"receipt_no\": \"20260130800516\", \"corp_code\": \"00126362\"}",
+        "score": 0.19016,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4331,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 241,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]금전대여결정               [기재정정]금전대여결정",
+        "chunk_length": 39,
+        "ticker": "009150",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 685,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"009150\", \"source\": \"opendart\", \"published_at\": \"2025-12-18\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]금전대여결정              \", \"receipt_no\": \"20251218800030\", \"corp_code\": \"00126362\"}",
+        "score": 0.184087,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4289,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 239,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "조회공시요구(풍문또는보도)에대한답변(미확정)               조회공시요구(풍문또는보도)에대한답변(미확정)",
+        "chunk_length": 63,
+        "ticker": "009150",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 687,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"009150\", \"source\": \"opendart\", \"published_at\": \"2025-12-03\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"조회공시요구(풍문또는보도)에대한답변(미확정)              \", \"receipt_no\": \"20251203800441\", \"corp_code\": \"00126362\"}",
+        "score": 0.14982,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4049,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 236,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "신한자산운용 AI반도체톱2플러스 순자산 3조5천억원 돌파\n\n[신한자산운용 'SOL AI반도체톱2플러스' 순자산 3조5천억원 돌파 (신한자산운용 제공=연합뉴스)]\n신한자산운용은 ‘SOL AI반도체TOP2플러스’ 상장지수펀드(ETF) 순자산이 3조5천억원을 넘어섰다고 오늘(28일) 밝혔습니다.\nSOL AI반도체TOP2플러스는 지난 3월 17일 110억원 규모로 상장한 이후 전날 기준 순자산 3조5천억원을 달성했습니다. 개인 투자자 누적 순매수액은 1조9천729억원을 기록했습니다.\n이 ETF는 ‘에프앤가이드 AI반도체 TOP2 플러스 지수’를 기초지수로 하며, SK하이닉스(시가총액 기준 구성비중 26.46%), 삼성전기(23.28%), 삼성전자(17.78%), SK스퀘어(16.18%) 등을 담고 있습니다.\n신한자산운용 김정현 ETF사업그룹장은 “삼성전자와 SK하이닉스라는 국내 대표 메모리 반도체 기업을 중심으로 SK스퀘어, 삼성전기 등을 함께 편입해 고대역폭 메모리(HBM), 고성능 메모리, 인공지능(AI) 서버용 기판·적층세라믹커패시터(MLCC) 등 AI 반도체 가치사슬의 핵심 성장 동력을 포트폴리오에 반영한 점이 차별화 요소”라고 설명했습니다.\n당신의 제보가 뉴스로 만들어집니다.\nSBS Biz는 여러분의 제보를 기다리고 있습니다.\n홈페이지 = https://url.kr/9pghjn",
+        "chunk_length": 669,
+        "ticker": "009150",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 44,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"009150\", \"source\": \"SBS Biz\", \"published_at\": \"2026-05-28 10:26:12\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"신한자산운용 AI반도체톱2플러스 순자산 3조5천억원 돌파\", \"url\": \"https://n.news.naver.com/mnews/article/374/0000512667?sid=101\"}",
+        "score": 0.293523,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4005,
+        "source_priority": "MEDIUM"
+      }
+    ],
+    "reasoning_context": [
+      "[공시] chunk #251",
+      "[공시] chunk #245",
+      "[공시] chunk #241",
+      "[공시] chunk #239",
+      "[뉴스] chunk #236"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 4,
+      "NEWS": 1,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "failed",
+    "has_disclosure": true,
+    "disclosure_priority": "HIGH"
+  },
+  "completed_at": "2026-06-09 15:48:44"
+}

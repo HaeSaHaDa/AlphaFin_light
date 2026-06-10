@@ -1,0 +1,33 @@
+{
+  "trace_id": "20260610_000325",
+  "query": "삼성전자 005930",
+  "ticker": "005930",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [
+      "삼성전자의 최대주주 및 대량보유 상황 보고서가 지속적으로 업데이트되고 있어 기업의 안정성을 시사함",
+      "특수관계인과의 내부 거래가 발생하고 있어 투명성에 대한 우려가 존재함",
+      "글로벌 경제 불확실성으로 인한 매출 감소 리스크"
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

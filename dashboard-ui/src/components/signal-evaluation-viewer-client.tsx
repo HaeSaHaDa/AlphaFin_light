@@ -3,9 +3,9 @@
 import { useActiveTrace } from "@/hooks/use-active-trace";
 import { RuntimeTraceBanner } from "@/components/runtime-panels/RuntimeTraceBanner";
 import Link from "next/link";
+import { traceQueryHref } from "@/runtime-state/runtime-trace-store";
 import { Loader2, AlertTriangle, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { PresentationModeToggle } from "@/components/layout/presentation-mode-toggle";
 import { SignalPanel } from "@/components/signal-evaluation/SignalPanel";
 import { SignalHistory } from "@/components/signal-evaluation/SignalHistory";
 import { SignalTimeline } from "@/components/signal-evaluation/SignalTimeline";
@@ -30,9 +30,8 @@ export function SignalEvaluationViewerClient() {
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <PresentationModeToggle />
           <Button variant="outline" size="sm" asChild>
-            <Link href="/">Dashboard</Link>
+            <Link href={traceQueryHref("/", traceId)}>Dashboard</Link>
           </Button>
           <Button variant="outline" size="sm" onClick={reload} disabled={status === "loading"}>
             <RefreshCw className="h-3 w-3" />

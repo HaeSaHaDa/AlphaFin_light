@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260528_133750",
+  "query": "삼성전자 005930 HBM 비메모리",
+  "persona": "growth_investor",
+  "ticker": "005930",
+  "started_at": "2026-05-28 13:37:50",
+  "completed_at": "2026-05-28 13:38:00",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "chunks=5",
+      "timestamp": "2026-05-28 13:37:50"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=1737",
+      "timestamp": "2026-05-28 13:37:50"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=4507",
+      "timestamp": "2026-05-28 13:37:50"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-05-28 13:37:56"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-05-28 13:37:56"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 삼성전자의 성장 가능성을 긍정적으로 평가하고 있으나, 리스크 요소가 충분히 다뤄지지",
+      "timestamp": "2026-05-28 13:38:00"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-05-28 13:38:00"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=1.00",
+      "timestamp": "2026-05-28 13:38:00"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-05-28 13:38:00"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=21 rels=51",
+      "timestamp": "2026-05-28 13:38:00"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=62",
+      "timestamp": "2026-05-28 13:38:00"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 5,
+    "max_score": 0.424442
+  },
+  "reflection_summary": "분석은 삼성전자의 성장 가능성을 긍정적으로 평가하고 있으나, 리스크 요소가 충분히 다뤄지지 않았습니다. 특히, 과도한 낙관이 감지되며, 추가적인 Context가 필요합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

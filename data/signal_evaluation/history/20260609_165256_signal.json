@@ -1,0 +1,33 @@
+{
+  "trace_id": "20260609_165256",
+  "query": "삼성화재 000810",
+  "ticker": "000810",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [
+      "삼성전자 지분 보유로 인한 간접적 수익 가능성",
+      "반도체 시장의 경쟁 심화",
+      "환율 변동에 따른 수익성 리스크"
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

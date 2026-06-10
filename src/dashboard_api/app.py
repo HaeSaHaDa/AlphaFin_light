@@ -28,6 +28,8 @@ from .routes import (
     runtime,
     query,
     market_graph,
+    disclosure,
+    events,
 )
 
 load_dotenv()
@@ -115,6 +117,8 @@ def register_routes(app: FastAPI) -> None:
     app.include_router(runtime.router)
     app.include_router(query.router)
     app.include_router(market_graph.router)
+    app.include_router(disclosure.router)
+    app.include_router(events.router)
     logger.info("API Route 등록 완료")
 
 

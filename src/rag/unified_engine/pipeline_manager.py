@@ -69,17 +69,19 @@ def setup_module_paths() -> None:
 def create_pipeline_state(
     query: str,
     persona: str = "growth_investor",
-    ticker: str = "005930",
+    ticker: str | None = None,
     trace_id: str | None = None,
 ) -> dict[str, Any]:
     """Pipeline 초기 상태 dict를 생성한다."""
+    if not ticker or not ticker.strip():
+        raise ValueError("ticker is required")
     if trace_id is None:
         trace_id = datetime.now().strftime("%Y%m%d_%H%M%S")
 
     return {
         "query": query,
         "persona": persona,
-        "ticker": ticker,
+        "ticker": ticker.strip(),
         "trace_id": trace_id,
         "trace_log": [],
         "started_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),

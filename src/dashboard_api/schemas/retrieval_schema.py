@@ -16,5 +16,6 @@ class RetrievalResponse(BaseModel):
     context_usage: dict[str, Any] = Field(default_factory=dict)
     unified_context_length: int = 0
     retrieval_timestamp: str = ""
+    freshness: dict[str, Any] = Field(default_factory=dict)
     analysis: dict[str, Any] = Field(default_factory=dict)
     context_layers: dict[str, Any] = Field(default_factory=dict)

@@ -1,0 +1,83 @@
+{
+  "query": "삼성전자 005930",
+  "ticker": "005930",
+  "entities": [
+    {
+      "name": "삼성전자",
+      "entity_type": "company",
+      "ticker": "005930",
+      "event_type": null,
+      "created_at": "2026-06-10 00:03:38"
+    }
+  ],
+  "links": [
+    {
+      "source": "경쟁 심화",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "삼성전자의 최대주주 및 대량보유 상황 보고서가 지속적으로 업데이트되고 있",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "신기술 및 신시장에 대한 지속적인 투자로 장기 성장 가능성이 높음",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "특수관계인과의 내부 거래가 발생하고 있어 투명성에 대한 우려가 존재함",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "글로벌 반도체 시장의 경쟁 심화로 인한 시장 점유율 확대의 어려움",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "글로벌 경제 불확실성으로 인한 매출 감소 리스크",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "기술 발전 속도에 따른 경쟁사의 시장 진입 가능성",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    }
+  ],
+  "metadata": {
+    "entity_count": 1,
+    "link_count": 7,
+    "created_at": "2026-06-10 00:03:38"
+  }
+}

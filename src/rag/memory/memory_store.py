@@ -12,6 +12,34 @@ PROJECT_ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_ANALYSIS_DIR = PROJECT_ROOT / "data" / "memory" / "analysis_memory"
 
 
+def _memory_evidence(chunks: list[dict]) -> list[dict]:
+    fields = (
+        "chunk_id",
+        "document_type",
+        "ticker",
+        "score",
+        "merge_score",
+        "source_priority",
+        "source",
+        "title",
+        "report_name",
+        "report_type",
+        "report_date",
+        "section_name",
+        "published_at",
+        "url",
+        "document_url",
+        "text",
+        "chunk_text",
+        "metadata_json",
+    )
+    return [
+        {field: chunk.get(field) for field in fields if chunk.get(field) is not None}
+        for chunk in chunks
+        if isinstance(chunk, dict)
+    ]
+
+
 def build_analysis_memory(analysis_result: dict) -> dict:
     """분석 결과를 Memory 형태로 변환한다.
 
@@ -24,12 +52,16 @@ def build_analysis_memory(analysis_result: dict) -> dict:
     memory = {
         "memory_type": "analysis_memory",
         "query": analysis_result.get("query", ""),
+        "ticker": analysis_result.get("ticker", ""),
+        "keywords": analysis_result.get("keywords", []),
         "persona": analysis_result.get("persona", "default"),
         "bullish_factors": analysis_result.get("bullish_factors", []),
         "bearish_factors": analysis_result.get("bearish_factors", []),
         "risks": analysis_result.get("risks", []),
         "summary": analysis_result.get("summary", ""),
-        "referenced_chunks": analysis_result.get("referenced_chunks", []),
+        "referenced_chunks": _memory_evidence(
+            analysis_result.get("referenced_chunks", []),
+        ),
         "model": analysis_result.get("model", ""),
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     }

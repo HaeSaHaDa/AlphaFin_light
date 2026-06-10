@@ -1,311 +1,147 @@
-# rag-architecture.md
-
 # AlphaFin LTE RAG 구조
 
 ## 문서 목적
 
-이 문서는 AlphaFin LTE 프로젝트의
-RAG(Retrieval-Augmented Generation) 구조를 정의한다.
-
-목표는 다음과 같다.
-
-- Retrieval 흐름 정의
-- 검색 구조 정의
-- Context 생성 구조 정의
-- LLM 입력 흐름 정의
-- AI 구현 방향 통일
-
-현재 문서는
-경량형 연구 구조를 기준으로 작성한다.
+현재 구현된 뉴스·공시 통합 Retrieval과 LLM Context 흐름을 정의한다.
 
 ---
 
-# RAG 개요
-
-현재 프로젝트의 RAG 구조는
-다음 흐름을 기준으로 구성된다.
+# Retrieval 개요
 
 ```text
-문서 수집
-→ 전처리
-→ Chunk 생성
-→ Embedding 생성
-→ Vector 저장
-→ Retrieval
-→ Context Assembly
-→ Prompt 구성
-→ LLM 분석
+Runtime Query
+→ Query Embedding
+→ ticker filtered news/document retrieval
+→ selectedTicker disclosure retrieval
+→ source 정규화
+→ score 기반 evidence 병합
+→ Runtime Context
+→ Unified Context
+→ LLM Analysis
 ```
 
 ---
 
-# 현재 RAG 목표
+# 뉴스 및 일반 문서 Retrieval
 
-현재 프로젝트의 목표:
-
-- 검색 가능한 금융 문서 구조 구축
-- 뉴스 기반 Retrieval
-- 공시 기반 Retrieval
-- Metadata 기반 검색
-- LLM 기반 금융 분석 지원
-
-현재 프로젝트는
-실험 가능한 수준의 단순 구조를 우선한다.
-
----
-
-# 현재 RAG 범위
-
-## 포함 범위
-
-현재 포함:
-
-- Chunk 기반 검색
-- Embedding 기반 검색
-- Metadata Filtering
-- Context Assembly
-- Prompt 기반 분석
-
----
-
-## 제외 범위
-
-현재 제외:
-
-- 대규모 분산 Retrieval
-- 초대형 Vector 인프라
-- 복잡한 Multi-Agent Retrieval
-- 실시간 검색 최적화
-- 대규모 Reranking Cluster
-
----
-
-# Chunk 구조
-
-## 목적
-
-문서를 검색 가능한 단위로 분할한다.
-
-## 예상 대상
-
-- 뉴스 기사
-- 공시 문서
-- 재무 설명 텍스트
-
-## 현재 원칙
-
-- 작은 단위 유지
-- 의미 단위 유지
-- 검색 가능한 구조 유지
-
-## Chunk 포함 가능 정보
-
-- 본문 텍스트
-- 종목코드
-- 날짜
-- 뉴스 출처
-- 공시 종류
-- 문서 타입
-
----
-
-# Embedding 구조
-
-## 목적
-
-텍스트를 벡터 형태로 변환한다.
-
-## 역할
-
-- 의미 기반 검색 지원
-- Similarity Search 지원
-- Retrieval 지원
-
-## 현재 원칙
-
-- 경량 구조 우선
-- 실험 가능한 구조 우선
-- 단일 노드 기반 구조 우선
-
----
-
-# Vector Store 구조
-
-## 목적
-
-Embedding 데이터를 저장한다.
-
-## 현재 후보 기술
-
-- FAISS
-- ChromaDB
-
-## 현재 원칙
-
-- 단순한 구조 유지
-- 빠른 실험 가능 구조 유지
-- 로컬 기반 구조 우선
-
----
-
-# Retrieval 구조
-
-## 목적
-
-질문과 관련된 문서를 검색한다.
-
-## 포함 가능 요소
-
-- Similarity Search
-- Metadata Filtering
-- 날짜 기반 검색
-- 종목 기반 검색
-
-## Retrieval 입력
-
-예시:
+위치:
 
 ```text
-사용자 질문
-+ 종목코드
-+ 날짜 정보
-+ 검색 조건
+src/rag/embedding/
+src/rag/retrieval/
+src/runtime_flow/retrieval_executor.py
 ```
 
-## Retrieval 출력
+동작:
 
-예시:
+- OpenAI `text-embedding-3-small` 사용
+- MariaDB `document_embeddings` 조회
+- ticker metadata filter 적용
+- cosine similarity 기반 ranking
+- top_k 결과 반환
+
+---
+
+# Disclosure Retrieval
+
+위치:
 
 ```text
-관련 뉴스
-관련 공시
-관련 Chunk
-Metadata
+src/disclosure/
+src/runtime_query/disclosure_runtime_integration.py
 ```
 
----
+동작:
 
-# Metadata 구조
-
-## 목적
-
-검색 정확도를 향상한다.
-
-## 포함 가능 정보
-
-- 종목코드
-- 날짜
-- 뉴스 출처
-- 공시 종류
-- 문서 타입
-
-## 사용 목적
-
-- 검색 필터링
-- Context 정렬
-- 실험 추적
+- OpenDART 문서 수집 또는 cache 재사용
+- `disclosure_documents` 저장
+- disclosure chunk 생성
+- selectedTicker 기반 후보 조회
+- query token overlap와 importance 기반 점수 계산
 
 ---
 
-# Context Assembly 구조
+# Unified Retrieval
 
-## 목적
-
-검색 결과를
-LLM 입력 가능한 형태로 조합한다.
-
-## 현재 예상 구성
+위치:
 
 ```text
-질문
-+ Retrieval 결과
-+ 뉴스 정보
-+ 공시 정보
-+ Metadata
+src/runtime_query/unified_retrieval_builder.py
+src/runtime_query/runtime_evidence_merger.py
 ```
 
-## 현재 원칙
-
-- 너무 긴 Context 방지
-- 관련성 우선
-- 명시적 구조 유지
-
----
-
-# Prompt 연결 구조
-
-## 목적
-
-RAG 결과를 Prompt에 연결한다.
-
-## 포함 가능 요소
-
-- System Prompt
-- 사용자 질문
-- Retrieval 결과
-- 금융 문맥 정보
-
-## 예상 흐름
+출력 분류:
 
 ```text
-Retrieval
-→ Context 생성
-→ Prompt 구성
-→ LLM 분석
+news_chunks
+disclosure_chunks
+merged_evidence
+source_breakdown
 ```
+
+공시 evidence가 있으면 Runtime Context에 `has_disclosure`와
+`disclosure_priority`가 포함된다.
 
 ---
 
-# 현재 예상 모듈 구조
+# Context Assembly
+
+위치:
 
 ```text
-src/rag/
-├─ embedding/
-├─ retrieval/
-├─ vectorstore/
-└─ context/
+src/rag/context/
+src/rag/unified_engine/context_orchestrator.py
 ```
 
----
+기본 retrieval context에 다음 보강 context가 연결된다.
 
-# 현재 구조 원칙
+- layered memory
+- temporal memory
+- reflection
+- event graph
+- stock chain
 
-현재 프로젝트는 다음 원칙을 유지한다.
-
-- 단순성 우선
-- 작은 모듈 유지
-- 명시적 흐름 유지
-- 추적 가능한 Retrieval 유지
-- AI 협업 가능한 구조 유지
+Context는 최대 길이를 제한하고 document type별로 정리한다.
 
 ---
 
-# 현재 제외 범위
+# LLM 분석
 
-현재 제외:
+위치:
 
-- Hybrid Search 최적화
-- 고급 Reranking
-- 멀티 노드 Vector DB
-- Agentic Retrieval
-- 초대형 검색 클러스터
+```text
+src/rag/unified_engine/engine_runner.py
+```
 
-현재 프로젝트는
-경량형 연구 구조를 목표로 한다.
+현재 기본 Chat 모델:
+
+```text
+gpt-4o-mini
+```
+
+주요 출력:
+
+- bullish factors
+- bearish factors
+- risks
+- summary
+- referenced chunks
+
+이후 Evaluation, Reflection, Memory, Graph 단계가 이어진다.
 
 ---
 
-# 향후 확장 가능 영역
+# Trace 원칙
 
-향후 확장 가능 영역:
+- Runtime 결과는 `trace_id`로 저장한다.
+- Dashboard API는 명시적 trace 조회를 우선한다.
+- selectedTicker와 다른 ticker의 결과를 fallback으로 사용하지 않는다.
 
-- reranking
-- hybrid search
-- query expansion
-- retrieval cache
-- prompt versioning
-- memory layer
+---
 
-단,
-현재 단계에서는
-복잡한 Retrieval 구조를 우선하지 않는다.
+# 현재 한계
+
+- 뉴스 retrieval embedding과 disclosure retrieval의 scoring 방식이 다르다.
+- Context usage 평가는 실제 사용 근거를 충분히 추적하지 못할 수 있다.
+- OpenAI 호출 실패와 Runtime completed 상태의 계약을 보강해야 한다.
+- 고급 reranker와 분산 vector infrastructure는 범위 밖이다.

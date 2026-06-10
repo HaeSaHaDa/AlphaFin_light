@@ -70,8 +70,10 @@ def _call_chat_api(client: OpenAI, messages: list[dict]) -> dict:
 def run_unified_pipeline(
     query: str,
     persona: str = "growth_investor",
-    ticker: str = "005930",
+    ticker: str | None = None,
     trace_id: str | None = None,
+    preloaded_chunks: list[dict] | None = None,
+    runtime_context: dict | None = None,
 ) -> dict:
     """End-to-End Unified Pipeline을 실행한다.
 
@@ -101,18 +103,29 @@ def run_unified_pipeline(
     from entity_extractor import normalize_entities  # noqa: E402
     from chain_builder import build_stock_chain, merge_event_graph_links  # noqa: E402
     from propagation_engine import calculate_propagation  # noqa: E402
-    from chain_store import save_stock_chain, save_propagation_log  # noqa: E402
-    from propagation_engine import propagate_market_impact  # noqa: E402
+    from chain_store import save_stock_chain  # noqa: E402
 
     state = create_pipeline_state(query, persona, ticker, trace_id)
+    ticker = state["ticker"]
+    if runtime_context:
+        state["runtime_context"] = runtime_context
     client = _get_openai_client()
 
     logger.info("=== Unified Engine 시작  trace_id=%s ===", state["trace_id"])
 
-    # --- Retrieval ---
-    chunks = retrieve_similar_chunks(query, top_k=5, filters={"ticker": ticker})
-    log_step(state, "retrieval", "ok" if chunks else "warn",
-             f"chunks={len(chunks)}")
+    # --- Retrieval (news + optional disclosure pre-merge) ---
+    if preloaded_chunks is not None:
+        chunks = preloaded_chunks
+        disc_n = sum(1 for c in chunks if c.get("document_type") == "disclosure")
+        log_step(
+            state,
+            "retrieval",
+            "ok" if chunks else "warn",
+            f"unified_chunks={len(chunks)} disclosure={disc_n}",
+        )
+    else:
+        chunks = retrieve_similar_chunks(query, top_k=5, filters={"ticker": ticker})
+        log_step(state, "retrieval", "ok" if chunks else "warn", f"chunks={len(chunks)}")
 
     if not chunks:
         log_step(state, "pipeline", "error", "Retrieval 결과 없음")
@@ -168,6 +181,8 @@ def run_unified_pipeline(
     analysis_result = {
         "persona": persona,
         "query": query,
+        "ticker": ticker,
+        "keywords": (state.get("runtime_context") or {}).get("keywords", []),
         "bullish_factors": analysis_raw.get("bullish_factors", []),
         "bearish_factors": analysis_raw.get("bearish_factors", []),
         "risks": analysis_raw.get("risks", []),
@@ -195,9 +210,11 @@ def run_unified_pipeline(
              reflection.get("reflection_summary", "")[:50])
 
     # --- Memory ---
-    analysis_memory = build_analysis_memory(analysis_result)
-    save_analysis_memory(analysis_memory)
-    state["analysis_memory"] = analysis_memory
+    memory_input = {
+        **analysis_result,
+        "referenced_chunks": chunks,
+    }
+    analysis_memory = build_analysis_memory(memory_input)
 
     reflections = state.get("reflections", [])
     graphs = state.get("event_graphs", [])
@@ -205,6 +222,8 @@ def run_unified_pipeline(
         analysis_memory, reflections=reflections, graphs=graphs,
         reuse_count=1,
     )
+    save_analysis_memory(importance_mem)
+    state["analysis_memory"] = importance_mem
     layered_save = save_layered_memory(importance_mem)
     state["importance_result"] = {
         "importance_score": importance_mem.get("importance_score"),
@@ -249,10 +268,8 @@ def run_unified_pipeline(
     entities = normalize_entities(sc_extract_entities(all_text))
     chain = build_stock_chain(entities, query=query, ticker=ticker)
     chain = merge_event_graph_links(chain, graph)
-    paths = calculate_propagation(chain, start_source="NVIDIA")
-    prop = propagate_market_impact(chain, "HBM")
+    paths = calculate_propagation(chain)
     save_stock_chain(chain, filename=f"{state['trace_id']}_chain.json")
-    save_propagation_log(prop)
     state["stock_chain"] = {
         "entity_count": len(entities),
         "link_count": len(chain.get("links", [])),

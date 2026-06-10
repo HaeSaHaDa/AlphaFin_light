@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { useActiveTrace } from "@/hooks/use-active-trace";
+import { traceQueryHref } from "@/runtime-state/runtime-trace-store";
+
 export function RuntimeTraceBanner() {
-  const { traceId, ticker, companyName, runtimeQuery, fromSession } = useActiveTrace();
+  const { traceId, ticker, companyName, runtimeQuery } = useActiveTrace();
 
   if (!traceId) {
     return (
@@ -28,11 +30,12 @@ export function RuntimeTraceBanner() {
         <span className="ml-2 text-muted-foreground">· {runtimeQuery}</span>
       )}
       <span className="ml-2 font-mono text-muted-foreground">trace: {traceId}</span>
-      {fromSession && (
-        <Link href="/" className="ml-3 text-primary underline">
-          Dashboard
-        </Link>
-      )}
+      <Link
+        href={traceQueryHref("/", traceId)}
+        className="ml-3 text-primary underline"
+      >
+        Dashboard
+      </Link>
     </div>
   );
 }

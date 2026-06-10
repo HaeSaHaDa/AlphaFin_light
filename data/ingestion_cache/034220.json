@@ -1,0 +1,9 @@
+{
+  "ticker": "034220",
+  "company_name": "LG디스플레이",
+  "status": "completed",
+  "documents": 94,
+  "chunks": 26,
+  "embeddings": 9,
+  "completed_at": "2026-06-09 17:20:42"
+}

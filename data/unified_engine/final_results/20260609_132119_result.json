@@ -1,0 +1,473 @@
+{
+  "trace_id": "20260609_132119",
+  "query": "삼성물산 028260",
+  "persona": "growth_investor",
+  "ticker": "028260",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "삼성물산 028260",
+    "bullish_factors": [
+      "AI 및 IoT 기술을 활용한 시니어 리빙 솔루션 도입으로 새로운 시장 창출 가능성",
+      "프리미엄 시니어 주거 기준 제시로 시장 점유율 확대 기회"
+    ],
+    "bearish_factors": [
+      "시니어 시장의 경쟁 심화 가능성",
+      "기술 도입 초기 단계에서의 운영 리스크"
+    ],
+    "risks": [
+      "AI 및 IoT 기술의 신뢰성 문제",
+      "고령층의 기술 수용성에 따른 서비스 이용률 저조"
+    ],
+    "summary": "삼성물산은 AI 및 IoT 기술을 활용한 시니어 리빙 솔루션을 도입함으로써 새로운 시장을 창출하고 프리미엄 주거 기준을 제시할 수 있는 기회를 가지고 있습니다. 그러나 경쟁 심화와 초기 운영 리스크가 존재하여 주의가 필요합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 109,
+        "document_type": "disclosure",
+        "score": 0.308509,
+        "ticker": "028260"
+      },
+      {
+        "chunk_id": 101,
+        "document_type": "news_article",
+        "score": 0.363684,
+        "ticker": "028260"
+      },
+      {
+        "chunk_id": 97,
+        "document_type": "news_article",
+        "score": 0.325094,
+        "ticker": "028260"
+      },
+      {
+        "chunk_id": 107,
+        "document_type": "news_article",
+        "score": 0.31103,
+        "ticker": "028260"
+      },
+      {
+        "chunk_id": 108,
+        "document_type": "news_article",
+        "score": 0.300041,
+        "ticker": "028260"
+      },
+      {
+        "chunk_id": 105,
+        "document_type": "news_article",
+        "score": 0.299054,
+        "ticker": "028260"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "삼성물산 028260",
+    "retrieval_quality": {
+      "chunk_count": 6,
+      "score_stats": {
+        "min": 0.299054,
+        "max": 0.363684,
+        "avg": 0.317902,
+        "count": 6
+      },
+      "doc_type_distribution": {
+        "disclosure": 1,
+        "news_article": 5
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 6,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 6,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.308509,
+        0.363684,
+        0.325094,
+        0.31103,
+        0.300041,
+        0.299054
+      ],
+      "score_stats": {
+        "min": 0.299054,
+        "max": 0.363684,
+        "avg": 0.317902,
+        "count": 6
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "삼성물산 028260",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 삼성물산의 시니어 리빙 솔루션의 성장 가능성을 긍정적으로 평가하고 있지만, 경쟁 심화와 운영 리스크에 대한 경고가 다소 약하게 표현되어 있습니다. 전반적으로 과도한 낙관이 감지됩니다.",
+    "missing_risks": [
+      "경제 불황에 따른 소비 감소 리스크",
+      "법적 규제 변화에 따른 영향",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "AI 및 IoT 기술 도입에 대한 지나친 기대",
+      "프리미엄 시장 점유율 확대 가능성에 대한 과도한 긍정적 전망"
+    ],
+    "context_gaps": [
+      "시니어 시장의 전체 성장 추세에 대한 분석 부족",
+      "경쟁업체 분석 및 비교 부족",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "경쟁 심화에 대한 구체적인 데이터 및 사례 추가",
+      "기술 도입에 따른 구체적인 운영 리스크 분석 강화"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-06-09 13:21:28"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "삼성물산 028260",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "AI 및 IoT 기술을 활용한 시니어 리빙 솔루션 도입으로 새로운 시장 창출 가능성",
+        "프리미엄 시니어 주거 기준 제시로 시장 점유율 확대 기회"
+      ],
+      "bearish_factors": [
+        "시니어 시장의 경쟁 심화 가능성",
+        "기술 도입 초기 단계에서의 운영 리스크"
+      ],
+      "risks": [
+        "AI 및 IoT 기술의 신뢰성 문제",
+        "고령층의 기술 수용성에 따른 서비스 이용률 저조"
+      ],
+      "summary": "삼성물산은 AI 및 IoT 기술을 활용한 시니어 리빙 솔루션을 도입함으로써 새로운 시장을 창출하고 프리미엄 주거 기준을 제시할 수 있는 기회를 가지고 있습니다. 그러나 경쟁 심화와 초기 운영 리스크가 존재하여 주의가 필요합니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 109,
+          "document_type": "disclosure",
+          "score": 0.308509,
+          "ticker": "028260"
+        },
+        {
+          "chunk_id": 101,
+          "document_type": "news_article",
+          "score": 0.363684,
+          "ticker": "028260"
+        },
+        {
+          "chunk_id": 97,
+          "document_type": "news_article",
+          "score": 0.325094,
+          "ticker": "028260"
+        },
+        {
+          "chunk_id": 107,
+          "document_type": "news_article",
+          "score": 0.31103,
+          "ticker": "028260"
+        },
+        {
+          "chunk_id": 108,
+          "document_type": "news_article",
+          "score": 0.300041,
+          "ticker": "028260"
+        },
+        {
+          "chunk_id": 105,
+          "document_type": "news_article",
+          "score": 0.299054,
+          "ticker": "028260"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-06-09 13:21:28"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.7,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 10
+    },
+    "importance": {
+      "importance_score": 0.7,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_삼성물산_028260_2026-06-09_13:21:28",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-06-09 13:21:28"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 18,
+    "relation_count": 45,
+    "query": "삼성물산 028260"
+  },
+  "stock_chain": {
+    "entity_count": 14,
+    "link_count": 45,
+    "propagation_paths": 102
+  },
+  "unified_context_length": 5389,
+  "retrieval_chunk_count": 6,
+  "runtime_context": {
+    "trace_id": "20260609_132119",
+    "ticker": "028260",
+    "query": "삼성물산 028260",
+    "news_chunks": [
+      {
+        "chunk_id": 101,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "삼성물산, 고급 시니어 레지던스에 'AI 리빙 솔루션' 적용\n '더시그넘하우스 강남'에 도입…AI·IoT로 입주민 일상-돌봄인력 연결 (서울=연합뉴스) 임기창 기자 = 삼성물산은 인공기능(AI)을 활용해 돌봄 인력을 고령층과 연결하는 'AI 시니어 리빙 솔루션'을 고급 시니어 레지던스 '더시그넘하우스 강남'에 적용한다고 28일 밝혔다. 삼성물산-도타이, 'AI 시니어 리빙 솔루션' 도입 업무협약 [삼성물산 제공. 재판매 및 DB 금지] AI 시니어 리빙 솔루션은 AI와 사물인터넷(IoT) 데이터 기술을 통합해 고령층의 일상과 전문 돌봄 인력을 연결하는 디지털 호스피탈리티 (Digital Hospitality) 솔루션이다. 시니어 레지던스 입주민은 세대 내에 설치된 여러 개의 IoT 센서로 수면, 활동, 심박 등 일상 데이터를 측정하고 스마트폰 애플리케이션을 통해 운동, 식단 등에 관한 맞춤형 지도를 받는다. 시설 운영자에게는 입주민 건강 상태와 활동 유무, 이상 징후를 실시간 확인할 수 있는 대시보드와 24시간 안전 모니터링이 제공된다. 이와 관련해 삼성물산은 전날 더시그넘하우스 강남 운영사인 도타이와 솔루션 도입 및 사업 협력에 관한 업무협약을 체결하고 내달부터 자립형 거주 세대와 돌봄형 너싱홈 베드에 솔루션을 도입하기로 했다. 입주자 스스로 생활 가능한 자립형 세대에는 활동량과 생활 리듬을 기반으로 한 건강관리·예방 중심 기능이, 돌봄이 필요한 너싱홈에는 전문인력 개입이 필요한 시점에 알람을 제공하는 모니터링 중심 기능이 적용된다.",
+        "chunk_length": 758,
+        "ticker": "028260",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 26,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"연합뉴스\", \"published_at\": \"2026-05-28 09:07:37\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"삼성물산, 고급 시니어 레지던스에 'AI 리빙 솔루션' 적용\", \"url\": \"https://n.news.naver.com/mnews/article/001/0016103489?sid=101\"}",
+        "score": 0.363684,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 97,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "“시니어 레지던스 기준 제시”…삼성물산, 더시그넘하우스 강남에 ‘AI 시니어 리빙 솔루션’ 도입\n AI·IoT·데이터 기술로 시니어·전문 돌봄 인력 연결 자립형 세대·너싱홈 동시 도입 (왼쪽부터) 삼성물산 유연택 플랫폼사업개발팀장과 조혜정 부사장, 도타이 정길자 대표, 박주비 실장이 지난 27일 서울 강남구 자곡동 더시그넘하우스 강남에서 업무협약을 맺고 기념사진을 찍고 있다. [삼성물산 건설부문] 삼성물산 건설부문(이하 삼성물산)이 ‘인공지능(AI) 시니어 리빙 솔루션’ 도입을 통해 프리미엄 시니어 주거 기준을 제시한다. 삼성물산은 지난 27일 서울 강남구 자곡동 ‘더시그넘하우스 강남’ 운영사인 도타이와 ‘AI 시니어 리빙 솔루션 도입 및 사업협력 업무협약(MOU)’을 체결했다고 28일 밝혔다. 이날 협약식에는 조혜정 삼성물산 DxP본부장과 정길자 도타이 대표 등 양사 주요 경영진이 참석했다. 삼성물산에 따르면 ‘AI 시니어 리빙 솔루션’은 AI·IoT(사물인터넷)·데이터 기술을 통합해 시니어의 일상과 전문 돌봄 인력을 자연스럽게 연결하는 디지털 호스피탈리티 솔루션이다. 시니어 레지던스 입주민은 세대 내 설치된 여러 IoT 센서로 수면·활동·심박 등 일상 데이터를 측정하고 이를 기반으로 운동·식단 등 개인 맞춤형 웰니스 코칭을 전용 스마트폰 애플리케이션을 통해 받는다. 시설 운영자는 입주민 건강 상태·활동 유무와 이상 징후를 실시간으로 확인할 수 있다. 대시보드와 24시간 안전 모니터링이 제공돼 서비스 품질과 운영 효율도 끌어올릴 수 있다.",
+        "chunk_length": 761,
+        "ticker": "028260",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 28,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"매일경제\", \"published_at\": \"2026-05-28 09:04:10\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"“시니어 레지던스 기준 제시”…삼성물산, 더시그넘하우스 강남에 ‘AI 시니어 리빙 솔루션’ 도입\", \"url\": \"https://n.news.naver.com/mnews/article/009/0005686009?sid=101\"}",
+        "score": 0.325094,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 107,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\n\n(서울=뉴스1) = 캐리비안 베이가 때 이른 더위에 파도풀, 메가스톰 등 현재 운영 중인 시설 외에 추가 야외 슬라이드를 당초 계획보다 최대 5주 일찍 가동하는 등 6월 중순까지 모든 물놀이 시설을 풀가동하기로 했다고 28일 밝혔다. 사진은 29일 가동 예정인 캐리비안 베이 '타워부메랑고' (삼성물산 제공. 재판매 및 DB 금지) 2026.5.28/뉴스1",
+        "chunk_length": 231,
+        "ticker": "028260",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 22,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"뉴스1\", \"published_at\": \"2026-05-28 09:16:51\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\", \"url\": \"https://n.news.naver.com/mnews/article/421/0008970194?sid=101\"}",
+        "score": 0.31103,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 109,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "대규모기업집단현황공시[분기별공시(개별회사용)] 대규모기업집단현황공시[분기별공시(개별회사용)]",
+        "chunk_length": 51,
+        "ticker": "028260",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 440,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"opendart\", \"published_at\": \"2025-12-01\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"대규모기업집단현황공시[분기별공시(개별회사용)]\", \"receipt_no\": \"20251201000380\", \"corp_code\": \"00149655\"}",
+        "score": 0.308509,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 108,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\n\n(서울=뉴스1) = 캐리비안 베이가 때 이른 더위에 파도풀, 메가스톰 등 현재 운영 중인 시설 외에 추가 야외 슬라이드를 당초 계획보다 최대 5주 일찍 가동하는 등 6월 중순까지 모든 물놀이 시설을 풀가동하기로 했다고 28일 밝혔다. 사진은 캐리비안 베이 '야외 파도풀' (삼성물산 제공. 재판매 및 DB 금지) 2026.5.28/뉴스1",
+        "chunk_length": 220,
+        "ticker": "028260",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 21,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"뉴스1\", \"published_at\": \"2026-05-28 09:16:58\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\", \"url\": \"https://n.news.naver.com/mnews/article/421/0008970196?sid=101\"}",
+        "score": 0.300041,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 105,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\n\n(서울=뉴스1) = 캐리비안 베이가 때 이른 더위에 파도풀, 메가스톰 등 현재 운영 중인 시설 외에 추가 야외 슬라이드를 당초 계획보다 최대 5주 일찍 가동하는 등 6월 중순까지 모든 물놀이 시설을 풀가동하기로 했다고 28일 밝혔다. 사진은 30일 가동 예정인 캐리비안 베이 '서핑라이드' (삼성물산 제공. 재판매 및 DB 금지) 2026.5.28/뉴스1",
+        "chunk_length": 230,
+        "ticker": "028260",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 24,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"뉴스1\", \"published_at\": \"2026-05-28 09:16:54\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\", \"url\": \"https://n.news.naver.com/mnews/article/421/0008970195?sid=101\"}",
+        "score": 0.299054,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      }
+    ],
+    "disclosure_chunks": [],
+    "merged_evidence": [
+      {
+        "chunk_id": 109,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "대규모기업집단현황공시[분기별공시(개별회사용)] 대규모기업집단현황공시[분기별공시(개별회사용)]",
+        "chunk_length": 51,
+        "ticker": "028260",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 440,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"opendart\", \"published_at\": \"2025-12-01\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"대규모기업집단현황공시[분기별공시(개별회사용)]\", \"receipt_no\": \"20251201000380\", \"corp_code\": \"00149655\"}",
+        "score": 0.308509,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.516,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 101,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "삼성물산, 고급 시니어 레지던스에 'AI 리빙 솔루션' 적용\n '더시그넘하우스 강남'에 도입…AI·IoT로 입주민 일상-돌봄인력 연결 (서울=연합뉴스) 임기창 기자 = 삼성물산은 인공기능(AI)을 활용해 돌봄 인력을 고령층과 연결하는 'AI 시니어 리빙 솔루션'을 고급 시니어 레지던스 '더시그넘하우스 강남'에 적용한다고 28일 밝혔다. 삼성물산-도타이, 'AI 시니어 리빙 솔루션' 도입 업무협약 [삼성물산 제공. 재판매 및 DB 금지] AI 시니어 리빙 솔루션은 AI와 사물인터넷(IoT) 데이터 기술을 통합해 고령층의 일상과 전문 돌봄 인력을 연결하는 디지털 호스피탈리티 (Digital Hospitality) 솔루션이다. 시니어 레지던스 입주민은 세대 내에 설치된 여러 개의 IoT 센서로 수면, 활동, 심박 등 일상 데이터를 측정하고 스마트폰 애플리케이션을 통해 운동, 식단 등에 관한 맞춤형 지도를 받는다. 시설 운영자에게는 입주민 건강 상태와 활동 유무, 이상 징후를 실시간 확인할 수 있는 대시보드와 24시간 안전 모니터링이 제공된다. 이와 관련해 삼성물산은 전날 더시그넘하우스 강남 운영사인 도타이와 솔루션 도입 및 사업 협력에 관한 업무협약을 체결하고 내달부터 자립형 거주 세대와 돌봄형 너싱홈 베드에 솔루션을 도입하기로 했다. 입주자 스스로 생활 가능한 자립형 세대에는 활동량과 생활 리듬을 기반으로 한 건강관리·예방 중심 기능이, 돌봄이 필요한 너싱홈에는 전문인력 개입이 필요한 시점에 알람을 제공하는 모니터링 중심 기능이 적용된다.",
+        "chunk_length": 758,
+        "ticker": "028260",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 26,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"연합뉴스\", \"published_at\": \"2026-05-28 09:07:37\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"삼성물산, 고급 시니어 레지던스에 'AI 리빙 솔루션' 적용\", \"url\": \"https://n.news.naver.com/mnews/article/001/0016103489?sid=101\"}",
+        "score": 0.363684,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4496,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 97,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "“시니어 레지던스 기준 제시”…삼성물산, 더시그넘하우스 강남에 ‘AI 시니어 리빙 솔루션’ 도입\n AI·IoT·데이터 기술로 시니어·전문 돌봄 인력 연결 자립형 세대·너싱홈 동시 도입 (왼쪽부터) 삼성물산 유연택 플랫폼사업개발팀장과 조혜정 부사장, 도타이 정길자 대표, 박주비 실장이 지난 27일 서울 강남구 자곡동 더시그넘하우스 강남에서 업무협약을 맺고 기념사진을 찍고 있다. [삼성물산 건설부문] 삼성물산 건설부문(이하 삼성물산)이 ‘인공지능(AI) 시니어 리빙 솔루션’ 도입을 통해 프리미엄 시니어 주거 기준을 제시한다. 삼성물산은 지난 27일 서울 강남구 자곡동 ‘더시그넘하우스 강남’ 운영사인 도타이와 ‘AI 시니어 리빙 솔루션 도입 및 사업협력 업무협약(MOU)’을 체결했다고 28일 밝혔다. 이날 협약식에는 조혜정 삼성물산 DxP본부장과 정길자 도타이 대표 등 양사 주요 경영진이 참석했다. 삼성물산에 따르면 ‘AI 시니어 리빙 솔루션’은 AI·IoT(사물인터넷)·데이터 기술을 통합해 시니어의 일상과 전문 돌봄 인력을 자연스럽게 연결하는 디지털 호스피탈리티 솔루션이다. 시니어 레지던스 입주민은 세대 내 설치된 여러 IoT 센서로 수면·활동·심박 등 일상 데이터를 측정하고 이를 기반으로 운동·식단 등 개인 맞춤형 웰니스 코칭을 전용 스마트폰 애플리케이션을 통해 받는다. 시설 운영자는 입주민 건강 상태·활동 유무와 이상 징후를 실시간으로 확인할 수 있다. 대시보드와 24시간 안전 모니터링이 제공돼 서비스 품질과 운영 효율도 끌어올릴 수 있다.",
+        "chunk_length": 761,
+        "ticker": "028260",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 28,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"매일경제\", \"published_at\": \"2026-05-28 09:04:10\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"“시니어 레지던스 기준 제시”…삼성물산, 더시그넘하우스 강남에 ‘AI 시니어 리빙 솔루션’ 도입\", \"url\": \"https://n.news.naver.com/mnews/article/009/0005686009?sid=101\"}",
+        "score": 0.325094,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4226,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 107,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\n\n(서울=뉴스1) = 캐리비안 베이가 때 이른 더위에 파도풀, 메가스톰 등 현재 운영 중인 시설 외에 추가 야외 슬라이드를 당초 계획보다 최대 5주 일찍 가동하는 등 6월 중순까지 모든 물놀이 시설을 풀가동하기로 했다고 28일 밝혔다. 사진은 29일 가동 예정인 캐리비안 베이 '타워부메랑고' (삼성물산 제공. 재판매 및 DB 금지) 2026.5.28/뉴스1",
+        "chunk_length": 231,
+        "ticker": "028260",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 22,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"뉴스1\", \"published_at\": \"2026-05-28 09:16:51\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\", \"url\": \"https://n.news.naver.com/mnews/article/421/0008970194?sid=101\"}",
+        "score": 0.31103,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4127,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 108,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\n\n(서울=뉴스1) = 캐리비안 베이가 때 이른 더위에 파도풀, 메가스톰 등 현재 운영 중인 시설 외에 추가 야외 슬라이드를 당초 계획보다 최대 5주 일찍 가동하는 등 6월 중순까지 모든 물놀이 시설을 풀가동하기로 했다고 28일 밝혔다. 사진은 캐리비안 베이 '야외 파도풀' (삼성물산 제공. 재판매 및 DB 금지) 2026.5.28/뉴스1",
+        "chunk_length": 220,
+        "ticker": "028260",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 21,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"뉴스1\", \"published_at\": \"2026-05-28 09:16:58\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\", \"url\": \"https://n.news.naver.com/mnews/article/421/0008970196?sid=101\"}",
+        "score": 0.300041,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.405,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 105,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\n\n(서울=뉴스1) = 캐리비안 베이가 때 이른 더위에 파도풀, 메가스톰 등 현재 운영 중인 시설 외에 추가 야외 슬라이드를 당초 계획보다 최대 5주 일찍 가동하는 등 6월 중순까지 모든 물놀이 시설을 풀가동하기로 했다고 28일 밝혔다. 사진은 30일 가동 예정인 캐리비안 베이 '서핑라이드' (삼성물산 제공. 재판매 및 DB 금지) 2026.5.28/뉴스1",
+        "chunk_length": 230,
+        "ticker": "028260",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 24,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"028260\", \"source\": \"뉴스1\", \"published_at\": \"2026-05-28 09:16:54\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"캐리비안 베이, 이른 더위에 야외 시설 조기 가동 돌입\", \"url\": \"https://n.news.naver.com/mnews/article/421/0008970195?sid=101\"}",
+        "score": 0.299054,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4043,
+        "source_priority": "MEDIUM"
+      }
+    ],
+    "reasoning_context": [
+      "[공시] chunk #109",
+      "[뉴스] chunk #101",
+      "[뉴스] chunk #97",
+      "[뉴스] chunk #107",
+      "[뉴스] chunk #108",
+      "[뉴스] chunk #105"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 1,
+      "NEWS": 5,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "failed",
+    "has_disclosure": true,
+    "disclosure_priority": "HIGH"
+  },
+  "completed_at": "2026-06-09 13:21:29"
+}

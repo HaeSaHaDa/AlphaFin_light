@@ -1,0 +1,9 @@
+{
+  "ticker": "066570",
+  "company_name": "LG전자",
+  "status": "completed",
+  "documents": 90,
+  "chunks": 31,
+  "embeddings": 17,
+  "completed_at": "2026-06-09 13:02:14"
+}

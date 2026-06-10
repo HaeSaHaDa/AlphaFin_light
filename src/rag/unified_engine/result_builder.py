@@ -32,6 +32,7 @@ def build_unified_result(state: dict) -> dict:
         "stock_chain": state.get("stock_chain"),
         "unified_context_length": state.get("unified_context_length", 0),
         "retrieval_chunk_count": len(state.get("chunks", [])),
+        "runtime_context": state.get("runtime_context", {}),
         "completed_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     }
 

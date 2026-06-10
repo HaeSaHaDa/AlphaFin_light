@@ -67,6 +67,20 @@ def get_ticker_stats(ticker: str) -> dict:
     }
 
 
+def get_latest_news_published_at(ticker: str) -> str:
+    conn = get_connection()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                "SELECT MAX(published_at) AS latest FROM news_articles WHERE ticker = %s",
+                (ticker,),
+            )
+            row = cur.fetchone()
+    finally:
+        conn.close()
+    return str(row["latest"]) if row and row.get("latest") else ""
+
+
 def fetch_recent_disclosures(ticker: str, limit: int = 5) -> list[dict]:
     conn = get_connection()
     try:

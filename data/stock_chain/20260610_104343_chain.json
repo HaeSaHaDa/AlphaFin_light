@@ -1,0 +1,163 @@
+{
+  "query": "SK하이닉스 000660",
+  "ticker": "000660",
+  "entities": [
+    {
+      "name": "삼성전자",
+      "entity_type": "company",
+      "ticker": "005930",
+      "event_type": null,
+      "created_at": "2026-06-10 10:43:59"
+    },
+    {
+      "name": "SK하이닉스",
+      "entity_type": "company",
+      "ticker": "000660",
+      "event_type": null,
+      "created_at": "2026-06-10 10:43:59"
+    },
+    {
+      "name": "반도체",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-10 10:43:59"
+    },
+    {
+      "name": "AI",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-10 10:43:59"
+    },
+    {
+      "name": "demand increase",
+      "entity_type": "market_event",
+      "ticker": null,
+      "event_type": "demand_increase",
+      "created_at": "2026-06-10 10:43:59"
+    },
+    {
+      "name": "investment expansion",
+      "entity_type": "market_event",
+      "ticker": null,
+      "event_type": "investment_expansion",
+      "created_at": "2026-06-10 10:43:59"
+    }
+  ],
+  "links": [
+    {
+      "source": "반도체",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "반도체",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "삼성전자",
+      "target": "SK하이닉스",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "005930",
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "SK하이닉스",
+      "target": "삼성전자",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "000660",
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "SK하이닉스는 전기전자 업종에서 강보합세를 보이며 긍정적인 시장 반응을 ",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "AI 및 반도체 기술의 발전으로 인한 수요 증가가 예상된다.",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "외국인 매도세가 지속되고 있어 시장 전반에 부정적인 영향을 미치고 있다.",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "코스피 지수가 약세를 보이며 시가총액 상위 종목들이 하락하는 경향이 있다",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "글로벌 경제 불확실성으로 인한 수요 감소 가능성.",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "특정 종목에 대한 쏠림 현상으로 인한 변동성 확대 우려.",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    }
+  ],
+  "metadata": {
+    "entity_count": 6,
+    "link_count": 12,
+    "created_at": "2026-06-10 10:43:59"
+  }
+}

@@ -1,4 +1,7 @@
 import type {
+  DisclosureData,
+  DisclosureEvidenceData,
+  DisclosureTimelineData,
   EvaluationData,
   MemoryData,
   ReflectionData,
@@ -19,6 +22,11 @@ import type {
   DisclosurePreview,
   IngestionRunSummary,
 } from "@/types/company";
+import type { EventsTracePayload, EventEvidence, CanonicalEvent } from "@/types/events";
+import type {
+  RuntimeContextPayload as RuntimeContextFull,
+  RuntimeEvidencePayload,
+} from "@/types/runtime-evidence";
 
 const API_BASE =
   process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") ||
@@ -73,6 +81,62 @@ export function getStockChain(traceId: string) {
   return fetchJson<StockChainData>(requireTracePath(traceId, "/api/stock-chain"));
 }
 
+export function collectDisclosure(ticker: string, force = false, days = 365) {
+  const url = `${API_BASE}/api/disclosure/collect`;
+  return fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ticker, force, days }),
+    cache: "no-store",
+  }).then(async (res) => {
+    if (!res.ok) {
+      const detail = await res.text().catch(() => "");
+      throw new ApiError(detail || `collect failed: ${res.status}`, res.status, "/api/disclosure/collect");
+    }
+    return res.json();
+  });
+}
+
+export function getDisclosureByTicker(ticker: string) {
+  return fetchJson<DisclosureData>(`/api/disclosure/${encodeURIComponent(ticker)}`);
+}
+
+export function searchDisclosure(ticker: string, q: string, topK = 8) {
+  return fetchJson<{ ticker: string; query: string; top_k: number; chunks: Record<string, unknown>[] }>(
+    `/api/disclosure/search?ticker=${encodeURIComponent(ticker)}&q=${encodeURIComponent(q)}&top_k=${topK}`,
+  );
+}
+
+export function getDisclosureTimeline(ticker: string) {
+  return fetchJson<DisclosureTimelineData>(`/api/disclosure/timeline/${encodeURIComponent(ticker)}`);
+}
+
+export function getDisclosureEvidence(traceId: string) {
+  return fetchJson<DisclosureEvidenceData>(requireTracePath(traceId, "/api/disclosure/evidence"));
+}
+
+export function getEventsByTrace(traceId: string, ticker?: string) {
+  const base = requireTracePath(traceId, "/api/events");
+  const q = ticker ? `?ticker=${encodeURIComponent(ticker)}` : "";
+  return fetchJson<EventsTracePayload>(`${base}${q}`);
+}
+
+export function getEventsByTicker(ticker: string) {
+  return fetchJson<{ ticker: string; event_count: number; events: CanonicalEvent[] }>(
+    `/api/events/ticker/${encodeURIComponent(ticker)}`,
+  );
+}
+
+export function getEventEvidence(eventId: string) {
+  return fetchJson<{ event_id: string; evidence_count: number; evidence: EventEvidence[] }>(
+    `/api/events/${encodeURIComponent(eventId)}/evidence`,
+  );
+}
+
+export function getMemoryEvents(traceId: string) {
+  return fetchJson<EventsTracePayload>(requireTracePath(traceId, "/api/memory/events"));
+}
+
 export function getMarketGraph(traceId: string) {
   return fetchJson<MarketGraphPayload>(
     requireTracePath(traceId, "/api/market-graph"),
@@ -97,6 +161,18 @@ export function getRuntimeContext(traceId: string) {
   const id = traceId.trim();
   const q = id ? `?trace_id=${encodeURIComponent(id)}` : "";
   return fetchJson<RuntimeContextPayload>(`/api/runtime/context${q}`);
+}
+
+export function getRuntimeContextFull(traceId: string) {
+  return fetchJson<RuntimeContextFull>(
+    requireTracePath(traceId, "/api/runtime/context"),
+  );
+}
+
+export function getRuntimeEvidence(traceId: string) {
+  return fetchJson<RuntimeEvidencePayload>(
+    requireTracePath(traceId, "/api/runtime/evidence"),
+  );
 }
 
 export function getMarketInsight(traceId: string) {
@@ -289,9 +365,10 @@ export function getEvaluation(traceId: string) {
   return fetchJson<EvaluationData>(requireTracePath(traceId, "/api/evaluation"));
 }
 
-const DEFAULT_PIPELINE = [
+export const PIPELINE_FALLBACK = [
   "retrieval",
   "context_assembly",
+  "unified_context",
   "character_analysis",
   "evaluation",
   "reflection",
@@ -303,22 +380,27 @@ const DEFAULT_PIPELINE = [
   "result_save",
 ];
 
-function normalizeTrace(
+export function normalizeTrace(
   raw: TraceData | Record<string, unknown>,
   traceId?: string | null,
 ): TraceData {
   if (raw && "pipeline_flow" in raw && Array.isArray(raw.pipeline_flow)) {
     return raw as TraceData;
   }
-  const trace = raw as { trace_id?: string; steps?: TraceData["trace"]["steps"] };
+  const trace = raw as {
+    trace_id?: string;
+    steps?: TraceData["trace"]["steps"];
+    query?: string;
+    completed_at?: string;
+  };
   return {
     trace: { trace_id: trace.trace_id, steps: trace.steps },
     unified_result_summary: {
       trace_id: trace.trace_id ?? traceId ?? "",
-      query: "",
-      completed_at: "",
+      query: trace.query ?? "",
+      completed_at: trace.completed_at ?? "",
     },
-    pipeline_flow: DEFAULT_PIPELINE,
+    pipeline_flow: PIPELINE_FALLBACK,
   };
 }
 

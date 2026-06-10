@@ -1,0 +1,374 @@
+{
+  "trace_id": "20260609_101515",
+  "query": "현대자동차 전기차 전망",
+  "persona": "growth_investor",
+  "ticker": "005380",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "현대자동차 전기차 전망",
+    "bullish_factors": [],
+    "bearish_factors": [],
+    "risks": [],
+    "summary": "",
+    "referenced_chunks": [
+      {
+        "chunk_id": 201,
+        "document_type": "disclosure",
+        "score": 0.5173,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 213,
+        "document_type": "disclosure",
+        "score": 0.5108,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 212,
+        "document_type": "disclosure",
+        "score": 0.5108,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 219,
+        "document_type": "disclosure",
+        "score": 0.5095,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 284,
+        "document_type": "disclosure",
+        "score": 0.5054,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "현대자동차 전기차 전망",
+    "retrieval_quality": {
+      "chunk_count": 5,
+      "score_stats": {
+        "min": 0.5054,
+        "max": 0.5173,
+        "avg": 0.51076,
+        "count": 5
+      },
+      "doc_type_distribution": {
+        "disclosure": 5
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 5,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 0,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": false,
+      "has_bearish": false,
+      "has_risks": false,
+      "has_summary": false,
+      "bullish_count": 0,
+      "bearish_count": 0,
+      "risks_count": 0,
+      "structure_complete": false
+    },
+    "hallucination_risk": {
+      "risk_level": "medium",
+      "reasons": [
+        "분석 구조 불완전"
+      ],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.5173,
+        0.5108,
+        0.5108,
+        0.5095,
+        0.5054
+      ],
+      "score_stats": {
+        "min": 0.5054,
+        "max": 0.5173,
+        "avg": 0.51076,
+        "count": 5
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "현대자동차 전기차 전망",
+    "error": "Reflection 생성 실패"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "현대자동차 전기차 전망",
+      "persona": "growth_investor",
+      "bullish_factors": [],
+      "bearish_factors": [],
+      "risks": [],
+      "summary": "",
+      "referenced_chunks": [
+        {
+          "chunk_id": 201,
+          "document_type": "disclosure",
+          "score": 0.5173,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 213,
+          "document_type": "disclosure",
+          "score": 0.5108,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 212,
+          "document_type": "disclosure",
+          "score": 0.5108,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 219,
+          "document_type": "disclosure",
+          "score": 0.5095,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 284,
+          "document_type": "disclosure",
+          "score": 0.5054,
+          "ticker": "005380"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-06-09 10:15:19"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.3,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 9
+    },
+    "importance": {
+      "importance_score": 0.3,
+      "retention_action": "promote"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_현대자동차_전기차_전망_2026-06-09_10:15:19",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-06-09 10:15:19"
+    },
+    "action": "keep"
+  },
+  "event_graph": {
+    "node_count": 18,
+    "relation_count": 39,
+    "query": "현대자동차 전기차 전망"
+  },
+  "stock_chain": {
+    "entity_count": 15,
+    "link_count": 50,
+    "propagation_paths": 95
+  },
+  "unified_context_length": 2687,
+  "retrieval_chunk_count": 5,
+  "runtime_context": {
+    "trace_id": "20260609_101515",
+    "ticker": "005380",
+    "query": "현대자동차 전기차 전망",
+    "news_chunks": [],
+    "disclosure_chunks": [
+      {
+        "chunk_id": 201,
+        "document_id": 201,
+        "report_name": "[기재정정]타법인주식및출자증권취득결정(자율공시)              ",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-05-21",
+        "section_name": "general",
+        "score": 0.5173,
+        "text": "[기재정정]타법인주식및출자증권취득결정(자율공시)",
+        "ticker": "005380",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5173,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 213,
+        "document_id": 213,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-04-28",
+        "section_name": "general",
+        "score": 0.5108,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005380",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5108,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 212,
+        "document_id": 214,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-04-28",
+        "section_name": "general",
+        "score": 0.5108,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005380",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5108,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 219,
+        "document_id": 217,
+        "report_name": "약관에의한금융거래시계열금융회사의거래상대방의공시",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-04-23",
+        "section_name": "general",
+        "score": 0.5095,
+        "text": "약관에의한금융거래시계열금융회사의거래상대방의공시",
+        "ticker": "005380",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5095,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 284,
+        "document_id": 240,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-04-08",
+        "section_name": "general",
+        "score": 0.5054,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005380",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5054,
+        "priority": "HIGH"
+      }
+    ],
+    "merged_evidence": [
+      {
+        "chunk_id": 201,
+        "document_id": 201,
+        "report_name": "[기재정정]타법인주식및출자증권취득결정(자율공시)              ",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-05-21",
+        "section_name": "general",
+        "score": 0.5173,
+        "text": "[기재정정]타법인주식및출자증권취득결정(자율공시)",
+        "ticker": "005380",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5173,
+        "priority": "HIGH",
+        "merge_score": 0.6621,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 213,
+        "document_id": 213,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-04-28",
+        "section_name": "general",
+        "score": 0.5108,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005380",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5108,
+        "priority": "HIGH",
+        "merge_score": 0.6576,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 212,
+        "document_id": 214,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-04-28",
+        "section_name": "general",
+        "score": 0.5108,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005380",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5108,
+        "priority": "HIGH",
+        "merge_score": 0.6576,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 219,
+        "document_id": 217,
+        "report_name": "약관에의한금융거래시계열금융회사의거래상대방의공시",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-04-23",
+        "section_name": "general",
+        "score": 0.5095,
+        "text": "약관에의한금융거래시계열금융회사의거래상대방의공시",
+        "ticker": "005380",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5095,
+        "priority": "HIGH",
+        "merge_score": 0.6566,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 284,
+        "document_id": 240,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-04-08",
+        "section_name": "general",
+        "score": 0.5054,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005380",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5054,
+        "priority": "HIGH",
+        "merge_score": 0.6538,
+        "source_priority": "HIGH"
+      }
+    ],
+    "reasoning_context": [
+      "[공시] [기재정정]타법인주식및출자증권취득결정(자율공시)              ",
+      "[공시] [기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+      "[공시] [기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+      "[공시] 약관에의한금융거래시계열금융회사의거래상대방의공시",
+      "[공시] [기재정정]임원ㆍ주요주주특정증권등소유상황보고서"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 5,
+      "NEWS": 0,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "completed",
+    "has_disclosure": true,
+    "disclosure_priority": "HIGH"
+  },
+  "completed_at": "2026-06-09 10:15:19"
+}

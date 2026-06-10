@@ -75,7 +75,10 @@ def evaluate_context_usage(
         *analysis_result.get("risks", []),
     ])
 
-    chunk_texts = [c.get("chunk_text", "") for c in context_chunks]
+    chunk_texts = [
+        c.get("chunk_text") or c.get("text") or ""
+        for c in context_chunks
+    ]
     overlap = check_context_text_in_analysis(all_analysis_text, chunk_texts)
 
     if overlap["overlap_ratio"] >= 0.5:

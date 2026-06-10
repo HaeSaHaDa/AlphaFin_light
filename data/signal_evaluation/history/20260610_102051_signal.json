@@ -1,0 +1,33 @@
+{
+  "trace_id": "20260610_102051",
+  "query": "SK하이닉스 000660",
+  "ticker": "000660",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [
+      "AI 및 반도체 시장의 지속적인 성장",
+      "외국인 매도세로 인한 시장 불안정성",
+      "반도체 가격 변동성"
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

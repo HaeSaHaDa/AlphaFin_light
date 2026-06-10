@@ -1,0 +1,669 @@
+{
+  "trace_id": "20260609_172003",
+  "query": "NAVER 035420 news platform",
+  "persona": "growth_investor",
+  "ticker": "035420",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "NAVER 035420 news platform",
+    "bullish_factors": [
+      "AI 산업의 성장으로 인한 광고 및 콘텐츠 수익 증가 가능성",
+      "K컬처의 해외 수요 증가로 인한 글로벌 시장 확대 기회"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성으로 인한 기술적 제약",
+      "글로벌 경쟁 심화로 인한 시장 점유율 압박"
+    ],
+    "risks": [
+      "AI 기술 발전에 따른 경쟁사 대응",
+      "K컬처 수요 감소 시 수익성 악화 가능성"
+    ],
+    "summary": "NAVER는 AI 산업의 성장과 K컬처의 해외 수요 증가로 긍정적인 성장 가능성을 보이고 있으나, 반도체 산업의 불안정성과 글로벌 경쟁 심화가 시장 확대에 부담을 줄 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 402,
+        "document_type": "disclosure",
+        "score": 0.5213,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 406,
+        "document_type": "disclosure",
+        "score": 0.5196,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 426,
+        "document_type": "disclosure",
+        "score": 0.5075,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 430,
+        "document_type": "disclosure",
+        "score": 0.5031,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 493,
+        "document_type": "disclosure",
+        "score": 0.4902,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 80,
+        "document_type": "disclosure",
+        "score": 0.272659,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 78,
+        "document_type": "disclosure",
+        "score": 0.184,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 79,
+        "document_type": "disclosure",
+        "score": 0.170845,
+        "ticker": "035420"
+      },
+      {
+        "chunk_id": 84,
+        "document_type": "disclosure",
+        "score": 0.128066,
+        "ticker": "035420"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "NAVER 035420 news platform",
+    "retrieval_quality": {
+      "chunk_count": 9,
+      "score_stats": {
+        "min": 0.128066,
+        "max": 0.5213,
+        "avg": 0.366363,
+        "count": 9
+      },
+      "doc_type_distribution": {
+        "disclosure": 9
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 9,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 9,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.5213,
+        0.5196,
+        0.5075,
+        0.5031,
+        0.4902,
+        0.272659,
+        0.184,
+        0.170845,
+        0.128066
+      ],
+      "score_stats": {
+        "min": 0.128066,
+        "max": 0.5213,
+        "avg": 0.366363,
+        "count": 9
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "NAVER 035420 news platform",
+    "ticker": "",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 NAVER의 성장 가능성을 긍정적으로 평가하고 있으나, 하락 요인과 리스크가 충분히 고려되지 않은 것으로 보입니다. 특히, 시장 환경 변화에 대한 리스크가 누락되어 있습니다.",
+    "missing_risks": [
+      "글로벌 경제 불황에 따른 광고 수익 감소",
+      "규제 변화에 따른 사업 운영 리스크",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "AI 산업과 K컬처의 성장 가능성에 대한 지나친 낙관적 평가"
+    ],
+    "context_gaps": [
+      "NAVER의 현재 시장 점유율 및 경쟁사 분석 부족",
+      "AI 기술 발전의 구체적 영향에 대한 분석 부족",
+      "뉴스 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "하락 요인 및 리스크에 대한 보다 구체적인 데이터 제공",
+      "경쟁사 분석 및 시장 점유율 변화에 대한 심층적 논의 추가"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-06-09 17:20:15"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "NAVER 035420 news platform",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "AI 산업의 성장으로 인한 광고 및 콘텐츠 수익 증가 가능성",
+        "K컬처의 해외 수요 증가로 인한 글로벌 시장 확대 기회"
+      ],
+      "bearish_factors": [
+        "반도체 산업의 불안정성으로 인한 기술적 제약",
+        "글로벌 경쟁 심화로 인한 시장 점유율 압박"
+      ],
+      "risks": [
+        "AI 기술 발전에 따른 경쟁사 대응",
+        "K컬처 수요 감소 시 수익성 악화 가능성"
+      ],
+      "summary": "NAVER는 AI 산업의 성장과 K컬처의 해외 수요 증가로 긍정적인 성장 가능성을 보이고 있으나, 반도체 산업의 불안정성과 글로벌 경쟁 심화가 시장 확대에 부담을 줄 수 있습니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 402,
+          "document_type": "disclosure",
+          "ticker": "035420",
+          "score": 0.5213,
+          "merge_score": 0.6649,
+          "source_priority": "HIGH",
+          "source": "disclosure_documents",
+          "report_name": "[기재정정]대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+          "report_type": "MAJOR_ISSUE",
+          "report_date": "2026-06-01",
+          "section_name": "general",
+          "text": "[기재정정]대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]"
+        },
+        {
+          "chunk_id": 406,
+          "document_type": "disclosure",
+          "ticker": "035420",
+          "score": 0.5196,
+          "merge_score": 0.6637,
+          "source_priority": "HIGH",
+          "source": "disclosure_documents",
+          "report_name": "대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+          "report_type": "MAJOR_ISSUE",
+          "report_date": "2026-05-28",
+          "section_name": "general",
+          "text": "대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]"
+        },
+        {
+          "chunk_id": 426,
+          "document_type": "disclosure",
+          "ticker": "035420",
+          "score": 0.5075,
+          "merge_score": 0.6552,
+          "source_priority": "HIGH",
+          "source": "disclosure_documents",
+          "report_name": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)              ",
+          "report_type": "MAJOR_ISSUE",
+          "report_date": "2026-04-15",
+          "section_name": "general",
+          "text": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)"
+        },
+        {
+          "chunk_id": 430,
+          "document_type": "disclosure",
+          "ticker": "035420",
+          "score": 0.5031,
+          "merge_score": 0.6522,
+          "source_priority": "HIGH",
+          "source": "disclosure_documents",
+          "report_name": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)              ",
+          "report_type": "MAJOR_ISSUE",
+          "report_date": "2026-03-30",
+          "section_name": "general",
+          "text": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)"
+        },
+        {
+          "chunk_id": 493,
+          "document_type": "disclosure",
+          "ticker": "035420",
+          "score": 0.4902,
+          "merge_score": 0.6431,
+          "source_priority": "HIGH",
+          "source": "disclosure_documents",
+          "report_name": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+          "report_type": "MAJOR_ISSUE",
+          "report_date": "2026-02-11",
+          "section_name": "general",
+          "text": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항"
+        },
+        {
+          "chunk_id": 80,
+          "document_type": "disclosure",
+          "ticker": "035420",
+          "score": 0.272659,
+          "merge_score": 0.4909,
+          "source_priority": "HIGH",
+          "source": "document_chunks",
+          "chunk_text": "기업설명회(IR)개최(안내공시)               기업설명회(IR)개최(안내공시)",
+          "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"기업설명회(IR)개최(안내공시)              \", \"receipt_no\": \"20260206800223\", \"corp_code\": \"00266961\"}"
+        },
+        {
+          "chunk_id": 78,
+          "document_type": "disclosure",
+          "ticker": "035420",
+          "score": 0.184,
+          "merge_score": 0.4288,
+          "source_priority": "HIGH",
+          "source": "document_chunks",
+          "chunk_text": "연결재무제표기준영업(잠정)실적(공정공시)               연결재무제표기준영업(잠정)실적(공정공시)",
+          "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"연결재무제표기준영업(잠정)실적(공정공시)              \", \"receipt_no\": \"20260206800014\", \"corp_code\": \"00266961\"}"
+        },
+        {
+          "chunk_id": 79,
+          "document_type": "disclosure",
+          "ticker": "035420",
+          "score": 0.170845,
+          "merge_score": 0.4196,
+          "source_priority": "HIGH",
+          "source": "document_chunks",
+          "chunk_text": "영업(잠정)실적(공정공시)               영업(잠정)실적(공정공시)",
+          "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"영업(잠정)실적(공정공시)              \", \"receipt_no\": \"20260206800015\", \"corp_code\": \"00266961\"}"
+        },
+        {
+          "chunk_id": 84,
+          "document_type": "disclosure",
+          "ticker": "035420",
+          "score": 0.128066,
+          "merge_score": 0.3896,
+          "source_priority": "HIGH",
+          "source": "document_chunks",
+          "chunk_text": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항 지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+          "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-11\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항\", \"receipt_no\": \"20260211000701\", \"corp_code\": \"00266961\"}"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-06-09 17:20:15"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.9,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 10
+    },
+    "importance": {
+      "importance_score": 0.9,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_NAVER_035420_news_pl_2026-06-09_17:20:15",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-06-09 17:20:15"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 13,
+    "relation_count": 42,
+    "query": "NAVER 035420 news platform"
+  },
+  "stock_chain": {
+    "entity_count": 12,
+    "link_count": 42,
+    "propagation_paths": 102
+  },
+  "unified_context_length": 2442,
+  "retrieval_chunk_count": 9,
+  "runtime_context": {
+    "trace_id": "20260609_172003",
+    "ticker": "035420",
+    "query": "NAVER 035420 news platform",
+    "news_chunks": [
+      {
+        "chunk_id": 80,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "기업설명회(IR)개최(안내공시)               기업설명회(IR)개최(안내공시)",
+        "chunk_length": 49,
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 357,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"기업설명회(IR)개최(안내공시)              \", \"receipt_no\": \"20260206800223\", \"corp_code\": \"00266961\"}",
+        "score": 0.272659,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 78,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "연결재무제표기준영업(잠정)실적(공정공시)               연결재무제표기준영업(잠정)실적(공정공시)",
+        "chunk_length": 59,
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 359,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"연결재무제표기준영업(잠정)실적(공정공시)              \", \"receipt_no\": \"20260206800014\", \"corp_code\": \"00266961\"}",
+        "score": 0.184,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 79,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "영업(잠정)실적(공정공시)               영업(잠정)실적(공정공시)",
+        "chunk_length": 43,
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 358,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"영업(잠정)실적(공정공시)              \", \"receipt_no\": \"20260206800015\", \"corp_code\": \"00266961\"}",
+        "score": 0.170845,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 84,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항 지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+        "chunk_length": 55,
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 353,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-11\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항\", \"receipt_no\": \"20260211000701\", \"corp_code\": \"00266961\"}",
+        "score": 0.128066,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      }
+    ],
+    "disclosure_chunks": [
+      {
+        "chunk_id": 402,
+        "document_id": 403,
+        "report_name": "[기재정정]대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-06-01",
+        "section_name": "general",
+        "score": 0.5213,
+        "text": "[기재정정]대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5213,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 406,
+        "document_id": 405,
+        "report_name": "대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-05-28",
+        "section_name": "general",
+        "score": 0.5196,
+        "text": "대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5196,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 426,
+        "document_id": 426,
+        "report_name": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)              ",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-04-15",
+        "section_name": "general",
+        "score": 0.5075,
+        "text": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)",
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5075,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 430,
+        "document_id": 430,
+        "report_name": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)              ",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-03-30",
+        "section_name": "general",
+        "score": 0.5031,
+        "text": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)",
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5031,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 493,
+        "document_id": 499,
+        "report_name": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-02-11",
+        "section_name": "general",
+        "score": 0.4902,
+        "text": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.4902,
+        "priority": "HIGH"
+      }
+    ],
+    "merged_evidence": [
+      {
+        "chunk_id": 402,
+        "document_id": 403,
+        "report_name": "[기재정정]대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-06-01",
+        "section_name": "general",
+        "score": 0.5213,
+        "text": "[기재정정]대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5213,
+        "priority": "HIGH",
+        "merge_score": 0.6649,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 406,
+        "document_id": 405,
+        "report_name": "대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-05-28",
+        "section_name": "general",
+        "score": 0.5196,
+        "text": "대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5196,
+        "priority": "HIGH",
+        "merge_score": 0.6637,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 426,
+        "document_id": 426,
+        "report_name": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)              ",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-04-15",
+        "section_name": "general",
+        "score": 0.5075,
+        "text": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)",
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5075,
+        "priority": "HIGH",
+        "merge_score": 0.6552,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 430,
+        "document_id": 430,
+        "report_name": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)              ",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-03-30",
+        "section_name": "general",
+        "score": 0.5031,
+        "text": "[기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)",
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5031,
+        "priority": "HIGH",
+        "merge_score": 0.6522,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 493,
+        "document_id": 499,
+        "report_name": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-02-11",
+        "section_name": "general",
+        "score": 0.4902,
+        "text": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.4902,
+        "priority": "HIGH",
+        "merge_score": 0.6431,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 80,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "기업설명회(IR)개최(안내공시)               기업설명회(IR)개최(안내공시)",
+        "chunk_length": 49,
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 357,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"기업설명회(IR)개최(안내공시)              \", \"receipt_no\": \"20260206800223\", \"corp_code\": \"00266961\"}",
+        "score": 0.272659,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4909,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 78,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "연결재무제표기준영업(잠정)실적(공정공시)               연결재무제표기준영업(잠정)실적(공정공시)",
+        "chunk_length": 59,
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 359,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"연결재무제표기준영업(잠정)실적(공정공시)              \", \"receipt_no\": \"20260206800014\", \"corp_code\": \"00266961\"}",
+        "score": 0.184,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4288,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 79,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "영업(잠정)실적(공정공시)               영업(잠정)실적(공정공시)",
+        "chunk_length": 43,
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 358,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-06\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"영업(잠정)실적(공정공시)              \", \"receipt_no\": \"20260206800015\", \"corp_code\": \"00266961\"}",
+        "score": 0.170845,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4196,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 84,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항 지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+        "chunk_length": 55,
+        "ticker": "035420",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 353,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"035420\", \"source\": \"opendart\", \"published_at\": \"2026-02-11\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항\", \"receipt_no\": \"20260211000701\", \"corp_code\": \"00266961\"}",
+        "score": 0.128066,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3896,
+        "source_priority": "HIGH"
+      }
+    ],
+    "reasoning_context": [
+      "[공시] [기재정정]대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+      "[공시] 대규모기업집단현황공시[연1회공시및1/4분기용(대표회사)]",
+      "[공시] [기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)              ",
+      "[공시] [기재정정]주식교환ㆍ이전결정(종속회사의주요경영사항)              ",
+      "[공시] 지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+      "[공시] chunk #80",
+      "[공시] chunk #78",
+      "[공시] chunk #79"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 9,
+      "NEWS": 0,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "timeout",
+    "has_disclosure": true,
+    "disclosure_priority": "HIGH"
+  },
+  "completed_at": "2026-06-09 17:20:15"
+}

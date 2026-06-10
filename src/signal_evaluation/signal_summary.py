@@ -40,10 +40,8 @@ def build_signal_api_payload(record: dict) -> dict:
 
 def _build_summary_text(record: dict) -> str:
     signal = record.get("signal") or {}
-    metrics = record.get("metrics") or {}
     label = signal.get("display_label", "중립")
-    hit = metrics.get("hit_ratio_pct", 0)
     return (
         f"현재 AI 시장 관점: {label} · "
-        f"예측 적중률 {hit}% (샘플 {metrics.get('total_signals', 0)}건)"
+        "실제 시장 결과가 연동되지 않아 수익률 및 적중률 평가는 제공하지 않습니다."
     )

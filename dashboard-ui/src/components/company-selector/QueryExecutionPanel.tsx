@@ -1,8 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getCompanyByTicker } from "@/services/api";
+import { loadRuntimeSession } from "@/runtime-state/runtime-session";
 import { Loader2, Play, Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { PrimaryActionButton } from "@/components/ui-cleanup/PrimaryActionButton";
+import { SecondaryActionButton } from "@/components/ui-cleanup/SecondaryActionButton";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CompanySearchInput } from "@/components/company-selector/CompanySearchInput";
@@ -20,6 +23,7 @@ interface QueryExecutionPanelProps {
   traceId: string | null;
   displayQuery?: string;
   selectedTicker: string | null;
+  companyName?: string | null;
   onRunQuery: (payload: {
     ticker: string;
     company: string;
@@ -35,6 +39,7 @@ export function QueryExecutionPanel({
   traceId,
   displayQuery,
   selectedTicker: externalTicker,
+  companyName: externalCompanyName,
   onRunQuery,
   onLoadByTraceId,
   companyContext,
@@ -42,6 +47,7 @@ export function QueryExecutionPanel({
   const [searchText, setSearchText] = useState("");
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [traceInput, setTraceInput] = useState("");
+  const [hydratedTicker, setHydratedTicker] = useState<string | null>(null);
 
   const {
     selectedCompany,
@@ -61,7 +67,48 @@ export function QueryExecutionPanel({
   const showDropdown =
     dropdownOpen && !selectedCompany && searchText.trim().length > 0;
 
-  const busy = status === "loading" || engineRunning;
+  useEffect(() => {
+    if (!externalTicker) return;
+    if (selectedCompany?.ticker === externalTicker) return;
+    if (hydratedTicker === externalTicker) return;
+    if (searchText.trim().length > 0) return;
+    const session = loadRuntimeSession();
+    const name =
+      externalCompanyName?.trim() ||
+      session?.companyName?.trim() ||
+      "";
+    if (name) {
+      selectCompany({
+        ticker: externalTicker,
+        company_name: name,
+      });
+      setSearchText(name);
+      setHydratedTicker(externalTicker);
+      return;
+    }
+    let cancelled = false;
+    getCompanyByTicker(externalTicker)
+      .then((item) => {
+        if (cancelled) return;
+        selectCompany(item);
+        setSearchText(item.company_name);
+        setHydratedTicker(externalTicker);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [
+    externalTicker,
+    externalCompanyName,
+    selectedCompany,
+    selectCompany,
+    searchText,
+    hydratedTicker,
+  ]);
+
+  // 패널 로딩 중에도 종목 입력은 허용하고, 실제 실행 중일 때만 입력 잠금
+  const busy = engineRunning;
   const ticker = selectedCompany?.ticker ?? externalTicker;
   const kwList = parseKeywords();
 
@@ -81,7 +128,7 @@ export function QueryExecutionPanel({
   };
 
   return (
-    <Card className="overflow-visible border-primary/30 bg-card">
+    <Card className="dash-panel dash-panel-primary overflow-visible">
       <CardHeader>
         <CardTitle>종목 선택 · 토픽 분석</CardTitle>
         <p className="text-xs text-muted-foreground">
@@ -129,8 +176,7 @@ export function QueryExecutionPanel({
         />
 
         <div className="flex flex-wrap items-end gap-2">
-          <Button
-            type="button"
+          <PrimaryActionButton
             disabled={busy || !selectedCompany}
             onClick={handleRun}
           >
@@ -140,28 +186,27 @@ export function QueryExecutionPanel({
               <Search className="h-4 w-4" />
             )}
             {engineRunning ? "분석 중…" : "분석 실행"}
-          </Button>
+          </PrimaryActionButton>
 
           <div className="flex flex-wrap items-end gap-2 sm:ml-auto">
             <div className="min-w-[160px] space-y-1">
-              <label className="text-xs text-muted-foreground">trace_id</label>
+              <label className="text-xs text-muted-foreground">
+                이전 세션 불러오기
+              </label>
               <Input
                 value={traceInput}
                 onChange={(e) => setTraceInput(e.target.value)}
-                placeholder={traceId ?? ""}
+                placeholder={traceId ? `···${traceId.slice(-8)}` : "trace_id"}
                 disabled={busy}
               />
             </div>
-            <Button
-              type="button"
-              variant="outline"
-              size="sm"
+            <SecondaryActionButton
               disabled={busy || !traceInput.trim()}
               onClick={() => onLoadByTraceId(traceInput.trim())}
             >
               <Play className="h-4 w-4" />
-              Load
-            </Button>
+              Load trace
+            </SecondaryActionButton>
           </div>
         </div>
 
@@ -174,11 +219,8 @@ export function QueryExecutionPanel({
 
         {displayQuery && (
           <p className="text-xs text-muted-foreground">
-            Runtime query:{" "}
+            분석 쿼리:{" "}
             <span className="font-medium text-foreground">{displayQuery}</span>
-            {traceId && (
-              <span className="ml-2 font-mono opacity-60">({traceId})</span>
-            )}
           </p>
         )}
       </CardContent>

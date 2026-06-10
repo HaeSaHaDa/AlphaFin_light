@@ -40,10 +40,11 @@
     ],
     "reflection_mentions": 1,
     "memory_id": "analysis_memory_growth_investor_AI_산업_장기_성장_2026-05-27_12:13:05",
-    "retention_action": "high_retention",
+    "retention_action": "demote",
     "temporal_boost": 0.24,
     "evolution_stage": "structural_shift",
-    "previous_layer": "mid_term",
-    "promoted_at": "2026-05-27 12:13:06"
+    "previous_layer": "long_term",
+    "promoted_at": "2026-05-27 12:13:06",
+    "moved_at": "2026-06-10 10:58:38"
   }
 ]

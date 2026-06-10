@@ -30,6 +30,10 @@ class QueryRunResponse(BaseModel):
     runtime_query: str = ""
     keywords: list[str] = Field(default_factory=list)
     runtime_logs: list[str] = Field(default_factory=list)
+    disclosure_chunk_count: int = 0
+    news_chunk_count: int = 0
+    disclosure_collect_status: str = ""
+    runtime_context: dict | None = None
     company: CompanyResolveResponse | None = None
 
 
@@ -72,5 +76,9 @@ def post_query_run(req: QueryRunRequest) -> QueryRunResponse:
         runtime_query=result.get("runtime_query", ""),
         keywords=req.keywords,
         runtime_logs=result.get("runtime_logs", []),
+        disclosure_chunk_count=int(result.get("disclosure_chunk_count", 0)),
+        news_chunk_count=int(result.get("news_chunk_count", 0)),
+        disclosure_collect_status=result.get("disclosure_collect_status", ""),
+        runtime_context=result.get("runtime_context"),
         company=company_resp,
     )

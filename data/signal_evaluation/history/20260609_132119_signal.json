@@ -1,0 +1,33 @@
+{
+  "trace_id": "20260609_132119",
+  "query": "삼성물산 028260",
+  "ticker": "028260",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [
+      "AI 및 IoT 기술을 활용한 시니어 리빙 솔루션 도입으로 새로운 시장 창출 가능성",
+      "시니어 시장의 경쟁 심화 가능성",
+      "AI 및 IoT 기술의 신뢰성 문제"
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

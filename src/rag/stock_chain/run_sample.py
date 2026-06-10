@@ -109,7 +109,7 @@ def main() -> int:
     # --- Phase 3: Propagation ---
     logger.info("--- Phase 3: Propagation ---")
 
-    paths = calculate_propagation(chain, start_source="NVIDIA")
+    paths = calculate_propagation(chain)
     for p in paths[:5]:
         logger.info(
             "  path: %s  impact=%.2f",

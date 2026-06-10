@@ -1,0 +1,477 @@
+{
+  "trace_id": "20260609_130908",
+  "query": "한화에어로스페이스 012450",
+  "persona": "growth_investor",
+  "ticker": "012450",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "한화에어로스페이스 012450",
+    "bullish_factors": [
+      "AI 산업 장기 성장 구조 변화",
+      "AI 서버 투자 확대"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화",
+      "노조의 반발"
+    ],
+    "risks": [
+      "환율 변동에 따른 수익성 영향",
+      "지속적인 공급망 문제로 인한 생산 차질"
+    ],
+    "summary": "한화에어로스페이스는 AI 산업의 장기 성장 구조 변화와 AI 서버 투자 확대에 따른 긍정적인 성장 가능성을 보이고 있습니다. 그러나 글로벌 경쟁 심화와 노조의 반발 등으로 인해 운영 리스크가 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 328,
+        "document_type": "disclosure",
+        "score": 0.234351,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 322,
+        "document_type": "disclosure",
+        "score": 0.191379,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 323,
+        "document_type": "disclosure",
+        "score": 0.19062,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 324,
+        "document_type": "disclosure",
+        "score": 0.19062,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 330,
+        "document_type": "disclosure",
+        "score": 0.17338,
+        "ticker": "012450"
+      },
+      {
+        "chunk_id": 327,
+        "document_type": "disclosure",
+        "score": 0.166135,
+        "ticker": "012450"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "한화에어로스페이스 012450",
+    "retrieval_quality": {
+      "chunk_count": 6,
+      "score_stats": {
+        "min": 0.166135,
+        "max": 0.234351,
+        "avg": 0.191081,
+        "count": 6
+      },
+      "doc_type_distribution": {
+        "disclosure": 6
+      },
+      "has_relevant": false
+    },
+    "context_usage": {
+      "referenced_count": 6,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 6,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "medium",
+      "reasons": [
+        "평균 retrieval score 낮음: 0.1911"
+      ],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.234351,
+        0.191379,
+        0.19062,
+        0.19062,
+        0.17338,
+        0.166135
+      ],
+      "score_stats": {
+        "min": 0.166135,
+        "max": 0.234351,
+        "avg": 0.191081,
+        "count": 6
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "한화에어로스페이스 012450",
+    "persona": "growth_investor",
+    "reflection_summary": "한화에어로스페이스에 대한 분석은 긍정적인 성장 요인을 강조하고 있으나, 운영 리스크에 대한 언급이 부족하여 균형이 결여되어 있습니다. 또한, 리스크 요소가 충분히 구체화되지 않아 전반적인 신뢰성이 떨어집니다.",
+    "missing_risks": [
+      "정치적 리스크",
+      "기술 발전 속도에 따른 시장 변화",
+      "자원 가격 변동에 따른 비용 증가",
+      "금리 변동 리스크",
+      "규제 변동 리스크",
+      "지정학적 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "AI 산업의 성장 가능성을 지나치게 강조하며, 경쟁 심화와 같은 리스크를 충분히 반영하지 않음"
+    ],
+    "context_gaps": [
+      "AI 산업의 성장 전망에 대한 구체적인 데이터 부족",
+      "한화에어로스페이스의 현재 시장 점유율 및 경쟁사 분석 부족",
+      "뉴스 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "리스크 요소를 보다 구체적으로 설명하고, 각 리스크의 잠재적 영향을 평가할 것",
+      "AI 산업의 성장 전망에 대한 데이터와 통계적 근거를 추가할 것"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-06-09 13:09:17"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "한화에어로스페이스 012450",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "AI 산업 장기 성장 구조 변화",
+        "AI 서버 투자 확대"
+      ],
+      "bearish_factors": [
+        "글로벌 경쟁 심화",
+        "노조의 반발"
+      ],
+      "risks": [
+        "환율 변동에 따른 수익성 영향",
+        "지속적인 공급망 문제로 인한 생산 차질"
+      ],
+      "summary": "한화에어로스페이스는 AI 산업의 장기 성장 구조 변화와 AI 서버 투자 확대에 따른 긍정적인 성장 가능성을 보이고 있습니다. 그러나 글로벌 경쟁 심화와 노조의 반발 등으로 인해 운영 리스크가 존재합니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 328,
+          "document_type": "disclosure",
+          "score": 0.234351,
+          "ticker": "012450"
+        },
+        {
+          "chunk_id": 322,
+          "document_type": "disclosure",
+          "score": 0.191379,
+          "ticker": "012450"
+        },
+        {
+          "chunk_id": 323,
+          "document_type": "disclosure",
+          "score": 0.19062,
+          "ticker": "012450"
+        },
+        {
+          "chunk_id": 324,
+          "document_type": "disclosure",
+          "score": 0.19062,
+          "ticker": "012450"
+        },
+        {
+          "chunk_id": 330,
+          "document_type": "disclosure",
+          "score": 0.17338,
+          "ticker": "012450"
+        },
+        {
+          "chunk_id": 327,
+          "document_type": "disclosure",
+          "score": 0.166135,
+          "ticker": "012450"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-06-09 13:09:17"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.7,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 10
+    },
+    "importance": {
+      "importance_score": 0.7,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_한화에어로스페이스_012450_2026-06-09_13:09:17",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "AI → 서버 → 투자 → 장기 → 성장"
+      ],
+      "long_term_signal": true,
+      "evolution_stage": "structural_shift",
+      "tracked_at": "2026-06-09 13:09:17"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 20,
+    "relation_count": 51,
+    "query": "한화에어로스페이스 012450"
+  },
+  "stock_chain": {
+    "entity_count": 15,
+    "link_count": 51,
+    "propagation_paths": 102
+  },
+  "unified_context_length": 3573,
+  "retrieval_chunk_count": 6,
+  "runtime_context": {
+    "trace_id": "20260609_130908",
+    "ticker": "012450",
+    "query": "한화에어로스페이스 012450",
+    "news_chunks": [
+      {
+        "chunk_id": 328,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "타인에대한채무보증결정               타인에대한채무보증결정",
+        "chunk_length": 37,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 976,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2025-12-24\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"타인에대한채무보증결정              \", \"receipt_no\": \"20251224801004\", \"corp_code\": \"00126566\"}",
+        "score": 0.234351,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 322,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]약관에의한금융거래시계열금융회사의거래상대방의공시 [기재정정]약관에의한금융거래시계열금융회사의거래상대방의공시",
+        "chunk_length": 63,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 982,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2025-12-24\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]약관에의한금융거래시계열금융회사의거래상대방의공시\", \"receipt_no\": \"20251224000737\", \"corp_code\": \"00126566\"}",
+        "score": 0.191379,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 323,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "약관에의한금융거래시계열금융회사의거래상대방의공시 약관에의한금융거래시계열금융회사의거래상대방의공시",
+        "chunk_length": 51,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 981,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2025-12-24\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"약관에의한금융거래시계열금융회사의거래상대방의공시\", \"receipt_no\": \"20251224000738\", \"corp_code\": \"00126566\"}",
+        "score": 0.19062,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 324,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "약관에의한금융거래시계열금융회사의거래상대방의공시 약관에의한금융거래시계열금융회사의거래상대방의공시",
+        "chunk_length": 51,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 980,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2025-12-24\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"약관에의한금융거래시계열금융회사의거래상대방의공시\", \"receipt_no\": \"20251224000740\", \"corp_code\": \"00126566\"}",
+        "score": 0.19062,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 330,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "증권신고서(채무증권) 증권신고서(채무증권)",
+        "chunk_length": 23,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 974,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2026-01-05\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"증권신고서(채무증권)\", \"receipt_no\": \"20260105000379\", \"corp_code\": \"00126566\"}",
+        "score": 0.17338,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 327,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]기타경영사항(자율공시)              (기업지배구조헌장 개정의 건) [기재정정]기타경영사항(자율공시)              (기업지배구조헌장 개정의 건)",
+        "chunk_length": 97,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 977,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2025-12-24\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]기타경영사항(자율공시)              (기업지배구조헌장 개정의 건)\", \"receipt_no\": \"20251224800950\", \"corp_code\": \"00126566\"}",
+        "score": 0.166135,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      }
+    ],
+    "disclosure_chunks": [],
+    "merged_evidence": [
+      {
+        "chunk_id": 328,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "타인에대한채무보증결정               타인에대한채무보증결정",
+        "chunk_length": 37,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 976,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2025-12-24\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"타인에대한채무보증결정              \", \"receipt_no\": \"20251224801004\", \"corp_code\": \"00126566\"}",
+        "score": 0.234351,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.464,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 322,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]약관에의한금융거래시계열금융회사의거래상대방의공시 [기재정정]약관에의한금융거래시계열금융회사의거래상대방의공시",
+        "chunk_length": 63,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 982,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2025-12-24\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]약관에의한금융거래시계열금융회사의거래상대방의공시\", \"receipt_no\": \"20251224000737\", \"corp_code\": \"00126566\"}",
+        "score": 0.191379,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.434,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 323,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "약관에의한금융거래시계열금융회사의거래상대방의공시 약관에의한금융거래시계열금융회사의거래상대방의공시",
+        "chunk_length": 51,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 981,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2025-12-24\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"약관에의한금융거래시계열금융회사의거래상대방의공시\", \"receipt_no\": \"20251224000738\", \"corp_code\": \"00126566\"}",
+        "score": 0.19062,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4334,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 324,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "약관에의한금융거래시계열금융회사의거래상대방의공시 약관에의한금융거래시계열금융회사의거래상대방의공시",
+        "chunk_length": 51,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 980,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2025-12-24\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"약관에의한금융거래시계열금융회사의거래상대방의공시\", \"receipt_no\": \"20251224000740\", \"corp_code\": \"00126566\"}",
+        "score": 0.19062,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4334,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 330,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "증권신고서(채무증권) 증권신고서(채무증권)",
+        "chunk_length": 23,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 974,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2026-01-05\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"증권신고서(채무증권)\", \"receipt_no\": \"20260105000379\", \"corp_code\": \"00126566\"}",
+        "score": 0.17338,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4214,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 327,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[기재정정]기타경영사항(자율공시)              (기업지배구조헌장 개정의 건) [기재정정]기타경영사항(자율공시)              (기업지배구조헌장 개정의 건)",
+        "chunk_length": 97,
+        "ticker": "012450",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 977,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012450\", \"source\": \"opendart\", \"published_at\": \"2025-12-24\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"[기재정정]기타경영사항(자율공시)              (기업지배구조헌장 개정의 건)\", \"receipt_no\": \"20251224800950\", \"corp_code\": \"00126566\"}",
+        "score": 0.166135,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4163,
+        "source_priority": "HIGH"
+      }
+    ],
+    "reasoning_context": [
+      "[공시] chunk #328",
+      "[공시] chunk #322",
+      "[공시] chunk #323",
+      "[공시] chunk #324",
+      "[공시] chunk #330",
+      "[공시] chunk #327"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 6,
+      "NEWS": 0,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "failed",
+    "has_disclosure": true,
+    "disclosure_priority": "HIGH"
+  },
+  "completed_at": "2026-06-09 13:09:17"
+}

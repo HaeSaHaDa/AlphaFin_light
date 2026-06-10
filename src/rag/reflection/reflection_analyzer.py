@@ -108,6 +108,7 @@ def analyze_reflection(
 
     reflection = {
         "query": analysis_result.get("query", ""),
+        "ticker": str(analysis_result.get("ticker") or "").strip(),
         "persona": analysis_result.get("persona", "default"),
         "reflection_summary": llm_reflection.get("reflection_summary", ""),
         "missing_risks": _merge_lists(

@@ -108,12 +108,36 @@
         "ticker": "012450",
         "count": 9
       }
+    },
+    {
+      "timestamp": "2026-05-28 12:54:35",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 1847,
+      "meta": {
+        "ticker": "042660",
+        "count": 12
+      }
+    },
+    {
+      "timestamp": "2026-05-28 16:06:02",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 1469,
+      "meta": {
+        "ticker": "402340",
+        "count": 9
+      }
     }
   ],
   "totals": {
     "prompt_tokens": 0,
     "completion_tokens": 0,
-    "embedding_tokens": 10794,
-    "call_count": 9
+    "embedding_tokens": 14110,
+    "call_count": 11
   }
 }

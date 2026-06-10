@@ -29,7 +29,7 @@ SAMPLE_QUERIES = [
 OUTPUT_DIR = PROJECT_ROOT / "data" / "evaluation_suite"
 
 
-def _evaluate_retrieval_only(query: str, ticker: str = "005930") -> dict:
+def _evaluate_retrieval_only(query: str, ticker: str) -> dict:
     """샘플 Query별 Retrieval만 빠르게 평가한다."""
     sys.path.insert(0, str(PROJECT_ROOT / "src" / "rag" / "retrieval"))
     sys.path.insert(0, str(PROJECT_ROOT / "src" / "rag" / "embedding"))

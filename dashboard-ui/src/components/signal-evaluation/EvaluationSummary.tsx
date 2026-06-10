@@ -20,9 +20,11 @@ export function EvaluationSummary({ data }: EvaluationSummaryProps) {
             ticker: {data.ticker}
           </span>
         )}
-        <span className="rounded border border-border px-2 py-1">
-          적중률 {data.metrics.hit_ratio_pct}%
-        </span>
+        {data.market_comparison.actual_direction !== "unavailable" && (
+          <span className="rounded border border-border px-2 py-1">
+            적중률 {data.metrics.hit_ratio_pct}%
+          </span>
+        )}
       </div>
     </div>
   );

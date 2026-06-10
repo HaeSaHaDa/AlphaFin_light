@@ -1,0 +1,9 @@
+{
+  "ticker": "042660",
+  "company_name": "한화오션",
+  "status": "completed",
+  "documents": 46,
+  "chunks": 12,
+  "embeddings": 12,
+  "completed_at": "2026-05-28 12:54:35"
+}

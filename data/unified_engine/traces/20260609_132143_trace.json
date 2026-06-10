@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260609_132143",
+  "query": "두산에너빌리티 034020",
+  "persona": "growth_investor",
+  "ticker": "034020",
+  "started_at": "2026-06-09 13:21:43",
+  "completed_at": "2026-06-09 13:21:51",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=6 disclosure=0",
+      "timestamp": "2026-06-09 13:21:43"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=4523",
+      "timestamp": "2026-06-09 13:21:43"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=5414",
+      "timestamp": "2026-06-09 13:21:43"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-09 13:21:48"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-09 13:21:48"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "두산에너빌리티에 대한 분석은 긍정적인 성장 가능성을 강조하고 있지만, 하락 요인과 리스크에",
+      "timestamp": "2026-06-09 13:21:51"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-09 13:21:51"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.90",
+      "timestamp": "2026-06-09 13:21:51"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-09 13:21:51"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=20 rels=64",
+      "timestamp": "2026-06-09 13:21:51"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=64",
+      "timestamp": "2026-06-09 13:21:51"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 6,
+    "max_score": 0.392613
+  },
+  "reflection_summary": "두산에너빌리티에 대한 분석은 긍정적인 성장 가능성을 강조하고 있지만, 하락 요인과 리스크에 대한 언급이 다소 부족합니다. 특히, 내부 운영 리스크와 외부 경제 환경 변화의 구체적인 영향에 대한 설명이 필요합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

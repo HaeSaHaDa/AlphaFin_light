@@ -1,0 +1,110 @@
+/* TASK-043 — Dashboard visual hierarchy */
+
+.dash-panel {
+  @apply rounded-xl border border-border/80 bg-card/55 p-5 shadow-md backdrop-blur-sm md:p-6;
+}
+
+.dash-panel-primary {
+  @apply border-primary/35 ring-1 ring-primary/15;
+}
+
+.dash-panel-disclosure {
+  @apply border-cyan-500/30 bg-cyan-950/20;
+}
+
+.dash-panel-graph {
+  @apply border-sky-500/25 bg-sky-950/15;
+}
+
+.dash-panel-memory {
+  @apply border-violet-500/25 bg-violet-950/15;
+}
+
+.dash-panel-news {
+  @apply border-blue-500/20 bg-blue-950/10;
+}
+
+.dash-panel-evidence {
+  @apply border-teal-500/25 bg-teal-950/15;
+}
+
+.dash-panel-warning {
+  @apply border-amber-500/25 bg-amber-950/10;
+}
+
+.dash-section-title {
+  @apply text-base font-semibold tracking-tight text-foreground md:text-lg;
+}
+
+.dash-metric-value {
+  @apply text-3xl font-bold tracking-tight text-foreground;
+}
+
+.dash-ticker-anchor {
+  @apply text-lg font-bold tracking-tight text-foreground md:text-xl;
+}
+
+.dash-ticker-code {
+  @apply ml-2 font-mono text-base font-semibold text-primary;
+}
+
+.dash-btn-primary {
+  @apply bg-primary text-primary-foreground hover:bg-primary/90;
+}
+
+.dash-btn-secondary {
+  @apply border-border/80 text-muted-foreground hover:border-primary/40 hover:text-foreground;
+}
+
+.dash-status {
+  @apply inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium;
+}
+
+.dash-status-idle {
+  @apply border-border bg-muted/40 text-muted-foreground;
+}
+
+.dash-status-running,
+.dash-status-retrieval {
+  @apply border-primary/40 bg-primary/10 text-primary;
+}
+
+.dash-status-complete {
+  @apply border-emerald-500/40 bg-emerald-500/10 text-emerald-400;
+}
+
+.dash-status-error {
+  @apply border-rose-500/40 bg-rose-500/10 text-rose-400;
+}
+
+.dash-empty-state {
+  @apply rounded-xl border border-dashed border-border/80 bg-muted/15 px-6 py-10 text-center;
+}
+
+.dash-loading-state {
+  @apply rounded-xl border border-primary/30 bg-primary/5 px-5 py-4;
+}
+
+.dash-section-divider {
+  @apply my-8 border-0 border-t border-border/60;
+}
+
+.dash-section-nav-btn {
+  @apply rounded-md border border-border/70 bg-card/50 px-2.5 py-1 text-xs text-muted-foreground transition-colors hover:border-primary/45 hover:text-foreground;
+}
+
+.dash-section-nav-btn-active {
+  @apply border-primary/50 bg-primary/15 font-medium text-primary;
+}
+
+.dash-sidebar-link {
+  @apply block rounded-md border border-transparent px-2.5 py-1.5 text-xs text-muted-foreground transition-all duration-150 hover:border-border/80 hover:bg-muted/40 hover:text-foreground;
+}
+
+.dash-sidebar-link-active {
+  @apply border-primary/50 bg-primary/15 font-medium text-primary shadow-sm;
+}
+
+.dash-trace-hint {
+  @apply font-mono text-[10px] text-muted-foreground/70;
+}

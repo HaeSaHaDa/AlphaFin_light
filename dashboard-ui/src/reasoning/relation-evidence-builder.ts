@@ -7,9 +7,13 @@ export function buildRelationEvidence(
 ): string[] {
   if (edge.evidence?.length) return edge.evidence;
   const chunks = retrieval?.chunks ?? [];
-  const picks = chunks.slice(0, 2).map(
-    (c) => `retrieval:${c.document_type ?? "doc"}#${c.chunk_id ?? "?"}`,
-  );
+  const picks = chunks
+    .slice(0, 2)
+    .map((chunk, index) =>
+      chunk.title ||
+      chunk.text?.split("\n")[0]?.trim() ||
+      `근거 문서 ${index + 1}`,
+    );
   if (edge.reason) picks.push(`reason:${edge.reason}`);
   return picks.slice(0, 3);
 }

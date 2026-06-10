@@ -1,0 +1,271 @@
+{
+  "query": "LG디스플레이 034220",
+  "ticker": "034220",
+  "entities": [
+    {
+      "name": "삼성전자",
+      "entity_type": "company",
+      "ticker": "005930",
+      "event_type": null,
+      "created_at": "2026-06-09 17:20:59"
+    },
+    {
+      "name": "SK하이닉스",
+      "entity_type": "company",
+      "ticker": "000660",
+      "event_type": null,
+      "created_at": "2026-06-09 17:20:59"
+    },
+    {
+      "name": "NVIDIA",
+      "entity_type": "company",
+      "ticker": "NVDA",
+      "event_type": null,
+      "created_at": "2026-06-09 17:20:59"
+    },
+    {
+      "name": "반도체",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-09 17:20:59"
+    },
+    {
+      "name": "AI",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-09 17:20:59"
+    },
+    {
+      "name": "데이터센터",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-09 17:20:59"
+    }
+  ],
+  "links": [
+    {
+      "source": "경쟁 심화",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "경쟁 심화",
+      "target": "SK하이닉스",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "경쟁 심화",
+      "target": "엔비디아",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "반도체",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "반도체",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "반도체",
+      "target": "엔비디아",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "엔비디아",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "데이터센터",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "데이터센터",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "데이터센터",
+      "target": "엔비디아",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "삼성전자",
+      "target": "SK하이닉스",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "005930",
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "삼성전자",
+      "target": "엔비디아",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "005930",
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "SK하이닉스",
+      "target": "삼성전자",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "000660",
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "SK하이닉스",
+      "target": "엔비디아",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "000660",
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "엔비디아",
+      "target": "삼성전자",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "NVDA",
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "엔비디아",
+      "target": "SK하이닉스",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "NVDA",
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "LG디스플레이는 AI 및 클라우드 데이터센터 구축과 관련된 기술 발전에 ",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "LG그룹의 전반적인 기술력과 시장 지배력을 바탕으로 새로운 시장 기회를 ",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "LG디스플레이의 주가는 최근 하락세를 보이며 시장에서 부진한 성과를 나타",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "LG전자의 급락과 같은 그룹 내 다른 주식의 하락이 LG디스플레이에도 부",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "글로벌 반도체 시장의 변동성과 경쟁 심화로 인한 수익성 저하 리스크",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "신기술 도입 및 시장 확장에 따른 초기 투자 비용 증가",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    }
+  ],
+  "metadata": {
+    "entity_count": 6,
+    "link_count": 24,
+    "created_at": "2026-06-09 17:20:59"
+  }
+}

@@ -193,6 +193,9 @@ TASK-001-create-project-harness.md
 - TASK 범위를 벗어난 수정 금지
 - 관련 없는 리팩토링 금지
 - 하나의 TASK는 하나의 목적만 가진다
+- `tasks/`의 TASK 파일은 상태 이동을 위한 파일 이동만 허용한다
+- TASK 파일을 `tasks/done/`으로 이동할 때는 `## 상태` 항목의 값만 `DONE`으로 변경할 수 있다
+- 상태값 외 TASK 본문은 수정하지 않는다
 
 ---
 

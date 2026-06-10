@@ -24,26 +24,34 @@ function SignalAccordionBody({ signal }: { signal: SignalEvaluationData | null }
     return <p className="text-sm text-muted-foreground">Signal 데이터 없음</p>;
   }
   const m = signal.metrics;
+  const hasMarketOutcome =
+    signal.market_comparison.actual_direction !== "unavailable";
   return (
     <div className="space-y-3 text-sm">
       <p>{signal.summary_text}</p>
-      <div className="grid grid-cols-2 gap-2 text-xs">
-        <div className="rounded border border-border p-2">
-          <p className="text-muted-foreground">방향 예측 정확도</p>
-          <p className="font-bold">
-            {Math.round(m.direction_accuracy * 100)}%
-          </p>
+      {hasMarketOutcome && (
+        <div className="grid grid-cols-2 gap-2 text-xs">
+          <div className="rounded border border-border p-2">
+            <p className="text-muted-foreground">방향 예측 정확도</p>
+            <p className="font-bold">
+              {Math.round(m.direction_accuracy * 100)}%
+            </p>
+          </div>
+          <div className="rounded border border-border p-2">
+            <p className="text-muted-foreground">예측 적중률</p>
+            <p className="font-bold">{m.hit_ratio_pct}%</p>
+          </div>
         </div>
-        <div className="rounded border border-border p-2">
-          <p className="text-muted-foreground">예측 적중률</p>
-          <p className="font-bold">{m.hit_ratio_pct}%</p>
-        </div>
-      </div>
+      )}
       <p className="text-xs text-muted-foreground">
-        실제 시장 변화:{" "}
-        {signal.market_comparison.price_change_pct >= 0 ? "+" : ""}
-        {signal.market_comparison.price_change_pct}% ·{" "}
-        {signal.market_comparison.direction_correct ? "방향 일치" : "방향 불일치"}
+        {hasMarketOutcome ? (
+          <>
+            실제 시장 변화:{" "}
+            {signal.market_comparison.price_change_pct >= 0 ? "+" : ""}
+            {signal.market_comparison.price_change_pct}% ·{" "}
+            {signal.market_comparison.direction_correct ? "방향 일치" : "방향 불일치"}
+          </>
+        ) : signal.market_comparison.period_label}
       </p>
     </div>
   );
@@ -61,6 +69,9 @@ export function ExplainabilityAccordion({
   const signalHref = traceId
     ? `/signal-evaluation?trace_id=${encodeURIComponent(traceId)}`
     : "/signal-evaluation";
+  const analysisHref = traceId
+    ? `/analysis?trace_id=${encodeURIComponent(traceId)}`
+    : "/analysis";
 
   return (
     <DashboardSection
@@ -75,6 +86,9 @@ export function ExplainabilityAccordion({
         <div id="section-retrieval" className="scroll-mt-24">
           <CollapsibleSection title="AI가 참고한 자료" defaultOpen={false}>
             <RetrievalViewer data={data.retrieval} status={status} />
+            <Button variant="ghost" size="sm" className="mt-2 h-auto px-0 text-primary" asChild>
+              <Link href={analysisHref}>Retrieval 상세 보기</Link>
+            </Button>
           </CollapsibleSection>
         </div>
 

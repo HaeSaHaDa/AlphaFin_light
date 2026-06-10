@@ -1,0 +1,29 @@
+{
+  "trace_id": "20260610_100500",
+  "query": "삼성전자 최신 뉴스와 공시 분석",
+  "ticker": "005930",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [],
+    "bullish_count": 0,
+    "bearish_count": 0
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

@@ -1,9 +1,8 @@
 "use client";
 
 import { SelectedTickerInfo } from "./SelectedTickerInfo";
-import { RuntimeStatusBadge } from "./RuntimeStatusBadge";
-import { RuntimeSectionNav } from "./RuntimeSectionNav";
-import { RuntimeActionBar } from "./RuntimeActionBar";
+import { RuntimeStatusCard } from "@/components/ui-cleanup/RuntimeStatusCard";
+import { DetailLocalNavigation } from "@/components/navigation-cleanup/DetailLocalNavigation";
 import type { RuntimeStatusPayload } from "@/types/market-graph";
 
 interface Props {
@@ -35,15 +34,14 @@ export function StickyRuntimeHeader({
           ticker={ticker || runtimeStatus?.ticker || ""}
           traceId={traceId}
         />
-        <RuntimeStatusBadge
+        <RuntimeStatusCard
           label={label}
           phase={runtimeStatus?.phase ?? phase}
           engineRunning={engineRunning}
         />
       </div>
-      <div className="mt-3 flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between">
-        <RuntimeSectionNav />
-        <RuntimeActionBar traceId={traceId} />
+      <div className="mt-3">
+        <DetailLocalNavigation />
       </div>
     </header>
   );

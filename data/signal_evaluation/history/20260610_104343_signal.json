@@ -1,0 +1,33 @@
+{
+  "trace_id": "20260610_104343",
+  "query": "SK하이닉스 000660",
+  "ticker": "000660",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [
+      "SK하이닉스는 전기전자 업종에서 강보합세를 보이며 긍정적인 시장 반응을 얻고 있다.",
+      "외국인 매도세가 지속되고 있어 시장 전반에 부정적인 영향을 미치고 있다.",
+      "글로벌 경제 불확실성으로 인한 수요 감소 가능성."
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

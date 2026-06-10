@@ -65,7 +65,13 @@ function bfsFromCenter(
 function chainFromRetrievalChunks(
   centerName: string,
   ticker: string,
-  chunks: Array<{ document_type?: string; chunk_id?: number; score?: number }>,
+  chunks: Array<{
+    document_type?: string;
+    chunk_id?: number;
+    score?: number;
+    title?: string;
+    text?: string;
+  }>,
 ): TickerCentricChain {
   const entities: GraphEntity[] = [
     {
@@ -79,8 +85,10 @@ function chainFromRetrievalChunks(
   const links: GraphLink[] = [];
   const seen = new Set<string>();
   chunks.slice(0, 6).forEach((ch, i) => {
-    const doc = ch.document_type || "document";
-    const label = `${doc} #${ch.chunk_id ?? i + 1}`;
+    const label =
+      ch.title ||
+      ch.text?.split("\n")[0]?.trim() ||
+      `근거 문서 ${i + 1}`;
     if (seen.has(label)) return;
     seen.add(label);
     entities.push({
@@ -107,6 +115,8 @@ export function buildTickerCentricChain(
     chunk_id?: number;
     score?: number;
     ticker?: string;
+    title?: string;
+    text?: string;
   }>,
 ): TickerCentricChain {
   const ticker = (data.ticker || "").trim();

@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260528_160602",
+  "query": "SK스퀘어 402340 반도체",
+  "persona": "growth_investor",
+  "ticker": "402340",
+  "started_at": "2026-05-28 16:06:02",
+  "completed_at": "2026-05-28 16:06:13",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=6 disclosure=0",
+      "timestamp": "2026-05-28 16:06:02"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=5350",
+      "timestamp": "2026-05-28 16:06:02"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=5030",
+      "timestamp": "2026-05-28 16:06:02"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-05-28 16:06:07"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-05-28 16:06:07"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "전체적으로 SK스퀘어의 성장 가능성을 긍정적으로 평가하고 있으나, 하락 요인과 리스크가 충",
+      "timestamp": "2026-05-28 16:06:12"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-05-28 16:06:13"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=1.00",
+      "timestamp": "2026-05-28 16:06:13"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-05-28 16:06:13"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=18 rels=30",
+      "timestamp": "2026-05-28 16:06:13"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=41",
+      "timestamp": "2026-05-28 16:06:13"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 6,
+    "max_score": 0.328507
+  },
+  "reflection_summary": "전체적으로 SK스퀘어의 성장 가능성을 긍정적으로 평가하고 있으나, 하락 요인과 리스크가 충분히 구체화되지 않았습니다. 특히, 글로벌 경쟁 심화와 같은 하락 요인에 대한 심층 분석이 부족합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

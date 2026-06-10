@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260610_102051",
+  "query": "SK하이닉스 000660",
+  "persona": "growth_investor",
+  "ticker": "000660",
+  "started_at": "2026-06-10 10:20:51",
+  "completed_at": "2026-06-10 10:20:59",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=6 disclosure=0",
+      "timestamp": "2026-06-10 10:20:51"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=4739",
+      "timestamp": "2026-06-10 10:20:51"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=3106",
+      "timestamp": "2026-06-10 10:20:51"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-10 10:20:55"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-10 10:20:55"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 SK하이닉스의 성장 가능성을 긍정적으로 평가하고 있으나, 외부 요인에 대한 리스크가",
+      "timestamp": "2026-06-10 10:20:59"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-10 10:20:59"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.80",
+      "timestamp": "2026-06-10 10:20:59"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-10 10:20:59"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=5 rels=12",
+      "timestamp": "2026-06-10 10:20:59"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=12",
+      "timestamp": "2026-06-10 10:20:59"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 6,
+    "max_score": 0.378059
+  },
+  "reflection_summary": "분석은 SK하이닉스의 성장 가능성을 긍정적으로 평가하고 있으나, 외부 요인에 대한 리스크가 충분히 다뤄지지 않았습니다. 전반적으로 기술력과 시장 성장에 대한 낙관적인 시각이 두드러집니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

@@ -9,34 +9,42 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { usePathname } from "next/navigation";
 import {
   DEFAULT_LAYOUT_STATE,
   RUNTIME_LAYOUT_KEY,
   type RuntimeLayoutState,
 } from "./RuntimeLayoutState";
+import { normalizeSectionKey } from "@/navigation/section-key";
+import { sectionIdToKey } from "@/navigation/section-key";
 
 interface RuntimeShellContextValue extends RuntimeLayoutState {
   setSidebarCollapsed: (v: boolean) => void;
   setCurrentSection: (v: string) => void;
-  setSearchQuery: (v: string) => void;
   toggleSidebar: () => void;
 }
 
 const RuntimeShellContext = createContext<RuntimeShellContextValue | null>(null);
 
 export function RuntimeShellProvider({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
   const [state, setState] = useState<RuntimeLayoutState>(DEFAULT_LAYOUT_STATE);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     try {
       const raw = sessionStorage.getItem(RUNTIME_LAYOUT_KEY);
-      if (!raw) return;
-      const parsed = JSON.parse(raw) as RuntimeLayoutState;
+      const parsed = raw
+        ? (JSON.parse(raw) as RuntimeLayoutState)
+        : DEFAULT_LAYOUT_STATE;
+      const hashSection = window.location.hash
+        ? sectionIdToKey(window.location.hash)
+        : null;
       setState({
         sidebarCollapsed: Boolean(parsed.sidebarCollapsed),
-        currentSection: parsed.currentSection || "summary",
-        searchQuery: parsed.searchQuery || "",
+        currentSection:
+          hashSection ??
+          normalizeSectionKey(parsed.currentSection || "summary"),
       });
     } catch {
       // ignore parse errors
@@ -49,14 +57,45 @@ export function RuntimeShellProvider({ children }: { children: ReactNode }) {
   }, [state]);
 
   const setSidebarCollapsed = useCallback((v: boolean) => {
-    setState((prev) => ({ ...prev, sidebarCollapsed: v }));
+    setState((prev) =>
+      prev.sidebarCollapsed === v ? prev : { ...prev, sidebarCollapsed: v },
+    );
   }, []);
   const setCurrentSection = useCallback((v: string) => {
-    setState((prev) => ({ ...prev, currentSection: v }));
+    const nextKey = normalizeSectionKey(v);
+    setState((prev) =>
+      prev.currentSection === nextKey
+        ? prev
+        : { ...prev, currentSection: nextKey },
+    );
   }, []);
-  const setSearchQuery = useCallback((v: string) => {
-    setState((prev) => ({ ...prev, searchQuery: v }));
-  }, []);
+  useEffect(() => {
+    if (pathname !== "/" || typeof window === "undefined") return;
+    setCurrentSection(
+      window.location.hash
+        ? sectionIdToKey(window.location.hash)
+        : "summary",
+    );
+  }, [pathname, setCurrentSection]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const syncHash = () => {
+      if (pathname !== "/") return;
+      setCurrentSection(
+        window.location.hash
+          ? sectionIdToKey(window.location.hash)
+          : "summary",
+      );
+    };
+    window.addEventListener("hashchange", syncHash);
+    window.addEventListener("popstate", syncHash);
+    return () => {
+      window.removeEventListener("hashchange", syncHash);
+      window.removeEventListener("popstate", syncHash);
+    };
+  }, [pathname, setCurrentSection]);
+
   const toggleSidebar = useCallback(() => {
     setState((prev) => ({ ...prev, sidebarCollapsed: !prev.sidebarCollapsed }));
   }, []);
@@ -66,10 +105,9 @@ export function RuntimeShellProvider({ children }: { children: ReactNode }) {
       ...state,
       setSidebarCollapsed,
       setCurrentSection,
-      setSearchQuery,
       toggleSidebar,
     }),
-    [state, setSidebarCollapsed, setCurrentSection, setSearchQuery, toggleSidebar],
+    [state, setSidebarCollapsed, setCurrentSection, toggleSidebar],
   );
 
   return (

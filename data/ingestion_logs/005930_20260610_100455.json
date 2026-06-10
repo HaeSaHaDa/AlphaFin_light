@@ -1,0 +1,21 @@
+{
+  "ticker": "005930",
+  "company_name": "삼성전자",
+  "corp_code": "00126380",
+  "status": "completed",
+  "documents": 0,
+  "chunks": 0,
+  "embeddings": 31,
+  "embeddings_created": 0,
+  "embeddings_skipped": 12,
+  "skipped_collectors": [
+    "dart",
+    "price",
+    "embedding"
+  ],
+  "presentation_mode": false,
+  "cache_status": "REFRESHED",
+  "cache_fresh": true,
+  "cache_ttl_hours": 12,
+  "cache_updated_at": "2026-06-10 10:04:55"
+}

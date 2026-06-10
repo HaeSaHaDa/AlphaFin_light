@@ -10,7 +10,7 @@ export function PresentationModeToggle() {
   const { enabled, loading, toggling, error, toggle } = usePresentationMode();
 
   return (
-    <div className="flex flex-col items-end gap-1">
+    <div className="flex flex-wrap items-center gap-2">
       <Button
         type="button"
         variant={enabled ? "default" : "outline"}

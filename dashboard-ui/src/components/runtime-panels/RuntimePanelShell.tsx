@@ -1,6 +1,7 @@
 "use client";
 
 import { Skeleton } from "@/components/ui/skeleton";
+import { EmptyStateCard } from "@/components/ui-cleanup/EmptyStateCard";
 import type { LoadStatus } from "@/types/dashboard";
 
 interface RuntimePanelShellProps {
@@ -20,9 +21,10 @@ export function RuntimePanelShell({
 }: RuntimePanelShellProps) {
   if (!traceId) {
     return (
-      <div className="rounded-xl border border-dashed border-border p-5 text-sm text-muted-foreground">
-        {title}: trace_id가 없습니다. 종목을 선택하고 분석을 실행하세요.
-      </div>
+      <EmptyStateCard
+        title={title}
+        message="종목을 선택하고 분석을 실행하세요."
+      />
     );
   }
 

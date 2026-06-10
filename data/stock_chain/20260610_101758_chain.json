@@ -1,0 +1,334 @@
+{
+  "query": "SK하이닉스 000660 삼성전자 엔비디아 TSMC 마이크론",
+  "ticker": "000660",
+  "entities": [
+    {
+      "name": "삼성전자",
+      "entity_type": "company",
+      "ticker": "005930",
+      "event_type": null,
+      "created_at": "2026-06-10 10:18:11"
+    },
+    {
+      "name": "SK하이닉스",
+      "entity_type": "company",
+      "ticker": "000660",
+      "event_type": null,
+      "created_at": "2026-06-10 10:18:11"
+    },
+    {
+      "name": "NVIDIA",
+      "entity_type": "company",
+      "ticker": "NVDA",
+      "event_type": null,
+      "created_at": "2026-06-10 10:18:11"
+    },
+    {
+      "name": "TSMC",
+      "entity_type": "company",
+      "ticker": "TSM",
+      "event_type": null,
+      "created_at": "2026-06-10 10:18:11"
+    },
+    {
+      "name": "마이크론",
+      "entity_type": "company",
+      "ticker": "MU",
+      "event_type": null,
+      "created_at": "2026-06-10 10:18:11"
+    },
+    {
+      "name": "AI",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-10 10:18:11"
+    }
+  ],
+  "links": [
+    {
+      "source": "AI",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "엔비디아",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "TSMC",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "TSM",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "마이크론",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "MU",
+      "from_event_graph": true
+    },
+    {
+      "source": "삼성전자",
+      "target": "SK하이닉스",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "005930",
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "삼성전자",
+      "target": "엔비디아",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "005930",
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "삼성전자",
+      "target": "TSMC",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "005930",
+      "target_ticker": "TSM",
+      "from_event_graph": true
+    },
+    {
+      "source": "삼성전자",
+      "target": "마이크론",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "005930",
+      "target_ticker": "MU",
+      "from_event_graph": true
+    },
+    {
+      "source": "SK하이닉스",
+      "target": "삼성전자",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "000660",
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "SK하이닉스",
+      "target": "엔비디아",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "000660",
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "SK하이닉스",
+      "target": "TSMC",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "000660",
+      "target_ticker": "TSM",
+      "from_event_graph": true
+    },
+    {
+      "source": "SK하이닉스",
+      "target": "마이크론",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "000660",
+      "target_ticker": "MU",
+      "from_event_graph": true
+    },
+    {
+      "source": "엔비디아",
+      "target": "삼성전자",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "NVDA",
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "엔비디아",
+      "target": "SK하이닉스",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "NVDA",
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "엔비디아",
+      "target": "TSMC",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "NVDA",
+      "target_ticker": "TSM",
+      "from_event_graph": true
+    },
+    {
+      "source": "엔비디아",
+      "target": "마이크론",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "NVDA",
+      "target_ticker": "MU",
+      "from_event_graph": true
+    },
+    {
+      "source": "TSMC",
+      "target": "삼성전자",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "TSM",
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "TSMC",
+      "target": "SK하이닉스",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "TSM",
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "TSMC",
+      "target": "엔비디아",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "TSM",
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "TSMC",
+      "target": "마이크론",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "TSM",
+      "target_ticker": "MU",
+      "from_event_graph": true
+    },
+    {
+      "source": "마이크론",
+      "target": "삼성전자",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "MU",
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "마이크론",
+      "target": "SK하이닉스",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "MU",
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "마이크론",
+      "target": "엔비디아",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "MU",
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "마이크론",
+      "target": "TSMC",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "MU",
+      "target_ticker": "TSM",
+      "from_event_graph": true
+    },
+    {
+      "source": "SK하이닉스는 최근 강세를 보이며 시장에서 긍정적인 반응을 얻고 있다.",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "전기전자 업종이 강보합권에서 움직이고 있어, 관련 기업들의 성장 가능성이",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "외국인 매도세가 지속되고 있어 시장 전반에 부정적인 영향을 미치고 있다.",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "삼성전자와 SK하이닉스 등 주요 기업들이 약세를 보이며 시장 신뢰도가 하",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "글로벌 경제 불확실성과 외국인 투자자의 매도세가 지속될 경우 추가 하락 ",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "AI 주도주에 대한 쏠림 현상이 부담으로 작용할 수 있다.",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    }
+  ],
+  "metadata": {
+    "entity_count": 6,
+    "link_count": 31,
+    "created_at": "2026-06-10 10:18:11"
+  }
+}

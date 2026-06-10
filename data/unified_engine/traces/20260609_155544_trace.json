@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260609_155544",
+  "query": "삼성전자 005930",
+  "persona": "growth_investor",
+  "ticker": "005930",
+  "started_at": "2026-06-09 15:55:44",
+  "completed_at": "2026-06-09 15:55:53",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=10 disclosure=10",
+      "timestamp": "2026-06-09 15:55:44"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=2132",
+      "timestamp": "2026-06-09 15:55:44"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=4540",
+      "timestamp": "2026-06-09 15:55:44"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-09 15:55:49"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-09 15:55:49"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 삼성전자의 성장 가능성을 긍정적으로 평가하고 있지만, 하락 요인과 리스크가 충분히 ",
+      "timestamp": "2026-06-09 15:55:53"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-09 15:55:53"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=1.00",
+      "timestamp": "2026-06-09 15:55:53"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-09 15:55:53"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=18 rels=45",
+      "timestamp": "2026-06-09 15:55:53"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=45",
+      "timestamp": "2026-06-09 15:55:53"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 10,
+    "max_score": 0.536251
+  },
+  "reflection_summary": "분석은 삼성전자의 성장 가능성을 긍정적으로 평가하고 있지만, 하락 요인과 리스크가 충분히 다루어지지 않았습니다. 전반적으로 과도한 낙관이 감지되며, 추가적인 리스크와 Context가 부족합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

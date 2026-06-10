@@ -1,0 +1,1756 @@
+2026-06-10 10:41:13,683 [INFO] src.dashboard_api.app - API Route 등록 완료
+INFO:     Started server process [24032]
+INFO:     Waiting for application startup.
+2026-06-10 10:41:13,737 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\requests\models.py", line 976, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pykrx\website\comm\util.py", line 10, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pykrx\website\krx\market\wrap.py", line 964, in get_index_ohlcv_by_date
+    df = 개별지수시세().fetch(ticker[1:], ticker[0], fromdate, todate)
+         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pykrx\website\krx\market\core.py", line 811, in fetch
+    result = self.read(
+        indIdx2=ticker, indIdx=group_id, strtDd=fromdate, endDd=todate
+    )
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pykrx\website\krx\krxio.py", line 55, in read
+    result = resp.json()
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\requests\models.py", line 980, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\miniconda3\Lib\logging\__init__.py", line 1151, in emit
+    msg = self.format(record)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\logging\__init__.py", line 999, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\logging\__init__.py", line 712, in format
+    record.message = record.getMessage()
+                     ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\logging\__init__.py", line 400, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\click\core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\click\core.py", line 1363, in main
+    rv = self.invoke(ctx)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\click\core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\click\core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\main.py", line 441, in main
+    run(
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\main.py", line 620, in run
+    server.run()
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Users\oh_kim_family\miniconda3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\asyncio\base_events.py", line 712, in run_until_complete
+    self.run_forever()
+  File "C:\Users\oh_kim_family\miniconda3\Lib\asyncio\base_events.py", line 683, in run_forever
+    self._run_once()
+  File "C:\Users\oh_kim_family\miniconda3\Lib\asyncio\base_events.py", line 2050, in _run_once
+    handle._run()
+  File "C:\Users\oh_kim_family\miniconda3\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\lifespan\on.py", line 86, in main
+    await app(scope, self.receive, self.send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 29, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\errors.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 103, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\cors.py", line 80, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\exceptions.py", line 49, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 669, in app
+    await self.lifespan(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 638, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 216, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\app.py", line 49, in _lifespan
+    n = load_kospi200_companies(sync_companies_table=False)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\company_master\kospi200_loader.py", line 56, in load_kospi200_companies
+    rows = _load_from_pykrx() or _load_from_seed()
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\company_master\kospi200_loader.py", line 24, in _load_from_pykrx
+    tickers = stock.get_index_portfolio_deposit_file("1028")
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pykrx\stock\stock_api.py", line 1298, in get_index_portfolio_deposit_file
+    target_date = get_nearest_business_day_in_a_week()
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pykrx\stock\stock_api.py", line 69, in get_nearest_business_day_in_a_week
+    return krx.get_nearest_business_day_in_a_week(date, prev)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pykrx\website\krx\__init__.py", line 38, in get_nearest_business_day_in_a_week
+    df = get_index_ohlcv_by_date(prev, curr, "1001")
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pykrx\website\comm\util.py", line 19, in wrapper
+    logging.info(args, kwargs)
+Message: ('20260603', '20260610', '1001')
+Arguments: ({},)
+2026-06-10 10:41:14,774 [INFO] root - Expecting value: line 1 column 1 (char 0)
+2026-06-10 10:41:14,777 [ERROR] src.company_master.kospi200_loader - pykrx KOSPI200 로드 실패 \u2014 seed 사용
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pandas\core\indexes\range.py", line 1018, in __getitem__
+    return self._range[new_key]
+           ~~~~~~~~~~~^^^^^^^^^
+IndexError: range object index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\company_master\kospi200_loader.py", line 24, in _load_from_pykrx
+    tickers = stock.get_index_portfolio_deposit_file("1028")
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pykrx\stock\stock_api.py", line 1298, in get_index_portfolio_deposit_file
+    target_date = get_nearest_business_day_in_a_week()
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pykrx\stock\stock_api.py", line 69, in get_nearest_business_day_in_a_week
+    return krx.get_nearest_business_day_in_a_week(date, prev)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pykrx\website\krx\__init__.py", line 39, in get_nearest_business_day_in_a_week
+    return df.index[-1].strftime("%Y%m%d")
+           ~~~~~~~~^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\pandas\core\indexes\range.py", line 1020, in __getitem__
+    raise IndexError(
+        f"index {key} is out of bounds for axis 0 with size {len(self)}"
+    ) from err
+IndexError: index -1 is out of bounds for axis 0 with size 0
+2026-06-10 10:41:14,779 [INFO] src.company_master.kospi200_loader - seed KOSPI200 로드  count=50
+2026-06-10 10:41:14,792 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:14,811 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:14,835 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:14,844 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:14,853 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:14,870 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:14,893 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:14,918 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:14,926 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:14,952 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:14,960 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:14,984 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,009 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,017 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,045 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,077 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,097 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,120 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,141 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,159 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,178 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,198 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,223 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,242 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,262 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,278 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,298 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,320 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,338 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,357 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,380 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,398 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,413 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,428 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,445 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,463 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,485 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,519 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,538 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,554 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,576 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,593 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,634 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,675 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,699 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,723 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,739 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,754 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,771 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,818 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:41:15,823 [INFO] src.company_master.kospi200_loader - company_master 적재 완료  rows=50
+2026-06-10 10:41:15,823 [INFO] src.dashboard_api.app - company_master startup load  rows=50
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-06-10 10:41:22,193 [INFO] src.dashboard_api.app - GET /health  status=200  3.81ms
+2026-06-10 10:41:42,286 [INFO] src.dashboard_api.app - GET /health  status=200  1.83ms
+2026-06-10 10:41:52,402 [INFO] src.dashboard_api.routes.signal - GET /api/signal/20260610_103809
+2026-06-10 10:41:52,402 [INFO] src.dashboard_api.routes.signal - GET /api/signal/20260610_103809
+2026-06-10 10:41:52,404 [INFO] src.dashboard_api.app - GET /api/signal/20260610_103809  status=200  6.91ms
+2026-06-10 10:41:52,406 [INFO] src.dashboard_api.app - GET /api/signal/20260610_103809  status=200  10.43ms
+2026-06-10 10:42:02,439 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:02,441 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:02,494 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:02,496 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:02,503 [INFO] src.dashboard_api.app - GET /api/disclosure/066570  status=200  108.52ms
+2026-06-10 10:42:02,506 [INFO] src.dashboard_api.app - GET /api/disclosure/000660  status=200  110.07ms
+2026-06-10 10:42:02,548 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:02,571 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:02,604 [INFO] src.dashboard_api.app - GET /api/disclosure/search  status=200  76.49ms
+2026-06-10 10:42:06,642 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:06,691 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:06,735 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:06,786 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:06,823 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:06,826 [INFO] src.dashboard_api.routes.events - GET /api/events/20260610_103809  events=1  ticker=000660
+2026-06-10 10:42:06,828 [INFO] src.dashboard_api.app - GET /api/events/20260610_103809  status=200  212.91ms
+2026-06-10 10:42:06,835 [INFO] src.dashboard_api.routes.runtime - GET /api/runtime/evidence/20260610_103809  merged=11
+2026-06-10 10:42:06,837 [INFO] src.dashboard_api.app - GET /api/runtime/evidence/20260610_103809  status=200  6.63ms
+2026-06-10 10:42:06,871 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:06,896 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:06,903 [INFO] src.dashboard_api.app - GET /api/disclosure/000660  status=200  62.76ms
+2026-06-10 10:42:06,963 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:06,986 [INFO] src.dashboard_api.routes.market_graph - GET /api/runtime-status/20260610_103809  phase=analysis_complete
+2026-06-10 10:42:06,990 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,048 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,048 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,049 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,053 [INFO] src.dashboard_api.app - GET /api/runtime-status/20260610_103809  status=200  124.1ms
+2026-06-10 10:42:07,070 [INFO] src.dashboard_api.routes.runtime - GET /api/runtime/evidence/20260610_103809  merged=11
+2026-06-10 10:42:07,072 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,107 [INFO] src.dashboard_api.app - GET /api/disclosure/timeline/000660  status=200  201.31ms
+2026-06-10 10:42:07,111 [INFO] src.dashboard_api.app - GET /api/runtime/evidence/20260610_103809  status=200  182.09ms
+2026-06-10 10:42:07,113 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,116 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,116 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,143 [INFO] src.dashboard_api.routes.market_graph - GET /api/runtime-status/20260610_103809  phase=analysis_complete
+2026-06-10 10:42:07,153 [INFO] src.dashboard_api.app - GET /api/disclosure/evidence/20260610_103809  status=200  224.88ms
+2026-06-10 10:42:07,170 [INFO] src.dashboard_api.app - OPTIONS /api/disclosure/collect  status=200  0.32ms
+2026-06-10 10:42:07,174 [INFO] src.dashboard_api.app - GET /api/runtime-status/20260610_103809  status=200  58.95ms
+2026-06-10 10:42:07,178 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,179 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,187 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,188 [INFO] src.dashboard_api.app - GET /api/disclosure/000660  status=200  252.13ms
+2026-06-10 10:42:07,190 [INFO] src.dashboard_api.routes.disclosure - POST /api/disclosure/collect  ticker=000660  status=cached
+2026-06-10 10:42:07,205 [INFO] src.dashboard_api.app - POST /api/disclosure/collect  status=200  22.47ms
+2026-06-10 10:42:07,220 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,247 [INFO] src.dashboard_api.app - GET /api/disclosure/timeline/000660  status=200  169.21ms
+2026-06-10 10:42:07,251 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,251 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,252 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,253 [INFO] src.dashboard_api.app - OPTIONS /api/disclosure/collect  status=200  0.19ms
+2026-06-10 10:42:07,292 [INFO] src.dashboard_api.app - GET /api/disclosure/evidence/20260610_103809  status=200  177.53ms
+2026-06-10 10:42:07,295 [INFO] src.dashboard_api.routes.disclosure - POST /api/disclosure/collect  ticker=000660  status=cached
+2026-06-10 10:42:07,295 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,296 [INFO] src.dashboard_api.app - POST /api/disclosure/collect  status=200  27.92ms
+2026-06-10 10:42:07,299 [INFO] src.dashboard_api.routes.events - GET /api/events/20260610_103809  events=1  ticker=000660
+2026-06-10 10:42:07,300 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,300 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,323 [INFO] src.dashboard_api.app - GET /api/events/20260610_103809  status=200  394.08ms
+2026-06-10 10:42:07,330 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,332 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,335 [INFO] src.dashboard_api.app - GET /api/disclosure/000660  status=200  113.87ms
+2026-06-10 10:42:07,370 [INFO] src.dashboard_api.app - GET /api/disclosure/timeline/000660  status=200  148.21ms
+2026-06-10 10:42:07,372 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,372 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:42:07,377 [INFO] src.dashboard_api.app - GET /api/disclosure/timeline/000660  status=200  75.72ms
+2026-06-10 10:42:07,379 [INFO] src.dashboard_api.app - GET /api/disclosure/000660  status=200  78.64ms
+2026-06-10 10:43:41,026 [INFO] src.dashboard_api.app - OPTIONS /api/query/run  status=200  0.23ms
+2026-06-10 10:43:41,033 [INFO] src.dashboard_api.routes.query - POST /api/query/run  ticker=000660  keywords=[]
+2026-06-10 10:43:41,072 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,075 [INFO] runtime_flow - [Resolver] SK하이닉스 (selected) → 000660
+2026-06-10 10:43:41,075 [INFO] runtime_flow - [Query] SK하이닉스 000660
+2026-06-10 10:43:41,100 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,117 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,137 [INFO] connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,144 [INFO] store - company UPSERT  ticker=000660  name=SK하이닉스
+2026-06-10 10:43:41,147 [INFO] collector - search_news  keyword=SK하이닉스  max_pages=1
+2026-06-10 10:43:41,275 [ERROR] collector - 뉴스 검색 실패  keyword=SK하이닉스  page=1
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\collectors\news\collector.py", line 58, in search_news
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://search.naver.com/search.naver?where=news&query=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4&start=1&sort=1
+2026-06-10 10:43:41,277 [INFO] collector - 총 수집 기사 수: 0
+2026-06-10 10:43:41,279 [WARNING] src.ingestion_pipeline.news_ingestor - 뉴스 수집 0건  company=SK하이닉스
+2026-06-10 10:43:41,280 [INFO] src.ingestion_pipeline.ingestion_runner - 공시 스킵  existing=9
+2026-06-10 10:43:41,280 [INFO] src.ingestion_pipeline.ingestion_runner - 주가 스킵  existing=41
+2026-06-10 10:43:41,298 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,301 [INFO] chunker - split_text_into_chunks  text_len=1214  chunks=2  chunk_size=800
+2026-06-10 10:43:41,302 [INFO] chunker - split_text_into_chunks  text_len=1165  chunks=2  chunk_size=800
+2026-06-10 10:43:41,302 [INFO] chunker - split_text_into_chunks  text_len=1191  chunks=2  chunk_size=800
+2026-06-10 10:43:41,319 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,350 [INFO] connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,358 [INFO] store - document_chunks INSERT  총 0 / 15건
+2026-06-10 10:43:41,359 [INFO] src.ingestion_pipeline.chunk_pipeline - chunking 완료  ticker=000660  rows=15 inserted=0
+2026-06-10 10:43:41,374 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,395 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,398 [INFO] src.ingestion_pipeline.embedding_pipeline - 임베딩 생략  ticker=000660  pending=7  skipped=7
+2026-06-10 10:43:41,442 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,445 [WARNING] src.ingestion_pipeline.ingestion_runner - 뉴스 갱신 실패로 기존 cache 시각 유지  ticker=000660  updated_at=2026-05-28 10:14:16
+2026-06-10 10:43:41,447 [INFO] src.ingestion_pipeline.ingestion_runner - ingestion 완료  {'ticker': '000660', 'company_name': 'SK하이닉스', 'corp_code': '00164779', 'status': 'completed', 'documents': 0, 'chunks': 0, 'embeddings': 8, 'embeddings_created': 0, 'embeddings_skipped': 7, 'skipped_collectors': ['dart', 'price', 'embedding'], 'presentation_mode': False, 'cache_status': 'STALE', 'cache_fresh': False, 'cache_ttl_hours': 12, 'cache_updated_at': '2026-05-28 10:14:16'}
+2026-06-10 10:43:41,462 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,475 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,489 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,492 [INFO] runtime_flow - [Ingestion] completed  docs=0
+2026-06-10 10:43:41,493 [INFO] src.runtime_query.disclosure_runtime_integration - disclosure collect cache hit  ticker=000660
+2026-06-10 10:43:41,505 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,517 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,533 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,562 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:41,576 [INFO] runtime_flow - [Disclosure] collect=cached  chunks=5
+2026-06-10 10:43:41,585 [INFO] retriever - retrieve_similar_chunks  query='SK하이닉스 000660'  top_k=6  filters={'ticker': '000660', 'document_type': 'news_article', 'published_at_from': '2026-03-12'}
+2026-06-10 10:43:41,585 [INFO] retriever - Query Embedding 생성  query='SK하이닉스 000660'  model=text-embedding-3-small
+2026-06-10 10:43:41,691 [INFO] embedder - OpenAI 클라이언트 초기화 완료
+2026-06-10 10:43:43,536 [INFO] httpx - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-10 10:43:43,541 [INFO] retriever - Query Embedding 성공  dim=1536
+2026-06-10 10:43:43,575 [INFO] connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:43,579 [INFO] retriever - DB Embedding 조회  6건  filters={'ticker': '000660', 'document_type': 'news_article'}
+2026-06-10 10:43:43,582 [INFO] similarity - rank_similar_chunks  총=6  top_k=6  최고score=0.3413
+2026-06-10 10:43:43,583 [INFO] retriever - Metadata 필터링  before=6  after=6  filters={'published_at_from': '2026-03-12'}
+2026-06-10 10:43:43,584 [INFO] retriever - Retrieval 완료  결과=6건  최고score=0.3780
+2026-06-10 10:43:43,584 [INFO] src.runtime_flow.retrieval_executor - execute_retrieval  query=SK하이닉스 000660  ticker=000660  type=news_article  hits=6
+2026-06-10 10:43:43,585 [INFO] src.runtime_query.unified_retrieval_builder - unified_retrieval  ticker=000660  news=6  disclosure=5  merged=11
+2026-06-10 10:43:43,586 [INFO] runtime_flow - [Retrieval] retrieved 11 chunks  ticker=000660 (news+disclosure)
+2026-06-10 10:43:43,592 [INFO] pipeline_manager - 모듈 경로 등록 완료  modules=13
+2026-06-10 10:43:43,653 [INFO] engine_runner - === Unified Engine 시작  trace_id=20260610_104343 ===
+2026-06-10 10:43:43,655 [INFO] pipeline_manager - Pipeline  [retrieval] ok  unified_chunks=11 disclosure=5
+2026-06-10 10:43:43,657 [INFO] assembler - assemble_context  query='SK하이닉스 000660'  chunks=11
+2026-06-10 10:43:43,659 [INFO] assembler - Context 제한 적용  원본=11  결과=10  총문자=4552 (max=8000)
+2026-06-10 10:43:43,659 [INFO] assembler -   group  disclosure: 5건
+2026-06-10 10:43:43,660 [INFO] assembler -   group  news_article: 5건
+2026-06-10 10:43:43,660 [INFO] formatter - build_prompt_context  query='SK하이닉스 000660'  news=5  disclosure=5  total_len=5647
+2026-06-10 10:43:43,661 [INFO] assembler - Context 조립 완료  total=11  limited=10  context_len=5647
+2026-06-10 10:43:43,662 [INFO] pipeline_manager - Pipeline  [context_assembly] ok  len=5647
+2026-06-10 10:43:43,676 [INFO] graph_store - 관련 Graph 조회  ticker=000660  결과=15건
+2026-06-10 10:43:43,679 [INFO] reflection_store - Reflection 로드  persona=growth_investor  총=71건
+2026-06-10 10:43:43,681 [INFO] layered_store - Layer 로드  layer=short_term  전체=14  활성=2
+2026-06-10 10:43:43,685 [INFO] layered_retriever - Layer Retrieval  layer=short_term  query='SK하이닉스 000660'  결과=0건
+2026-06-10 10:43:43,694 [INFO] layered_store - Layer 로드  layer=mid_term  전체=73  활성=73
+2026-06-10 10:43:43,695 [INFO] layered_retriever - Layer Retrieval  layer=mid_term  query='SK하이닉스 000660'  결과=0건
+2026-06-10 10:43:43,696 [INFO] layered_store - Layer 로드  layer=long_term  전체=1  활성=1
+2026-06-10 10:43:43,697 [INFO] layered_retriever - Layer Retrieval  layer=long_term  query='SK하이닉스 000660'  결과=0건
+2026-06-10 10:43:43,697 [INFO] layered_retriever - Layered Context 생성  short=0  mid=0  long=0  총=0  len=0
+2026-06-10 10:43:43,699 [INFO] layered_store - Layer 로드  layer=short_term  전체=14  활성=2
+2026-06-10 10:43:43,706 [INFO] layered_store - Layer 로드  layer=mid_term  전체=73  활성=73
+2026-06-10 10:43:43,707 [INFO] layered_store - Layer 로드  layer=long_term  전체=1  활성=1
+2026-06-10 10:43:43,708 [INFO] layered_store - 전체 Layer 로드  short=2  mid=73  long=1  총=76
+2026-06-10 10:43:43,709 [INFO] lifecycle_manager - Temporal Context 생성  len=24
+2026-06-10 10:43:43,770 [INFO] chain_store - 관련 Chain 조회  ticker=000660  결과=59건
+2026-06-10 10:43:43,771 [INFO] context_orchestrator - 보강 Context 로드  graph=15  reflection=6  chain=59
+2026-06-10 10:43:43,771 [INFO] context_orchestrator - Unified Context 생성  len=3106
+2026-06-10 10:43:43,771 [INFO] pipeline_manager - Pipeline  [unified_context] ok  len=3106
+2026-06-10 10:43:43,772 [INFO] prompt_builder - build_character_prompt  persona='growth_investor'  query='SK하이닉스 000660'  context_len=3106
+2026-06-10 10:43:54,872 [INFO] httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-10 10:43:54,893 [INFO] pipeline_manager - Pipeline  [character_analysis] ok  bullish=2
+2026-06-10 10:43:54,893 [INFO] evaluator - Retrieval 품질  chunks=11  max=0.5861  avg=0.4583  relevant=True
+2026-06-10 10:43:54,895 [INFO] evaluator - Context 사용  refs=11  overlap=0.00  rating=weak
+2026-06-10 10:43:54,895 [INFO] metrics - hallucination 추정  risk=low  reasons=0
+2026-06-10 10:43:54,896 [INFO] evaluator - 종합 평가  query='SK하이닉스 000660'  retrieval=OK  context=weak  hallucination=low
+2026-06-10 10:43:54,896 [INFO] pipeline_manager - Pipeline  [evaluation] ok  hallucination=low
+2026-06-10 10:43:54,897 [INFO] reflection_analyzer - === analyze_reflection  query='SK하이닉스 000660' ===
+2026-06-10 10:43:54,898 [INFO] reflection_prompt_builder - build_reflection_prompt  query='SK하이닉스 000660'  persona=growth_investor  eval=yes
+2026-06-10 10:43:54,923 [INFO] reflection_analyzer - OpenAI Chat 클라이언트 초기화 완료
+2026-06-10 10:43:59,714 [INFO] httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-10 10:43:59,725 [INFO] reflection_analyzer - Chat API 응답 수신  len=489
+2026-06-10 10:43:59,726 [INFO] reflection_analyzer - Reflection 완료  missing_risks=5  overconfidence=True  gaps=3  suggestions=2
+2026-06-10 10:43:59,730 [INFO] reflection_store - Reflection 저장  growth_investor_reflections.json  총=72건
+2026-06-10 10:43:59,731 [INFO] pipeline_manager - Pipeline  [reflection] ok  분석은 SK하이닉스의 긍정적인 성장 가능성을 강조하고 있으나, 외부 요인에 대한 비관적인 
+2026-06-10 10:43:59,732 [INFO] memory_store - Analysis Memory 생성  query='SK하이닉스 000660'  persona=growth_investor
+2026-06-10 10:43:59,733 [INFO] memory_classifier - importance_score=0.9000  impact=3  comp=4  refs=11
+2026-06-10 10:43:59,736 [INFO] importance_calculator - calculate_importance  id=analysis_memory_grow  score=1.0000  reasons=3
+2026-06-10 10:43:59,737 [INFO] importance_manager - update_memory_importance  id=analysis_memory_grow  score=1.0000  action=high_retention
+2026-06-10 10:43:59,751 [INFO] memory_store - Analysis Memory 저장  growth_investor_memories.json  총=75건
+2026-06-10 10:43:59,752 [INFO] memory_classifier - Memory 분류  layer=short_term  age=0d  short_kw=0  long_kw=0
+2026-06-10 10:43:59,752 [INFO] memory_classifier - importance_score=0.9000  impact=3  comp=4  refs=11
+2026-06-10 10:43:59,761 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=11
+2026-06-10 10:43:59,770 [INFO] layered_store - Layered Memory 저장  layer=short_term  score=0.9000  파일=growth_investor_short_term.json  총=11건
+2026-06-10 10:43:59,771 [INFO] pipeline_manager - Pipeline  [memory_save] ok  layer=short_term
+2026-06-10 10:43:59,771 [INFO] pipeline_manager - Pipeline  [importance_update] ok  score=0.90
+2026-06-10 10:43:59,771 [INFO] temporal_tracker - track_event_reoccurrence  id=analysis_memory_grow  count=1
+2026-06-10 10:43:59,772 [INFO] temporal_tracker - track_memory_evolution  stage=initial_event  reoccurrence=1  chains=1
+2026-06-10 10:43:59,772 [INFO] temporal_tracker - track_event_reoccurrence  id=analysis_memory_grow  count=1
+2026-06-10 10:43:59,772 [INFO] temporal_tracker - track_memory_evolution  stage=initial_event  reoccurrence=1  chains=1
+2026-06-10 10:43:59,773 [INFO] decay_manager - apply_temporal_importance_update  score=0.9000  boost=0.0000
+2026-06-10 10:43:59,773 [INFO] retention_policy - should_promote=True  id=analysis_memory_grow  score=0.9000  layer=short_term
+2026-06-10 10:43:59,773 [INFO] retention_policy - should_promote=True  id=analysis_memory_grow  score=0.9000  layer=short_term
+2026-06-10 10:43:59,773 [INFO] decay_manager - apply_temporal_importance_update  score=0.9000  boost=0.0000
+2026-06-10 10:43:59,777 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:43:59,796 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:43:59,797 [INFO] layered_store - move_memory  short_term → mid_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:43:59,799 [INFO] lifecycle_manager - promotion 저장  analysis_memory_growth_investo_promotion.json
+2026-06-10 10:43:59,802 [INFO] lifecycle_manager - lifecycle log 저장  action=promote
+2026-06-10 10:43:59,802 [INFO] lifecycle_manager - promote_memory  short_term → mid_term  reasons=3
+2026-06-10 10:43:59,803 [INFO] pipeline_manager - Pipeline  [temporal_tracking] ok  action=promote
+2026-06-10 10:43:59,804 [INFO] event_extractor - Event Node 추출  텍스트=3308자  노드=7개
+2026-06-10 10:43:59,804 [INFO] relation_builder - Relation 생성  노드=7  관계=6
+2026-06-10 10:43:59,804 [INFO] relation_builder - Impact Relation 추출  bullish=2  bearish=2  risks=2  총=6
+2026-06-10 10:43:59,804 [INFO] graph_store - Event Graph 생성  노드=7  관계=12  query='SK하이닉스 000660'
+2026-06-10 10:43:59,805 [INFO] graph_store - Event Graph 저장  C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\data\event_graph\000660_event_graph.json
+2026-06-10 10:43:59,806 [INFO] pipeline_manager - Pipeline  [event_graph] ok  nodes=7 rels=12
+2026-06-10 10:43:59,807 [INFO] entity_extractor - Entity 추출  총=6건
+2026-06-10 10:43:59,808 [INFO] entity_extractor - Entity 정규화  6 → 6
+2026-06-10 10:43:59,808 [INFO] chain_builder - Stock Chain 생성  runtime entities=6
+2026-06-10 10:43:59,809 [INFO] chain_builder - Event Graph 병합  총 links=12
+2026-06-10 10:43:59,809 [INFO] propagation_engine - calculate_propagation  paths=6
+2026-06-10 10:43:59,811 [INFO] chain_store - Stock Chain 저장  C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\data\stock_chain\20260610_104343_chain.json
+2026-06-10 10:43:59,811 [INFO] pipeline_manager - Pipeline  [stock_chain] ok  links=12
+2026-06-10 10:43:59,812 [INFO] result_builder - Unified Result 생성  trace_id=20260610_104343
+2026-06-10 10:43:59,814 [INFO] result_builder - Unified Result 저장  C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\data\unified_engine\final_results\20260610_104343_result.json
+2026-06-10 10:43:59,816 [INFO] result_builder - Full Trace 저장  20260610_104343_trace.json  steps=11
+2026-06-10 10:43:59,818 [INFO] result_builder - Pipeline log 저장  20260610_104343_pipeline.json
+2026-06-10 10:43:59,819 [INFO] pipeline_manager - Pipeline  [result_save] ok  trace_id=20260610_104343
+2026-06-10 10:43:59,819 [INFO] engine_runner - === Unified Engine 완료  trace_id=20260610_104343 ===
+2026-06-10 10:43:59,828 [INFO] src.runtime_query.runtime_query_pipeline - runtime_context saved  trace_id=20260610_104343
+2026-06-10 10:43:59,828 [INFO] runtime_flow - [Engine] disclosure-aware reasoning completed
+2026-06-10 10:43:59,828 [INFO] runtime_flow - [Trace] trace_id=20260610_104343 생성 완료
+2026-06-10 10:43:59,849 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:59,860 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:59,883 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:59,908 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:59,910 [INFO] src.dashboard_api.app - POST /api/query/run  status=200  18880.16ms
+2026-06-10 10:43:59,925 [INFO] src.dashboard_api.routes.reflection - GET /api/reflection/20260610_104343
+2026-06-10 10:43:59,933 [INFO] src.dashboard_api.app - GET /api/reflection/20260610_104343  status=200  15.36ms
+2026-06-10 10:43:59,936 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:59,951 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:59,979 [INFO] layered_store - Layer 로드  layer=short_term  전체=14  활성=14
+2026-06-10 10:43:59,983 [INFO] layered_store - Layer 로드  layer=mid_term  전체=74  활성=74
+2026-06-10 10:43:59,984 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:43:59,984 [INFO] layered_store - Layer 로드  layer=long_term  전체=1  활성=1
+2026-06-10 10:43:59,999 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:00,000 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:44:00,012 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:00,017 [INFO] src.dashboard_api.routes.retrieval - GET /api/retrieval/20260610_104343
+2026-06-10 10:44:00,018 [INFO] src.dashboard_api.app - GET /api/retrieval/20260610_104343  status=200  102.54ms
+2026-06-10 10:44:00,027 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:00,028 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:44:00,034 [INFO] src.dashboard_api.routes.stock_chain - GET /api/stock-chain/20260610_104343
+2026-06-10 10:44:00,035 [INFO] src.dashboard_api.app - GET /api/stock-chain/20260610_104343  status=200  14.85ms
+2026-06-10 10:44:00,042 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:44:00,046 [INFO] src.dashboard_api.routes.trace - GET /api/trace/20260610_104343  steps=11
+2026-06-10 10:44:00,047 [INFO] src.dashboard_api.app - GET /api/trace/20260610_104343  status=200  10.31ms
+2026-06-10 10:44:00,052 [INFO] src.dashboard_api.routes.evaluation - GET /api/evaluation/20260610_104343
+2026-06-10 10:44:00,053 [INFO] src.dashboard_api.app - GET /api/evaluation/20260610_104343  status=200  3.28ms
+2026-06-10 10:44:00,057 [INFO] src.signal_evaluation.signal_history_manager - Signal 저장  20260610_104343_signal.json
+2026-06-10 10:44:00,058 [INFO] src.signal_evaluation.signal_evaluator - Signal 관점 생성 완료  trace_id=20260610_104343  signal=neutral  market_outcome=unavailable
+2026-06-10 10:44:00,058 [INFO] src.dashboard_api.routes.signal - GET /api/signal/20260610_104343
+2026-06-10 10:44:00,060 [INFO] src.dashboard_api.app - GET /api/signal/20260610_104343  status=200  5.73ms
+2026-06-10 10:44:00,061 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:00,062 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:44:00,075 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:44:00,092 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:00,093 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:44:00,105 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:44:00,122 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:00,123 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:44:00,135 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:44:00,152 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:00,153 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:44:00,164 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:44:00,180 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:00,181 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:44:00,195 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:44:00,210 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:00,211 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:44:00,222 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:44:00,239 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:00,239 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:44:00,267 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:00,300 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:00,300 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:00,328 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:00,361 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:00,362 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:00,393 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:00,429 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:00,430 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:00,463 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:00,500 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:00,502 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:00,538 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:00,580 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:00,581 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:00,616 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:00,648 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:00,649 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:00,685 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:00,720 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:00,721 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:00,757 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:00,795 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:00,796 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:00,829 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:00,887 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:00,890 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:00,930 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:00,970 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:00,971 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:01,010 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:01,043 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:01,043 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:01,077 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:44:01,113 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=74
+2026-06-10 10:44:01,114 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:44:01,133 [ERROR] src.dashboard_api.services.memory_service - layer memory repair 실패
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\memory_service.py", line 140, in _repair_layer_files_if_needed
+    n = repair_layer_duplicates()
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 201, in repair_layer_duplicates
+    move_memory_to_layer(m, m["memory_layer"], base_dir=base_dir)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 130, in move_memory_to_layer
+    removed_from = remove_memory_from_all_layers(mem_id, base_dir=base_dir)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 76, in remove_memory_from_all_layers
+    if remove_memory_from_layer(memory_id, layer, base_dir=base_dir):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 58, in remove_memory_from_layer
+    with open(fp, "w", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\mid_term\\growth_investor_mid_term.json'
+2026-06-10 10:44:01,164 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,174 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,185 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,195 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,224 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,226 [INFO] src.dashboard_api.routes.memory - GET /api/memory/20260610_104343
+2026-06-10 10:44:01,228 [INFO] src.dashboard_api.app - GET /api/memory/20260610_104343  status=200  1290.93ms
+2026-06-10 10:44:01,259 [INFO] src.dashboard_api.routes.runtime - GET /api/runtime/evidence/20260610_104343  merged=11
+2026-06-10 10:44:01,278 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,281 [INFO] src.dashboard_api.app - GET /api/runtime/evidence/20260610_104343  status=200  37.4ms
+2026-06-10 10:44:01,290 [INFO] src.dashboard_api.routes.market_graph - GET /api/runtime-status/20260610_104343  phase=analysis_complete
+2026-06-10 10:44:01,291 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,291 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,292 [INFO] src.dashboard_api.app - GET /api/runtime-status/20260610_104343  status=200  48.31ms
+2026-06-10 10:44:01,319 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,322 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,324 [INFO] src.dashboard_api.routes.reflection - GET /api/reflection/20260610_104343
+2026-06-10 10:44:01,341 [INFO] src.dashboard_api.routes.market_graph - GET /api/runtime-status/20260610_104343  phase=analysis_complete
+2026-06-10 10:44:01,354 [INFO] src.dashboard_api.app - GET /api/reflection/20260610_104343  status=200  36.78ms
+2026-06-10 10:44:01,354 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,358 [INFO] src.dashboard_api.app - GET /api/runtime-status/20260610_104343  status=200  41.87ms
+2026-06-10 10:44:01,360 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,375 [INFO] src.dashboard_api.routes.trace - GET /api/trace/20260610_104343  steps=11
+2026-06-10 10:44:01,377 [INFO] src.dashboard_api.app - GET /api/disclosure/evidence/20260610_104343  status=200  133.16ms
+2026-06-10 10:44:01,378 [INFO] src.dashboard_api.routes.stock_chain - GET /api/stock-chain/20260610_104343
+2026-06-10 10:44:01,388 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,388 [INFO] src.dashboard_api.app - GET /api/trace/20260610_104343  status=200  18.7ms
+2026-06-10 10:44:01,394 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,397 [INFO] src.dashboard_api.routes.events - GET /api/events/20260610_104343  events=1  ticker=000660
+2026-06-10 10:44:01,397 [INFO] src.dashboard_api.app - GET /api/stock-chain/20260610_104343  status=200  39.68ms
+2026-06-10 10:44:01,402 [INFO] src.dashboard_api.app - GET /api/events/20260610_104343  status=200  159.86ms
+2026-06-10 10:44:01,412 [INFO] src.dashboard_api.routes.evaluation - GET /api/evaluation/20260610_104343
+2026-06-10 10:44:01,413 [INFO] src.dashboard_api.app - GET /api/evaluation/20260610_104343  status=200  17.73ms
+2026-06-10 10:44:01,414 [INFO] layered_store - Layer 로드  layer=short_term  전체=14  활성=14
+2026-06-10 10:44:01,416 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,419 [INFO] src.dashboard_api.routes.market_graph - GET /api/runtime-status/20260610_104343  phase=analysis_complete
+2026-06-10 10:44:01,420 [INFO] src.dashboard_api.routes.signal - GET /api/signal/20260610_104343
+2026-06-10 10:44:01,423 [INFO] layered_store - Layer 로드  layer=mid_term  전체=74  활성=74
+2026-06-10 10:44:01,425 [INFO] src.dashboard_api.app - GET /api/runtime-status/20260610_104343  status=200  22.51ms
+2026-06-10 10:44:01,435 [INFO] layered_store - Layer 로드  layer=long_term  전체=1  활성=1
+2026-06-10 10:44:01,436 [INFO] src.dashboard_api.app - GET /api/signal/20260610_104343  status=200  38.73ms
+2026-06-10 10:44:01,438 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,441 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:44:01,454 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,455 [INFO] src.dashboard_api.routes.retrieval - GET /api/retrieval/20260610_104343
+2026-06-10 10:44:01,456 [INFO] src.dashboard_api.app - GET /api/retrieval/20260610_104343  status=200  139.81ms
+2026-06-10 10:44:01,471 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:01,472 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:44:01,485 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:44:01,502 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:01,503 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:44:01,517 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:44:01,535 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:01,535 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:44:01,548 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:44:01,566 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:01,567 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:44:01,580 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:44:01,597 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:01,598 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:44:01,611 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:44:01,626 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:01,627 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:44:01,641 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:44:01,659 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:01,660 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:44:01,671 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:44:01,688 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:44:01,689 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:44:01,704 [ERROR] src.dashboard_api.services.memory_service - layer memory repair 실패
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\memory_service.py", line 140, in _repair_layer_files_if_needed
+    n = repair_layer_duplicates()
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 201, in repair_layer_duplicates
+    move_memory_to_layer(m, m["memory_layer"], base_dir=base_dir)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 130, in move_memory_to_layer
+    removed_from = remove_memory_from_all_layers(mem_id, base_dir=base_dir)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 76, in remove_memory_from_all_layers
+    if remove_memory_from_layer(memory_id, layer, base_dir=base_dir):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 58, in remove_memory_from_layer
+    with open(fp, "w", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\mid_term\\growth_investor_mid_term.json'
+2026-06-10 10:44:01,730 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,750 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,760 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,770 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,797 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:44:01,799 [INFO] src.dashboard_api.routes.memory - GET /api/memory/20260610_104343
+2026-06-10 10:44:01,801 [INFO] src.dashboard_api.app - GET /api/memory/20260610_104343  status=200  483.75ms
+2026-06-10 10:44:01,831 [INFO] src.dashboard_api.routes.market_graph - GET /api/runtime-status/20260610_104343  phase=analysis_complete
+2026-06-10 10:44:01,833 [INFO] src.dashboard_api.app - GET /api/runtime-status/20260610_104343  status=200  4.65ms
+2026-06-10 10:58:24,252 [INFO] src.dashboard_api.app - OPTIONS /api/query/run  status=200  0.23ms
+2026-06-10 10:58:24,259 [INFO] src.dashboard_api.routes.query - POST /api/query/run  ticker=000660  keywords=['HBM']
+2026-06-10 10:58:24,274 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,276 [INFO] runtime_flow - [Resolver] SK하이닉스 (selected) → 000660
+2026-06-10 10:58:24,277 [INFO] runtime_flow - [Query] SK하이닉스 000660 HBM
+2026-06-10 10:58:24,288 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,305 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,321 [INFO] connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,324 [INFO] store - company UPSERT  ticker=000660  name=SK하이닉스
+2026-06-10 10:58:24,325 [INFO] collector - search_news  keyword=SK하이닉스  max_pages=1
+2026-06-10 10:58:24,387 [ERROR] collector - 뉴스 검색 실패  keyword=SK하이닉스  page=1
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\collectors\news\collector.py", line 58, in search_news
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://search.naver.com/search.naver?where=news&query=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4&start=1&sort=1
+2026-06-10 10:58:24,390 [INFO] collector - 총 수집 기사 수: 0
+2026-06-10 10:58:24,392 [WARNING] src.ingestion_pipeline.news_ingestor - 뉴스 수집 0건  company=SK하이닉스
+2026-06-10 10:58:24,393 [INFO] src.ingestion_pipeline.ingestion_runner - 공시 스킵  existing=9
+2026-06-10 10:58:24,393 [INFO] src.ingestion_pipeline.ingestion_runner - 주가 스킵  existing=41
+2026-06-10 10:58:24,407 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,409 [INFO] chunker - split_text_into_chunks  text_len=1214  chunks=2  chunk_size=800
+2026-06-10 10:58:24,410 [INFO] chunker - split_text_into_chunks  text_len=1165  chunks=2  chunk_size=800
+2026-06-10 10:58:24,410 [INFO] chunker - split_text_into_chunks  text_len=1191  chunks=2  chunk_size=800
+2026-06-10 10:58:24,432 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,446 [INFO] connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,452 [INFO] store - document_chunks INSERT  총 0 / 15건
+2026-06-10 10:58:24,453 [INFO] src.ingestion_pipeline.chunk_pipeline - chunking 완료  ticker=000660  rows=15 inserted=0
+2026-06-10 10:58:24,466 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,497 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,500 [INFO] src.ingestion_pipeline.embedding_pipeline - 임베딩 생략  ticker=000660  pending=7  skipped=7
+2026-06-10 10:58:24,530 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,533 [WARNING] src.ingestion_pipeline.ingestion_runner - 뉴스 갱신 실패로 기존 cache 시각 유지  ticker=000660  updated_at=2026-05-28 10:14:16
+2026-06-10 10:58:24,535 [INFO] src.ingestion_pipeline.ingestion_runner - ingestion 완료  {'ticker': '000660', 'company_name': 'SK하이닉스', 'corp_code': '00164779', 'status': 'completed', 'documents': 0, 'chunks': 0, 'embeddings': 8, 'embeddings_created': 0, 'embeddings_skipped': 7, 'skipped_collectors': ['dart', 'price', 'embedding'], 'presentation_mode': False, 'cache_status': 'STALE', 'cache_fresh': False, 'cache_ttl_hours': 12, 'cache_updated_at': '2026-05-28 10:14:16'}
+2026-06-10 10:58:24,547 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,563 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,595 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,598 [INFO] runtime_flow - [Ingestion] completed  docs=0
+2026-06-10 10:58:24,600 [INFO] src.runtime_query.disclosure_runtime_integration - disclosure collect cache hit  ticker=000660
+2026-06-10 10:58:24,617 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,630 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,648 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,663 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:24,680 [INFO] runtime_flow - [Disclosure] collect=cached  chunks=5
+2026-06-10 10:58:24,682 [INFO] retriever - retrieve_similar_chunks  query='SK하이닉스 000660 HBM'  top_k=6  filters={'ticker': '000660', 'document_type': 'news_article', 'published_at_from': '2026-03-12'}
+2026-06-10 10:58:24,682 [INFO] retriever - Query Embedding 생성  query='SK하이닉스 000660 HBM'  model=text-embedding-3-small
+2026-06-10 10:58:25,495 [INFO] httpx - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2026-06-10 10:58:25,498 [INFO] retriever - Query Embedding 성공  dim=1536
+2026-06-10 10:58:25,529 [INFO] connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:25,534 [INFO] retriever - DB Embedding 조회  6건  filters={'ticker': '000660', 'document_type': 'news_article'}
+2026-06-10 10:58:25,537 [INFO] similarity - rank_similar_chunks  총=6  top_k=6  최고score=0.3485
+2026-06-10 10:58:25,538 [INFO] retriever - Metadata 필터링  before=6  after=6  filters={'published_at_from': '2026-03-12'}
+2026-06-10 10:58:25,539 [INFO] retriever - Retrieval 완료  결과=6건  최고score=0.3837
+2026-06-10 10:58:25,540 [INFO] src.runtime_flow.retrieval_executor - execute_retrieval  query=SK하이닉스 000660 HBM  ticker=000660  type=news_article  hits=6
+2026-06-10 10:58:25,541 [INFO] src.runtime_query.unified_retrieval_builder - unified_retrieval  ticker=000660  news=6  disclosure=5  merged=11
+2026-06-10 10:58:25,542 [INFO] runtime_flow - [Retrieval] retrieved 11 chunks  ticker=000660 (news+disclosure)
+2026-06-10 10:58:25,558 [INFO] engine_runner - === Unified Engine 시작  trace_id=20260610_105825 ===
+2026-06-10 10:58:25,559 [INFO] pipeline_manager - Pipeline  [retrieval] ok  unified_chunks=11 disclosure=5
+2026-06-10 10:58:25,559 [INFO] assembler - assemble_context  query='SK하이닉스 000660 HBM'  chunks=11
+2026-06-10 10:58:25,559 [INFO] assembler - Context 제한 적용  원본=11  결과=10  총문자=4552 (max=8000)
+2026-06-10 10:58:25,560 [INFO] assembler -   group  disclosure: 5건
+2026-06-10 10:58:25,560 [INFO] assembler -   group  news_article: 5건
+2026-06-10 10:58:25,560 [INFO] formatter - build_prompt_context  query='SK하이닉스 000660 HBM'  news=5  disclosure=5  total_len=5651
+2026-06-10 10:58:25,560 [INFO] assembler - Context 조립 완료  total=11  limited=10  context_len=5651
+2026-06-10 10:58:25,560 [INFO] pipeline_manager - Pipeline  [context_assembly] ok  len=5651
+2026-06-10 10:58:25,567 [INFO] graph_store - 관련 Graph 조회  ticker=000660  결과=15건
+2026-06-10 10:58:25,569 [INFO] reflection_store - Reflection 로드  persona=growth_investor  총=72건
+2026-06-10 10:58:25,571 [INFO] layered_store - Layer 로드  layer=short_term  전체=14  활성=2
+2026-06-10 10:58:25,572 [INFO] layered_retriever - Layer Retrieval  layer=short_term  query='SK하이닉스 000660 HBM'  결과=0건
+2026-06-10 10:58:25,579 [INFO] layered_store - Layer 로드  layer=mid_term  전체=74  활성=74
+2026-06-10 10:58:25,580 [INFO] layered_retriever - Layer Retrieval  layer=mid_term  query='SK하이닉스 000660 HBM'  결과=0건
+2026-06-10 10:58:25,582 [INFO] layered_store - Layer 로드  layer=long_term  전체=1  활성=1
+2026-06-10 10:58:25,583 [INFO] layered_retriever - Layer Retrieval  layer=long_term  query='SK하이닉스 000660 HBM'  결과=0건
+2026-06-10 10:58:25,584 [INFO] layered_retriever - Layered Context 생성  short=0  mid=0  long=0  총=0  len=0
+2026-06-10 10:58:25,586 [INFO] layered_store - Layer 로드  layer=short_term  전체=14  활성=2
+2026-06-10 10:58:25,592 [INFO] layered_store - Layer 로드  layer=mid_term  전체=74  활성=74
+2026-06-10 10:58:25,593 [INFO] layered_store - Layer 로드  layer=long_term  전체=1  활성=1
+2026-06-10 10:58:25,594 [INFO] layered_store - 전체 Layer 로드  short=2  mid=74  long=1  총=77
+2026-06-10 10:58:25,595 [INFO] lifecycle_manager - Temporal Context 생성  len=24
+2026-06-10 10:58:25,620 [INFO] chain_store - 관련 Chain 조회  ticker=000660  결과=60건
+2026-06-10 10:58:25,621 [INFO] context_orchestrator - 보강 Context 로드  graph=15  reflection=7  chain=60
+2026-06-10 10:58:25,621 [INFO] context_orchestrator - Unified Context 생성  len=3110
+2026-06-10 10:58:25,621 [INFO] pipeline_manager - Pipeline  [unified_context] ok  len=3110
+2026-06-10 10:58:25,622 [INFO] prompt_builder - build_character_prompt  persona='growth_investor'  query='SK하이닉스 000660 HBM'  context_len=3110
+2026-06-10 10:58:29,167 [INFO] httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-10 10:58:29,173 [INFO] pipeline_manager - Pipeline  [character_analysis] ok  bullish=2
+2026-06-10 10:58:29,174 [INFO] evaluator - Retrieval 품질  chunks=11  max=0.5861  avg=0.4574  relevant=True
+2026-06-10 10:58:29,175 [INFO] evaluator - Context 사용  refs=11  overlap=0.00  rating=weak
+2026-06-10 10:58:29,175 [INFO] metrics - hallucination 추정  risk=low  reasons=0
+2026-06-10 10:58:29,175 [INFO] evaluator - 종합 평가  query='SK하이닉스 000660 HBM'  retrieval=OK  context=weak  hallucination=low
+2026-06-10 10:58:29,175 [INFO] pipeline_manager - Pipeline  [evaluation] ok  hallucination=low
+2026-06-10 10:58:29,176 [INFO] reflection_analyzer - === analyze_reflection  query='SK하이닉스 000660 HBM' ===
+2026-06-10 10:58:29,176 [INFO] reflection_prompt_builder - build_reflection_prompt  query='SK하이닉스 000660 HBM'  persona=growth_investor  eval=yes
+2026-06-10 10:58:32,483 [INFO] httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-10 10:58:32,494 [INFO] reflection_analyzer - Chat API 응답 수신  len=506
+2026-06-10 10:58:32,495 [INFO] reflection_analyzer - Reflection 완료  missing_risks=6  overconfidence=True  gaps=3  suggestions=2
+2026-06-10 10:58:32,501 [INFO] reflection_store - Reflection 저장  growth_investor_reflections.json  총=73건
+2026-06-10 10:58:32,501 [INFO] pipeline_manager - Pipeline  [reflection] ok  분석은 SK하이닉스의 HBM 기술에 대한 긍정적인 전망과 함께 리스크 요인을 잘 언급하고 
+2026-06-10 10:58:32,502 [INFO] memory_store - Analysis Memory 생성  query='SK하이닉스 000660 HBM'  persona=growth_investor
+2026-06-10 10:58:32,502 [INFO] memory_classifier - importance_score=1.0000  impact=4  comp=4  refs=11
+2026-06-10 10:58:32,504 [INFO] importance_calculator - calculate_importance  id=analysis_memory_grow  score=1.0000  reasons=5
+2026-06-10 10:58:32,505 [INFO] importance_manager - update_memory_importance  id=analysis_memory_grow  score=1.0000  action=high_retention
+2026-06-10 10:58:32,523 [INFO] memory_store - Analysis Memory 저장  growth_investor_memories.json  총=76건
+2026-06-10 10:58:32,524 [INFO] memory_classifier - Memory 분류  layer=short_term  age=0d  short_kw=0  long_kw=0
+2026-06-10 10:58:32,525 [INFO] memory_classifier - importance_score=1.0000  impact=4  comp=4  refs=11
+2026-06-10 10:58:32,537 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=11
+2026-06-10 10:58:32,552 [INFO] layered_store - Layered Memory 저장  layer=short_term  score=1.0000  파일=growth_investor_short_term.json  총=11건
+2026-06-10 10:58:32,552 [INFO] pipeline_manager - Pipeline  [memory_save] ok  layer=short_term
+2026-06-10 10:58:32,553 [INFO] pipeline_manager - Pipeline  [importance_update] ok  score=1.00
+2026-06-10 10:58:32,554 [INFO] temporal_tracker - track_event_reoccurrence  id=analysis_memory_grow  count=1
+2026-06-10 10:58:32,554 [INFO] temporal_tracker - track_memory_evolution  stage=initial_event  reoccurrence=1  chains=2
+2026-06-10 10:58:32,555 [INFO] temporal_tracker - track_event_reoccurrence  id=analysis_memory_grow  count=1
+2026-06-10 10:58:32,555 [INFO] temporal_tracker - track_memory_evolution  stage=initial_event  reoccurrence=1  chains=2
+2026-06-10 10:58:32,555 [INFO] decay_manager - apply_temporal_importance_update  score=1.0000  boost=0.0000
+2026-06-10 10:58:32,555 [INFO] retention_policy - should_promote=True  id=analysis_memory_grow  score=1.0000  layer=short_term
+2026-06-10 10:58:32,556 [INFO] retention_policy - should_promote=True  id=analysis_memory_grow  score=1.0000  layer=short_term
+2026-06-10 10:58:32,556 [INFO] decay_manager - apply_temporal_importance_update  score=1.0000  boost=0.0000
+2026-06-10 10:58:32,559 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:58:32,589 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:32,590 [INFO] layered_store - move_memory  short_term → mid_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:58:32,592 [INFO] lifecycle_manager - promotion 저장  analysis_memory_growth_investo_promotion.json
+2026-06-10 10:58:32,596 [INFO] lifecycle_manager - lifecycle log 저장  action=promote
+2026-06-10 10:58:32,597 [INFO] lifecycle_manager - promote_memory  short_term → mid_term  reasons=3
+2026-06-10 10:58:32,597 [INFO] pipeline_manager - Pipeline  [temporal_tracking] ok  action=promote
+2026-06-10 10:58:32,598 [INFO] event_extractor - Event Node 추출  텍스트=3305자  노드=9개
+2026-06-10 10:58:32,598 [INFO] relation_builder - Relation 생성  노드=9  관계=11
+2026-06-10 10:58:32,599 [INFO] relation_builder - Impact Relation 추출  bullish=2  bearish=2  risks=2  총=6
+2026-06-10 10:58:32,599 [INFO] graph_store - Event Graph 생성  노드=9  관계=17  query='SK하이닉스 000660 HBM'
+2026-06-10 10:58:32,601 [INFO] graph_store - Event Graph 저장  C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\data\event_graph\000660_event_graph.json
+2026-06-10 10:58:32,601 [INFO] pipeline_manager - Pipeline  [event_graph] ok  nodes=9 rels=17
+2026-06-10 10:58:32,602 [INFO] entity_extractor - Entity 추출  총=7건
+2026-06-10 10:58:32,602 [INFO] entity_extractor - Entity 정규화  7 → 7
+2026-06-10 10:58:32,602 [INFO] chain_builder - Stock Chain 생성  runtime entities=7
+2026-06-10 10:58:32,602 [INFO] chain_builder - Event Graph 병합  총 links=17
+2026-06-10 10:58:32,603 [INFO] propagation_engine - calculate_propagation  paths=7
+2026-06-10 10:58:32,605 [INFO] chain_store - Stock Chain 저장  C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\data\stock_chain\20260610_105825_chain.json
+2026-06-10 10:58:32,606 [INFO] pipeline_manager - Pipeline  [stock_chain] ok  links=17
+2026-06-10 10:58:32,606 [INFO] result_builder - Unified Result 생성  trace_id=20260610_105825
+2026-06-10 10:58:32,610 [INFO] result_builder - Unified Result 저장  C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\data\unified_engine\final_results\20260610_105825_result.json
+2026-06-10 10:58:32,612 [INFO] result_builder - Full Trace 저장  20260610_105825_trace.json  steps=11
+2026-06-10 10:58:32,614 [INFO] result_builder - Pipeline log 저장  20260610_105825_pipeline.json
+2026-06-10 10:58:32,615 [INFO] pipeline_manager - Pipeline  [result_save] ok  trace_id=20260610_105825
+2026-06-10 10:58:32,615 [INFO] engine_runner - === Unified Engine 완료  trace_id=20260610_105825 ===
+2026-06-10 10:58:32,626 [INFO] src.runtime_query.runtime_query_pipeline - runtime_context saved  trace_id=20260610_105825
+2026-06-10 10:58:32,627 [INFO] runtime_flow - [Engine] disclosure-aware reasoning completed
+2026-06-10 10:58:32,627 [INFO] runtime_flow - [Trace] trace_id=20260610_105825 생성 완료
+2026-06-10 10:58:32,662 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:32,680 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:32,713 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:32,729 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:32,732 [INFO] src.dashboard_api.app - POST /api/query/run  status=200  8475.14ms
+2026-06-10 10:58:32,745 [INFO] src.dashboard_api.routes.reflection - GET /api/reflection/20260610_105825
+2026-06-10 10:58:32,759 [INFO] src.dashboard_api.app - GET /api/reflection/20260610_105825  status=200  22.1ms
+2026-06-10 10:58:32,764 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:32,777 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:32,798 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:32,800 [INFO] layered_store - Layer 로드  layer=short_term  전체=14  활성=14
+2026-06-10 10:58:32,817 [INFO] layered_store - Layer 로드  layer=mid_term  전체=75  활성=75
+2026-06-10 10:58:32,819 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:32,820 [INFO] layered_store - Layer 로드  layer=long_term  전체=1  활성=1
+2026-06-10 10:58:32,834 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:58:32,835 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:32,845 [INFO] src.dashboard_api.routes.retrieval - GET /api/retrieval/20260610_105825
+2026-06-10 10:58:32,847 [INFO] src.dashboard_api.app - GET /api/retrieval/20260610_105825  status=200  110.47ms
+2026-06-10 10:58:32,862 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:58:32,863 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:58:32,869 [INFO] src.dashboard_api.routes.stock_chain - GET /api/stock-chain/20260610_105825
+2026-06-10 10:58:32,871 [INFO] src.dashboard_api.app - GET /api/stock-chain/20260610_105825  status=200  21.33ms
+2026-06-10 10:58:32,877 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:58:32,883 [INFO] src.dashboard_api.routes.trace - GET /api/trace/20260610_105825  steps=11
+2026-06-10 10:58:32,885 [INFO] src.dashboard_api.app - GET /api/trace/20260610_105825  status=200  12.03ms
+2026-06-10 10:58:32,890 [INFO] src.dashboard_api.routes.evaluation - GET /api/evaluation/20260610_105825
+2026-06-10 10:58:32,891 [INFO] src.dashboard_api.app - GET /api/evaluation/20260610_105825  status=200  3.73ms
+2026-06-10 10:58:32,896 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:58:32,897 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:58:32,899 [INFO] src.signal_evaluation.signal_history_manager - Signal 저장  20260610_105825_signal.json
+2026-06-10 10:58:32,899 [INFO] src.signal_evaluation.signal_evaluator - Signal 관점 생성 완료  trace_id=20260610_105825  signal=neutral  market_outcome=unavailable
+2026-06-10 10:58:32,900 [INFO] src.dashboard_api.routes.signal - GET /api/signal/20260610_105825
+2026-06-10 10:58:32,901 [INFO] src.dashboard_api.app - GET /api/signal/20260610_105825  status=200  7.89ms
+2026-06-10 10:58:32,909 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:58:32,929 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:58:32,930 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:58:32,942 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:58:32,963 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:58:32,963 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:58:32,978 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:58:33,001 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:58:33,003 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:58:33,014 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:58:33,035 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:58:33,036 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:58:33,050 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:58:33,071 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:58:33,071 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:58:33,085 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:58:33,103 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:58:33,104 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:58:33,132 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,163 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,164 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,193 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,256 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,257 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,289 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,319 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,321 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,352 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,383 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,384 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,417 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,446 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,447 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,479 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,511 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,512 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,548 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,581 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,582 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,621 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,666 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,667 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,702 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,745 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,746 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,787 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,823 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,824 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,859 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,893 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,894 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,925 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:33,955 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:33,957 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:33,989 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,021 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,022 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:34,055 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,089 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,090 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:34,143 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,177 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,178 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:34,216 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,258 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,259 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:34,290 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,330 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,332 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:34,364 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,397 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,398 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:34,432 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=event_memory_growth_inve  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,477 [INFO] layered_store - Layer upsert  layer=mid_term  id=event_memory_growth_inve  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,479 [INFO] layered_store - move_memory  mid_term → mid_term  id=event_memory_growth_inve  removed_from=['mid_term']
+2026-06-10 10:58:34,540 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=event_memory_growth_inve  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,587 [INFO] layered_store - Layer upsert  layer=mid_term  id=event_memory_growth_inve  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,588 [INFO] layered_store - move_memory  mid_term → mid_term  id=event_memory_growth_inve  removed_from=['mid_term']
+2026-06-10 10:58:34,634 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,690 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,691 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:34,734 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,773 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,774 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:34,814 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,862 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,863 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:34,899 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:34,937 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:34,938 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:34,977 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,024 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,025 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,058 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,093 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,094 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,141 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,179 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,180 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,216 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,250 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,251 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,285 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,318 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,319 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,355 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,389 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,390 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,424 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,463 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,465 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,496 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,529 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,530 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,568 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,603 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,604 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,643 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,676 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,678 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,716 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,750 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,752 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,786 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,826 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,828 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,866 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,898 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,900 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:35,935 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:35,972 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:35,973 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,006 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,046 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,047 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,085 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,123 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,125 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,165 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,199 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,200 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,235 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,269 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,270 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,310 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,347 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,348 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,393 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,433 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,434 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,480 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,526 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,528 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,566 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,596 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,597 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,630 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,666 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,667 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,699 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,743 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,745 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,781 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,822 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,823 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,863 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,908 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,909 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:36,941 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:36,980 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:36,981 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,022 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,063 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,064 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,104 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,140 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,141 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,181 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,218 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,219 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,260 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,298 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,299 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,334 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,372 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,373 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,415 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,452 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,453 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,495 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,539 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,540 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,585 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,622 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,623 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,672 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,717 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,719 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,758 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,796 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,797 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,828 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,867 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,868 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,906 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:37,936 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:37,937 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:37,972 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:38,007 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:38,008 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:38,040 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:38,073 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:38,075 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:38,107 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:38,144 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:38,145 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:38,184 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:38,212 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:38,213 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:38,243 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:38,278 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:38,279 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:38,319 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:38,356 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:38,357 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:38,394 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:38,430 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:38,431 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:38,464 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:38,493 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:38,494 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:38,526 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:38,573 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:38,574 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:38,613 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:38,647 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:38,648 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:38,684 [INFO] layered_store - memory 이동 \u2014 제거  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json
+2026-06-10 10:58:38,718 [INFO] layered_store - Layer upsert  layer=mid_term  id=analysis_memory_growth_i  file=growth_investor_mid_term.json  count=75
+2026-06-10 10:58:38,719 [INFO] layered_store - move_memory  mid_term → mid_term  id=analysis_memory_growth_i  removed_from=['mid_term']
+2026-06-10 10:58:38,739 [INFO] layered_store - memory 이동 \u2014 제거  layer=long_term  id=analysis_memory_growth_i  file=growth_investor_long_term.json
+2026-06-10 10:58:38,742 [INFO] layered_store - Layer upsert  layer=long_term  id=analysis_memory_growth_i  file=growth_investor_long_term.json  count=1
+2026-06-10 10:58:38,742 [INFO] layered_store - move_memory  long_term → long_term  id=analysis_memory_growth_i  removed_from=['long_term']
+2026-06-10 10:58:38,743 [INFO] src.dashboard_api.services.memory_service - layer memory 중복 repair  corrected=83
+2026-06-10 10:58:38,790 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,798 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,812 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,828 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,835 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,837 [INFO] src.dashboard_api.routes.memory - GET /api/memory/20260610_105825
+2026-06-10 10:58:38,840 [INFO] src.dashboard_api.app - GET /api/memory/20260610_105825  status=200  6077.49ms
+2026-06-10 10:58:38,867 [INFO] src.dashboard_api.routes.runtime - GET /api/runtime/evidence/20260610_105825  merged=11
+2026-06-10 10:58:38,879 [INFO] src.dashboard_api.app - GET /api/runtime/evidence/20260610_105825  status=200  26.36ms
+2026-06-10 10:58:38,880 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,880 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,881 [INFO] src.dashboard_api.routes.market_graph - GET /api/runtime-status/20260610_105825  phase=analysis_complete
+2026-06-10 10:58:38,883 [INFO] src.dashboard_api.app - GET /api/runtime-status/20260610_105825  status=200  30.6ms
+2026-06-10 10:58:38,906 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,906 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,922 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,927 [INFO] src.dashboard_api.app - GET /api/disclosure/evidence/20260610_105825  status=200  74.32ms
+2026-06-10 10:58:38,941 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,964 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:38,966 [INFO] src.dashboard_api.routes.events - GET /api/events/20260610_105825  events=1  ticker=000660
+2026-06-10 10:58:38,968 [INFO] src.dashboard_api.app - GET /api/events/20260610_105825  status=200  116.84ms
+2026-06-10 10:58:54,896 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:54,915 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:54,947 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:54,981 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:55,021 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:55,025 [INFO] src.dashboard_api.routes.retrieval - GET /api/retrieval/20260610_104343
+2026-06-10 10:58:55,028 [INFO] src.dashboard_api.app - GET /api/retrieval/20260610_104343  status=200  178.24ms
+2026-06-10 10:58:55,032 [INFO] src.dashboard_api.routes.reflection - GET /api/reflection/20260610_104343
+2026-06-10 10:58:55,034 [INFO] src.dashboard_api.app - GET /api/reflection/20260610_104343  status=200  3.83ms
+2026-06-10 10:58:55,039 [INFO] src.dashboard_api.routes.trace - GET /api/trace/20260610_104343  steps=11
+2026-06-10 10:58:55,041 [INFO] src.dashboard_api.app - GET /api/trace/20260610_104343  status=200  2.94ms
+2026-06-10 10:58:55,047 [INFO] src.dashboard_api.routes.evaluation - GET /api/evaluation/20260610_104343
+2026-06-10 10:58:55,049 [INFO] src.dashboard_api.app - GET /api/evaluation/20260610_104343  status=200  6.01ms
+2026-06-10 10:58:55,083 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:55,105 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:55,132 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:55,155 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:55,176 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:55,178 [INFO] src.dashboard_api.routes.reflection - GET /api/reflection/20260610_104343
+2026-06-10 10:58:55,179 [INFO] src.dashboard_api.routes.trace - GET /api/trace/20260610_104343  steps=11
+2026-06-10 10:58:55,181 [INFO] src.dashboard_api.routes.retrieval - GET /api/retrieval/20260610_104343
+2026-06-10 10:58:55,183 [INFO] src.dashboard_api.app - GET /api/reflection/20260610_104343  status=200  25.19ms
+2026-06-10 10:58:55,184 [INFO] src.dashboard_api.routes.evaluation - GET /api/evaluation/20260610_104343
+2026-06-10 10:58:55,185 [INFO] src.dashboard_api.app - GET /api/trace/20260610_104343  status=200  27.11ms
+2026-06-10 10:58:55,189 [INFO] src.dashboard_api.app - GET /api/retrieval/20260610_104343  status=200  137.13ms
+2026-06-10 10:58:55,191 [INFO] src.dashboard_api.app - GET /api/evaluation/20260610_104343  status=200  18.36ms
+2026-06-10 10:58:57,854 [INFO] src.dashboard_api.routes.market_graph - GET /api/runtime-status/20260610_104343  phase=analysis_complete
+2026-06-10 10:58:57,873 [INFO] src.dashboard_api.routes.market_graph - GET /api/runtime-status/20260610_104343  phase=analysis_complete
+2026-06-10 10:58:57,873 [INFO] src.dashboard_api.app - GET /api/runtime-status/20260610_104343  status=200  29.99ms
+2026-06-10 10:58:57,875 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:57,876 [INFO] src.dashboard_api.app - GET /api/runtime-status/20260610_104343  status=200  30.47ms
+2026-06-10 10:58:57,890 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:57,891 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:57,917 [INFO] src.dashboard_api.routes.market_graph - GET /api/market-graph/20260610_104343  nodes=7  edges=6
+2026-06-10 10:58:57,917 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:57,920 [INFO] src.dashboard_api.app - GET /api/market-graph/20260610_104343  status=200  75.57ms
+2026-06-10 10:58:57,941 [INFO] src.dashboard_api.routes.market_graph - GET /api/market-graph/20260610_104343  nodes=7  edges=6
+2026-06-10 10:58:57,960 [INFO] src.dashboard_api.app - GET /api/market-graph/20260610_104343  status=200  117.55ms
+2026-06-10 10:58:57,964 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:57,964 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:57,984 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:58,039 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:58,049 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:58,050 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:58,051 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:58,051 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:58,065 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:58,080 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:58,099 [INFO] src.dashboard_api.routes.market_graph - GET /api/relation-explanation/20260610_104343  relations=6
+2026-06-10 10:58:58,100 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:58,103 [INFO] src.dashboard_api.app - GET /api/relation-explanation/20260610_104343  status=200  176.41ms
+2026-06-10 10:58:58,104 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 10:58:58,116 [INFO] src.dashboard_api.routes.market_graph - GET /api/market-insight/20260610_104343
+2026-06-10 10:58:58,123 [INFO] src.dashboard_api.routes.market_graph - GET /api/risk-exposure/20260610_104343  risks=2
+2026-06-10 10:58:58,127 [INFO] src.dashboard_api.app - GET /api/market-insight/20260610_104343  status=200  201.53ms
+2026-06-10 10:58:58,134 [INFO] src.dashboard_api.routes.market_graph - GET /api/risk-exposure/20260610_104343  risks=2
+2026-06-10 10:58:58,134 [INFO] src.dashboard_api.app - GET /api/risk-exposure/20260610_104343  status=200  205.57ms
+2026-06-10 10:58:58,150 [INFO] src.dashboard_api.app - GET /api/risk-exposure/20260610_104343  status=200  174.82ms
+2026-06-10 10:58:58,155 [INFO] src.dashboard_api.routes.market_graph - GET /api/relation-explanation/20260610_104343  relations=6
+2026-06-10 10:58:58,161 [INFO] src.dashboard_api.routes.market_graph - GET /api/market-insight/20260610_104343
+2026-06-10 10:58:58,162 [INFO] src.dashboard_api.app - GET /api/relation-explanation/20260610_104343  status=200  187.58ms
+2026-06-10 10:58:58,166 [INFO] src.dashboard_api.app - GET /api/market-insight/20260610_104343  status=200  191.49ms
+2026-06-10 10:59:09,990 [INFO] layered_store - Layer 로드  layer=short_term  전체=14  활성=14
+2026-06-10 10:59:09,990 [INFO] layered_store - Layer 로드  layer=short_term  전체=14  활성=14
+2026-06-10 10:59:09,996 [INFO] layered_store - Layer 로드  layer=mid_term  전체=75  활성=75
+2026-06-10 10:59:10,000 [INFO] layered_store - Layer 로드  layer=mid_term  전체=75  활성=75
+2026-06-10 10:59:10,001 [INFO] layered_store - Layer 로드  layer=long_term  전체=1  활성=1
+2026-06-10 10:59:10,002 [INFO] layered_store - Layer 로드  layer=long_term  전체=1  활성=1
+2026-06-10 10:59:10,007 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:59:10,008 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:59:10,040 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:59:10,040 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:59:10,041 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:59:10,041 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:59:10,057 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:59:10,058 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:59:10,085 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:59:10,086 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:59:10,087 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:59:10,087 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:59:10,105 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:59:10,106 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:59:10,139 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:59:10,139 [INFO] layered_store - Layer upsert  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json  count=10
+2026-06-10 10:59:10,141 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:59:10,142 [INFO] layered_store - move_memory  short_term → short_term  id=analysis_memory_growth_i  removed_from=['short_term']
+2026-06-10 10:59:10,159 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:59:10,159 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:59:10,190 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:59:10,191 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:59:10,191 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:59:10,192 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:59:10,207 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:59:10,219 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json
+2026-06-10 10:59:10,238 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:59:10,238 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:59:10,257 [INFO] layered_store - Layer upsert  layer=short_term  id=event_memory_growth_inve  file=growth_investor_short_term.json  count=10
+2026-06-10 10:59:10,257 [INFO] layered_store - memory 이동 \u2014 제거  layer=short_term  id=analysis_memory_growth_i  file=growth_investor_short_term.json
+2026-06-10 10:59:10,258 [INFO] layered_store - move_memory  short_term → short_term  id=event_memory_growth_inve  removed_from=['short_term']
+2026-06-10 10:59:10,275 [ERROR] src.dashboard_api.services.memory_service - layer memory repair 실패
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\memory_service.py", line 140, in _repair_layer_files_if_needed
+    n = repair_layer_duplicates()
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 201, in repair_layer_duplicates
+    move_memory_to_layer(m, m["memory_layer"], base_dir=base_dir)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 130, in move_memory_to_layer
+    removed_from = remove_memory_from_all_layers(mem_id, base_dir=base_dir)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 76, in remove_memory_from_all_layers
+    if remove_memory_from_layer(memory_id, layer, base_dir=base_dir):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 50, in remove_memory_from_layer
+    data = json.load(f)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+                 ~~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xed in position 9574: invalid continuation byte
+2026-06-10 10:59:10,275 [ERROR] src.dashboard_api.services.memory_service - layer memory repair 실패
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\memory_service.py", line 140, in _repair_layer_files_if_needed
+    n = repair_layer_duplicates()
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 201, in repair_layer_duplicates
+    move_memory_to_layer(m, m["memory_layer"], base_dir=base_dir)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 137, in move_memory_to_layer
+    upsert_memory_in_layer(memory, target_layer, base_dir=base_dir)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\rag\layered_memory\layered_store.py", line 96, in upsert_memory_in_layer
+    existing = json.load(f)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+                 ~~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xed in position 9574: invalid continuation byte
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\app.py", line 78, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\routes\memory.py", line 52, in get_memory_by_trace
+    data = fetch_memory_by_trace(trace_id)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\memory_service.py", line 198, in fetch_memory_by_trace
+    return _build_memory_payload(result, trace_id)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\memory_service.py", line 158, in _build_memory_payload
+    layers = _layers_for_trace(result)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\memory_service.py", line 92, in _layers_for_trace
+    for item in load_layer_memories(layer):
+                ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\trace_service.py", line 84, in load_layer_memories
+    data = load_json_file(fp)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\trace_service.py", line 23, in load_json_file
+    return json.load(f)
+           ~~~~~~~~~^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+                 ~~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xed in position 9574: invalid continuation byte
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\app.py", line 78, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\routes\memory.py", line 52, in get_memory_by_trace
+    data = fetch_memory_by_trace(trace_id)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\memory_service.py", line 198, in fetch_memory_by_trace
+    return _build_memory_payload(result, trace_id)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\memory_service.py", line 158, in _build_memory_payload
+    layers = _layers_for_trace(result)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\memory_service.py", line 92, in _layers_for_trace
+    for item in load_layer_memories(layer):
+                ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\trace_service.py", line 84, in load_layer_memories
+    data = load_json_file(fp)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\trace_service.py", line 23, in load_json_file
+    return json.load(f)
+           ~~~~~~~~~^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+                 ~~~~~~~^^
+  File "<frozen codecs>", line 325, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xed in position 9574: invalid continuation byte
+2026-06-10 10:59:12,824 [INFO] src.dashboard_api.routes.signal - GET /api/signal/20260610_104343
+2026-06-10 10:59:12,825 [INFO] src.dashboard_api.app - GET /api/signal/20260610_104343  status=200  4.55ms
+2026-06-10 10:59:12,830 [INFO] src.dashboard_api.routes.signal - GET /api/signal/20260610_104343
+2026-06-10 10:59:12,831 [INFO] src.dashboard_api.app - GET /api/signal/20260610_104343  status=200  3.87ms
+2026-06-10 12:35:37,642 [INFO] src.dashboard_api.routes.runtime - GET /api/runtime/evidence/20260610_105825  merged=11
+2026-06-10 12:35:37,650 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,651 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,698 [INFO] src.dashboard_api.app - GET /api/runtime/evidence/20260610_105825  status=200  121.82ms
+2026-06-10 12:35:37,720 [INFO] src.dashboard_api.routes.market_graph - GET /api/runtime-status/20260610_105825  phase=analysis_complete
+2026-06-10 12:35:37,721 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,723 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,725 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,739 [INFO] src.dashboard_api.app - GET /api/runtime-status/20260610_105825  status=200  159.46ms
+2026-06-10 12:35:37,776 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,790 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,792 [INFO] src.dashboard_api.routes.runtime - GET /api/runtime/evidence/20260610_105825  merged=11
+2026-06-10 12:35:37,797 [INFO] src.dashboard_api.app - GET /api/runtime/evidence/20260610_105825  status=200  19.01ms
+2026-06-10 12:35:37,823 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,843 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,871 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,872 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,872 [INFO] src.dashboard_api.app - GET /api/disclosure/000660  status=200  295.55ms
+2026-06-10 12:35:37,873 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,876 [INFO] src.dashboard_api.app - GET /api/disclosure/timeline/000660  status=200  299.56ms
+2026-06-10 12:35:37,929 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,980 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:37,986 [INFO] src.dashboard_api.app - GET /api/disclosure/evidence/20260610_105825  status=200  406.53ms
+2026-06-10 12:35:37,989 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,003 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,004 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,017 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,029 [INFO] src.dashboard_api.routes.market_graph - GET /api/runtime-status/20260610_105825  phase=analysis_complete
+2026-06-10 12:35:38,054 [INFO] src.dashboard_api.app - GET /api/runtime-status/20260610_105825  status=200  63.41ms
+2026-06-10 12:35:38,063 [INFO] src.dashboard_api.app - OPTIONS /api/disclosure/collect  status=200  0.65ms
+2026-06-10 12:35:38,064 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,065 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,070 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,083 [INFO] src.dashboard_api.app - GET /api/disclosure/000660  status=200  259.53ms
+2026-06-10 12:35:38,098 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\app.py", line 78, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\routes\events.py", line 48, in get_events_by_trace
+    data = fetch_events_by_trace(trace_id, ticker=ticker or None)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\events_service.py", line 37, in fetch_events_by_trace
+    data = fetch_events_for_trace(trace_id, selected_ticker=ticker)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\event_consolidation\event_consolidator.py", line 271, in fetch_events_for_trace
+    return consolidate_events(trace_id, selected_ticker=selected_ticker)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\event_consolidation\event_consolidator.py", line 170, in consolidate_events
+    conf = compute_event_confidence(evidence)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\event_consolidation\event_confidence.py", line 38, in compute_event_confidence
+    days = max(0, (now - dt).days)
+                   ~~~~^~~~
+TypeError: can't subtract offset-naive and offset-aware datetimes
+2026-06-10 12:35:38,113 [INFO] src.dashboard_api.app - GET /api/disclosure/timeline/000660  status=200  222.67ms
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 421, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\applications.py", line 1159, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_utils.py", line 87, in collapse_excgroups
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\app.py", line 78, in log_requests
+    response = await call_next(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 168, in call_next
+    raise app_exc from app_exc.__cause__ or app_exc.__context__
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\base.py", line 144, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 680, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 134, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 120, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 674, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\fastapi\routing.py", line 330, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\oh_kim_family\miniconda3\Lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\routes\events.py", line 48, in get_events_by_trace
+    data = fetch_events_by_trace(trace_id, ticker=ticker or None)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\dashboard_api\services\events_service.py", line 37, in fetch_events_by_trace
+    data = fetch_events_for_trace(trace_id, selected_ticker=ticker)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\event_consolidation\event_consolidator.py", line 271, in fetch_events_for_trace
+    return consolidate_events(trace_id, selected_ticker=selected_ticker)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\event_consolidation\event_consolidator.py", line 170, in consolidate_events
+    conf = compute_event_confidence(evidence)
+  File "C:\Users\oh_kim_family\Desktop\my_project\finance_ai\AlphaFin_light\src\event_consolidation\event_confidence.py", line 38, in compute_event_confidence
+    days = max(0, (now - dt).days)
+                   ~~~~^~~~
+TypeError: can't subtract offset-naive and offset-aware datetimes
+2026-06-10 12:35:38,124 [INFO] src.dashboard_api.app - GET /api/disclosure/evidence/20260610_105825  status=200  223.42ms
+2026-06-10 12:35:38,126 [INFO] src.dashboard_api.routes.disclosure - POST /api/disclosure/collect  ticker=000660  status=cached
+2026-06-10 12:35:38,128 [INFO] src.dashboard_api.app - OPTIONS /api/disclosure/collect  status=200  0.98ms
+2026-06-10 12:35:38,132 [INFO] src.dashboard_api.app - POST /api/disclosure/collect  status=200  20.04ms
+2026-06-10 12:35:38,138 [INFO] src.dashboard_api.routes.disclosure - POST /api/disclosure/collect  ticker=000660  status=cached
+2026-06-10 12:35:38,162 [INFO] src.dashboard_api.app - POST /api/disclosure/collect  status=200  27.81ms
+2026-06-10 12:35:38,165 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,179 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,201 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,202 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,215 [INFO] src.dashboard_api.app - GET /api/disclosure/000660  status=200  78.17ms
+2026-06-10 12:35:38,215 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,230 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,235 [INFO] src.dashboard_api.app - GET /api/disclosure/000660  status=200  68.64ms
+2026-06-10 12:35:38,236 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,238 [INFO] src.dashboard_api.app - GET /api/disclosure/timeline/000660  status=200  101.62ms
+2026-06-10 12:35:38,255 [INFO] src.common.db.connection - MariaDB 연결 성공  host=localhost  db=finance_study
+2026-06-10 12:35:38,258 [INFO] src.dashboard_api.app - GET /api/disclosure/timeline/000660  status=200  40.91ms

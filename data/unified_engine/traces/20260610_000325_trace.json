@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260610_000325",
+  "query": "삼성전자 005930",
+  "persona": "growth_investor",
+  "ticker": "005930",
+  "started_at": "2026-06-10 00:03:25",
+  "completed_at": "2026-06-10 00:03:38",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=10 disclosure=10",
+      "timestamp": "2026-06-10 00:03:25"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=2132",
+      "timestamp": "2026-06-10 00:03:25"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=2236",
+      "timestamp": "2026-06-10 00:03:25"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-10 00:03:33"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-10 00:03:33"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 삼성전자의 성장 가능성과 리스크를 균형 있게 다루고 있으나, 일부 리스크가 누락되어",
+      "timestamp": "2026-06-10 00:03:38"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-10 00:03:38"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.70",
+      "timestamp": "2026-06-10 00:03:38"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-10 00:03:38"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=3 rels=7",
+      "timestamp": "2026-06-10 00:03:38"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=7",
+      "timestamp": "2026-06-10 00:03:38"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 10,
+    "max_score": 0.536251
+  },
+  "reflection_summary": "분석은 삼성전자의 성장 가능성과 리스크를 균형 있게 다루고 있으나, 일부 리스크가 누락되어 있으며, 과도한 낙관이 감지됩니다. 또한, 전반적인 맥락 부족이 존재하여 추가적인 정보가 필요합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

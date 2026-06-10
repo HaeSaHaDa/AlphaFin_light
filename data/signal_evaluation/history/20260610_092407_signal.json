@@ -1,0 +1,33 @@
+{
+  "trace_id": "20260610_092407",
+  "query": "두산에너빌리티 034020",
+  "ticker": "034020",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [
+      "SMR 전용 공장 건설 및 생산 능력 확대 계획",
+      "전반적인 시장 약세와 외부 경제 요인에 따른 불확실성",
+      "글로벌 경제 둔화로 인한 수요 감소 가능성"
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

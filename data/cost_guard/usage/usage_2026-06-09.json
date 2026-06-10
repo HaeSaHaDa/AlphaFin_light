@@ -1,0 +1,83 @@
+{
+  "date": "2026-06-09",
+  "entries": [
+    {
+      "timestamp": "2026-06-09 13:00:00",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 912,
+      "meta": {
+        "ticker": "086280",
+        "count": 9
+      }
+    },
+    {
+      "timestamp": "2026-06-09 13:02:14",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 1838,
+      "meta": {
+        "ticker": "066570",
+        "count": 17
+      }
+    },
+    {
+      "timestamp": "2026-06-09 16:21:33",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 1070,
+      "meta": {
+        "ticker": "012330",
+        "count": 7
+      }
+    },
+    {
+      "timestamp": "2026-06-09 16:52:56",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 1089,
+      "meta": {
+        "ticker": "000810",
+        "count": 18
+      }
+    },
+    {
+      "timestamp": "2026-06-09 17:20:42",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 1031,
+      "meta": {
+        "ticker": "034220",
+        "count": 9
+      }
+    },
+    {
+      "timestamp": "2026-06-09 17:25:33",
+      "operation": "embedding_batch",
+      "model": "text-embedding-3-small",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "embedding_tokens": 924,
+      "meta": {
+        "ticker": "051900",
+        "count": 5
+      }
+    }
+  ],
+  "totals": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "embedding_tokens": 6864,
+    "call_count": 6
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "ticker": "000810",
+  "company_name": "삼성화재",
+  "corp_code": "00126256",
+  "status": "completed",
+  "documents": 92,
+  "chunks": 26,
+  "embeddings": 18,
+  "embeddings_created": 18,
+  "embeddings_skipped": 8,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

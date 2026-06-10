@@ -1,0 +1,33 @@
+{
+  "trace_id": "20260609_172043",
+  "query": "LG디스플레이 034220",
+  "ticker": "034220",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [
+      "LG디스플레이는 AI 및 클라우드 데이터센터 구축과 관련된 기술 발전에 참여할 가능성이 있음",
+      "LG디스플레이의 주가는 최근 하락세를 보이며 시장에서 부진한 성과를 나타내고 있음",
+      "글로벌 반도체 시장의 변동성과 경쟁 심화로 인한 수익성 저하 리스크"
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

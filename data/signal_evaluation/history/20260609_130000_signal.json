@@ -1,0 +1,33 @@
+{
+  "trace_id": "20260609_130000",
+  "query": "현대글로비스 086280",
+  "ticker": "086280",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [
+      "현대차그룹의 로봇 밸류체인에 대한 집중 투자로 인해 현대글로비스의 성장 가능성이 높아짐",
+      "글로벌 로봇 산업 경쟁 심화로 인한 시장 점유율 확보의 어려움",
+      "로봇 기술의 발전 속도와 시장 수요 변화에 따른 불확실성"
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

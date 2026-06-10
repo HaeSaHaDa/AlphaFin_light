@@ -74,8 +74,13 @@ def _chain_from_retrieval_chunks(
     links: list[dict] = []
     seen: set[str] = set()
     for i, ch in enumerate(chunks[:6]):
-        doc = ch.get("document_type") or "document"
-        label = f"{doc} #{ch.get('chunk_id', i + 1)}"
+        text = ch.get("text") or ch.get("chunk_text") or ""
+        label = (
+            ch.get("title")
+            or ch.get("report_name")
+            or (text.splitlines()[0].strip() if text else "")
+            or f"근거 문서 {i + 1}"
+        )
         if label in seen:
             continue
         seen.add(label)

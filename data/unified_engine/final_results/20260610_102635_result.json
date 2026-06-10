@@ -1,0 +1,588 @@
+{
+  "trace_id": "20260610_102635",
+  "query": "SK하이닉스 000660 삼성전자 엔비디아 TSMC 마이크론",
+  "persona": "growth_investor",
+  "ticker": "000660",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "SK하이닉스 000660 삼성전자 엔비디아 TSMC 마이크론",
+    "ticker": "000660",
+    "keywords": [
+      "삼성전자",
+      "엔비디아",
+      "TSMC",
+      "마이크론"
+    ],
+    "bullish_factors": [
+      "SK하이닉스의 최근 강세, AI 및 반도체 수요 증가에 따른 성장 가능성",
+      "전기전자 업종의 강보합세로 인한 긍정적인 시장 분위기"
+    ],
+    "bearish_factors": [
+      "외국인 매도세로 인한 시장 전반의 약세",
+      "삼성전자와 SK하이닉스의 하락세가 시장에 미치는 부정적 영향"
+    ],
+    "risks": [
+      "글로벌 경제 불확실성에 따른 수요 감소",
+      "경쟁 심화로 인한 가격 압박"
+    ],
+    "summary": "SK하이닉스는 AI 및 반도체 수요 증가로 성장 가능성이 높지만, 외국인 매도세와 삼성전자의 하락세가 시장에 부정적인 영향을 미치고 있습니다. 전기전자 업종의 강보합세는 긍정적인 신호로 해석될 수 있으나, 글로벌 경제 리스크가 여전히 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 235,
+        "document_type": "news_article",
+        "score": 0.368518,
+        "ticker": "000660"
+      },
+      {
+        "chunk_id": 234,
+        "document_type": "news_article",
+        "score": 0.364014,
+        "ticker": "000660"
+      },
+      {
+        "chunk_id": 230,
+        "document_type": "news_article",
+        "score": 0.345019,
+        "ticker": "000660"
+      },
+      {
+        "chunk_id": 231,
+        "document_type": "news_article",
+        "score": 0.328972,
+        "ticker": "000660"
+      },
+      {
+        "chunk_id": 232,
+        "document_type": "news_article",
+        "score": 0.310808,
+        "ticker": "000660"
+      },
+      {
+        "chunk_id": 233,
+        "document_type": "news_article",
+        "score": 0.290093,
+        "ticker": "000660"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "SK하이닉스 000660 삼성전자 엔비디아 TSMC 마이크론",
+    "retrieval_quality": {
+      "chunk_count": 6,
+      "score_stats": {
+        "min": 0.290093,
+        "max": 0.368518,
+        "avg": 0.334571,
+        "count": 6
+      },
+      "doc_type_distribution": {
+        "news_article": 6
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 6,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 6,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.368518,
+        0.364014,
+        0.345019,
+        0.328972,
+        0.310808,
+        0.290093
+      ],
+      "score_stats": {
+        "min": 0.290093,
+        "max": 0.368518,
+        "avg": 0.334571,
+        "count": 6
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "SK하이닉스 000660 삼성전자 엔비디아 TSMC 마이크론",
+    "ticker": "000660",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 SK하이닉스의 성장 가능성을 긍정적으로 평가하고 있지만, 외국인 매도세와 삼성전자의 하락세에 대한 비관적인 요소도 언급하고 있습니다. 그러나 리스크와 Context 부족 부분이 있어 균형 잡힌 시각이 부족합니다.",
+    "missing_risks": [
+      "환율 변동에 따른 수익성 악화",
+      "정치적 불안정성으로 인한 공급망 차질",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "AI 및 반도체 수요 증가에 대한 지나친 낙관적 전망"
+    ],
+    "context_gaps": [
+      "SK하이닉스의 경쟁사 분석 부족",
+      "AI 및 반도체 시장의 구체적인 성장 전망 데이터 부족",
+      "공시 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "경쟁사와의 비교 분석을 포함하여 시장 위치를 명확히 할 것",
+      "AI 및 반도체 수요 증가에 대한 구체적인 데이터와 예측을 추가할 것"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-06-10 10:26:45"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "SK하이닉스 000660 삼성전자 엔비디아 TSMC 마이크론",
+      "ticker": "000660",
+      "keywords": [
+        "삼성전자",
+        "엔비디아",
+        "TSMC",
+        "마이크론"
+      ],
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "SK하이닉스의 최근 강세, AI 및 반도체 수요 증가에 따른 성장 가능성",
+        "전기전자 업종의 강보합세로 인한 긍정적인 시장 분위기"
+      ],
+      "bearish_factors": [
+        "외국인 매도세로 인한 시장 전반의 약세",
+        "삼성전자와 SK하이닉스의 하락세가 시장에 미치는 부정적 영향"
+      ],
+      "risks": [
+        "글로벌 경제 불확실성에 따른 수요 감소",
+        "경쟁 심화로 인한 가격 압박"
+      ],
+      "summary": "SK하이닉스는 AI 및 반도체 수요 증가로 성장 가능성이 높지만, 외국인 매도세와 삼성전자의 하락세가 시장에 부정적인 영향을 미치고 있습니다. 전기전자 업종의 강보합세는 긍정적인 신호로 해석될 수 있으나, 글로벌 경제 리스크가 여전히 존재합니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 235,
+          "document_type": "news_article",
+          "ticker": "000660",
+          "score": 0.368518,
+          "merge_score": 0.453,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": ", 삼성물산 －1. 22%, 삼성바이오로직스 －0. 87% 등이 약세다. 반면 SK하이닉스는 1. 16% 강세고 현대차 1. 91%, 삼성전기 1. 66%, LG에너지솔루션 11. 21% 등은 오름세를 보이고 있다. 코스닥지수도 약세 흐름을 이어가고 있다. 같은 시각 코스닥지수는 전일 대비 2. 19% 빠진 1108. 29에 거래되고 있다. 투자주체별로는 기관과 외국인이 각각 570억원, 400억원을 순매도하고 있는 반면 개인은 922억원을 순매수하고 있다. 시가총액 상위권 종목들은 내리는 종목이 더 많다. 알테오젠이 4. 01% 약세고 레인보우로보틱스 －3. 01%, 주성엔지니어링 －7. 42%, 코오롱티슈진 －5. 79%, 삼천당제약 －2. 99%, 리노공업 －3. 9%, 펩트론 －1. 39%, 에이비엘바이오 －3. 38% 등이 약세다. 반면 에코프로비엠은 2. 34% 강세고 에코프로 0. 77%, HLB 0. 2% 등도 강보합권에서 움직이고 있다. 한편 서울 외환시장에서 원/달러 환율은 전일 대비 4. 5원 오른 1503. 9원에 거래되고 있다.",
+          "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:11:46\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"코스피, 외국인 매도세에 장중 약세\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768802?sid=101\"}"
+        },
+        {
+          "chunk_id": 234,
+          "document_type": "news_article",
+          "ticker": "000660",
+          "score": 0.364014,
+          "merge_score": 0.4498,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "코스피, 외국인 매도세에 장중 약세\n 28일 코스피 지수가 사상 첫 8400을 돌파하고 잠시 숨고르기를 하고 있다. 서울 중구 하나은행 본점 딜링룸 지수 현황판에 각종 지수가 표시되고 있다. 2025. 05. 28 윤동주 기자 코스피가 외국인의 매도세에 밀려 장중 약세를 보이고 있다. 28일 오전 10시3분 기준 코스피는 전일 대비 0. 35% 내린 8199. 03에 거래되고 있다. 투자주체별로는 외국인이 1조8339억원을 순매도하고 있는 반면 기관과 개인은 각각 4202억원, 1조3743억원을 순매수하고 있다. 선물시장에서는 기관과 개인이 각각 2590억원, 15억원 순매수하고 있는 반면 외국인은 2667억원을 순매도하고 있다. 업종별로는 하락하는 업종이 더 많다. 통신업종이 2. 9% 약세고 증권 －2. 68%, 기계장비 －2. 64%, 부동산 －2. 66%, 보험 －2. 58%, 금융 －2. 22%, 금속 －2. 12%, 건설 －2. 08%, 의료정밀 －2. 08%, 전기가스 －1. 64%, 종이목재 －1. 64%, 제약 －1. 55%, 일반서비스 －1. 57% 등이 하락했다. 반면 운송창고, 전기전자 업종은 강보합권에서 움직이고 있다. 시가총액 상위권 종목들은 등락이 엇갈리고 있다. 삼성전자가 1. 3% 약세고 SK스퀘어 －2. 59%, HD현대중공업 －3. 63%, 삼성생명 －1. 55%, 두산에너빌리티 －1. 2%, 삼성물산 －1. 22%, 삼성바이오로직스 －0. 87% 등이 약세다. 반면 SK하이닉스는 1. 16% 강세고 현대차 1. 91%, 삼성전기 1. 66%, LG에너지솔루션 11.",
+          "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:11:46\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"코스피, 외국인 매도세에 장중 약세\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768802?sid=101\"}"
+        },
+        {
+          "chunk_id": 230,
+          "document_type": "news_article",
+          "ticker": "000660",
+          "score": 0.345019,
+          "merge_score": 0.4365,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "외국인 매도에 밀린 코스피…8200선 아래로\n [김혜인 디지털팀 기자 haileykim0516@gmail. com] 개인·기관 순매수에도 지수 약세 뉴욕 강세 무색…AI 주도주 쏠림 부담 사상 최고치를 경신했던 코스피가 하락 출발한 28일 서울 중구 하나은행 본점 딜링룸 ⓒ연합뉴스 코스피가 외국인 매도 영향으로 8200선 아래에서 거래되고 있다. 뉴욕증시 강세에도 국내 증시는 시가총액 상위 종목을 중심으로 차익실현 매물이 나오면서 약세를 나타내는 모습이다. 28일 한국거래소에 따르면, 이날 오전 9시23분 기준 코스피는 전일 대비 66. 15포인트(0. 80%) 내린 8162. 55에 거래되고 있다. 이날 코스피는 62. 97포인트(0. 77%) 내린 8165. 73에 개장했다. 유가증권시장에서 외국인은 1조2497억원 순매도하고 있다. 개인은 9715억원, 기관은 2560억원 순매수하고 있다. 시가총액 상위 종목은 엇갈린 흐름을 보이고 있다. 삼성전자(-1. 63%), SK하이닉스(-1. 03%), 두산에너빌리티(-0. 88%), 삼성물산(-1. 22%), 한화에어로스페이스(-3. 30%), HD현대중공업(-2. 82%), 삼성생명(-2. 26%)이 내리고 있다. 현대차(+1. 47%), LG에너지솔루션(+12. 26%), 삼성바이오로직스(+0. 43%), 삼성전기(+0. 61%)은 오르고 있다. 코스닥지수는 전일 대비 18. 86포인트(1. 66%) 내린 1114. 27에 거래되고 있다. 코스닥시장에서 외국인은 441억원, 기관은 181억원 순매도하고 있으며 개인은 624억원 순매수하고 있다.",
+          "metadata_json": "{\"ticker\": \"000660\", \"source\": \"시사저널\", \"published_at\": \"2026-05-28 10:10:13\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"외국인 매도에 밀린 코스피…8200선 아래로\", \"url\": \"https://n.news.naver.com/mnews/article/586/0000130109?sid=101\"}"
+        },
+        {
+          "chunk_id": 231,
+          "document_type": "news_article",
+          "ticker": "000660",
+          "score": 0.328972,
+          "merge_score": 0.4253,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "18. 86포인트(1. 66%) 내린 1114. 27에 거래되고 있다. 코스닥시장에서 외국인은 441억원, 기관은 181억원 순매도하고 있으며 개인은 624억원 순매수하고 있다. 27일(현지시간) 뉴욕증시는 미국·이란 종전 협상 기대감에 3대 지수가 모두 사상 최고치로 마감했다. 다우존스30 산업평균지수는 182. 60포인트(0. 36%) 오른 50,644. 28에 거래를 마쳤다. 스탠더드앤드푸어스(S&P) 500 지수는 전장보다 1. 24포인트(0. 02%) 오른 7,520. 36에, 기술주 중심의 나스닥지수는 전장보다 18. 55포인트(0. 07%) 오른 26,674. 73에 각각 마감했다. 이와 관련해 한지영 키움증권 연구원은 \"현재 시장은 과거 단순 테마주 중심 장세와 달리 글로벌 AI 투자 확대 흐름 속에서 주도주에 자금이 집중되는 양상\"이라며 \"다만 단기적으로는 특정 종목 쏠림 현상이 차익실현 욕구와 변동성 확대로 이어질 가능성에 유의할 필요가 있다\"고 분석했다. 한편, 원-달러 환율은 하나은행 기준 전일 대비 2. 20원 오른 1504. 20원을 나타내고 있다.",
+          "metadata_json": "{\"ticker\": \"000660\", \"source\": \"시사저널\", \"published_at\": \"2026-05-28 10:10:13\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"외국인 매도에 밀린 코스피…8200선 아래로\", \"url\": \"https://n.news.naver.com/mnews/article/586/0000130109?sid=101\"}"
+        },
+        {
+          "chunk_id": 232,
+          "document_type": "news_article",
+          "ticker": "000660",
+          "score": 0.310808,
+          "merge_score": 0.4126,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "미래에셋운용, TIGER SK하이닉스단일종목레버리지 상장 첫날 개인 순매수 1위\n 미래에셋자산운용은 신규 상장한 'TIGER SK하이닉스단일종목레버리지'가 상장 첫날 개인 투자자들의 높은 관심을 받으며 단일종목레버리지 및 인버스 상품 중 개인 순매수 1위를 차지했다고 28일 밝혔다. 한국거래소에 따르면 상장일인 지난 27일 기준 개인 투자자들은 TIGER SK하이닉스단일종목레버리지를 총 약 6909억원 순매수한 것으로 집계됐다. 이는 함께 상장된 16종의 단일종목레버리지 및 인버스 상품의 개인순매수 규모 중 가장 큰 규모다. 국내 증시에 상장된 모든 ETF의 상장일 당일 기록을 통틀어서도 역대 개인 순매수 1위다. 상장 첫날부터 역대급의 개인 자금이 유입된 것은 인공지능(AI) 인프라 시장의 핵심이자 글로벌 메모리 시장을 선도하는 SK하이닉스의 가파른 성장성에 대한 기대감이 반영된 결과다. 미래에셋자산운용 관계자는 \"개별 종목의 주가 상승에 더욱 적극적인 수익을 추구하는 레버리지 투자 수요가 한곳으로 집중된 것으로 보인다\"고 말했다. 특히 미래에셋자산운용은 상장 전부터 기관 및 글로벌 자금을 대거 선점하며 흥행을 예고했다. 이번 TIGER 단일종목 레버리지 2종은 초기 설정 단계에서 외국인 투자자들이 약 3290억원 규모로 참여해 풍부한 유동성 기반을 미리 확보했다. 상장지수펀드(ETF) 시장에서 가장 중요한 요소인 유동성과 거래 효율성을 높이기 위해 현금 설정·환매 방식을 채택한 점도 주효했다.",
+          "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:10:37\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"미래에셋운용, TIGER SK하이닉스단일종목레버리지 상장 첫날 개인 순매수 1위\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768800?sid=101\"}"
+        },
+        {
+          "chunk_id": 233,
+          "document_type": "news_article",
+          "ticker": "000660",
+          "score": 0.290093,
+          "merge_score": 0.3981,
+          "source_priority": "MEDIUM",
+          "source": "document_chunks",
+          "chunk_text": "로 참여해 풍부한 유동성 기반을 미리 확보했다. 상장지수펀드(ETF) 시장에서 가장 중요한 요소인 유동성과 거래 효율성을 높이기 위해 현금 설정·환매 방식을 채택한 점도 주효했다. 미래에셋자산운용은 현물과 선물을 함께 활용하는 현물 레버리지 구조를 적용하고 유동성공급자(LP) 증권사의 헤지 거래는 선물 중심으로 운영해 거래 비용 부담을 대폭 낮췄다. 이를 통해 투자자들에게 안정적인 호가 스프레드와 낮은 괴리율 환경을 제공했다는 긍정적인 평가를 받고 있다. 같은 날 함께 상장된 'TIGER 삼성전자단일종목레버리지' 역시 개인 순매수 2784억원을 기록했다. 김남기 미래에셋자산운용 ETF운용부문 대표는 \"TIGER 단일종목 레버리지 2종은 현금 설정·환매 구조와 압도적인 유동성을 기반으로 괴리율이 매우 안정적으로 유지되고 있다\"면서 \"낮은 보수와 함께 안정적인 괴리율은 투자자들의 매매 효용을 높이는 요소가 될 것\"이라고 말했다. 이어 \"다만 단일종목 레버리지 상품의 특성과 위험을 충분히 인지하고 투자에 임할 것을 당부드린다\"고 덧붙였다.",
+          "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:10:37\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"미래에셋운용, TIGER SK하이닉스단일종목레버리지 상장 첫날 개인 순매수 1위\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768800?sid=101\"}"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-06-10 10:26:45",
+      "importance_score": 0.9,
+      "importance_factors": {
+        "base_score": 0.9,
+        "market_impact": 0.16,
+        "low_importance_penalty": 0.0,
+        "long_term_industry": 0.0,
+        "reuse_score": 0.04,
+        "event_impact": 0.25,
+        "reflection_boost": 0.15,
+        "character_weight": 0.05,
+        "raw_total": 1.55,
+        "reflection_mentions": 4
+      },
+      "importance_reasons": [
+        "높은 시장 영향 키워드 포함",
+        "Event Graph 연관 관계 존재",
+        "Reflection에서 언급됨",
+        "핵심 키워드: 엔비디아",
+        "핵심 키워드: 반도체"
+      ],
+      "reuse_count": 1,
+      "reflection_mentions": 4,
+      "memory_id": "analysis_memory_growth_investor_SK하이닉스_000660_삼성전자_엔_2026-06-10_10:26:45",
+      "retention_action": "high_retention",
+      "memory_layer": "short_term"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.9,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 11
+    },
+    "importance": {
+      "importance_score": 0.9,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_SK하이닉스_000660_삼성전자_엔_2026-06-10_10:26:45",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-06-10 10:26:45"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 9,
+    "relation_count": 36,
+    "query": "SK하이닉스 000660 삼성전자 엔비디아 TSMC 마이크론"
+  },
+  "stock_chain": {
+    "entity_count": 8,
+    "link_count": 36,
+    "propagation_paths": 1305
+  },
+  "unified_context_length": 3126,
+  "retrieval_chunk_count": 6,
+  "runtime_context": {
+    "trace_id": "20260610_102635",
+    "ticker": "000660",
+    "query": "SK하이닉스 000660 삼성전자 엔비디아 TSMC 마이크론",
+    "keywords": [
+      "삼성전자",
+      "엔비디아",
+      "TSMC",
+      "마이크론"
+    ],
+    "news_chunks": [
+      {
+        "chunk_id": 235,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": ", 삼성물산 －1. 22%, 삼성바이오로직스 －0. 87% 등이 약세다. 반면 SK하이닉스는 1. 16% 강세고 현대차 1. 91%, 삼성전기 1. 66%, LG에너지솔루션 11. 21% 등은 오름세를 보이고 있다. 코스닥지수도 약세 흐름을 이어가고 있다. 같은 시각 코스닥지수는 전일 대비 2. 19% 빠진 1108. 29에 거래되고 있다. 투자주체별로는 기관과 외국인이 각각 570억원, 400억원을 순매도하고 있는 반면 개인은 922억원을 순매수하고 있다. 시가총액 상위권 종목들은 내리는 종목이 더 많다. 알테오젠이 4. 01% 약세고 레인보우로보틱스 －3. 01%, 주성엔지니어링 －7. 42%, 코오롱티슈진 －5. 79%, 삼천당제약 －2. 99%, 리노공업 －3. 9%, 펩트론 －1. 39%, 에이비엘바이오 －3. 38% 등이 약세다. 반면 에코프로비엠은 2. 34% 강세고 에코프로 0. 77%, HLB 0. 2% 등도 강보합권에서 움직이고 있다. 한편 서울 외환시장에서 원/달러 환율은 전일 대비 4. 5원 오른 1503. 9원에 거래되고 있다.",
+        "chunk_length": 539,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 41,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:11:46\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"코스피, 외국인 매도세에 장중 약세\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768802?sid=101\"}",
+        "score": 0.368518,
+        "similarity_score": 0.32937,
+        "freshness_score": 0.525111,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 234,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "코스피, 외국인 매도세에 장중 약세\n 28일 코스피 지수가 사상 첫 8400을 돌파하고 잠시 숨고르기를 하고 있다. 서울 중구 하나은행 본점 딜링룸 지수 현황판에 각종 지수가 표시되고 있다. 2025. 05. 28 윤동주 기자 코스피가 외국인의 매도세에 밀려 장중 약세를 보이고 있다. 28일 오전 10시3분 기준 코스피는 전일 대비 0. 35% 내린 8199. 03에 거래되고 있다. 투자주체별로는 외국인이 1조8339억원을 순매도하고 있는 반면 기관과 개인은 각각 4202억원, 1조3743억원을 순매수하고 있다. 선물시장에서는 기관과 개인이 각각 2590억원, 15억원 순매수하고 있는 반면 외국인은 2667억원을 순매도하고 있다. 업종별로는 하락하는 업종이 더 많다. 통신업종이 2. 9% 약세고 증권 －2. 68%, 기계장비 －2. 64%, 부동산 －2. 66%, 보험 －2. 58%, 금융 －2. 22%, 금속 －2. 12%, 건설 －2. 08%, 의료정밀 －2. 08%, 전기가스 －1. 64%, 종이목재 －1. 64%, 제약 －1. 55%, 일반서비스 －1. 57% 등이 하락했다. 반면 운송창고, 전기전자 업종은 강보합권에서 움직이고 있다. 시가총액 상위권 종목들은 등락이 엇갈리고 있다. 삼성전자가 1. 3% 약세고 SK스퀘어 －2. 59%, HD현대중공업 －3. 63%, 삼성생명 －1. 55%, 두산에너빌리티 －1. 2%, 삼성물산 －1. 22%, 삼성바이오로직스 －0. 87% 등이 약세다. 반면 SK하이닉스는 1. 16% 강세고 현대차 1. 91%, 삼성전기 1. 66%, LG에너지솔루션 11.",
+        "chunk_length": 795,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 41,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:11:46\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"코스피, 외국인 매도세에 장중 약세\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768802?sid=101\"}",
+        "score": 0.364014,
+        "similarity_score": 0.32374,
+        "freshness_score": 0.525111,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 230,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "외국인 매도에 밀린 코스피…8200선 아래로\n [김혜인 디지털팀 기자 haileykim0516@gmail. com] 개인·기관 순매수에도 지수 약세 뉴욕 강세 무색…AI 주도주 쏠림 부담 사상 최고치를 경신했던 코스피가 하락 출발한 28일 서울 중구 하나은행 본점 딜링룸 ⓒ연합뉴스 코스피가 외국인 매도 영향으로 8200선 아래에서 거래되고 있다. 뉴욕증시 강세에도 국내 증시는 시가총액 상위 종목을 중심으로 차익실현 매물이 나오면서 약세를 나타내는 모습이다. 28일 한국거래소에 따르면, 이날 오전 9시23분 기준 코스피는 전일 대비 66. 15포인트(0. 80%) 내린 8162. 55에 거래되고 있다. 이날 코스피는 62. 97포인트(0. 77%) 내린 8165. 73에 개장했다. 유가증권시장에서 외국인은 1조2497억원 순매도하고 있다. 개인은 9715억원, 기관은 2560억원 순매수하고 있다. 시가총액 상위 종목은 엇갈린 흐름을 보이고 있다. 삼성전자(-1. 63%), SK하이닉스(-1. 03%), 두산에너빌리티(-0. 88%), 삼성물산(-1. 22%), 한화에어로스페이스(-3. 30%), HD현대중공업(-2. 82%), 삼성생명(-2. 26%)이 내리고 있다. 현대차(+1. 47%), LG에너지솔루션(+12. 26%), 삼성바이오로직스(+0. 43%), 삼성전기(+0. 61%)은 오르고 있다. 코스닥지수는 전일 대비 18. 86포인트(1. 66%) 내린 1114. 27에 거래되고 있다. 코스닥시장에서 외국인은 441억원, 기관은 181억원 순매도하고 있으며 개인은 624억원 순매수하고 있다.",
+        "chunk_length": 793,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 43,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"시사저널\", \"published_at\": \"2026-05-28 10:10:13\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"외국인 매도에 밀린 코스피…8200선 아래로\", \"url\": \"https://n.news.naver.com/mnews/article/586/0000130109?sid=101\"}",
+        "score": 0.345019,
+        "similarity_score": 0.300003,
+        "freshness_score": 0.525083,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 231,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "18. 86포인트(1. 66%) 내린 1114. 27에 거래되고 있다. 코스닥시장에서 외국인은 441억원, 기관은 181억원 순매도하고 있으며 개인은 624억원 순매수하고 있다. 27일(현지시간) 뉴욕증시는 미국·이란 종전 협상 기대감에 3대 지수가 모두 사상 최고치로 마감했다. 다우존스30 산업평균지수는 182. 60포인트(0. 36%) 오른 50,644. 28에 거래를 마쳤다. 스탠더드앤드푸어스(S&P) 500 지수는 전장보다 1. 24포인트(0. 02%) 오른 7,520. 36에, 기술주 중심의 나스닥지수는 전장보다 18. 55포인트(0. 07%) 오른 26,674. 73에 각각 마감했다. 이와 관련해 한지영 키움증권 연구원은 \"현재 시장은 과거 단순 테마주 중심 장세와 달리 글로벌 AI 투자 확대 흐름 속에서 주도주에 자금이 집중되는 양상\"이라며 \"다만 단기적으로는 특정 종목 쏠림 현상이 차익실현 욕구와 변동성 확대로 이어질 가능성에 유의할 필요가 있다\"고 분석했다. 한편, 원-달러 환율은 하나은행 기준 전일 대비 2. 20원 오른 1504. 20원을 나타내고 있다.",
+        "chunk_length": 552,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 43,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"시사저널\", \"published_at\": \"2026-05-28 10:10:13\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"외국인 매도에 밀린 코스피…8200선 아래로\", \"url\": \"https://n.news.naver.com/mnews/article/586/0000130109?sid=101\"}",
+        "score": 0.328972,
+        "similarity_score": 0.279944,
+        "freshness_score": 0.525083,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 232,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "미래에셋운용, TIGER SK하이닉스단일종목레버리지 상장 첫날 개인 순매수 1위\n 미래에셋자산운용은 신규 상장한 'TIGER SK하이닉스단일종목레버리지'가 상장 첫날 개인 투자자들의 높은 관심을 받으며 단일종목레버리지 및 인버스 상품 중 개인 순매수 1위를 차지했다고 28일 밝혔다. 한국거래소에 따르면 상장일인 지난 27일 기준 개인 투자자들은 TIGER SK하이닉스단일종목레버리지를 총 약 6909억원 순매수한 것으로 집계됐다. 이는 함께 상장된 16종의 단일종목레버리지 및 인버스 상품의 개인순매수 규모 중 가장 큰 규모다. 국내 증시에 상장된 모든 ETF의 상장일 당일 기록을 통틀어서도 역대 개인 순매수 1위다. 상장 첫날부터 역대급의 개인 자금이 유입된 것은 인공지능(AI) 인프라 시장의 핵심이자 글로벌 메모리 시장을 선도하는 SK하이닉스의 가파른 성장성에 대한 기대감이 반영된 결과다. 미래에셋자산운용 관계자는 \"개별 종목의 주가 상승에 더욱 적극적인 수익을 추구하는 레버리지 투자 수요가 한곳으로 집중된 것으로 보인다\"고 말했다. 특히 미래에셋자산운용은 상장 전부터 기관 및 글로벌 자금을 대거 선점하며 흥행을 예고했다. 이번 TIGER 단일종목 레버리지 2종은 초기 설정 단계에서 외국인 투자자들이 약 3290억원 규모로 참여해 풍부한 유동성 기반을 미리 확보했다. 상장지수펀드(ETF) 시장에서 가장 중요한 요소인 유동성과 거래 효율성을 높이기 위해 현금 설정·환매 방식을 채택한 점도 주효했다.",
+        "chunk_length": 736,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 42,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:10:37\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"미래에셋운용, TIGER SK하이닉스단일종목레버리지 상장 첫날 개인 순매수 1위\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768800?sid=101\"}",
+        "score": 0.310808,
+        "similarity_score": 0.257238,
+        "freshness_score": 0.52509,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 233,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "로 참여해 풍부한 유동성 기반을 미리 확보했다. 상장지수펀드(ETF) 시장에서 가장 중요한 요소인 유동성과 거래 효율성을 높이기 위해 현금 설정·환매 방식을 채택한 점도 주효했다. 미래에셋자산운용은 현물과 선물을 함께 활용하는 현물 레버리지 구조를 적용하고 유동성공급자(LP) 증권사의 헤지 거래는 선물 중심으로 운영해 거래 비용 부담을 대폭 낮췄다. 이를 통해 투자자들에게 안정적인 호가 스프레드와 낮은 괴리율 환경을 제공했다는 긍정적인 평가를 받고 있다. 같은 날 함께 상장된 'TIGER 삼성전자단일종목레버리지' 역시 개인 순매수 2784억원을 기록했다. 김남기 미래에셋자산운용 ETF운용부문 대표는 \"TIGER 단일종목 레버리지 2종은 현금 설정·환매 구조와 압도적인 유동성을 기반으로 괴리율이 매우 안정적으로 유지되고 있다\"면서 \"낮은 보수와 함께 안정적인 괴리율은 투자자들의 매매 효용을 높이는 요소가 될 것\"이라고 말했다. 이어 \"다만 단일종목 레버리지 상품의 특성과 위험을 충분히 인지하고 투자에 임할 것을 당부드린다\"고 덧붙였다.",
+        "chunk_length": 529,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 42,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:10:37\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"미래에셋운용, TIGER SK하이닉스단일종목레버리지 상장 첫날 개인 순매수 1위\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768800?sid=101\"}",
+        "score": 0.290093,
+        "similarity_score": 0.231344,
+        "freshness_score": 0.52509,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      }
+    ],
+    "disclosure_chunks": [],
+    "merged_evidence": [
+      {
+        "chunk_id": 235,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": ", 삼성물산 －1. 22%, 삼성바이오로직스 －0. 87% 등이 약세다. 반면 SK하이닉스는 1. 16% 강세고 현대차 1. 91%, 삼성전기 1. 66%, LG에너지솔루션 11. 21% 등은 오름세를 보이고 있다. 코스닥지수도 약세 흐름을 이어가고 있다. 같은 시각 코스닥지수는 전일 대비 2. 19% 빠진 1108. 29에 거래되고 있다. 투자주체별로는 기관과 외국인이 각각 570억원, 400억원을 순매도하고 있는 반면 개인은 922억원을 순매수하고 있다. 시가총액 상위권 종목들은 내리는 종목이 더 많다. 알테오젠이 4. 01% 약세고 레인보우로보틱스 －3. 01%, 주성엔지니어링 －7. 42%, 코오롱티슈진 －5. 79%, 삼천당제약 －2. 99%, 리노공업 －3. 9%, 펩트론 －1. 39%, 에이비엘바이오 －3. 38% 등이 약세다. 반면 에코프로비엠은 2. 34% 강세고 에코프로 0. 77%, HLB 0. 2% 등도 강보합권에서 움직이고 있다. 한편 서울 외환시장에서 원/달러 환율은 전일 대비 4. 5원 오른 1503. 9원에 거래되고 있다.",
+        "chunk_length": 539,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 41,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:11:46\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"코스피, 외국인 매도세에 장중 약세\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768802?sid=101\"}",
+        "score": 0.368518,
+        "similarity_score": 0.32937,
+        "freshness_score": 0.525111,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.453,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 234,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "코스피, 외국인 매도세에 장중 약세\n 28일 코스피 지수가 사상 첫 8400을 돌파하고 잠시 숨고르기를 하고 있다. 서울 중구 하나은행 본점 딜링룸 지수 현황판에 각종 지수가 표시되고 있다. 2025. 05. 28 윤동주 기자 코스피가 외국인의 매도세에 밀려 장중 약세를 보이고 있다. 28일 오전 10시3분 기준 코스피는 전일 대비 0. 35% 내린 8199. 03에 거래되고 있다. 투자주체별로는 외국인이 1조8339억원을 순매도하고 있는 반면 기관과 개인은 각각 4202억원, 1조3743억원을 순매수하고 있다. 선물시장에서는 기관과 개인이 각각 2590억원, 15억원 순매수하고 있는 반면 외국인은 2667억원을 순매도하고 있다. 업종별로는 하락하는 업종이 더 많다. 통신업종이 2. 9% 약세고 증권 －2. 68%, 기계장비 －2. 64%, 부동산 －2. 66%, 보험 －2. 58%, 금융 －2. 22%, 금속 －2. 12%, 건설 －2. 08%, 의료정밀 －2. 08%, 전기가스 －1. 64%, 종이목재 －1. 64%, 제약 －1. 55%, 일반서비스 －1. 57% 등이 하락했다. 반면 운송창고, 전기전자 업종은 강보합권에서 움직이고 있다. 시가총액 상위권 종목들은 등락이 엇갈리고 있다. 삼성전자가 1. 3% 약세고 SK스퀘어 －2. 59%, HD현대중공업 －3. 63%, 삼성생명 －1. 55%, 두산에너빌리티 －1. 2%, 삼성물산 －1. 22%, 삼성바이오로직스 －0. 87% 등이 약세다. 반면 SK하이닉스는 1. 16% 강세고 현대차 1. 91%, 삼성전기 1. 66%, LG에너지솔루션 11.",
+        "chunk_length": 795,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 41,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:11:46\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"코스피, 외국인 매도세에 장중 약세\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768802?sid=101\"}",
+        "score": 0.364014,
+        "similarity_score": 0.32374,
+        "freshness_score": 0.525111,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4498,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 230,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "외국인 매도에 밀린 코스피…8200선 아래로\n [김혜인 디지털팀 기자 haileykim0516@gmail. com] 개인·기관 순매수에도 지수 약세 뉴욕 강세 무색…AI 주도주 쏠림 부담 사상 최고치를 경신했던 코스피가 하락 출발한 28일 서울 중구 하나은행 본점 딜링룸 ⓒ연합뉴스 코스피가 외국인 매도 영향으로 8200선 아래에서 거래되고 있다. 뉴욕증시 강세에도 국내 증시는 시가총액 상위 종목을 중심으로 차익실현 매물이 나오면서 약세를 나타내는 모습이다. 28일 한국거래소에 따르면, 이날 오전 9시23분 기준 코스피는 전일 대비 66. 15포인트(0. 80%) 내린 8162. 55에 거래되고 있다. 이날 코스피는 62. 97포인트(0. 77%) 내린 8165. 73에 개장했다. 유가증권시장에서 외국인은 1조2497억원 순매도하고 있다. 개인은 9715억원, 기관은 2560억원 순매수하고 있다. 시가총액 상위 종목은 엇갈린 흐름을 보이고 있다. 삼성전자(-1. 63%), SK하이닉스(-1. 03%), 두산에너빌리티(-0. 88%), 삼성물산(-1. 22%), 한화에어로스페이스(-3. 30%), HD현대중공업(-2. 82%), 삼성생명(-2. 26%)이 내리고 있다. 현대차(+1. 47%), LG에너지솔루션(+12. 26%), 삼성바이오로직스(+0. 43%), 삼성전기(+0. 61%)은 오르고 있다. 코스닥지수는 전일 대비 18. 86포인트(1. 66%) 내린 1114. 27에 거래되고 있다. 코스닥시장에서 외국인은 441억원, 기관은 181억원 순매도하고 있으며 개인은 624억원 순매수하고 있다.",
+        "chunk_length": 793,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 43,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"시사저널\", \"published_at\": \"2026-05-28 10:10:13\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"외국인 매도에 밀린 코스피…8200선 아래로\", \"url\": \"https://n.news.naver.com/mnews/article/586/0000130109?sid=101\"}",
+        "score": 0.345019,
+        "similarity_score": 0.300003,
+        "freshness_score": 0.525083,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4365,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 231,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "18. 86포인트(1. 66%) 내린 1114. 27에 거래되고 있다. 코스닥시장에서 외국인은 441억원, 기관은 181억원 순매도하고 있으며 개인은 624억원 순매수하고 있다. 27일(현지시간) 뉴욕증시는 미국·이란 종전 협상 기대감에 3대 지수가 모두 사상 최고치로 마감했다. 다우존스30 산업평균지수는 182. 60포인트(0. 36%) 오른 50,644. 28에 거래를 마쳤다. 스탠더드앤드푸어스(S&P) 500 지수는 전장보다 1. 24포인트(0. 02%) 오른 7,520. 36에, 기술주 중심의 나스닥지수는 전장보다 18. 55포인트(0. 07%) 오른 26,674. 73에 각각 마감했다. 이와 관련해 한지영 키움증권 연구원은 \"현재 시장은 과거 단순 테마주 중심 장세와 달리 글로벌 AI 투자 확대 흐름 속에서 주도주에 자금이 집중되는 양상\"이라며 \"다만 단기적으로는 특정 종목 쏠림 현상이 차익실현 욕구와 변동성 확대로 이어질 가능성에 유의할 필요가 있다\"고 분석했다. 한편, 원-달러 환율은 하나은행 기준 전일 대비 2. 20원 오른 1504. 20원을 나타내고 있다.",
+        "chunk_length": 552,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 43,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"시사저널\", \"published_at\": \"2026-05-28 10:10:13\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"외국인 매도에 밀린 코스피…8200선 아래로\", \"url\": \"https://n.news.naver.com/mnews/article/586/0000130109?sid=101\"}",
+        "score": 0.328972,
+        "similarity_score": 0.279944,
+        "freshness_score": 0.525083,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4253,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 232,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "미래에셋운용, TIGER SK하이닉스단일종목레버리지 상장 첫날 개인 순매수 1위\n 미래에셋자산운용은 신규 상장한 'TIGER SK하이닉스단일종목레버리지'가 상장 첫날 개인 투자자들의 높은 관심을 받으며 단일종목레버리지 및 인버스 상품 중 개인 순매수 1위를 차지했다고 28일 밝혔다. 한국거래소에 따르면 상장일인 지난 27일 기준 개인 투자자들은 TIGER SK하이닉스단일종목레버리지를 총 약 6909억원 순매수한 것으로 집계됐다. 이는 함께 상장된 16종의 단일종목레버리지 및 인버스 상품의 개인순매수 규모 중 가장 큰 규모다. 국내 증시에 상장된 모든 ETF의 상장일 당일 기록을 통틀어서도 역대 개인 순매수 1위다. 상장 첫날부터 역대급의 개인 자금이 유입된 것은 인공지능(AI) 인프라 시장의 핵심이자 글로벌 메모리 시장을 선도하는 SK하이닉스의 가파른 성장성에 대한 기대감이 반영된 결과다. 미래에셋자산운용 관계자는 \"개별 종목의 주가 상승에 더욱 적극적인 수익을 추구하는 레버리지 투자 수요가 한곳으로 집중된 것으로 보인다\"고 말했다. 특히 미래에셋자산운용은 상장 전부터 기관 및 글로벌 자금을 대거 선점하며 흥행을 예고했다. 이번 TIGER 단일종목 레버리지 2종은 초기 설정 단계에서 외국인 투자자들이 약 3290억원 규모로 참여해 풍부한 유동성 기반을 미리 확보했다. 상장지수펀드(ETF) 시장에서 가장 중요한 요소인 유동성과 거래 효율성을 높이기 위해 현금 설정·환매 방식을 채택한 점도 주효했다.",
+        "chunk_length": 736,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 42,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:10:37\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"미래에셋운용, TIGER SK하이닉스단일종목레버리지 상장 첫날 개인 순매수 1위\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768800?sid=101\"}",
+        "score": 0.310808,
+        "similarity_score": 0.257238,
+        "freshness_score": 0.52509,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4126,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 233,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "로 참여해 풍부한 유동성 기반을 미리 확보했다. 상장지수펀드(ETF) 시장에서 가장 중요한 요소인 유동성과 거래 효율성을 높이기 위해 현금 설정·환매 방식을 채택한 점도 주효했다. 미래에셋자산운용은 현물과 선물을 함께 활용하는 현물 레버리지 구조를 적용하고 유동성공급자(LP) 증권사의 헤지 거래는 선물 중심으로 운영해 거래 비용 부담을 대폭 낮췄다. 이를 통해 투자자들에게 안정적인 호가 스프레드와 낮은 괴리율 환경을 제공했다는 긍정적인 평가를 받고 있다. 같은 날 함께 상장된 'TIGER 삼성전자단일종목레버리지' 역시 개인 순매수 2784억원을 기록했다. 김남기 미래에셋자산운용 ETF운용부문 대표는 \"TIGER 단일종목 레버리지 2종은 현금 설정·환매 구조와 압도적인 유동성을 기반으로 괴리율이 매우 안정적으로 유지되고 있다\"면서 \"낮은 보수와 함께 안정적인 괴리율은 투자자들의 매매 효용을 높이는 요소가 될 것\"이라고 말했다. 이어 \"다만 단일종목 레버리지 상품의 특성과 위험을 충분히 인지하고 투자에 임할 것을 당부드린다\"고 덧붙였다.",
+        "chunk_length": 529,
+        "ticker": "000660",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 42,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"000660\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 10:10:37\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"미래에셋운용, TIGER SK하이닉스단일종목레버리지 상장 첫날 개인 순매수 1위\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005768800?sid=101\"}",
+        "score": 0.290093,
+        "similarity_score": 0.231344,
+        "freshness_score": 0.52509,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3981,
+        "source_priority": "MEDIUM"
+      }
+    ],
+    "reasoning_context": [
+      "[뉴스] chunk #235",
+      "[뉴스] chunk #234",
+      "[뉴스] chunk #230",
+      "[뉴스] chunk #231",
+      "[뉴스] chunk #232",
+      "[뉴스] chunk #233"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 0,
+      "NEWS": 6,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "cached",
+    "has_disclosure": false,
+    "disclosure_priority": "NONE",
+    "freshness": {
+      "news": {
+        "data_as_of": "",
+        "last_collected_at": "",
+        "cache_status": "UNKNOWN",
+        "ttl_hours": 12
+      },
+      "disclosure": {
+        "data_as_of": "",
+        "last_collected_at": "2026-06-10T10:17:18.796989",
+        "cache_status": "HIT",
+        "ttl_hours": 12
+      }
+    }
+  },
+  "completed_at": "2026-06-10 10:26:45"
+}

@@ -2,6 +2,7 @@
 
 import { PanelShell } from "@/components/layout/panel-shell";
 import { Badge } from "@/components/ui/badge";
+import { PIPELINE_FALLBACK } from "@/services/api";
 import { CheckCircle2, Circle } from "lucide-react";
 import type { LoadStatus, TraceData } from "@/types/dashboard";
 
@@ -11,7 +12,7 @@ interface EngineTraceViewerProps {
 }
 
 export function EngineTraceViewer({ data, status }: EngineTraceViewerProps) {
-  const pipeline = data?.pipeline_flow ?? defaultPipeline();
+  const pipeline = data?.pipeline_flow ?? PIPELINE_FALLBACK;
   const steps = data?.trace?.steps ?? [];
   const completedAt = data?.unified_result_summary?.completed_at;
 
@@ -73,17 +74,4 @@ export function EngineTraceViewer({ data, status }: EngineTraceViewerProps) {
       )}
     </PanelShell>
   );
-}
-
-function defaultPipeline(): string[] {
-  return [
-    "retrieval",
-    "context_assembly",
-    "character_analysis",
-    "reflection",
-    "memory_update",
-    "temporal_tracking",
-    "stock_chain",
-    "final_result",
-  ];
 }

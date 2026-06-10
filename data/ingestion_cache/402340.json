@@ -1,0 +1,9 @@
+{
+  "ticker": "402340",
+  "company_name": "SK스퀘어",
+  "status": "completed",
+  "documents": 76,
+  "chunks": 28,
+  "embeddings": 9,
+  "completed_at": "2026-05-28 16:06:02"
+}

@@ -1,0 +1,674 @@
+{
+  "trace_id": "20260528_142129",
+  "query": "삼성전자 005930",
+  "persona": "growth_investor",
+  "ticker": "005930",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "삼성전자 005930",
+    "bullish_factors": [
+      "AI 반도체 수출 증가로 인한 긍정적인 실적 개선 가능성",
+      "HBM 및 DRAM 수요 증가로 인한 시장 성장 기대"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화로 인한 시장 점유율 확대의 어려움",
+      "노조의 반발 및 파업 우려로 인한 운영 리스크"
+    ],
+    "risks": [
+      "반도체 산업의 불안정성과 정치적 불확실성",
+      "환율 변동에 따른 수익성 영향"
+    ],
+    "summary": "삼성전자는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으나, 글로벌 경쟁 심화와 노조의 반발로 인한 리스크가 존재합니다. 이러한 요소들은 매출 성장과 시장 점유율 확대에 영향을 미칠 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 23,
+        "document_type": "disclosure",
+        "score": 0.536251,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 15,
+        "document_type": "disclosure",
+        "score": 0.533547,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 2,
+        "document_type": "disclosure",
+        "score": 0.5218,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 3,
+        "document_type": "disclosure",
+        "score": 0.5207,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 22,
+        "document_type": "disclosure",
+        "score": 0.511854,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 21,
+        "document_type": "disclosure",
+        "score": 0.511673,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 14,
+        "document_type": "disclosure",
+        "score": 0.506218,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 50,
+        "document_type": "disclosure",
+        "score": 0.5026,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 16,
+        "document_type": "disclosure",
+        "score": 0.4999,
+        "ticker": "005930"
+      },
+      {
+        "chunk_id": 87,
+        "document_type": "disclosure",
+        "score": 0.4941,
+        "ticker": "005930"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "삼성전자 005930",
+    "retrieval_quality": {
+      "chunk_count": 10,
+      "score_stats": {
+        "min": 0.4941,
+        "max": 0.536251,
+        "avg": 0.513864,
+        "count": 10
+      },
+      "doc_type_distribution": {
+        "disclosure": 10
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 10,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 10,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.536251,
+        0.533547,
+        0.5218,
+        0.5207,
+        0.511854,
+        0.511673,
+        0.506218,
+        0.5026,
+        0.4999,
+        0.4941
+      ],
+      "score_stats": {
+        "min": 0.4941,
+        "max": 0.536251,
+        "avg": 0.513864,
+        "count": 10
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "삼성전자 005930",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 삼성전자의 성장 가능성을 긍정적으로 평가하고 있으나, 하락 요인과 리스크에 대한 언급이 다소 제한적입니다. 특히, 글로벌 경쟁과 노조 문제 외에도 추가적인 리스크 요소가 존재할 수 있습니다.",
+    "missing_risks": [
+      "반도체 기술 발전 속도의 불확실성",
+      "글로벌 공급망의 불안정성",
+      "정치적 리스크가 반도체 산업에 미치는 영향",
+      "금리 변동 리스크",
+      "규제 변동 리스크",
+      "공급망 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "AI 반도체와 HBM 수요 증가에 대한 지나친 긍정적 전망"
+    ],
+    "context_gaps": [
+      "삼성전자의 경쟁사 분석 부족",
+      "글로벌 경제 상황 변화에 대한 고려 부족",
+      "뉴스 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "하락 요인과 리스크를 보다 구체적으로 분석할 것",
+      "경쟁사와의 비교 분석을 통해 시장 위치를 명확히 할 것"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 14:21:41"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "삼성전자 005930",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "AI 반도체 수출 증가로 인한 긍정적인 실적 개선 가능성",
+        "HBM 및 DRAM 수요 증가로 인한 시장 성장 기대"
+      ],
+      "bearish_factors": [
+        "글로벌 경쟁 심화로 인한 시장 점유율 확대의 어려움",
+        "노조의 반발 및 파업 우려로 인한 운영 리스크"
+      ],
+      "risks": [
+        "반도체 산업의 불안정성과 정치적 불확실성",
+        "환율 변동에 따른 수익성 영향"
+      ],
+      "summary": "삼성전자는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으나, 글로벌 경쟁 심화와 노조의 반발로 인한 리스크가 존재합니다. 이러한 요소들은 매출 성장과 시장 점유율 확대에 영향을 미칠 수 있습니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 23,
+          "document_type": "disclosure",
+          "score": 0.536251,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 15,
+          "document_type": "disclosure",
+          "score": 0.533547,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 2,
+          "document_type": "disclosure",
+          "score": 0.5218,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 3,
+          "document_type": "disclosure",
+          "score": 0.5207,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 22,
+          "document_type": "disclosure",
+          "score": 0.511854,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 21,
+          "document_type": "disclosure",
+          "score": 0.511673,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 14,
+          "document_type": "disclosure",
+          "score": 0.506218,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 50,
+          "document_type": "disclosure",
+          "score": 0.5026,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 16,
+          "document_type": "disclosure",
+          "score": 0.4999,
+          "ticker": "005930"
+        },
+        {
+          "chunk_id": 87,
+          "document_type": "disclosure",
+          "score": 0.4941,
+          "ticker": "005930"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-05-28 14:21:41"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 1.0,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 10
+    },
+    "importance": {
+      "importance_score": 1.0,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_삼성전자_005930_2026-05-28_14:21:41",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "NVIDIA → 실적",
+        "HBM → 공급",
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-05-28 14:21:41"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 20,
+    "relation_count": 48,
+    "query": "삼성전자 005930"
+  },
+  "stock_chain": {
+    "entity_count": 14,
+    "link_count": 59,
+    "propagation_paths": 95
+  },
+  "unified_context_length": 5015,
+  "retrieval_chunk_count": 10,
+  "runtime_context": {
+    "trace_id": "20260528_142129",
+    "ticker": "005930",
+    "query": "삼성전자 005930",
+    "news_chunks": [
+      {
+        "chunk_id": 16,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "매출액또는손익구조30%(대규모법인은15%)이상변경\n\n{\"corp_code\": \"00126380\", \"corp_name\": \"삼성전자\", \"stock_code\": \"005930\", \"corp_cls\": \"Y\", \"report_nm\": \"매출액또는손익구조30%(대규모법인은15%)이상변경\", \"rcept_no\": \"20240131800076\", \"flr_nm\": \"삼성전자\", \"rcept_dt\": \"20240131\", \"rm\": \"유\"}",
+        "chunk_length": 243,
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 33,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"005930\", \"source\": \"opendart\", \"published_at\": \"2024-01-31\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"매출액또는손익구조30%(대규모법인은15%)이상변경\", \"receipt_no\": \"20240131800076\", \"corp_code\": \"00126380\"}",
+        "score": 0.560089,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 23,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "최대주주등소유주식변동신고서\n\n{\"corp_code\": \"00126380\", \"corp_name\": \"삼성전자\", \"stock_code\": \"005930\", \"corp_cls\": \"Y\", \"report_nm\": \"최대주주등소유주식변동신고서\", \"rcept_no\": \"20240115800789\", \"flr_nm\": \"삼성전자\", \"rcept_dt\": \"20240115\", \"rm\": \"유\"}",
+        "chunk_length": 217,
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 40,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"005930\", \"source\": \"opendart\", \"published_at\": \"2024-01-15\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"최대주주등소유주식변동신고서\", \"receipt_no\": \"20240115800789\", \"corp_code\": \"00126380\"}",
+        "score": 0.536251,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 15,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "수시공시의무관련사항(공정공시)\n\n{\"corp_code\": \"00126380\", \"corp_name\": \"삼성전자\", \"stock_code\": \"005930\", \"corp_cls\": \"Y\", \"report_nm\": \"수시공시의무관련사항(공정공시)\", \"rcept_no\": \"20240131800110\", \"flr_nm\": \"삼성전자\", \"rcept_dt\": \"20240131\", \"rm\": \"유\"}",
+        "chunk_length": 221,
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 32,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"005930\", \"source\": \"opendart\", \"published_at\": \"2024-01-31\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"수시공시의무관련사항(공정공시)\", \"receipt_no\": \"20240131800110\", \"corp_code\": \"00126380\"}",
+        "score": 0.533547,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 22,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "주식등의대량보유상황보고서(일반)\n\n{\"corp_code\": \"00126380\", \"corp_name\": \"삼성전자\", \"stock_code\": \"005930\", \"corp_cls\": \"Y\", \"report_nm\": \"주식등의대량보유상황보고서(일반)\", \"rcept_no\": \"20240119000573\", \"flr_nm\": \"삼성물산\", \"rcept_dt\": \"20240119\", \"rm\": \"\"}",
+        "chunk_length": 222,
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 39,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"005930\", \"source\": \"opendart\", \"published_at\": \"2024-01-19\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"주식등의대량보유상황보고서(일반)\", \"receipt_no\": \"20240119000573\", \"corp_code\": \"00126380\"}",
+        "score": 0.511854,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 21,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "주식등의대량보유상황보고서(일반)\n\n{\"corp_code\": \"00126380\", \"corp_name\": \"삼성전자\", \"stock_code\": \"005930\", \"corp_cls\": \"Y\", \"report_nm\": \"주식등의대량보유상황보고서(일반)\", \"rcept_no\": \"20240126000600\", \"flr_nm\": \"삼성물산\", \"rcept_dt\": \"20240126\", \"rm\": \"\"}",
+        "chunk_length": 222,
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 38,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"005930\", \"source\": \"opendart\", \"published_at\": \"2024-01-26\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"주식등의대량보유상황보고서(일반)\", \"receipt_no\": \"20240126000600\", \"corp_code\": \"00126380\"}",
+        "score": 0.511673,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 14,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "특수관계인과의내부거래\n\n{\"corp_code\": \"00126380\", \"corp_name\": \"삼성전자\", \"stock_code\": \"005930\", \"corp_cls\": \"Y\", \"report_nm\": \"특수관계인과의내부거래\", \"rcept_no\": \"20240131000326\", \"flr_nm\": \"삼성전자\", \"rcept_dt\": \"20240131\", \"rm\": \"공\"}",
+        "chunk_length": 211,
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 31,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"005930\", \"source\": \"opendart\", \"published_at\": \"2024-01-31\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"특수관계인과의내부거래\", \"receipt_no\": \"20240131000326\", \"corp_code\": \"00126380\"}",
+        "score": 0.506218,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      }
+    ],
+    "disclosure_chunks": [
+      {
+        "chunk_id": 2,
+        "document_id": 1,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-05-26",
+        "section_name": "general",
+        "score": 0.5218,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5218,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 3,
+        "document_id": 5,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-05-22",
+        "section_name": "general",
+        "score": 0.5207,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5207,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 50,
+        "document_id": 50,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-03-17",
+        "section_name": "general",
+        "score": 0.5026,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5026,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 16,
+        "document_id": 19,
+        "report_name": "[기재정정]연결재무제표기준영업(잠정)실적(공정공시)              ",
+        "report_type": "EARNINGS",
+        "report_date": "2026-04-30",
+        "section_name": "실적",
+        "score": 0.4999,
+        "text": "[기재정정]연결재무제표기준영업(잠정)실적(공정공시)",
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.4999,
+        "priority": "HIGH"
+      },
+      {
+        "chunk_id": 87,
+        "document_id": 79,
+        "report_name": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-02-13",
+        "section_name": "general",
+        "score": 0.4941,
+        "text": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.4941,
+        "priority": "HIGH"
+      }
+    ],
+    "merged_evidence": [
+      {
+        "chunk_id": 23,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "최대주주등소유주식변동신고서\n\n{\"corp_code\": \"00126380\", \"corp_name\": \"삼성전자\", \"stock_code\": \"005930\", \"corp_cls\": \"Y\", \"report_nm\": \"최대주주등소유주식변동신고서\", \"rcept_no\": \"20240115800789\", \"flr_nm\": \"삼성전자\", \"rcept_dt\": \"20240115\", \"rm\": \"유\"}",
+        "chunk_length": 217,
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 40,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"005930\", \"source\": \"opendart\", \"published_at\": \"2024-01-15\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"최대주주등소유주식변동신고서\", \"receipt_no\": \"20240115800789\", \"corp_code\": \"00126380\"}",
+        "score": 0.536251,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.6754,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 15,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "수시공시의무관련사항(공정공시)\n\n{\"corp_code\": \"00126380\", \"corp_name\": \"삼성전자\", \"stock_code\": \"005930\", \"corp_cls\": \"Y\", \"report_nm\": \"수시공시의무관련사항(공정공시)\", \"rcept_no\": \"20240131800110\", \"flr_nm\": \"삼성전자\", \"rcept_dt\": \"20240131\", \"rm\": \"유\"}",
+        "chunk_length": 221,
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 32,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"005930\", \"source\": \"opendart\", \"published_at\": \"2024-01-31\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"수시공시의무관련사항(공정공시)\", \"receipt_no\": \"20240131800110\", \"corp_code\": \"00126380\"}",
+        "score": 0.533547,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.6735,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 2,
+        "document_id": 1,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-05-26",
+        "section_name": "general",
+        "score": 0.5218,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5218,
+        "priority": "HIGH",
+        "merge_score": 0.6653,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 3,
+        "document_id": 5,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-05-22",
+        "section_name": "general",
+        "score": 0.5207,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5207,
+        "priority": "HIGH",
+        "merge_score": 0.6645,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 22,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "주식등의대량보유상황보고서(일반)\n\n{\"corp_code\": \"00126380\", \"corp_name\": \"삼성전자\", \"stock_code\": \"005930\", \"corp_cls\": \"Y\", \"report_nm\": \"주식등의대량보유상황보고서(일반)\", \"rcept_no\": \"20240119000573\", \"flr_nm\": \"삼성물산\", \"rcept_dt\": \"20240119\", \"rm\": \"\"}",
+        "chunk_length": 222,
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 39,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"005930\", \"source\": \"opendart\", \"published_at\": \"2024-01-19\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"주식등의대량보유상황보고서(일반)\", \"receipt_no\": \"20240119000573\", \"corp_code\": \"00126380\"}",
+        "score": 0.511854,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.6583,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 21,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "주식등의대량보유상황보고서(일반)\n\n{\"corp_code\": \"00126380\", \"corp_name\": \"삼성전자\", \"stock_code\": \"005930\", \"corp_cls\": \"Y\", \"report_nm\": \"주식등의대량보유상황보고서(일반)\", \"rcept_no\": \"20240126000600\", \"flr_nm\": \"삼성물산\", \"rcept_dt\": \"20240126\", \"rm\": \"\"}",
+        "chunk_length": 222,
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 38,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"005930\", \"source\": \"opendart\", \"published_at\": \"2024-01-26\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"주식등의대량보유상황보고서(일반)\", \"receipt_no\": \"20240126000600\", \"corp_code\": \"00126380\"}",
+        "score": 0.511673,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.6582,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 14,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "특수관계인과의내부거래\n\n{\"corp_code\": \"00126380\", \"corp_name\": \"삼성전자\", \"stock_code\": \"005930\", \"corp_cls\": \"Y\", \"report_nm\": \"특수관계인과의내부거래\", \"rcept_no\": \"20240131000326\", \"flr_nm\": \"삼성전자\", \"rcept_dt\": \"20240131\", \"rm\": \"공\"}",
+        "chunk_length": 211,
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source_table": "dart_disclosures",
+        "source_id": 31,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"005930\", \"source\": \"opendart\", \"published_at\": \"2024-01-31\", \"chunk_index\": 0, \"document_type\": \"disclosure\", \"report_name\": \"특수관계인과의내부거래\", \"receipt_no\": \"20240131000326\", \"corp_code\": \"00126380\"}",
+        "score": 0.506218,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.6544,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 50,
+        "document_id": 50,
+        "report_name": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-03-17",
+        "section_name": "general",
+        "score": 0.5026,
+        "text": "[기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.5026,
+        "priority": "HIGH",
+        "merge_score": 0.6518,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 16,
+        "document_id": 19,
+        "report_name": "[기재정정]연결재무제표기준영업(잠정)실적(공정공시)              ",
+        "report_type": "EARNINGS",
+        "report_date": "2026-04-30",
+        "section_name": "실적",
+        "score": 0.4999,
+        "text": "[기재정정]연결재무제표기준영업(잠정)실적(공정공시)",
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.4999,
+        "priority": "HIGH",
+        "merge_score": 0.6499,
+        "source_priority": "HIGH"
+      },
+      {
+        "chunk_id": 87,
+        "document_id": 79,
+        "report_name": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+        "report_type": "MAJOR_ISSUE",
+        "report_date": "2026-02-13",
+        "section_name": "general",
+        "score": 0.4941,
+        "text": "지급수단별ㆍ지급기간별지급금액및분쟁조정기구에관한사항",
+        "ticker": "005930",
+        "document_type": "disclosure",
+        "source": "disclosure_documents",
+        "rank_score": 0.4941,
+        "priority": "HIGH",
+        "merge_score": 0.6459,
+        "source_priority": "HIGH"
+      }
+    ],
+    "reasoning_context": [
+      "[공시] chunk #23",
+      "[공시] chunk #15",
+      "[공시] [기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+      "[공시] [기재정정]임원ㆍ주요주주특정증권등소유상황보고서",
+      "[공시] chunk #22",
+      "[공시] chunk #21",
+      "[공시] chunk #14",
+      "[공시] [기재정정]임원ㆍ주요주주특정증권등소유상황보고서"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 10,
+      "NEWS": 0,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "completed",
+    "has_disclosure": true,
+    "disclosure_priority": "HIGH"
+  },
+  "completed_at": "2026-05-28 14:21:41"
+}

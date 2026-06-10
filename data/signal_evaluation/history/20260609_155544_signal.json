@@ -1,0 +1,33 @@
+{
+  "trace_id": "20260609_155544",
+  "query": "삼성전자 005930",
+  "ticker": "005930",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [
+      "AI 반도체 수출 증가로 인한 매출 성장 가능성",
+      "글로벌 경쟁 심화로 인한 가격 압박",
+      "환율 변동에 따른 수익성 악화"
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

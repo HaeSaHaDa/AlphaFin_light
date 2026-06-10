@@ -1,0 +1,19 @@
+{
+  "ticker": "000660",
+  "company_name": "SK하이닉스",
+  "corp_code": "00164779",
+  "status": "completed",
+  "documents": 9,
+  "chunks": 9,
+  "embeddings": 8,
+  "embeddings_created": 2,
+  "embeddings_skipped": 7,
+  "skipped_collectors": [
+    "price"
+  ],
+  "presentation_mode": false,
+  "cache_status": "STALE",
+  "cache_fresh": false,
+  "cache_ttl_hours": 12,
+  "cache_updated_at": "2026-05-28 10:14:16"
+}

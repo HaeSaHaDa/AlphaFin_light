@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260609_101515",
+  "query": "현대자동차 전기차 전망",
+  "persona": "growth_investor",
+  "ticker": "005380",
+  "started_at": "2026-06-09 10:15:15",
+  "completed_at": "2026-06-09 10:15:19",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=5 disclosure=5",
+      "timestamp": "2026-06-09 10:15:15"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=464",
+      "timestamp": "2026-06-09 10:15:15"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=2687",
+      "timestamp": "2026-06-09 10:15:16"
+    },
+    {
+      "step": "character_analysis",
+      "status": "warn",
+      "summary": "bullish=0",
+      "timestamp": "2026-06-09 10:15:17"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=medium",
+      "timestamp": "2026-06-09 10:15:17"
+    },
+    {
+      "step": "reflection",
+      "status": "warn",
+      "summary": "",
+      "timestamp": "2026-06-09 10:15:19"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-09 10:15:19"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.30",
+      "timestamp": "2026-06-09 10:15:19"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=keep",
+      "timestamp": "2026-06-09 10:15:19"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=18 rels=39",
+      "timestamp": "2026-06-09 10:15:19"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=50",
+      "timestamp": "2026-06-09 10:15:19"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 5,
+    "max_score": 0.5173
+  },
+  "reflection_summary": "",
+  "temporal_action": "keep",
+  "stock_chain_links": 0
+}

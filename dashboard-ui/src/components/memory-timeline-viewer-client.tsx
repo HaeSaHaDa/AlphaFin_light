@@ -1,12 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useActiveTrace } from "@/hooks/use-active-trace";
 import { RuntimeTraceBanner } from "@/components/runtime-panels/RuntimeTraceBanner";
 import { Loader2, AlertTriangle, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { PresentationModeToggle } from "@/components/layout/presentation-mode-toggle";
 import { MemoryTimeline } from "@/components/memory-timeline/MemoryTimeline";
 import { useMemoryTimeline } from "@/hooks/use-memory-timeline";
+import { traceQueryHref } from "@/runtime-state/runtime-trace-store";
 
 export function MemoryTimelineViewerClient() {
   const { traceId } = useActiveTrace();
@@ -25,7 +26,9 @@ export function MemoryTimelineViewerClient() {
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <PresentationModeToggle />
+          <Button variant="outline" size="sm" asChild>
+            <Link href={traceQueryHref("/", traceId)}>Dashboard</Link>
+          </Button>
           {traceId && (
             <span className="rounded border border-border px-2 py-1 font-mono text-xs text-muted-foreground">
               trace: {traceId}

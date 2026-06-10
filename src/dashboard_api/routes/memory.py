@@ -6,6 +6,8 @@ import logging
 from fastapi import APIRouter, HTTPException
 
 from ..schemas.memory_schema import MemoryLayerResponse, MemoryResponse
+from ..schemas.events_schema import MemoryEventsResponse
+from ..services.events_service import fetch_memory_events
 from ..services.memory_service import (
     fetch_latest_memory,
     fetch_memory_by_layer,
@@ -30,6 +32,19 @@ def get_memory_by_layer(layer: str) -> MemoryLayerResponse:
         raise HTTPException(status_code=404, detail=f"layer={layer} 없음")
     logger.info("GET /api/memory/layer/%s  count=%d", layer, data.get("memory_count"))
     return MemoryLayerResponse(**data)
+
+
+@router.get("/events/{trace_id}", response_model=MemoryEventsResponse)
+def get_memory_events(trace_id: str) -> MemoryEventsResponse:
+    data = fetch_memory_events(trace_id)
+    if not data:
+        raise HTTPException(status_code=404, detail=f"trace_id={trace_id} 없음")
+    logger.info(
+        "GET /api/memory/events/%s  events=%d",
+        trace_id,
+        data.get("event_count", 0),
+    )
+    return MemoryEventsResponse(**data)
 
 
 @router.get("/{trace_id}", response_model=MemoryResponse)

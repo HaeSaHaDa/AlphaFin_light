@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260610_102635",
+  "query": "SK하이닉스 000660 삼성전자 엔비디아 TSMC 마이크론",
+  "persona": "growth_investor",
+  "ticker": "000660",
+  "started_at": "2026-06-10 10:26:35",
+  "completed_at": "2026-06-10 10:26:45",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=6 disclosure=0",
+      "timestamp": "2026-06-10 10:26:35"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=4759",
+      "timestamp": "2026-06-10 10:26:35"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=3126",
+      "timestamp": "2026-06-10 10:26:35"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-10 10:26:40"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-10 10:26:40"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 SK하이닉스의 성장 가능성을 긍정적으로 평가하고 있지만, 외국인 매도세와 삼성전자의",
+      "timestamp": "2026-06-10 10:26:45"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-10 10:26:45"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.90",
+      "timestamp": "2026-06-10 10:26:45"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-10 10:26:45"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=9 rels=36",
+      "timestamp": "2026-06-10 10:26:45"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=36",
+      "timestamp": "2026-06-10 10:26:45"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 6,
+    "max_score": 0.368518
+  },
+  "reflection_summary": "분석은 SK하이닉스의 성장 가능성을 긍정적으로 평가하고 있지만, 외국인 매도세와 삼성전자의 하락세에 대한 비관적인 요소도 언급하고 있습니다. 그러나 리스크와 Context 부족 부분이 있어 균형 잡힌 시각이 부족합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

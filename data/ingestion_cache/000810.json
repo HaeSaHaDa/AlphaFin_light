@@ -1,0 +1,9 @@
+{
+  "ticker": "000810",
+  "company_name": "삼성화재",
+  "status": "completed",
+  "documents": 92,
+  "chunks": 26,
+  "embeddings": 18,
+  "completed_at": "2026-06-09 16:52:56"
+}

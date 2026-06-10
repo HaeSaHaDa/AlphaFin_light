@@ -10,6 +10,18 @@ import json
 from pathlib import Path
 
 
+def _event_graph_chain(chain: dict) -> dict:
+    """과거 고정 규칙 링크를 제외하고 Runtime Event Graph 링크만 유지한다."""
+    return {
+        **chain,
+        "links": [
+            link
+            for link in chain.get("links", [])
+            if link.get("from_event_graph") is True
+        ],
+    }
+
+
 def fetch_stock_chain_by_trace(trace_id: str) -> dict | None:
     from .ticker_centric_chain import build_ticker_centric_chain
     from .trace_service import get_unified_result_by_trace
@@ -17,11 +29,12 @@ def fetch_stock_chain_by_trace(trace_id: str) -> dict | None:
     result = get_unified_result_by_trace(trace_id)
     if not result:
         return None
-    chain_file = load_stock_chain_file(trace_id) or {}
+    chain_file = _event_graph_chain(load_stock_chain_file(trace_id) or {})
     ticker = (result.get("ticker") or "").strip()
     query = result.get("query") or ""
-    analysis = result.get("analysis_result") or {}
-    chunks = analysis.get("referenced_chunks") or []
+    from .retrieval_service import hydrate_retrieval_chunks
+
+    chunks = hydrate_retrieval_chunks(result)
 
     centered = build_ticker_centric_chain(
         chain_file,
@@ -66,7 +79,7 @@ def fetch_stock_chain_by_ticker(ticker: str) -> dict | None:
     for fp in STOCK_CHAIN_DIR.glob("*_chain.json"):
         try:
             with open(fp, "r", encoding="utf-8") as f:
-                chain = json.load(f)
+                chain = _event_graph_chain(json.load(f))
         except (json.JSONDecodeError, OSError):
             continue
         if chain.get("ticker") == ticker:

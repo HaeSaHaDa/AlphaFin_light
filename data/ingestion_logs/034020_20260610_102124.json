@@ -1,0 +1,19 @@
+{
+  "ticker": "034020",
+  "company_name": "두산에너빌리티",
+  "corp_code": "00159616",
+  "status": "completed",
+  "documents": 100,
+  "chunks": 20,
+  "embeddings": 10,
+  "embeddings_created": 1,
+  "embeddings_skipped": 19,
+  "skipped_collectors": [
+    "price"
+  ],
+  "presentation_mode": false,
+  "cache_status": "STALE",
+  "cache_fresh": false,
+  "cache_ttl_hours": 12,
+  "cache_updated_at": "2026-05-28 09:39:28"
+}

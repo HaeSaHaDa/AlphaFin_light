@@ -1,0 +1,477 @@
+{
+  "trace_id": "20260528_160602",
+  "query": "SK스퀘어 402340 반도체",
+  "persona": "growth_investor",
+  "ticker": "402340",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "SK스퀘어 402340 반도체",
+    "bullish_factors": [
+      "AI 반도체 및 HBM 수요 증가로 긍정적인 성장 가능성",
+      "K컬처의 영향으로 해외 시장 확대 기대"
+    ],
+    "bearish_factors": [
+      "반도체 산업의 불안정성과 글로벌 경쟁 심화",
+      "노조의 반발과 파업 우려가 운영에 리스크 초래"
+    ],
+    "risks": [
+      "정치적 불확실성과 글로벌 경제 둔화",
+      "기술 발전 속도의 불확실성"
+    ],
+    "summary": "SK스퀘어는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으며, K컬처의 영향으로 해외 시장 확대가 기대됩니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화, 노조의 반발 등 여러 리스크 요소가 존재합니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 350,
+        "document_type": "news_article",
+        "score": 0.328507,
+        "ticker": "402340"
+      },
+      {
+        "chunk_id": 347,
+        "document_type": "news_article",
+        "score": 0.282463,
+        "ticker": "402340"
+      },
+      {
+        "chunk_id": 349,
+        "document_type": "news_article",
+        "score": 0.256594,
+        "ticker": "402340"
+      },
+      {
+        "chunk_id": 353,
+        "document_type": "news_article",
+        "score": 0.256177,
+        "ticker": "402340"
+      },
+      {
+        "chunk_id": 351,
+        "document_type": "news_article",
+        "score": 0.246313,
+        "ticker": "402340"
+      },
+      {
+        "chunk_id": 348,
+        "document_type": "news_article",
+        "score": 0.222302,
+        "ticker": "402340"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "SK스퀘어 402340 반도체",
+    "retrieval_quality": {
+      "chunk_count": 6,
+      "score_stats": {
+        "min": 0.222302,
+        "max": 0.328507,
+        "avg": 0.265393,
+        "count": 6
+      },
+      "doc_type_distribution": {
+        "news_article": 6
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 6,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 6,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.328507,
+        0.282463,
+        0.256594,
+        0.256177,
+        0.246313,
+        0.222302
+      ],
+      "score_stats": {
+        "min": 0.222302,
+        "max": 0.328507,
+        "avg": 0.265393,
+        "count": 6
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "SK스퀘어 402340 반도체",
+    "persona": "growth_investor",
+    "reflection_summary": "전체적으로 SK스퀘어의 성장 가능성을 긍정적으로 평가하고 있으나, 하락 요인과 리스크가 충분히 구체화되지 않았습니다. 특히, 글로벌 경쟁 심화와 같은 하락 요인에 대한 심층 분석이 부족합니다.",
+    "missing_risks": [
+      "반도체 공급망의 불안정성",
+      "환율 변동에 따른 수익성 영향",
+      "기술 변화에 대한 적응력 부족",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "AI 반도체 및 HBM 수요 증가에 대한 지나친 긍정적 전망"
+    ],
+    "context_gaps": [
+      "반도체 산업 내 경쟁사의 동향",
+      "K컬처의 해외 시장 확대에 대한 구체적 사례",
+      "공시 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "하락 요인에 대한 구체적인 사례와 데이터 추가",
+      "리스크 요소에 대한 심층 분석 및 대안 제시"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 16:06:12"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "SK스퀘어 402340 반도체",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "AI 반도체 및 HBM 수요 증가로 긍정적인 성장 가능성",
+        "K컬처의 영향으로 해외 시장 확대 기대"
+      ],
+      "bearish_factors": [
+        "반도체 산업의 불안정성과 글로벌 경쟁 심화",
+        "노조의 반발과 파업 우려가 운영에 리스크 초래"
+      ],
+      "risks": [
+        "정치적 불확실성과 글로벌 경제 둔화",
+        "기술 발전 속도의 불확실성"
+      ],
+      "summary": "SK스퀘어는 AI 반도체와 HBM 수요 증가로 긍정적인 성장 가능성을 보이고 있으며, K컬처의 영향으로 해외 시장 확대가 기대됩니다. 그러나 반도체 산업의 불안정성과 글로벌 경쟁 심화, 노조의 반발 등 여러 리스크 요소가 존재합니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 350,
+          "document_type": "news_article",
+          "score": 0.328507,
+          "ticker": "402340"
+        },
+        {
+          "chunk_id": 347,
+          "document_type": "news_article",
+          "score": 0.282463,
+          "ticker": "402340"
+        },
+        {
+          "chunk_id": 349,
+          "document_type": "news_article",
+          "score": 0.256594,
+          "ticker": "402340"
+        },
+        {
+          "chunk_id": 353,
+          "document_type": "news_article",
+          "score": 0.256177,
+          "ticker": "402340"
+        },
+        {
+          "chunk_id": 351,
+          "document_type": "news_article",
+          "score": 0.246313,
+          "ticker": "402340"
+        },
+        {
+          "chunk_id": 348,
+          "document_type": "news_article",
+          "score": 0.222302,
+          "ticker": "402340"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-05-28 16:06:12"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 1.0,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 9
+    },
+    "importance": {
+      "importance_score": 1.0,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_SK스퀘어_402340_반도체_2026-05-28_16:06:12",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [
+        "NVIDIA → 실적",
+        "HBM → 공급",
+        "AI → 서버"
+      ],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-05-28 16:06:13"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 18,
+    "relation_count": 30,
+    "query": "SK스퀘어 402340 반도체"
+  },
+  "stock_chain": {
+    "entity_count": 15,
+    "link_count": 41,
+    "propagation_paths": 0
+  },
+  "unified_context_length": 5030,
+  "retrieval_chunk_count": 6,
+  "runtime_context": {
+    "trace_id": "20260528_160602",
+    "ticker": "402340",
+    "query": "SK스퀘어 402340 반도체",
+    "news_chunks": [
+      {
+        "chunk_id": 350,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "(005930)가 2. 44% 하락한 29만 9500원에 거래를 마쳤고, SK하이닉스(000660)는 장중 약세에서 낙폭을 줄여 2. 05% 상승한 228만 9000원에 마감했다. 반도체주가 쉬어가는 사이 LG에너지솔루션(373220)이 미국 데이터센터 ESS 수주 기대에 15. 25% 급등했고, 삼성전기(009150)도 13. 44% 오르며 강세를 이어갔다. 이외에 코스피 시가총액 상위 10개 종목 중 삼성생명(032830)이 0. 85% 상승했다. HD현대중공업(329180) -5. 38%, SK스퀘어(402340) -3. 06%, 삼성전자(005930) -2. 44%, 두산에너빌리티(034020) -2. 4%, 현대차(005380) -0. 59%, 삼성전자우(005935) -0. 57% 등은 하락했다. 코스닥은 전일 대비 28. 77p(-2. 54%) 하락한 1104. 36으로 마감했다. 개인은 381억 원, 외국인은 3819억 원 각각 순매수한 반면 기관은 4009억 원 순매도했다. 코스닥 시가총액 상위 10개 종목 중 펩트론(087010) 11. 3%, 에코프로비엠(247540) 2. 34%, 에코프로(086520) 1. 26% 등은 상승했다. 주성엔지니어링(036930) -9. 17%, 코오롱티슈진(950160) -6. 33%, 알테오젠(196170) -4. 4%, 레인보우로보틱스(277810) -4. 37%, 삼천당제약(000250) -3. 84%, 리노공업(058470) -3. 32%, HLB(028300) -0. 98% 등은 하락했다.",
+        "chunk_length": 767,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 61,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"뉴스1\", \"published_at\": \"2026-05-28 16:00:21\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"'닷새만에 주춤' 코스피 8185 마감…외국인 또 2.9조 순매도[시황종합]\", \"url\": \"https://n.news.naver.com/mnews/article/421/0008971681?sid=101\"}",
+        "score": 0.328507,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 347,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "코스피, 8180선 약보합 마감…장중 변동성 확대\n 연합뉴스 코스피가 장중 극심한 변동성을 보이다가 소폭 하락한 8180선에서 장을 마감했다. 28일 코스피는 전일 대비 43. 41포인트(0. 53%) 하락한 8185. 29에 거래를 마쳤다. 이날 거래량은 6억6451만주로, 거래대금은 52조1316억원으로 잠정 집계됐다. 투자주체별로는 기관과 외국인이 각각 8895억원, 2조8908억원을 순매도한 반면 개인은 3조6355억원을 순매수했다. 선물시장에서는 기관이 1조1438억원을 순매수한 반면 외국인과 개인은 각각 3175억원, 5456억원을 순매도했다. 프로그램매매는 차익거래에서 83억원, 비차익거래에서 2조3903억원의 순매도가 발생했다. 업종별로는 대부분의 업종이 하락했다. 기계장비 업종이 4. 01% 빠졌고 증권 －3. 48%, 오락문화 －2. 93%, 통신 －2. 78%, 의료정밀 －2. 57%, 건설 －2. 57%, 금융 －2. 46%, 운송장비 －2. 24%, 부동산 －1. 98%, 일반서비스 －1. 97%, 금속 －1. 92%, 제약 －1. 76%, 종이목재 －1. 72%, 유통 －1. 68% 등이 하락했다. 반면 음식료담배, 전기전자 업종은 강보합권에서 장을 마감했다. 시가총액 상위권 종목들은 내린 종목이 더 많았다. 삼성전자가 2. 44% 하락했고 SK스퀘어 －3. 06%, 현대차 －0. 59%, HD현대중공업 －5. 38%, 두산에너빌리티 －2. 4%, 삼성물산 －2. 68%, 기아 －0. 24%, 삼성바이오로직스 －0. 79%, 현대모비스 －0. 29% 등이 내렸다.",
+        "chunk_length": 788,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 62,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 15:56:49\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"코스피, 8180선 약보합 마감…장중 변동성 확대\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005769092?sid=101\"}",
+        "score": 0.282463,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 349,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "'닷새만에 주춤' 코스피 8185 마감…외국인 또 2. 9조 순매도[시황종합] 28일 오후 서울 중구 하나은행 본점 딜링룸 전광판에 종가가 표시되고 있다. 2026. 5. 28 ⓒ 뉴스1 김도우 기자 (서울=뉴스1) 한유주 기자 = 코스피가 5거래일 만에 약세로 마감했다. 중동 리스크와 한국은행의 기준금리 연내 인상 공식화에 위험자산 선호 심리가 후퇴한 영향이다. 28일 코스피는 전일 대비 43. 41p(-0. 53%) 하락한 8185. 29로 거래를 마쳤다. 장중 낙폭을 키워 7841. 01까지 하락하기도 했다. 개인 홀로 3조 6355억 원 순매수 중이다. 반면 기관은 8895억 원, 외국인은 2조 8969억 원 팔고 있다. 외국인은 이날까지 15거래일 연속 코스피를 팔고 있다. 전날 4000억 원대 순매도를 기록하는 등 최근 매도세가 주춤해졌지만 이날 다시 급증했다. 코스피200 선물 시장에서도 581억 원 순매도를 기록했다. 미국의 이란 공습에 WTI 국제 유가가 4% 가까이 급등하며 다시 90달러 선을 상회했고, 이날 한국은행이 연내 기준금리 인상을 공식화하면서 국채 금리가 상승한 영향이다. 위험자산 선호심리가 후퇴하며 달러·원 환율은 서울외환시장에서 1. 6원 오른 1502. 8원을 기록했다. 정오 무렵엔 1410원대까지 치솟았다. 삼성전자(005930)가 2. 44% 하락한 29만 9500원에 거래를 마쳤고, SK하이닉스(000660)는 장중 약세에서 낙폭을 줄여 2. 05% 상승한 228만 9000원에 마감했다.",
+        "chunk_length": 753,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 61,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"뉴스1\", \"published_at\": \"2026-05-28 16:00:21\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"'닷새만에 주춤' 코스피 8185 마감…외국인 또 2.9조 순매도[시황종합]\", \"url\": \"https://n.news.naver.com/mnews/article/421/0008971681?sid=101\"}",
+        "score": 0.256594,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 353,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "권, 오락·문화, 통신, 의료·정밀기기, 건설, 금융, 운송장비·부품, 부동산, 일반서비스, 금속, 제약, 종이·목재, 유통, 전기·가스, 비금속, IT서비스 등이 약세 마감했다. 반면 음식료·담배, 전기·전자, 운송·창고, 제조는 소폭 상승했다. 코스피 거래량은 6억 6451만주, 거래대금 52조 1309억원으로 집계됐다. 상한가 3개를 비롯해 214개 종목이 올랐고, 678개 종목은 내렸다. 27개 종목은 보합권에서 거래됐으며 하한가는 없었다. 코스닥은 전거래일 대비 28. 77포인트(2. 54%) 내린 1104. 36에 거래를 마쳤다. 장중 전장보다 5. 85% 내린 1066. 79까지 하락하기도 했으나 낙폭을 줄였다. 수급별로는 개인과 외국인이 각각 383억원, 3777억원을 순매수한 반면 기관은 홀로 4011억원 매도 우위를 보였다. 코스닥에서는 에코프로비엠(247540)(2. 34%)과 에코프로(086520)(1. 26%), 펩트론(087010)(11. 30%)이 상승 마감했다. 알테오젠(196170)(-4. 40%), 레인보우로보틱스(277810)(-4. 37%), 주성엔지니어링(036930)(-9. 17%), 코오롱티슈진(950160)(-6. 33%), 삼천당제약(000250)(-3. 84%), 리노공업(058470)(-3. 32%) 등은 약세를 보였다. 한편 간밤 미국 증시는 이란과의 종전 협상 기대감 속에 일제히 사상 최고치를 경신했다. 27일(현지시간) 블루칩을 모아놓은 다우존스30 산업평균지수는 182. 60포인트(0. 36%) 오른 5만644. 28에 거래를 마쳤다.",
+        "chunk_length": 789,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 60,
+        "chunk_index": 2,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"이데일리\", \"published_at\": \"2026-05-28 16:01:10\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"코스피, 4%대 급락 후 8100선 회복…하이닉스 상승 반전[마감]\", \"url\": \"https://n.news.naver.com/mnews/article/018/0006292437?sid=101\"}",
+        "score": 0.256177,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 351,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "코스피, 4%대 급락 후 8100선 회복…하이닉스 상승 반전[마감]\n 코스피 8185. 29 마감…장중 한때 4. 7% 하락 개인 3. 6조 순매수 vs 외인 2. 9조 순매도 SK하이닉스 상승 반전…삼성전자는 2. 44%↓ 코스닥은 2. 54% 내린 1104. 36서 마감 [이데일리 신하연 기자] 장중 한때 4% 넘게 내리며 7900선을 내줬던 코스피가 8100선을 회복하며 거래를 마쳤다. 외국인이 하루 새 2조8000억원 이상 순매도 했지만 개인이 3조6000억원 이상 순매수하며 지수 하방을 지지했다. 28일 엠피닥터와 한국거래소에 따르면 코스피는 이날 전거래일 대비 43. 41포인트(0. 53%) 내린 8185. 29에 거래를 마쳤다. 이날 지수는 전장 대비 0. 77% 내린 8165. 73에 출발해 장중 4. 71% 내린 7841. 01까지 하락하는 등 큰 변동성을 보였다. (사진=연합뉴스) 수급 주체별로는 유가증권시장에서 외국인과 기관 투자자가 각각 2조8908억원, 8895억원어치를 순매도하며 지수 하락을 견인했다. 반면 개인은 이날 하루 만에 3조6355억원을 순매수했다. 이날 장중 미국과 이란 간 군사 충돌 우려가 재점화된 데다가 한국은행의 기준금리 인상 가능성 시사, 국민연금 리밸런싱 경계감 등이 복합적으로 작용하며 낙폭을 키운 것으로 풀이된다. 이란 국영방송 등에 따르면 이란의 정예군인 혁명수비대(IRGC)는 현지시간으로 이날 오전 4시50분께 미국 공군기지를 표적 타격했다고 발표했다.",
+        "chunk_length": 740,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 60,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"이데일리\", \"published_at\": \"2026-05-28 16:01:10\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"코스피, 4%대 급락 후 8100선 회복…하이닉스 상승 반전[마감]\", \"url\": \"https://n.news.naver.com/mnews/article/018/0006292437?sid=101\"}",
+        "score": 0.246313,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 348,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": ", HD현대중공업 －5. 38%, 두산에너빌리티 －2. 4%, 삼성물산 －2. 68%, 기아 －0. 24%, 삼성바이오로직스 －0. 79%, 현대모비스 －0. 29% 등이 내렸다. 반면 SK하이닉스는 2. 05% 올랐고 삼성전기 13. 44%, LG에너지솔루션 15. 25% 등은 강한 상승세를 기록했다. 이날 상승 종목 수는 214개사로, 하락 종목 수는 678개사로, 보합권은 27개사로 잠정 집계됐다. 3개 종목은 상한가를 기록했다. 이날 코스닥지수는 2%대 하락세를 보였다. 코스닥지수는 전일 대비 28. 77포인트(2. 54%) 내린 1104. 36에 거래를 마쳤다. 투자주체별로는 기관이 4010억원을 순매도한 반면 외국인과 개인은 각각 3777억원, 382억원을 순매수했다. 시가총액 상위권 종목들은 내린 종목이 더 많았다. 알테오젠이 4. 4% 내렸고 레인보우로보틱스 －4. 37%, 주성엔지니어링 －9. 17%, 코오롱티슈진 －6. 33%, 삼천당제약 －3. 84%, 리노공업 －3. 32%, HLB －0. 98%, 에이비엘바이오 －3. 38%, 이오테크닉스 －5. 92% 등이 하락했다. 반면 에코프로비엠은 2. 34% 올랐고 에코프로 1. 26%, 펩트론 11. 3% 등은 상승세로 장을 마감했다. 한편 서울 외환시장에서 원/달러 환율은 전일 대비 2. 8원 오른 1502. 2원에 거래되고 있다.",
+        "chunk_length": 681,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 62,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 15:56:49\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"코스피, 8180선 약보합 마감…장중 변동성 확대\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005769092?sid=101\"}",
+        "score": 0.222302,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      }
+    ],
+    "disclosure_chunks": [],
+    "merged_evidence": [
+      {
+        "chunk_id": 350,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "(005930)가 2. 44% 하락한 29만 9500원에 거래를 마쳤고, SK하이닉스(000660)는 장중 약세에서 낙폭을 줄여 2. 05% 상승한 228만 9000원에 마감했다. 반도체주가 쉬어가는 사이 LG에너지솔루션(373220)이 미국 데이터센터 ESS 수주 기대에 15. 25% 급등했고, 삼성전기(009150)도 13. 44% 오르며 강세를 이어갔다. 이외에 코스피 시가총액 상위 10개 종목 중 삼성생명(032830)이 0. 85% 상승했다. HD현대중공업(329180) -5. 38%, SK스퀘어(402340) -3. 06%, 삼성전자(005930) -2. 44%, 두산에너빌리티(034020) -2. 4%, 현대차(005380) -0. 59%, 삼성전자우(005935) -0. 57% 등은 하락했다. 코스닥은 전일 대비 28. 77p(-2. 54%) 하락한 1104. 36으로 마감했다. 개인은 381억 원, 외국인은 3819억 원 각각 순매수한 반면 기관은 4009억 원 순매도했다. 코스닥 시가총액 상위 10개 종목 중 펩트론(087010) 11. 3%, 에코프로비엠(247540) 2. 34%, 에코프로(086520) 1. 26% 등은 상승했다. 주성엔지니어링(036930) -9. 17%, 코오롱티슈진(950160) -6. 33%, 알테오젠(196170) -4. 4%, 레인보우로보틱스(277810) -4. 37%, 삼천당제약(000250) -3. 84%, 리노공업(058470) -3. 32%, HLB(028300) -0. 98% 등은 하락했다.",
+        "chunk_length": 767,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 61,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"뉴스1\", \"published_at\": \"2026-05-28 16:00:21\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"'닷새만에 주춤' 코스피 8185 마감…외국인 또 2.9조 순매도[시황종합]\", \"url\": \"https://n.news.naver.com/mnews/article/421/0008971681?sid=101\"}",
+        "score": 0.328507,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.425,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 347,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "코스피, 8180선 약보합 마감…장중 변동성 확대\n 연합뉴스 코스피가 장중 극심한 변동성을 보이다가 소폭 하락한 8180선에서 장을 마감했다. 28일 코스피는 전일 대비 43. 41포인트(0. 53%) 하락한 8185. 29에 거래를 마쳤다. 이날 거래량은 6억6451만주로, 거래대금은 52조1316억원으로 잠정 집계됐다. 투자주체별로는 기관과 외국인이 각각 8895억원, 2조8908억원을 순매도한 반면 개인은 3조6355억원을 순매수했다. 선물시장에서는 기관이 1조1438억원을 순매수한 반면 외국인과 개인은 각각 3175억원, 5456억원을 순매도했다. 프로그램매매는 차익거래에서 83억원, 비차익거래에서 2조3903억원의 순매도가 발생했다. 업종별로는 대부분의 업종이 하락했다. 기계장비 업종이 4. 01% 빠졌고 증권 －3. 48%, 오락문화 －2. 93%, 통신 －2. 78%, 의료정밀 －2. 57%, 건설 －2. 57%, 금융 －2. 46%, 운송장비 －2. 24%, 부동산 －1. 98%, 일반서비스 －1. 97%, 금속 －1. 92%, 제약 －1. 76%, 종이목재 －1. 72%, 유통 －1. 68% 등이 하락했다. 반면 음식료담배, 전기전자 업종은 강보합권에서 장을 마감했다. 시가총액 상위권 종목들은 내린 종목이 더 많았다. 삼성전자가 2. 44% 하락했고 SK스퀘어 －3. 06%, 현대차 －0. 59%, HD현대중공업 －5. 38%, 두산에너빌리티 －2. 4%, 삼성물산 －2. 68%, 기아 －0. 24%, 삼성바이오로직스 －0. 79%, 현대모비스 －0. 29% 등이 내렸다.",
+        "chunk_length": 788,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 62,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 15:56:49\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"코스피, 8180선 약보합 마감…장중 변동성 확대\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005769092?sid=101\"}",
+        "score": 0.282463,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3927,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 349,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "'닷새만에 주춤' 코스피 8185 마감…외국인 또 2. 9조 순매도[시황종합] 28일 오후 서울 중구 하나은행 본점 딜링룸 전광판에 종가가 표시되고 있다. 2026. 5. 28 ⓒ 뉴스1 김도우 기자 (서울=뉴스1) 한유주 기자 = 코스피가 5거래일 만에 약세로 마감했다. 중동 리스크와 한국은행의 기준금리 연내 인상 공식화에 위험자산 선호 심리가 후퇴한 영향이다. 28일 코스피는 전일 대비 43. 41p(-0. 53%) 하락한 8185. 29로 거래를 마쳤다. 장중 낙폭을 키워 7841. 01까지 하락하기도 했다. 개인 홀로 3조 6355억 원 순매수 중이다. 반면 기관은 8895억 원, 외국인은 2조 8969억 원 팔고 있다. 외국인은 이날까지 15거래일 연속 코스피를 팔고 있다. 전날 4000억 원대 순매도를 기록하는 등 최근 매도세가 주춤해졌지만 이날 다시 급증했다. 코스피200 선물 시장에서도 581억 원 순매도를 기록했다. 미국의 이란 공습에 WTI 국제 유가가 4% 가까이 급등하며 다시 90달러 선을 상회했고, 이날 한국은행이 연내 기준금리 인상을 공식화하면서 국채 금리가 상승한 영향이다. 위험자산 선호심리가 후퇴하며 달러·원 환율은 서울외환시장에서 1. 6원 오른 1502. 8원을 기록했다. 정오 무렵엔 1410원대까지 치솟았다. 삼성전자(005930)가 2. 44% 하락한 29만 9500원에 거래를 마쳤고, SK하이닉스(000660)는 장중 약세에서 낙폭을 줄여 2. 05% 상승한 228만 9000원에 마감했다.",
+        "chunk_length": 753,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 61,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"뉴스1\", \"published_at\": \"2026-05-28 16:00:21\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"'닷새만에 주춤' 코스피 8185 마감…외국인 또 2.9조 순매도[시황종합]\", \"url\": \"https://n.news.naver.com/mnews/article/421/0008971681?sid=101\"}",
+        "score": 0.256594,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3746,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 353,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "권, 오락·문화, 통신, 의료·정밀기기, 건설, 금융, 운송장비·부품, 부동산, 일반서비스, 금속, 제약, 종이·목재, 유통, 전기·가스, 비금속, IT서비스 등이 약세 마감했다. 반면 음식료·담배, 전기·전자, 운송·창고, 제조는 소폭 상승했다. 코스피 거래량은 6억 6451만주, 거래대금 52조 1309억원으로 집계됐다. 상한가 3개를 비롯해 214개 종목이 올랐고, 678개 종목은 내렸다. 27개 종목은 보합권에서 거래됐으며 하한가는 없었다. 코스닥은 전거래일 대비 28. 77포인트(2. 54%) 내린 1104. 36에 거래를 마쳤다. 장중 전장보다 5. 85% 내린 1066. 79까지 하락하기도 했으나 낙폭을 줄였다. 수급별로는 개인과 외국인이 각각 383억원, 3777억원을 순매수한 반면 기관은 홀로 4011억원 매도 우위를 보였다. 코스닥에서는 에코프로비엠(247540)(2. 34%)과 에코프로(086520)(1. 26%), 펩트론(087010)(11. 30%)이 상승 마감했다. 알테오젠(196170)(-4. 40%), 레인보우로보틱스(277810)(-4. 37%), 주성엔지니어링(036930)(-9. 17%), 코오롱티슈진(950160)(-6. 33%), 삼천당제약(000250)(-3. 84%), 리노공업(058470)(-3. 32%) 등은 약세를 보였다. 한편 간밤 미국 증시는 이란과의 종전 협상 기대감 속에 일제히 사상 최고치를 경신했다. 27일(현지시간) 블루칩을 모아놓은 다우존스30 산업평균지수는 182. 60포인트(0. 36%) 오른 5만644. 28에 거래를 마쳤다.",
+        "chunk_length": 789,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 60,
+        "chunk_index": 2,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"이데일리\", \"published_at\": \"2026-05-28 16:01:10\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"코스피, 4%대 급락 후 8100선 회복…하이닉스 상승 반전[마감]\", \"url\": \"https://n.news.naver.com/mnews/article/018/0006292437?sid=101\"}",
+        "score": 0.256177,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3743,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 351,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "코스피, 4%대 급락 후 8100선 회복…하이닉스 상승 반전[마감]\n 코스피 8185. 29 마감…장중 한때 4. 7% 하락 개인 3. 6조 순매수 vs 외인 2. 9조 순매도 SK하이닉스 상승 반전…삼성전자는 2. 44%↓ 코스닥은 2. 54% 내린 1104. 36서 마감 [이데일리 신하연 기자] 장중 한때 4% 넘게 내리며 7900선을 내줬던 코스피가 8100선을 회복하며 거래를 마쳤다. 외국인이 하루 새 2조8000억원 이상 순매도 했지만 개인이 3조6000억원 이상 순매수하며 지수 하방을 지지했다. 28일 엠피닥터와 한국거래소에 따르면 코스피는 이날 전거래일 대비 43. 41포인트(0. 53%) 내린 8185. 29에 거래를 마쳤다. 이날 지수는 전장 대비 0. 77% 내린 8165. 73에 출발해 장중 4. 71% 내린 7841. 01까지 하락하는 등 큰 변동성을 보였다. (사진=연합뉴스) 수급 주체별로는 유가증권시장에서 외국인과 기관 투자자가 각각 2조8908억원, 8895억원어치를 순매도하며 지수 하락을 견인했다. 반면 개인은 이날 하루 만에 3조6355억원을 순매수했다. 이날 장중 미국과 이란 간 군사 충돌 우려가 재점화된 데다가 한국은행의 기준금리 인상 가능성 시사, 국민연금 리밸런싱 경계감 등이 복합적으로 작용하며 낙폭을 키운 것으로 풀이된다. 이란 국영방송 등에 따르면 이란의 정예군인 혁명수비대(IRGC)는 현지시간으로 이날 오전 4시50분께 미국 공군기지를 표적 타격했다고 발표했다.",
+        "chunk_length": 740,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 60,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"이데일리\", \"published_at\": \"2026-05-28 16:01:10\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"코스피, 4%대 급락 후 8100선 회복…하이닉스 상승 반전[마감]\", \"url\": \"https://n.news.naver.com/mnews/article/018/0006292437?sid=101\"}",
+        "score": 0.246313,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3674,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 348,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": ", HD현대중공업 －5. 38%, 두산에너빌리티 －2. 4%, 삼성물산 －2. 68%, 기아 －0. 24%, 삼성바이오로직스 －0. 79%, 현대모비스 －0. 29% 등이 내렸다. 반면 SK하이닉스는 2. 05% 올랐고 삼성전기 13. 44%, LG에너지솔루션 15. 25% 등은 강한 상승세를 기록했다. 이날 상승 종목 수는 214개사로, 하락 종목 수는 678개사로, 보합권은 27개사로 잠정 집계됐다. 3개 종목은 상한가를 기록했다. 이날 코스닥지수는 2%대 하락세를 보였다. 코스닥지수는 전일 대비 28. 77포인트(2. 54%) 내린 1104. 36에 거래를 마쳤다. 투자주체별로는 기관이 4010억원을 순매도한 반면 외국인과 개인은 각각 3777억원, 382억원을 순매수했다. 시가총액 상위권 종목들은 내린 종목이 더 많았다. 알테오젠이 4. 4% 내렸고 레인보우로보틱스 －4. 37%, 주성엔지니어링 －9. 17%, 코오롱티슈진 －6. 33%, 삼천당제약 －3. 84%, 리노공업 －3. 32%, HLB －0. 98%, 에이비엘바이오 －3. 38%, 이오테크닉스 －5. 92% 등이 하락했다. 반면 에코프로비엠은 2. 34% 올랐고 에코프로 1. 26%, 펩트론 11. 3% 등은 상승세로 장을 마감했다. 한편 서울 외환시장에서 원/달러 환율은 전일 대비 2. 8원 오른 1502. 2원에 거래되고 있다.",
+        "chunk_length": 681,
+        "ticker": "402340",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 62,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"402340\", \"source\": \"아시아경제\", \"published_at\": \"2026-05-28 15:56:49\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"코스피, 8180선 약보합 마감…장중 변동성 확대\", \"url\": \"https://n.news.naver.com/mnews/article/277/0005769092?sid=101\"}",
+        "score": 0.222302,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3506,
+        "source_priority": "MEDIUM"
+      }
+    ],
+    "reasoning_context": [
+      "[뉴스] chunk #350",
+      "[뉴스] chunk #347",
+      "[뉴스] chunk #349",
+      "[뉴스] chunk #353",
+      "[뉴스] chunk #351",
+      "[뉴스] chunk #348"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 0,
+      "NEWS": 6,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "failed",
+    "has_disclosure": false,
+    "disclosure_priority": "NONE"
+  },
+  "completed_at": "2026-05-28 16:06:13"
+}

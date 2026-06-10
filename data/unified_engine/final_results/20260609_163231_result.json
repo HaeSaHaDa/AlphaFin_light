@@ -1,0 +1,472 @@
+{
+  "trace_id": "20260609_163231",
+  "query": "현대모비스 012330",
+  "persona": "growth_investor",
+  "ticker": "012330",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "현대모비스 012330",
+    "bullish_factors": [
+      "전기차 및 자율주행차 시장 성장에 따른 수요 증가",
+      "기술 발전과 혁신을 통한 경쟁력 강화"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화로 인한 가격 압박",
+      "내부 리스크 및 노조의 반발 가능성"
+    ],
+    "risks": [
+      "환율 변동에 따른 수익성 리스크",
+      "원자재 가격 변동에 따른 비용 증가"
+    ],
+    "summary": "현대모비스는 전기차 및 자율주행차 시장의 성장에 힘입어 긍정적인 성장 가능성을 보이고 있으나, 글로벌 경쟁 심화와 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 442,
+        "document_type": "news_article",
+        "score": 0.328321,
+        "ticker": "012330"
+      },
+      {
+        "chunk_id": 441,
+        "document_type": "news_article",
+        "score": 0.254122,
+        "ticker": "012330"
+      },
+      {
+        "chunk_id": 444,
+        "document_type": "news_article",
+        "score": 0.234921,
+        "ticker": "012330"
+      },
+      {
+        "chunk_id": 447,
+        "document_type": "news_article",
+        "score": 0.234062,
+        "ticker": "012330"
+      },
+      {
+        "chunk_id": 443,
+        "document_type": "news_article",
+        "score": 0.23085,
+        "ticker": "012330"
+      },
+      {
+        "chunk_id": 446,
+        "document_type": "news_article",
+        "score": 0.228514,
+        "ticker": "012330"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "현대모비스 012330",
+    "retrieval_quality": {
+      "chunk_count": 6,
+      "score_stats": {
+        "min": 0.228514,
+        "max": 0.328321,
+        "avg": 0.251798,
+        "count": 6
+      },
+      "doc_type_distribution": {
+        "news_article": 6
+      },
+      "has_relevant": true
+    },
+    "context_usage": {
+      "referenced_count": 6,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 6,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "low",
+      "reasons": [],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.328321,
+        0.254122,
+        0.234921,
+        0.234062,
+        0.23085,
+        0.228514
+      ],
+      "score_stats": {
+        "min": 0.228514,
+        "max": 0.328321,
+        "avg": 0.251798,
+        "count": 6
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "현대모비스 012330",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 현대모비스의 성장 가능성을 잘 강조하고 있지만, 하락 요인과 리스크에 대한 깊이 있는 논의가 부족합니다. 전반적으로 긍정적인 전망이지만, 일부 리스크가 간과되고 있습니다.",
+    "missing_risks": [
+      "글로벌 공급망 문제로 인한 생산 차질 리스크",
+      "기술 발전 속도에 따른 경쟁사 대응 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크",
+      "공급망 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "전기차 및 자율주행차 시장 성장에 대한 지나친 긍정적 전망"
+    ],
+    "context_gaps": [
+      "경쟁사 분석 및 시장 점유율 변화에 대한 정보 부족",
+      "정책 변화나 규제 리스크에 대한 논의 부족",
+      "공시 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "하락 요인과 리스크에 대한 보다 구체적인 분석 추가",
+      "경쟁사와의 비교를 통해 시장 내 위치를 명확히 할 필요"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-06-09 16:32:41"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "현대모비스 012330",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "전기차 및 자율주행차 시장 성장에 따른 수요 증가",
+        "기술 발전과 혁신을 통한 경쟁력 강화"
+      ],
+      "bearish_factors": [
+        "글로벌 경쟁 심화로 인한 가격 압박",
+        "내부 리스크 및 노조의 반발 가능성"
+      ],
+      "risks": [
+        "환율 변동에 따른 수익성 리스크",
+        "원자재 가격 변동에 따른 비용 증가"
+      ],
+      "summary": "현대모비스는 전기차 및 자율주행차 시장의 성장에 힘입어 긍정적인 성장 가능성을 보이고 있으나, 글로벌 경쟁 심화와 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 442,
+          "document_type": "news_article",
+          "score": 0.328321,
+          "ticker": "012330"
+        },
+        {
+          "chunk_id": 441,
+          "document_type": "news_article",
+          "score": 0.254122,
+          "ticker": "012330"
+        },
+        {
+          "chunk_id": 444,
+          "document_type": "news_article",
+          "score": 0.234921,
+          "ticker": "012330"
+        },
+        {
+          "chunk_id": 447,
+          "document_type": "news_article",
+          "score": 0.234062,
+          "ticker": "012330"
+        },
+        {
+          "chunk_id": 443,
+          "document_type": "news_article",
+          "score": 0.23085,
+          "ticker": "012330"
+        },
+        {
+          "chunk_id": 446,
+          "document_type": "news_article",
+          "score": 0.228514,
+          "ticker": "012330"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-06-09 16:32:41"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.8,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 10
+    },
+    "importance": {
+      "importance_score": 0.8,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_현대모비스_012330_2026-06-09_16:32:41",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-06-09 16:32:41"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 15,
+    "relation_count": 22,
+    "query": "현대모비스 012330"
+  },
+  "stock_chain": {
+    "entity_count": 9,
+    "link_count": 22,
+    "propagation_paths": 7
+  },
+  "unified_context_length": 5408,
+  "retrieval_chunk_count": 6,
+  "runtime_context": {
+    "trace_id": "20260609_163231",
+    "ticker": "012330",
+    "query": "현대모비스 012330",
+    "news_chunks": [
+      {
+        "chunk_id": 442,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "가 확산된 하루로 읽힌다. 반도체 및 전자부품 관련 종목의 동반 강세도 두드러졌다. 한미반도체(042700)는 9. 07% 오른 27만 6500원, LG이노텍(011070)은 3. 84% 오른 113만 7000원에 마감했다. 반면 LG전자(066570)는 7. 46% 내린 24만 8000원, LG씨엔에스(064400)는 7. 04% 하락한 9만 9000원으로 약세를 보였다. NAVER(035420)도 7. 89% 떨어진 25만 7000원에 장을 마치며 기술주 내 종목별 차별화가 나타났다. 개별 종목 가운데서는 고영(098460)의 상승세가 가장 눈에 띄었다. 고영은 전일 대비 5650원 오른 3만 3450원에 마감해 20. 32% 급등했고, 거래량도 698만 5385주로 크게 늘었다. 알테오젠(196170)은 12. 78% 오른 32만 6500원, 대한광통신(010170)은 10. 62% 오른 1만 8340원, 두산에너빌리티(034020)는 7. 58% 오른 9만 2300원을 기록했다. 반면 두산로보틱스(454910)는 8. 33% 하락한 11만 6600원으로 밀렸고, 현대모비스(012330)는 2. 78% 내린 59만 5000원, 삼성중공업(010140)은 0. 96% 하락한 2만 5850원에 마감했다. 현대차(005380)는 63만 9000원으로 보합 마감했고, SK텔레콤(017670)은 1. 31% 오른 10만 8100원으로 장을 마쳤다. 이날 검색 상위 종목군은 대형 반도체주와 삼성 계열 강세, 일부 기술주와 로봇주의 약세가 동시에 나타나며 업종별 온도 차를 드러냈다.",
+        "chunk_length": 781,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 72,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 16:05:17\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]마감 직후 인기 검색 종목 20選\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650937?sid=101\"}",
+        "score": 0.328321,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 441,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[서울데이터랩]마감 직후 인기 검색 종목 20選\n 9일 오후 3시 30분 기준 네이버 금융 검색 상위 종목에서는 반도체와 삼성 계열 종목으로 투자자 관심이 집중됐다. 검색 비율 1위는 삼성전자(005930)로 17. 28%를 기록했고, 2위는 SK하이닉스(000660)로 16. 69%를 나타냈다. 두 종목의 검색 비율 합계가 33. 97%에 달해 장 마감 직후 시장의 시선이 대형 반도체주로 쏠린 모습이다. 주가 흐름도 강했다. 삼성전자는 전일 대비 2만 6500원 오른 32만 2000원에 거래를 마치며 8. 97% 상승했고, 장중 32만 4000원까지 올랐다. 거래량은 2898만 1703주로 집계됐다. SK하이닉스는 30만 4000원 급등한 221만 5000원에 마감해 15. 91% 상승률을 기록했다. 장중 222만 6000원까지 오르며 강한 탄력을 보였고 거래량은 578만 7772주였다. 삼성전기(009150) 역시 18. 39% 급등한 197만 원으로 마감하며 검색 3위에 올랐다. 시가는 176만 2000원이었고 장중 197만 2000원까지 상승했다. 삼성에스디에스(018260)도 6. 99% 오른 25만 2500원, 삼성전자우(005935)는 5. 71% 오른 20만 3500원, 삼성SDI(006400)는 2. 39% 오른 51만 5000원으로 거래를 마쳤다. 삼성 그룹주 전반에 매수세가 확산된 하루로 읽힌다. 반도체 및 전자부품 관련 종목의 동반 강세도 두드러졌다. 한미반도체(042700)는 9. 07% 오른 27만 6500원, LG이노텍(011070)은 3.",
+        "chunk_length": 776,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 72,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 16:05:17\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]마감 직후 인기 검색 종목 20選\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650937?sid=101\"}",
+        "score": 0.254122,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 444,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "시장 잠깐 출렁거려도 \"코스피 연내 1만2000\"…골드만삭스도 높였다\n 국내외 증권사, 목표가 줄상향 \"단기 조정에도 37% 추가 상승 여력\" 대만·인도 제치고 글로벌 톱5 증시 전망 '반도체' 삼성전자·SK하이닉스 외에도 방산·조선·전력·증권·유통주 아직 저평가 Getty Images Bank 코스피지수가 9천피 달성을 앞두고 있는 가운데 국내외 증권사의 하반기 목표 주가 전망도 잇따라 상향조정되고 있다. 국내 증권사들이 12,000을 베스트 시나리오로 보고 있는 가운데 골드만삭스도 ‘1만2천피’ 전망 대열에 참가했다. 반도체 기업의 막대한 실적을 기반으로 장이 계속 상승할 것으로 예상되는 가운데 하반기 옥석가리기가 본격화할 것이란 전망도 나온다. ◇올해 1만2천피 간다 글로벌 투자은행(IB) 골드만삭스는 최근 보고서에서 코스피 목표치를 9000에서 12,000으로 상향 조정했다. 골드만삭스는 “37%가량 추가 상승 여력이 있다”면서 “단기 조정 가능성도 존재하지만 투자 매력도는 여전히 높다”고 설명했다. 한국경제신문이 최근 하반기 코스피지수 목표치를 제시한 15개 증권사 전망을 분석한 결과 하반기 코스피지수는 10,546(목표치 또는 상단 평균)까지 오를 것으로 예측됐다. IBK증권과 현대차증권은 12,000까지 상승할 수 있을 것이란 전망을 내놨다. 김재승 현대차증권 연구원은 “개인 투자자의 상장지수펀드(ETF) 시장 참여가 늘어 하반기 대형주 중심의 강세장이 지속될 것”이라며 “반도체주 쏠림 현상으로 변동성이 커졌지만 실적 개선세를 고려하면 조정 시 저가 매수가 유리하다”고 말했다.",
+        "chunk_length": 789,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 71,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:16:16\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"시장 잠깐 출렁거려도 \\\"코스피 연내 1만2000\\\"…골드만삭스도 높였다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296725?sid=101\"}",
+        "score": 0.234921,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 447,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": ", 코스트코 등 대형 오프라인 유통채널에 입점될 예정이다. 에이피알과 달바글로벌은 올해 주가가 각각 83%, 30% 오르는 데 그쳤으나 하반기에는 상승세를 확대할 것으로 기대된다. 강현기 DB증권 연구원은 “올해 하반기 필수소비재, 호텔레저, 화장품 등 다양한 업종에도 관심을 가져볼 만하다”며 “주가 상승으로 소비가 늘어나는 등 부의 이전 효과로 이들 업종이 긍정적인 영향을 받을 것”이라고 분석했다.",
+        "chunk_length": 225,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 71,
+        "chunk_index": 3,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:16:16\", \"chunk_index\": 3, \"document_type\": \"news_article\", \"title\": \"시장 잠깐 출렁거려도 \\\"코스피 연내 1만2000\\\"…골드만삭스도 높였다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296725?sid=101\"}",
+        "score": 0.234062,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 443,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "1% 오른 10만 8100원으로 장을 마쳤다. 이날 검색 상위 종목군은 대형 반도체주와 삼성 계열 강세, 일부 기술주와 로봇주의 약세가 동시에 나타나며 업종별 온도 차를 드러냈다. 특히 삼성전자, SK하이닉스, 삼성전기의 급등이 검색량과 주가를 함께 끌어올리며 마감 직후 투자자 관심을 주도했다. [서울신문과 MetaVX의 생성형 AI가 함께 작성한 기사입니다]",
+        "chunk_length": 202,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 72,
+        "chunk_index": 2,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 16:05:17\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]마감 직후 인기 검색 종목 20選\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650937?sid=101\"}",
+        "score": 0.23085,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 446,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "업종은 상반기 이란 사태로 신규 수주가 지연되고 있다”며 “하반기 신규 수주가 집중되며, 실적이 개선될 것”이라고 말했다. 이외에도 삼성전기와 테스 등이 반도체 유망주로 제시했다. 삼성전기가 생산하는 적층세라믹콘덴서(MLCC)가 인공지능(AI) 서버 및 데이터센터 증설로 판매 호조를 보일 것이란 이유에서다. 코스닥시장 상장사인 테스 역시 올 들어 주가가 두 배 이상 뛰었지만 추가 상승 여력이 있는 것으로 제시됐다. 반도체 웨이퍼 전공정 장비 수요가 늘며, 호실적이 이어질 것으로 예상된다. 현대차, 기아, 현대모비스 등 로봇주도 관심주로 꼽혔다. 나정환 연구원은 “로봇 역시 AI가 제조·노동 현장으로 확산되며, 시장 관심이 소프트웨어와 AI 하드웨어 분야로 옮겨갈 것”이라고 내다봤다. ◇고금리·고물가 대응도 필요 고금리와 고물가에 대응하기 위해 증권과 금융, 유통주를 제안하는 목소리도 많았다. 증권 업종에선 한국금융지주와 삼성증권 등이 관심주로 언급됐다. 한국금융지주는 증권을 비롯해 기타 자회사의 순이익이 급격히 늘어 실적과 주가가 뛸 것으로 기대된다. SK스퀘어와 SK㈜ 등도 지주사 관련주로 눈여겨볼 만한 주식으로 꼽혔다. SK스퀘어는 자회사인 SK하이닉스 호실적에 배당 매력이 부각되고 있다. 에이피알과 달바글로벌, 한국콜마 등은 화장품주 기대주로 꼽혔다. 에이피알은 올해 3분기 월마트, 코스트코 등 대형 오프라인 유통채널에 입점될 예정이다. 에이피알과 달바글로벌은 올해 주가가 각각 83%, 30% 오르는 데 그쳤으나 하반기에는 상승세를 확대할 것으로 기대된다.",
+        "chunk_length": 773,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 71,
+        "chunk_index": 2,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:16:16\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"시장 잠깐 출렁거려도 \\\"코스피 연내 1만2000\\\"…골드만삭스도 높였다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296725?sid=101\"}",
+        "score": 0.228514,
+        "source": "document_chunks",
+        "priority": "MEDIUM"
+      }
+    ],
+    "disclosure_chunks": [],
+    "merged_evidence": [
+      {
+        "chunk_id": 442,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "가 확산된 하루로 읽힌다. 반도체 및 전자부품 관련 종목의 동반 강세도 두드러졌다. 한미반도체(042700)는 9. 07% 오른 27만 6500원, LG이노텍(011070)은 3. 84% 오른 113만 7000원에 마감했다. 반면 LG전자(066570)는 7. 46% 내린 24만 8000원, LG씨엔에스(064400)는 7. 04% 하락한 9만 9000원으로 약세를 보였다. NAVER(035420)도 7. 89% 떨어진 25만 7000원에 장을 마치며 기술주 내 종목별 차별화가 나타났다. 개별 종목 가운데서는 고영(098460)의 상승세가 가장 눈에 띄었다. 고영은 전일 대비 5650원 오른 3만 3450원에 마감해 20. 32% 급등했고, 거래량도 698만 5385주로 크게 늘었다. 알테오젠(196170)은 12. 78% 오른 32만 6500원, 대한광통신(010170)은 10. 62% 오른 1만 8340원, 두산에너빌리티(034020)는 7. 58% 오른 9만 2300원을 기록했다. 반면 두산로보틱스(454910)는 8. 33% 하락한 11만 6600원으로 밀렸고, 현대모비스(012330)는 2. 78% 내린 59만 5000원, 삼성중공업(010140)은 0. 96% 하락한 2만 5850원에 마감했다. 현대차(005380)는 63만 9000원으로 보합 마감했고, SK텔레콤(017670)은 1. 31% 오른 10만 8100원으로 장을 마쳤다. 이날 검색 상위 종목군은 대형 반도체주와 삼성 계열 강세, 일부 기술주와 로봇주의 약세가 동시에 나타나며 업종별 온도 차를 드러냈다.",
+        "chunk_length": 781,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 72,
+        "chunk_index": 1,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 16:05:17\", \"chunk_index\": 1, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]마감 직후 인기 검색 종목 20選\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650937?sid=101\"}",
+        "score": 0.328321,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.4248,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 441,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "[서울데이터랩]마감 직후 인기 검색 종목 20選\n 9일 오후 3시 30분 기준 네이버 금융 검색 상위 종목에서는 반도체와 삼성 계열 종목으로 투자자 관심이 집중됐다. 검색 비율 1위는 삼성전자(005930)로 17. 28%를 기록했고, 2위는 SK하이닉스(000660)로 16. 69%를 나타냈다. 두 종목의 검색 비율 합계가 33. 97%에 달해 장 마감 직후 시장의 시선이 대형 반도체주로 쏠린 모습이다. 주가 흐름도 강했다. 삼성전자는 전일 대비 2만 6500원 오른 32만 2000원에 거래를 마치며 8. 97% 상승했고, 장중 32만 4000원까지 올랐다. 거래량은 2898만 1703주로 집계됐다. SK하이닉스는 30만 4000원 급등한 221만 5000원에 마감해 15. 91% 상승률을 기록했다. 장중 222만 6000원까지 오르며 강한 탄력을 보였고 거래량은 578만 7772주였다. 삼성전기(009150) 역시 18. 39% 급등한 197만 원으로 마감하며 검색 3위에 올랐다. 시가는 176만 2000원이었고 장중 197만 2000원까지 상승했다. 삼성에스디에스(018260)도 6. 99% 오른 25만 2500원, 삼성전자우(005935)는 5. 71% 오른 20만 3500원, 삼성SDI(006400)는 2. 39% 오른 51만 5000원으로 거래를 마쳤다. 삼성 그룹주 전반에 매수세가 확산된 하루로 읽힌다. 반도체 및 전자부품 관련 종목의 동반 강세도 두드러졌다. 한미반도체(042700)는 9. 07% 오른 27만 6500원, LG이노텍(011070)은 3.",
+        "chunk_length": 776,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 72,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 16:05:17\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]마감 직후 인기 검색 종목 20選\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650937?sid=101\"}",
+        "score": 0.254122,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3729,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 444,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "시장 잠깐 출렁거려도 \"코스피 연내 1만2000\"…골드만삭스도 높였다\n 국내외 증권사, 목표가 줄상향 \"단기 조정에도 37% 추가 상승 여력\" 대만·인도 제치고 글로벌 톱5 증시 전망 '반도체' 삼성전자·SK하이닉스 외에도 방산·조선·전력·증권·유통주 아직 저평가 Getty Images Bank 코스피지수가 9천피 달성을 앞두고 있는 가운데 국내외 증권사의 하반기 목표 주가 전망도 잇따라 상향조정되고 있다. 국내 증권사들이 12,000을 베스트 시나리오로 보고 있는 가운데 골드만삭스도 ‘1만2천피’ 전망 대열에 참가했다. 반도체 기업의 막대한 실적을 기반으로 장이 계속 상승할 것으로 예상되는 가운데 하반기 옥석가리기가 본격화할 것이란 전망도 나온다. ◇올해 1만2천피 간다 글로벌 투자은행(IB) 골드만삭스는 최근 보고서에서 코스피 목표치를 9000에서 12,000으로 상향 조정했다. 골드만삭스는 “37%가량 추가 상승 여력이 있다”면서 “단기 조정 가능성도 존재하지만 투자 매력도는 여전히 높다”고 설명했다. 한국경제신문이 최근 하반기 코스피지수 목표치를 제시한 15개 증권사 전망을 분석한 결과 하반기 코스피지수는 10,546(목표치 또는 상단 평균)까지 오를 것으로 예측됐다. IBK증권과 현대차증권은 12,000까지 상승할 수 있을 것이란 전망을 내놨다. 김재승 현대차증권 연구원은 “개인 투자자의 상장지수펀드(ETF) 시장 참여가 늘어 하반기 대형주 중심의 강세장이 지속될 것”이라며 “반도체주 쏠림 현상으로 변동성이 커졌지만 실적 개선세를 고려하면 조정 시 저가 매수가 유리하다”고 말했다.",
+        "chunk_length": 789,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 71,
+        "chunk_index": 0,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:16:16\", \"chunk_index\": 0, \"document_type\": \"news_article\", \"title\": \"시장 잠깐 출렁거려도 \\\"코스피 연내 1만2000\\\"…골드만삭스도 높였다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296725?sid=101\"}",
+        "score": 0.234921,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3594,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 447,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": ", 코스트코 등 대형 오프라인 유통채널에 입점될 예정이다. 에이피알과 달바글로벌은 올해 주가가 각각 83%, 30% 오르는 데 그쳤으나 하반기에는 상승세를 확대할 것으로 기대된다. 강현기 DB증권 연구원은 “올해 하반기 필수소비재, 호텔레저, 화장품 등 다양한 업종에도 관심을 가져볼 만하다”며 “주가 상승으로 소비가 늘어나는 등 부의 이전 효과로 이들 업종이 긍정적인 영향을 받을 것”이라고 분석했다.",
+        "chunk_length": 225,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 71,
+        "chunk_index": 3,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:16:16\", \"chunk_index\": 3, \"document_type\": \"news_article\", \"title\": \"시장 잠깐 출렁거려도 \\\"코스피 연내 1만2000\\\"…골드만삭스도 높였다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296725?sid=101\"}",
+        "score": 0.234062,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3588,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 443,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "1% 오른 10만 8100원으로 장을 마쳤다. 이날 검색 상위 종목군은 대형 반도체주와 삼성 계열 강세, 일부 기술주와 로봇주의 약세가 동시에 나타나며 업종별 온도 차를 드러냈다. 특히 삼성전자, SK하이닉스, 삼성전기의 급등이 검색량과 주가를 함께 끌어올리며 마감 직후 투자자 관심을 주도했다. [서울신문과 MetaVX의 생성형 AI가 함께 작성한 기사입니다]",
+        "chunk_length": 202,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 72,
+        "chunk_index": 2,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"서울신문\", \"published_at\": \"2026-06-09 16:05:17\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"[서울데이터랩]마감 직후 인기 검색 종목 20選\", \"url\": \"https://n.news.naver.com/mnews/article/081/0003650937?sid=101\"}",
+        "score": 0.23085,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.3566,
+        "source_priority": "MEDIUM"
+      },
+      {
+        "chunk_id": 446,
+        "embedding_model": "text-embedding-3-small",
+        "embedding_dimension": 1536,
+        "chunk_text": "업종은 상반기 이란 사태로 신규 수주가 지연되고 있다”며 “하반기 신규 수주가 집중되며, 실적이 개선될 것”이라고 말했다. 이외에도 삼성전기와 테스 등이 반도체 유망주로 제시했다. 삼성전기가 생산하는 적층세라믹콘덴서(MLCC)가 인공지능(AI) 서버 및 데이터센터 증설로 판매 호조를 보일 것이란 이유에서다. 코스닥시장 상장사인 테스 역시 올 들어 주가가 두 배 이상 뛰었지만 추가 상승 여력이 있는 것으로 제시됐다. 반도체 웨이퍼 전공정 장비 수요가 늘며, 호실적이 이어질 것으로 예상된다. 현대차, 기아, 현대모비스 등 로봇주도 관심주로 꼽혔다. 나정환 연구원은 “로봇 역시 AI가 제조·노동 현장으로 확산되며, 시장 관심이 소프트웨어와 AI 하드웨어 분야로 옮겨갈 것”이라고 내다봤다. ◇고금리·고물가 대응도 필요 고금리와 고물가에 대응하기 위해 증권과 금융, 유통주를 제안하는 목소리도 많았다. 증권 업종에선 한국금융지주와 삼성증권 등이 관심주로 언급됐다. 한국금융지주는 증권을 비롯해 기타 자회사의 순이익이 급격히 늘어 실적과 주가가 뛸 것으로 기대된다. SK스퀘어와 SK㈜ 등도 지주사 관련주로 눈여겨볼 만한 주식으로 꼽혔다. SK스퀘어는 자회사인 SK하이닉스 호실적에 배당 매력이 부각되고 있다. 에이피알과 달바글로벌, 한국콜마 등은 화장품주 기대주로 꼽혔다. 에이피알은 올해 3분기 월마트, 코스트코 등 대형 오프라인 유통채널에 입점될 예정이다. 에이피알과 달바글로벌은 올해 주가가 각각 83%, 30% 오르는 데 그쳤으나 하반기에는 상승세를 확대할 것으로 기대된다.",
+        "chunk_length": 773,
+        "ticker": "012330",
+        "document_type": "news_article",
+        "source_table": "news_articles",
+        "source_id": 71,
+        "chunk_index": 2,
+        "metadata_json": "{\"ticker\": \"012330\", \"source\": \"한국경제\", \"published_at\": \"2026-06-09 16:16:16\", \"chunk_index\": 2, \"document_type\": \"news_article\", \"title\": \"시장 잠깐 출렁거려도 \\\"코스피 연내 1만2000\\\"…골드만삭스도 높였다\", \"url\": \"https://n.news.naver.com/mnews/article/015/0005296725?sid=101\"}",
+        "score": 0.228514,
+        "source": "document_chunks",
+        "priority": "MEDIUM",
+        "merge_score": 0.355,
+        "source_priority": "MEDIUM"
+      }
+    ],
+    "reasoning_context": [
+      "[뉴스] chunk #442",
+      "[뉴스] chunk #441",
+      "[뉴스] chunk #444",
+      "[뉴스] chunk #447",
+      "[뉴스] chunk #443",
+      "[뉴스] chunk #446"
+    ],
+    "source_breakdown": {
+      "DISCLOSURE": 0,
+      "NEWS": 6,
+      "OTHER": 0
+    },
+    "disclosure_collect_status": "failed",
+    "has_disclosure": false,
+    "disclosure_priority": "NONE"
+  },
+  "completed_at": "2026-06-09 16:32:41"
+}

@@ -24,41 +24,16 @@ PROJECT_ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_TEMPORAL_DIR = PROJECT_ROOT / "data" / "temporal_memory"
 LAYERED_DIR = PROJECT_ROOT / "data" / "layered_memory"
 IMPORTANCE_MODULE = PROJECT_ROOT / "src" / "rag" / "memory_importance"
+LAYERED_MODULE = PROJECT_ROOT / "src" / "rag" / "layered_memory"
 
 sys.path.insert(0, str(IMPORTANCE_MODULE))
+sys.path.insert(0, str(LAYERED_MODULE))
 from retention_policy import (  # noqa: E402
     should_promote_memory,
     get_promote_target_layer,
     PROMOTE_THRESHOLD,
 )
-
-
-def _save_to_layer(memory: dict, layer: str) -> Path | None:
-    """지정 Layer에 Memory를 저장한다."""
-    layer_dir = LAYERED_DIR / layer
-    layer_dir.mkdir(parents=True, exist_ok=True)
-
-    persona = memory.get("persona", "default")
-    filename = f"{persona}_{layer}.json"
-    filepath = layer_dir / filename
-
-    existing: list[dict] = []
-    if filepath.exists():
-        try:
-            with open(filepath, "r", encoding="utf-8") as f:
-                existing = json.load(f)
-        except (json.JSONDecodeError, Exception):
-            existing = []
-
-    mem_id = memory.get("memory_id", "")
-    existing = [m for m in existing if m.get("memory_id") != mem_id]
-    existing.append(memory)
-
-    with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(existing, f, ensure_ascii=False, indent=2)
-
-    logger.info("Layer 저장  %s  %s", layer, filepath.name)
-    return filepath
+from layered_store import move_memory_to_layer  # noqa: E402
 
 
 def _build_promotion_reasons(memory: dict, evolution: dict) -> list[str]:
@@ -145,16 +120,17 @@ def promote_memory(
 
     reasons = _build_promotion_reasons(memory, evolution)
     updated = apply_temporal_importance_update(memory, evolution)
-    updated["memory_layer"] = target
-    updated["previous_layer"] = previous
     updated["promoted_at"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    _save_to_layer(updated, target)
+    move_info = move_memory_to_layer(updated, target)
+    if not move_info:
+        return None
 
     record = {
         "memory_id": updated.get("memory_id", ""),
-        "previous_layer": previous,
-        "current_layer": target,
+        "previous_layer": move_info.get("previous_layer", previous),
+        "current_layer": move_info.get("current_layer", target),
+        "removed_from_layers": move_info.get("removed_from_layers", []),
         "promotion_reason": reasons,
         "importance_score": updated.get("importance_score", 0),
         "evolution_stage": evolution.get("evolution_stage", ""),

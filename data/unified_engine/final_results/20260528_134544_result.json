@@ -1,0 +1,232 @@
+{
+  "trace_id": "20260528_134544",
+  "query": "현대자동차 005380 전장 로봇 전기차",
+  "persona": "growth_investor",
+  "ticker": "005380",
+  "analysis_result": {
+    "persona": "growth_investor",
+    "query": "현대자동차 005380 전장 로봇 전기차",
+    "bullish_factors": [
+      "전기차 시장의 지속적인 성장과 기술 발전",
+      "글로벌 전장 로봇 시장 확대 가능성"
+    ],
+    "bearish_factors": [
+      "글로벌 경쟁 심화로 인한 시장 점유율 압박",
+      "내부 리스크로 인한 운영 부담"
+    ],
+    "risks": [
+      "정치적 불확실성과 무역 장벽",
+      "기술 혁신 실패로 인한 경쟁력 저하"
+    ],
+    "summary": "현대자동차의 전기차 및 전장 로봇 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으나, 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다.",
+    "referenced_chunks": [
+      {
+        "chunk_id": 24,
+        "document_type": "disclosure",
+        "score": 0.147193,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 25,
+        "document_type": "disclosure",
+        "score": 0.147193,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 26,
+        "document_type": "disclosure",
+        "score": 0.147193,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 27,
+        "document_type": "disclosure",
+        "score": 0.147193,
+        "ticker": "005380"
+      },
+      {
+        "chunk_id": 28,
+        "document_type": "disclosure",
+        "score": 0.147193,
+        "ticker": "005380"
+      }
+    ],
+    "model": "gpt-4o-mini"
+  },
+  "evaluation_result": {
+    "query": "현대자동차 005380 전장 로봇 전기차",
+    "retrieval_quality": {
+      "chunk_count": 5,
+      "score_stats": {
+        "min": 0.147193,
+        "max": 0.147193,
+        "avg": 0.147193,
+        "count": 5
+      },
+      "doc_type_distribution": {
+        "disclosure": 5
+      },
+      "has_relevant": false
+    },
+    "context_usage": {
+      "referenced_count": 5,
+      "context_overlap": {
+        "overlap_count": 0,
+        "total_chunks": 5,
+        "overlap_ratio": 0.0
+      },
+      "usage_rating": "weak"
+    },
+    "analysis_quality": {
+      "has_bullish": true,
+      "has_bearish": true,
+      "has_risks": true,
+      "has_summary": true,
+      "bullish_count": 2,
+      "bearish_count": 2,
+      "risks_count": 2,
+      "structure_complete": true
+    },
+    "hallucination_risk": {
+      "risk_level": "medium",
+      "reasons": [
+        "평균 retrieval score 낮음: 0.1472"
+      ],
+      "assertive_phrases": []
+    },
+    "scores": {
+      "retrieval_scores": [
+        0.147193,
+        0.147193,
+        0.147193,
+        0.147193,
+        0.147193
+      ],
+      "score_stats": {
+        "min": 0.147193,
+        "max": 0.147193,
+        "avg": 0.147193,
+        "count": 5
+      }
+    }
+  },
+  "reflection_result": {
+    "query": "현대자동차 005380 전장 로봇 전기차",
+    "persona": "growth_investor",
+    "reflection_summary": "분석은 현대자동차의 전기차 및 전장 로봇 부문에 대한 긍정적인 전망을 제시하고 있으나, 리스크 요소에 대한 깊이 있는 논의가 부족합니다. 또한, 과도한 낙관이 감지되며, 추가적인 리스크 요인과 Context가 필요합니다.",
+    "missing_risks": [
+      "원자재 가격 상승에 따른 생산 비용 증가",
+      "소비자 선호 변화에 따른 수요 감소",
+      "환율 변동 리스크",
+      "금리 변동 리스크",
+      "규제 변동 리스크"
+    ],
+    "overconfidence_detected": true,
+    "overconfidence_reasons": [
+      "전기차 시장 성장에 대한 지나친 기대",
+      "기술 발전이 항상 성공적으로 이루어질 것이라는 전제"
+    ],
+    "context_gaps": [
+      "경쟁사의 기술 발전 현황",
+      "글로벌 경제 상황 변화에 따른 영향",
+      "뉴스 데이터 미포함",
+      "Context 활용도 낮음"
+    ],
+    "improvement_suggestions": [
+      "리스크 분석을 보다 심층적으로 진행하여 다양한 시나리오를 고려할 것",
+      "경쟁사 분석 및 시장 동향에 대한 추가적인 데이터를 포함할 것"
+    ],
+    "model": "gpt-4o-mini",
+    "timestamp": "2026-05-28 13:45:52"
+  },
+  "memory_updates": {
+    "analysis_memory": {
+      "memory_type": "analysis_memory",
+      "query": "현대자동차 005380 전장 로봇 전기차",
+      "persona": "growth_investor",
+      "bullish_factors": [
+        "전기차 시장의 지속적인 성장과 기술 발전",
+        "글로벌 전장 로봇 시장 확대 가능성"
+      ],
+      "bearish_factors": [
+        "글로벌 경쟁 심화로 인한 시장 점유율 압박",
+        "내부 리스크로 인한 운영 부담"
+      ],
+      "risks": [
+        "정치적 불확실성과 무역 장벽",
+        "기술 혁신 실패로 인한 경쟁력 저하"
+      ],
+      "summary": "현대자동차의 전기차 및 전장 로봇 부문은 시장 성장과 기술 발전으로 긍정적인 전망을 보이고 있으나, 글로벌 경쟁과 내부 리스크가 운영에 부담을 줄 수 있는 요소로 작용할 수 있습니다.",
+      "referenced_chunks": [
+        {
+          "chunk_id": 24,
+          "document_type": "disclosure",
+          "score": 0.147193,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 25,
+          "document_type": "disclosure",
+          "score": 0.147193,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 26,
+          "document_type": "disclosure",
+          "score": 0.147193,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 27,
+          "document_type": "disclosure",
+          "score": 0.147193,
+          "ticker": "005380"
+        },
+        {
+          "chunk_id": 28,
+          "document_type": "disclosure",
+          "score": 0.147193,
+          "ticker": "005380"
+        }
+      ],
+      "model": "gpt-4o-mini",
+      "timestamp": "2026-05-28 13:45:52"
+    },
+    "layered_memory": {
+      "layer": "short_term",
+      "importance_score": 0.7,
+      "filepath": "C:\\Users\\oh_kim_family\\Desktop\\my_project\\finance_ai\\AlphaFin_light\\data\\layered_memory\\short_term\\growth_investor_short_term.json",
+      "memory_count": 9
+    },
+    "importance": {
+      "importance_score": 0.7,
+      "retention_action": "high_retention"
+    }
+  },
+  "temporal_result": {
+    "evolution": {
+      "memory_id": "analysis_memory_growth_investor_현대자동차_005380_전장_로봇_전_2026-05-28_13:45:52",
+      "current_layer": "short_term",
+      "reoccurrence_count": 1,
+      "has_reoccurrence": false,
+      "evolution_chains": [],
+      "long_term_signal": false,
+      "evolution_stage": "initial_event",
+      "tracked_at": "2026-05-28 13:45:52"
+    },
+    "action": "promote"
+  },
+  "event_graph": {
+    "node_count": 20,
+    "relation_count": 48,
+    "query": "현대자동차 005380 전장 로봇 전기차"
+  },
+  "stock_chain": {
+    "entity_count": 14,
+    "link_count": 59,
+    "propagation_paths": 95
+  },
+  "unified_context_length": 3721,
+  "retrieval_chunk_count": 5,
+  "completed_at": "2026-05-28 13:45:52"
+}

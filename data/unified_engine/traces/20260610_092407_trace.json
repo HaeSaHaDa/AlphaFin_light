@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260610_092407",
+  "query": "두산에너빌리티 034020",
+  "persona": "growth_investor",
+  "ticker": "034020",
+  "started_at": "2026-06-10 09:24:07",
+  "completed_at": "2026-06-10 09:24:21",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=6 disclosure=0",
+      "timestamp": "2026-06-10 09:24:07"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=4523",
+      "timestamp": "2026-06-10 09:24:07"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=3107",
+      "timestamp": "2026-06-10 09:24:08"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-10 09:24:17"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-10 09:24:17"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "두산에너빌리티에 대한 분석은 성장 가능성을 강조하고 있지만, 시장 약세와 외부 경제 요인에",
+      "timestamp": "2026-06-10 09:24:21"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-10 09:24:21"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.90",
+      "timestamp": "2026-06-10 09:24:21"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-10 09:24:21"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=8 rels=21",
+      "timestamp": "2026-06-10 09:24:21"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=21",
+      "timestamp": "2026-06-10 09:24:21"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 6,
+    "max_score": 0.392613
+  },
+  "reflection_summary": "두산에너빌리티에 대한 분석은 성장 가능성을 강조하고 있지만, 시장 약세와 외부 경제 요인에 대한 리스크를 충분히 반영하지 못하고 있습니다. 전반적으로 과도한 낙관이 감지됩니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

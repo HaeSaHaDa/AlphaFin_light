@@ -1,21 +1,13 @@
-import Link from "next/link";
 import { Activity } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { PresentationModeToggle } from "@/components/layout/presentation-mode-toggle";
-import { traceQueryHref } from "@/runtime-state/runtime-trace-store";
 
 interface DashboardNavProps {
   traceId: string | null;
   apiBase: string;
-  showAnalysisLink?: boolean;
 }
 
-export function DashboardNav({
-  traceId,
-  apiBase,
-  showAnalysisLink = true,
-}: DashboardNavProps) {
+/** 서브 페이지 제목·상태 (페이지 이동은 헤더 탭·사이드바 사용) */
+export function DashboardNav({ traceId, apiBase }: DashboardNavProps) {
   return (
     <header className="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-4">
       <div className="flex items-center gap-3">
@@ -32,29 +24,10 @@ export function DashboardNav({
         </div>
       </div>
       <div className="flex flex-wrap items-center gap-2 text-xs">
-        <PresentationModeToggle />
-        {showAnalysisLink && (
-          <>
-            <Button variant="outline" size="sm" asChild>
-              <Link href={traceQueryHref("/analysis", traceId)}>Analysis</Link>
-            </Button>
-            <Button variant="outline" size="sm" asChild>
-              <Link href={traceQueryHref("/event-graph", traceId)}>Event Graph</Link>
-            </Button>
-            <Button variant="outline" size="sm" asChild>
-              <Link href={traceQueryHref("/memory-timeline", traceId)}>시장 기억</Link>
-            </Button>
-            <Button variant="outline" size="sm" asChild>
-              <Link href={traceQueryHref("/signal-evaluation", traceId)}>
-                Signal 평가
-              </Link>
-            </Button>
-          </>
-        )}
         <Badge variant="secondary">API: {apiBase}</Badge>
-        {traceId && (
+        {traceId ? (
           <Badge variant="outline">trace: {traceId}</Badge>
-        )}
+        ) : null}
       </div>
     </header>
   );

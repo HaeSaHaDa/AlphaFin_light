@@ -6,6 +6,32 @@ import logging
 logger = logging.getLogger(__name__)
 
 
+def _matches_ticker(item: dict, ticker: str) -> bool:
+    if str(item.get("ticker") or "").strip() == ticker:
+        return True
+    if ticker in str(item.get("query") or ""):
+        return True
+    return any(
+        str(ref.get("ticker") or "").strip() == ticker
+        for ref in item.get("referenced_chunks", [])
+        if isinstance(ref, dict)
+    )
+
+
+def _filter_layers_by_ticker(
+    layers: dict[str, list[dict]],
+    ticker: str,
+) -> dict[str, list[dict]]:
+    return {
+        layer: [
+            item for item in items
+            if item.get("memory_type") == "event_memory"
+            and _matches_ticker(item, ticker)
+        ]
+        for layer, items in layers.items()
+    }
+
+
 def build_unified_context(state: dict) -> str:
     """Pipeline 상태에서 Unified Context 문자열을 생성한다."""
     parts: list[str] = ["[Unified Context]"]
@@ -44,34 +70,44 @@ def build_unified_context(state: dict) -> str:
 
 def load_enhancement_contexts(state: dict) -> dict:
     """기존 저장 데이터에서 보강 Context를 로드한다."""
-    from graph_store import load_related_graphs, build_graph_context  # noqa: E402
-    from reflection_store import load_reflections, build_reflection_context  # noqa: E402
+    from graph_store import load_related_graphs  # noqa: E402
+    from reflection_store import load_reflections  # noqa: E402
     from layered_retriever import retrieve_all_layers, build_layered_context  # noqa: E402
     from lifecycle_manager import build_temporal_context  # noqa: E402
     from layered_store import load_all_layers  # noqa: E402
-    from chain_store import load_related_chains, build_stock_chain_context  # noqa: E402
+    from chain_store import load_related_chains  # noqa: E402
 
     query = state.get("query", "")
-    ticker = state.get("ticker", "005930")
+    ticker = str(state.get("ticker") or "").strip()
+    if not ticker:
+        raise ValueError("ticker is required to load enhancement contexts")
     persona = state.get("persona", "growth_investor")
 
     graphs = load_related_graphs(ticker)
-    state["graph_context"] = build_graph_context(graphs) if graphs else ""
+    state["graph_context"] = ""
     state["event_graphs"] = graphs
 
-    reflections = load_reflections(persona)
-    state["reflection_context"] = build_reflection_context(reflections)
+    reflections = [
+        item for item in load_reflections(persona)
+        if _matches_ticker(item, ticker)
+    ]
+    state["reflection_context"] = ""
     state["reflections"] = reflections
 
-    layered = retrieve_all_layers(query, max_per_layer=2)
+    layered = retrieve_all_layers(
+        query,
+        max_per_layer=2,
+        ticker=ticker,
+        memory_type="event_memory",
+    )
     state["layered_context"] = build_layered_context(layered)
     state["layered_memories"] = layered
 
-    layers = load_all_layers()
+    layers = _filter_layers_by_ticker(load_all_layers(), ticker)
     state["temporal_context"] = build_temporal_context(layers)
 
     chains = load_related_chains(ticker)
-    state["stock_chain_context"] = build_stock_chain_context(chains)
+    state["stock_chain_context"] = ""
     state["stock_chains"] = chains
 
     logger.info(

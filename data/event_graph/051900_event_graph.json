@@ -1,0 +1,33 @@
+{
+  "query": "LG생활건강 051900",
+  "ticker": "051900",
+  "nodes": [
+    {
+      "name": "모바일",
+      "node_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-09 17:25:57"
+    },
+    {
+      "name": "경쟁 심화",
+      "node_type": "market_event",
+      "ticker": null,
+      "event_type": "competition_increase",
+      "created_at": "2026-06-09 17:25:57"
+    },
+    {
+      "name": "리스크",
+      "node_type": "market_event",
+      "ticker": null,
+      "event_type": "risk",
+      "created_at": "2026-06-09 17:25:57"
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "node_count": 3,
+    "relation_count": 0,
+    "created_at": "2026-06-09 17:25:57"
+  }
+}

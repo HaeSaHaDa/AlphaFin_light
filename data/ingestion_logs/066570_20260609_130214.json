@@ -1,0 +1,13 @@
+{
+  "ticker": "066570",
+  "company_name": "LG전자",
+  "corp_code": "00401731",
+  "status": "completed",
+  "documents": 90,
+  "chunks": 31,
+  "embeddings": 17,
+  "embeddings_created": 17,
+  "embeddings_skipped": 14,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

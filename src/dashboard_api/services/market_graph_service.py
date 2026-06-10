@@ -101,15 +101,25 @@ def _build_evidence_from_chunks(
     chunks: list[dict],
     ticker: str,
     relation_type: str,
+    disclosure_refs: list[dict] | None = None,
 ) -> list[str]:
     out: list[str] = []
     selected = [ch for ch in chunks if isinstance(ch, dict) and ch.get("ticker") == ticker][:2]
     for ch in selected:
-        out.append(
-            f"retrieval:{ch.get('document_type', 'doc')}#{ch.get('chunk_id', '?')}",
+        text = ch.get("text") or ch.get("chunk_text") or ""
+        label = (
+            ch.get("title")
+            or ch.get("report_name")
+            or (text.splitlines()[0].strip() if text else "")
+            or "근거 문서"
         )
+        out.append(label)
     if relation_type in ("EXPOSED_TO", "AFFECTED_BY"):
         out.append("analysis:risks")
+    for d in (disclosure_refs or [])[:2]:
+        out.append(
+            f"disclosure:{d.get('report_type','DOC')}#{d.get('chunk_id','?')}",
+        )
     return out[:3]
 
 
@@ -140,7 +150,9 @@ def _base_context(trace_id: str) -> tuple[dict, str, str, str, dict, list[dict],
     query = result.get("query") or ""
     company = parse_company_name(query, ticker) or ticker
     analysis = result.get("analysis_result") or {}
-    chunks = analysis.get("referenced_chunks") or []
+    from .retrieval_service import hydrate_retrieval_chunks
+
+    chunks = hydrate_retrieval_chunks(result)
     chain_file = load_stock_chain_file(trace_id) or {}
     centered = build_ticker_centric_chain(
         chain_file, ticker, query, retrieval_chunks=chunks,
@@ -153,6 +165,12 @@ def build_market_graph_by_trace(trace_id: str) -> dict | None:
     result, ticker, query, center_name, analysis, chunks, centered = _base_context(trace_id)
     if not result:
         return None
+    try:
+        from src.disclosure.disclosure_retriever import retrieve_disclosure_chunks
+
+        disclosure_refs = retrieve_disclosure_chunks(ticker, query, top_k=3)
+    except Exception:
+        disclosure_refs = []
 
     nodes: list[dict] = []
     edges: list[dict] = []
@@ -241,7 +259,7 @@ def build_market_graph_by_trace(trace_id: str) -> dict | None:
         edge_type = _map_relation(ln.get("relation_type"))
         relevance = _relevance(ln.get("impact_score"))
         reason = str(ln.get("relation_type") or edge_type)
-        evidence = _build_evidence_from_chunks(chunks, ticker, edge_type)
+        evidence = _build_evidence_from_chunks(chunks, ticker, edge_type, disclosure_refs)
         if src not in seen_nodes:
             add_node(src, src, "theme", relevance=relevance)
         if tgt not in seen_nodes:
@@ -269,7 +287,7 @@ def build_market_graph_by_trace(trace_id: str) -> dict | None:
             "COMPETES_WITH",
             0.72,
             reason="동종 company 연결",
-            evidence=_build_evidence_from_chunks(chunks, ticker, "COMPETES_WITH"),
+            evidence=_build_evidence_from_chunks(chunks, ticker, "COMPETES_WITH", disclosure_refs),
         )
 
     risks: list[str] = []
@@ -291,7 +309,7 @@ def build_market_graph_by_trace(trace_id: str) -> dict | None:
             "EXPOSED_TO",
             0.78,
             reason="analysis risks",
-            evidence=_build_evidence_from_chunks(chunks, ticker, "EXPOSED_TO"),
+            evidence=_build_evidence_from_chunks(chunks, ticker, "EXPOSED_TO", disclosure_refs),
         )
 
     themes: list[str] = []
@@ -320,7 +338,7 @@ def build_market_graph_by_trace(trace_id: str) -> dict | None:
             "AFFECTED_BY",
             0.7,
             reason="query/theme",
-            evidence=_build_evidence_from_chunks(chunks, ticker, "AFFECTED_BY"),
+            evidence=_build_evidence_from_chunks(chunks, ticker, "AFFECTED_BY", disclosure_refs),
         )
 
     # Macro dictionary 기반 관계 생성 (query + risks 기반)
@@ -338,7 +356,7 @@ def build_market_graph_by_trace(trace_id: str) -> dict | None:
                 macro_relation,
                 0.82,
                 reason=f"macro keyword:{token}",
-                evidence=_build_evidence_from_chunks(chunks, ticker, macro_relation),
+                evidence=_build_evidence_from_chunks(chunks, ticker, macro_relation, disclosure_refs),
             )
         else:
             add_edge(
@@ -347,7 +365,7 @@ def build_market_graph_by_trace(trace_id: str) -> dict | None:
                 macro_relation,
                 0.8,
                 reason=f"macro keyword:{token}",
-                evidence=_build_evidence_from_chunks(chunks, ticker, macro_relation),
+                evidence=_build_evidence_from_chunks(chunks, ticker, macro_relation, disclosure_refs),
             )
         seen_theme.add(label)
 

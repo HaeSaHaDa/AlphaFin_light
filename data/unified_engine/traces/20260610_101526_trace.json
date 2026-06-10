@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260610_101526",
+  "query": "삼성전자 005930",
+  "persona": "growth_investor",
+  "ticker": "005930",
+  "started_at": "2026-06-10 10:15:26",
+  "completed_at": "2026-06-10 10:15:36",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=11 disclosure=5",
+      "timestamp": "2026-06-10 10:15:26"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=8430",
+      "timestamp": "2026-06-10 10:15:26"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=3104",
+      "timestamp": "2026-06-10 10:15:26"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-10 10:15:31"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-10 10:15:31"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 삼성전자의 성장 가능성과 리스크를 잘 설명하고 있으나, 과도한 낙관이 감지됩니다. ",
+      "timestamp": "2026-06-10 10:15:36"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-10 10:15:36"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.90",
+      "timestamp": "2026-06-10 10:15:36"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-10 10:15:36"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=8 rels=21",
+      "timestamp": "2026-06-10 10:15:36"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=21",
+      "timestamp": "2026-06-10 10:15:36"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 11,
+    "max_score": 0.7668
+  },
+  "reflection_summary": "분석은 삼성전자의 성장 가능성과 리스크를 잘 설명하고 있으나, 과도한 낙관이 감지됩니다. 특정 리스크와 Context 부족 영역이 존재하여 분석의 깊이가 부족합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

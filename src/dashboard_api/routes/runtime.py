@@ -10,6 +10,11 @@ from src.runtime_flow.dashboard_response_builder import build_dashboard_bundle
 from src.runtime_flow.runtime_query_runner import run_runtime_query
 from src.runtime_flow.trace_manager import trace_exists
 
+from ..services.runtime_context_service import (
+    fetch_runtime_context_by_trace,
+    fetch_runtime_evidence_by_trace,
+)
+
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/runtime", tags=["runtime"])
 
@@ -45,6 +50,32 @@ def get_runtime_dashboard(trace_id: str) -> dict:
         raise HTTPException(status_code=404, detail="Dashboard 데이터 없음")
     logger.info("GET /api/runtime/dashboard/%s  ticker=%s", trace_id, bundle.get("ticker"))
     return bundle
+
+
+@router.get("/context/{trace_id}")
+def get_runtime_context_by_id(trace_id: str) -> dict:
+    data = fetch_runtime_context_by_trace(trace_id)
+    if not data:
+        raise HTTPException(status_code=404, detail=f"trace_id={trace_id} 없음")
+    logger.info(
+        "GET /api/runtime/context/%s  disclosure=%s",
+        trace_id,
+        data.get("has_disclosure"),
+    )
+    return data
+
+
+@router.get("/evidence/{trace_id}")
+def get_runtime_evidence(trace_id: str) -> dict:
+    data = fetch_runtime_evidence_by_trace(trace_id)
+    if not data:
+        raise HTTPException(status_code=404, detail=f"trace_id={trace_id} 없음")
+    logger.info(
+        "GET /api/runtime/evidence/%s  merged=%d",
+        trace_id,
+        len(data.get("merged_evidence", [])),
+    )
+    return data
 
 
 @router.get("/context")

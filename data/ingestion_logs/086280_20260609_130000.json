@@ -1,0 +1,13 @@
+{
+  "ticker": "086280",
+  "company_name": "현대글로비스",
+  "corp_code": "00344287",
+  "status": "completed",
+  "documents": 52,
+  "chunks": 15,
+  "embeddings": 9,
+  "embeddings_created": 9,
+  "embeddings_skipped": 6,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

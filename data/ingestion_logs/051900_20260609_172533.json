@@ -1,0 +1,13 @@
+{
+  "ticker": "051900",
+  "company_name": "LG생활건강",
+  "corp_code": "00188421",
+  "status": "completed",
+  "documents": 40,
+  "chunks": 5,
+  "embeddings": 5,
+  "embeddings_created": 5,
+  "embeddings_skipped": 0,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

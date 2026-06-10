@@ -1,0 +1,9 @@
+{
+  "ticker": "012330",
+  "company_name": "현대모비스",
+  "status": "completed",
+  "documents": 2,
+  "chunks": 7,
+  "embeddings": 7,
+  "completed_at": "2026-06-09 16:21:33"
+}

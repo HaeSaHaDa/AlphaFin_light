@@ -3,6 +3,7 @@ import {
   EMPTY_DASHBOARD,
   type RuntimeTraceState,
 } from "./runtime-trace-store";
+import { extractTickerMetaFromDashboard } from "./runtime-ticker-meta";
 
 /** query 실행 전 전체 상태 초기화 */
 export function resetRuntimeForNewQuery(
@@ -16,7 +17,7 @@ export function resetRuntimeForNewQuery(
     companyName,
     phase: "running_query",
     panelStatus: "loading",
-    loadingMessage: "종목 분석 실행 중…",
+    loadingMessage: "뉴스·공시 Retrieval 및 Runtime 분석 실행 중…",
   };
 }
 
@@ -26,7 +27,7 @@ export function beginPanelLoad(state: RuntimeTraceState): RuntimeTraceState {
     ...state,
     phase: "loading_panels",
     panelStatus: "loading",
-    loadingMessage: "뉴스 검색 · AI reasoning · 패널 동기화 중…",
+    loadingMessage: "뉴스 Retrieval · 공시 Retrieval · Event Consolidation · 패널 동기화 중…",
     data: EMPTY_DASHBOARD,
     signal: null,
   };
@@ -42,12 +43,18 @@ export function applyPanelBundle(
     runtimeQuery?: string;
   },
 ): RuntimeTraceState {
+  const meta = extractTickerMetaFromDashboard(bundle.data, bundle.runtimeQuery, {
+    selectedTicker: state.selectedTicker,
+    companyName: state.companyName,
+  });
   return {
     ...state,
     traceId: bundle.traceId,
     data: bundle.data,
     signal: bundle.signal,
-    runtimeQuery: bundle.runtimeQuery ?? state.runtimeQuery,
+    selectedTicker: meta.selectedTicker ?? state.selectedTicker,
+    companyName: meta.companyName ?? state.companyName,
+    runtimeQuery: meta.runtimeQuery ?? bundle.runtimeQuery ?? state.runtimeQuery,
     phase: "ready",
     panelStatus: "success",
     loadingMessage: null,

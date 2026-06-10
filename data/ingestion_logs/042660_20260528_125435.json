@@ -1,0 +1,13 @@
+{
+  "ticker": "042660",
+  "company_name": "한화오션",
+  "corp_code": "00111722",
+  "status": "completed",
+  "documents": 46,
+  "chunks": 12,
+  "embeddings": 12,
+  "embeddings_created": 12,
+  "embeddings_skipped": 0,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

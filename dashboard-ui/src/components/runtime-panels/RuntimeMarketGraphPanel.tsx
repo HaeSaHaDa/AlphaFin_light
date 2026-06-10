@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { SecondaryActionButton } from "@/components/ui-cleanup/SecondaryActionButton";
 import { MarketRelationshipGraph } from "@/components/market-graph/MarketRelationshipGraph";
 import { MarketGraphLegend } from "@/components/market-graph/MarketGraphLegend";
 import { MarketGraphToolbar } from "@/components/market-graph/MarketGraphToolbar";
@@ -44,7 +44,7 @@ export function RuntimeMarketGraphPanel({ traceId, status }: Props) {
       status={panelStatus}
       title="시장 관계 그래프"
     >
-      <div id="section-graph" className="scroll-mt-20 space-y-3">
+      <div className="dash-panel dash-panel-graph space-y-3 p-4 md:p-5">
         {payload?.center_company && (
           <p className="text-xs text-muted-foreground">
             중심:{" "}
@@ -73,11 +73,11 @@ export function RuntimeMarketGraphPanel({ traceId, status }: Props) {
         </div>
         <MarketInsightPanel insight={marketInsight} riskExposure={riskExposure} />
         {traceId && (
-          <Button variant="outline" size="sm" asChild>
+          <SecondaryActionButton asChild>
             <Link href={traceQueryHref("/event-graph", traceId)}>
-              전체 화면 그래프
+              그래프 전체 화면
             </Link>
-          </Button>
+          </SecondaryActionButton>
         )}
       </div>
     </RuntimePanelShell>

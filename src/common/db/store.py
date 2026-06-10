@@ -7,7 +7,10 @@ from datetime import datetime
 
 import pymysql
 
-from connection import get_connection
+try:
+    from .connection import get_connection
+except ImportError:
+    from connection import get_connection
 
 logger = logging.getLogger(__name__)
 

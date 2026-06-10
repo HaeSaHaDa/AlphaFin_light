@@ -1,0 +1,487 @@
+{
+  "query": "SK스퀘어 402340 반도체",
+  "ticker": "402340",
+  "entities": [
+    {
+      "name": "삼성전자",
+      "entity_type": "company",
+      "ticker": "005930",
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "SK하이닉스",
+      "entity_type": "company",
+      "ticker": "000660",
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "반도체",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "메모리",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "AI",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "서버",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "데이터센터",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "IT",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "HBM",
+      "entity_type": "product",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "DRAM",
+      "entity_type": "product",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "AI 서버",
+      "entity_type": "product",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "demand increase",
+      "entity_type": "market_event",
+      "ticker": null,
+      "event_type": "demand_increase",
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "investment expansion",
+      "entity_type": "market_event",
+      "ticker": null,
+      "event_type": "investment_expansion",
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "rate hike",
+      "entity_type": "market_event",
+      "ticker": null,
+      "event_type": "rate_hike",
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "name": "공급망",
+      "entity_type": "supply_chain",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-05-28 16:06:13"
+    }
+  ],
+  "links": [
+    {
+      "source": "GPU",
+      "target": "AI 서버",
+      "relation_type": "demand_propagation",
+      "impact_score": 0.82,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "AI 서버",
+      "target": "HBM",
+      "relation_type": "demand_propagation",
+      "impact_score": 0.88,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "HBM",
+      "target": "삼성전자",
+      "relation_type": "supply",
+      "impact_score": 0.8,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "HBM",
+      "target": "SK하이닉스",
+      "relation_type": "supply",
+      "impact_score": 0.78,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "HBM",
+      "target": "DRAM",
+      "relation_type": "product_link",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "DRAM",
+      "target": "dram price",
+      "relation_type": "price_impact",
+      "impact_score": 0.72,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "삼성전자",
+      "target": "반도체",
+      "relation_type": "industry_link",
+      "impact_score": 0.7,
+      "source_ticker": "005930",
+      "target_ticker": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "반도체",
+      "target": "메모리",
+      "relation_type": "industry_link",
+      "impact_score": 0.68,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "AI",
+      "target": "서버",
+      "relation_type": "industry_link",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "서버",
+      "target": "데이터센터",
+      "relation_type": "industry_link",
+      "impact_score": 0.72,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "메모리",
+      "target": "반도체",
+      "relation_type": "industry_link",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "rate hike",
+      "target": "IT",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "IT",
+      "target": "반도체",
+      "relation_type": "demand_decrease",
+      "impact_score": 0.68,
+      "source_ticker": null,
+      "target_ticker": null,
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "반도체",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "created_at": "2026-05-28 16:06:13"
+    },
+    {
+      "source": "수요 증가",
+      "target": "HBM",
+      "relation_type": "demand_increase",
+      "impact_score": 0.8,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "수요 증가",
+      "target": "DRAM",
+      "relation_type": "demand_increase",
+      "impact_score": 0.8,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "시장 성장",
+      "target": "HBM",
+      "relation_type": "demand_increase",
+      "impact_score": 0.8,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "시장 성장",
+      "target": "DRAM",
+      "relation_type": "demand_increase",
+      "impact_score": 0.8,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "DRAM",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "DRAM",
+      "target": "SK하이닉스",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "경쟁 심화",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "경쟁 심화",
+      "target": "SK하이닉스",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "반도체",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "메모리",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "메모리",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "서버",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "서버",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "데이터센터",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "데이터센터",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "자동차",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "자동차",
+      "target": "SK하이닉스",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "삼성전자",
+      "target": "SK하이닉스",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "005930",
+      "target_ticker": "000660",
+      "from_event_graph": true
+    },
+    {
+      "source": "SK하이닉스",
+      "target": "삼성전자",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "000660",
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI 반도체 및 HBM 수요 증가로 긍정적인 성장 가능성",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "K컬처의 영향으로 해외 시장 확대 기대",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "반도체 산업의 불안정성과 글로벌 경쟁 심화",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "노조의 반발과 파업 우려가 운영에 리스크 초래",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "정치적 불확실성과 글로벌 경제 둔화",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "기술 발전 속도의 불확실성",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    }
+  ],
+  "metadata": {
+    "entity_count": 15,
+    "link_count": 41,
+    "created_at": "2026-05-28 16:06:13"
+  }
+}

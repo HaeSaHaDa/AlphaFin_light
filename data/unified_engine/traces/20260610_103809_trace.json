@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260610_103809",
+  "query": "SK하이닉스 000660 엔비디아 삼성 마이크론",
+  "persona": "growth_investor",
+  "ticker": "000660",
+  "started_at": "2026-06-10 10:38:09",
+  "completed_at": "2026-06-10 10:38:22",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=11 disclosure=5",
+      "timestamp": "2026-06-10 10:38:09"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=5660",
+      "timestamp": "2026-06-10 10:38:09"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=3119",
+      "timestamp": "2026-06-10 10:38:09"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-10 10:38:15"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-10 10:38:15"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 SK하이닉스의 긍정적인 시장 반응과 외부 요인에 대한 우려를 잘 반영하고 있으나, ",
+      "timestamp": "2026-06-10 10:38:22"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-10 10:38:22"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.70",
+      "timestamp": "2026-06-10 10:38:22"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-10 10:38:22"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=7 rels=26",
+      "timestamp": "2026-06-10 10:38:22"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=26",
+      "timestamp": "2026-06-10 10:38:22"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 11,
+    "max_score": 0.5861
+  },
+  "reflection_summary": "분석은 SK하이닉스의 긍정적인 시장 반응과 외부 요인에 대한 우려를 잘 반영하고 있으나, 과도한 낙관이 감지됩니다. 리스크 요소가 충분히 다뤄지지 않았고, 전체적인 맥락이 부족합니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

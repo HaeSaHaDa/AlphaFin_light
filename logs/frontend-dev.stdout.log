@@ -1,0 +1,181 @@
+
+> alphafin-dashboard-ui@0.1.0 dev
+> next dev --port 3000
+
+   ▲ Next.js 15.5.18
+   - Local:        http://localhost:3000
+   - Network:      http://172.30.1.60:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 2.1s
+ ○ Compiling / ...
+ ✓ Compiled / in 3s (2164 modules)
+ GET / 200 in 3731ms
+ GET / 200 in 82ms
+ GET /?trace_id=20260609_124221 200 in 155ms
+ GET /?trace_id=20260609_124221 200 in 170ms
+ ○ Compiling /analysis ...
+ ✓ Compiled /analysis in 892ms (2214 modules)
+ GET /analysis?trace_id=20260609_124221 200 in 1355ms
+ ○ Compiling /event-graph ...
+ ✓ Compiled /event-graph in 508ms (2222 modules)
+ GET /event-graph?trace_id=20260609_124221 200 in 979ms
+ ✓ Compiled /memory-timeline in 434ms (2252 modules)
+ GET /memory-timeline?trace_id=20260609_124221 200 in 647ms
+ ✓ Compiled /signal-evaluation in 465ms (2276 modules)
+ GET /signal-evaluation?trace_id=20260609_124221 200 in 775ms
+ ✓ Compiled in 3.9s (2291 modules)
+ ✓ Compiled in 841ms (2291 modules)
+ GET /?trace_id=20260609_124221 200 in 589ms
+ GET /analysis?trace_id=20260609_124221 200 in 93ms
+ GET /event-graph?trace_id=20260609_124221 200 in 137ms
+ GET /memory-timeline?trace_id=20260609_124221 200 in 94ms
+ GET /signal-evaluation?trace_id=20260609_124221 200 in 84ms
+ GET /?trace_id=20260609_154829 200 in 85ms
+ GET /?trace_id=20260609_154829 200 in 78ms
+ GET /analysis?trace_id=20260609_154829 200 in 70ms
+ GET /event-graph?trace_id=20260609_154829 200 in 64ms
+ GET /memory-timeline?trace_id=20260609_154829 200 in 81ms
+ GET /signal-evaluation?trace_id=20260609_154829 200 in 59ms
+ ✓ Compiled in 1755ms (2291 modules)
+ GET /?trace_id=20260609_154829 200 in 440ms
+ GET /?trace_id=20260609_154829 200 in 94ms
+ GET / 200 in 316ms
+ GET / 200 in 70ms
+ GET /event-graph 200 in 124ms
+ GET /memory-timeline 200 in 81ms
+ GET /signal-evaluation 200 in 84ms
+ GET /analysis 200 in 117ms
+ GET / 200 in 76ms
+ ✓ Compiled in 2.7s (2285 modules)
+ GET / 200 in 120ms
+ GET / 200 in 1293ms
+ GET /analysis?trace_id=20260609_154829 200 in 252ms
+ GET /?trace_id=20260609_155431 200 in 182ms
+ GET /?trace_id=20260609_155431 200 in 1086ms
+ GET /?trace_id=20260609_155544 200 in 94ms
+ ○ Compiling /event-graph ...
+ ✓ Compiled /event-graph in 1521ms (1163 modules)
+ GET /event-graph?trace_id=20260609_155544 200 in 2283ms
+ GET /event-graph?trace_id=20260609_155544 200 in 91ms
+ GET /event-graph?trace_id=20260609_155544 200 in 67ms
+ ○ Compiling /memory-timeline ...
+ ✓ Compiled /memory-timeline in 589ms (1180 modules)
+ GET /memory-timeline?trace_id=20260609_155544 200 in 791ms
+ ○ Compiling /signal-evaluation ...
+ ✓ Compiled /signal-evaluation in 533ms (1194 modules)
+ GET /signal-evaluation?trace_id=20260609_155544 200 in 692ms
+ GET /?trace_id=20260609_155544 200 in 142ms
+ GET /memory-timeline?trace_id=20260609_155544 200 in 112ms
+ ✓ Compiled in 1685ms (2269 modules)
+ GET /memory-timeline?trace_id=20260609_155544 200 in 171ms
+ ✓ Compiled in 3.3s (2269 modules)
+ GET /memory-timeline?trace_id=20260609_155544 200 in 59ms
+ GET /?trace_id=20260609_154829 200 in 504ms
+ GET /?trace_id=20260609_154829 200 in 134ms
+ ○ Compiling /analysis ...
+ ✓ Compiled /analysis in 608ms (1216 modules)
+ GET /analysis?trace_id=20260609_154829 200 in 997ms
+ GET /event-graph?trace_id=20260609_154829 200 in 103ms
+ GET /memory-timeline?trace_id=20260609_154829 200 in 66ms
+ GET /signal-evaluation?trace_id=20260609_154829 200 in 69ms
+ GET /?trace_id=20260609_155544 200 in 267ms
+ GET /?trace_id=20260609_155544 200 in 1048ms
+ GET /?trace_id=20260609_154829 200 in 74ms
+ GET /analysis?trace_id=20260609_154829 200 in 65ms
+ GET /event-graph?trace_id=20260609_154829 200 in 74ms
+ GET /memory-timeline?trace_id=20260609_154829 200 in 97ms
+ GET /signal-evaluation?trace_id=20260609_154829 200 in 56ms
+ ✓ Compiled in 1801ms (2291 modules)
+ GET /?trace_id=20260609_155544 200 in 139ms
+ GET /?trace_id=20260609_154829 200 in 746ms
+ GET /?trace_id=20260609_154829 200 in 136ms
+ GET /analysis?trace_id=20260609_154829 200 in 155ms
+ GET /event-graph?trace_id=20260609_154829 200 in 127ms
+ GET /memory-timeline?trace_id=20260609_154829 200 in 125ms
+ GET /signal-evaluation?trace_id=20260609_154829 200 in 109ms
+ GET /?trace_id=20260609_155544 200 in 134ms
+ ✓ Compiled in 2.9s (2223 modules)
+ GET /?trace_id=20260609_155544 200 in 104ms
+ GET /?trace_id=20260609_154829 200 in 215ms
+ GET /?trace_id=20260609_154829 200 in 66ms
+ ✓ Compiled /analysis in 223ms (1196 modules)
+ GET /analysis?trace_id=20260609_154829 200 in 524ms
+ GET /event-graph?trace_id=20260609_154829 200 in 139ms
+ GET /memory-timeline?trace_id=20260609_154829 200 in 57ms
+ GET /signal-evaluation?trace_id=20260609_154829 200 in 68ms
+ GET /analysis?trace_id=20260609_155544 200 in 48ms
+ GET /event-graph?trace_id=20260609_155544 200 in 28ms
+ GET /?trace_id=20260609_155544 200 in 40ms
+ GET /memory-timeline?trace_id=20260609_155544 200 in 174ms
+ GET /signal-evaluation?trace_id=20260609_155544 200 in 35ms
+ GET /memory-timeline?trace_id=20260609_155544 200 in 34ms
+ GET /event-graph?trace_id=20260609_155544 200 in 288ms
+ GET /analysis?trace_id=20260609_155544 200 in 67ms
+ GET /memory-timeline?trace_id=20260609_155544 200 in 35ms
+ ✓ Compiled in 602ms (1055 modules)
+ GET /memory-timeline?trace_id=20260609_155544 200 in 34ms
+ GET /event-graph?trace_id=20260609_155544 200 in 40ms
+ GET /?trace_id=20260609_155544 200 in 33ms
+ GET /memory-timeline?trace_id=20260609_155544 200 in 44ms
+ GET / 200 in 98ms
+ GET /?trace_id=20260609_155544 200 in 35ms
+ GET /memory-timeline?trace_id=20260609_155544 200 in 78ms
+ GET /memory-timeline?trace_id=20260609_155544 200 in 183ms
+ GET /memory-timeline?trace_id=20260609_155431 200 in 146ms
+ GET /?trace_id=20260609_155544 200 in 39ms
+ GET /memory-timeline?trace_id=20260609_155431 200 in 66ms
+ ✓ Compiled in 2.1s (2251 modules)
+ GET /?trace_id=20260609_155544 200 in 108ms
+ ✓ Compiled in 1043ms (2251 modules)
+ GET /?trace_id=20260609_155544 200 in 109ms
+ GET /?trace_id=20260609_161931 200 in 45ms
+ GET /?trace_id=20260609_154829 200 in 223ms
+ GET /?trace_id=20260609_161931 200 in 311ms
+ GET /?trace_id=20260609_161931 200 in 143ms
+ GET / 200 in 217ms
+ GET /?trace_id=20260609_162133 200 in 32ms
+ ✓ Compiled in 2.2s (2251 modules)
+ GET /?trace_id=20260609_162133 200 in 166ms
+ GET /?trace_id=20260609_154829 200 in 219ms
+ GET /?trace_id=20260609_154829 200 in 61ms
+ GET /event-graph?trace_id=20260609_162133 200 in 53ms
+ GET /analysis?trace_id=20260609_162133 200 in 154ms
+ GET /?trace_id=20260609_162133 200 in 34ms
+ ✓ Compiled in 2.4s (2251 modules)
+ GET /?trace_id=20260609_162133 200 in 309ms
+ GET /?trace_id=20260609_162133 200 in 401ms
+ GET /?trace_id=20260609_163006 200 in 34ms
+ GET /?trace_id=20260609_154829 200 in 129ms
+ GET /analysis?trace_id=20260609_163006 200 in 52ms
+ GET /memory-timeline?trace_id=20260609_163006 200 in 42ms
+ GET /memory-timeline?trace_id=20260609_163006 200 in 54ms
+ GET /signal-evaluation?trace_id=20260609_163006 200 in 144ms
+ GET /signal-evaluation?trace_id=20260609_163006 200 in 365ms
+ GET /?trace_id=20260609_163231 200 in 25ms
+ GET /memory-timeline?trace_id=20260609_163231 200 in 37ms
+ GET /?trace_id=20260609_163231 200 in 175ms
+ GET /memory-timeline?trace_id=20260609_163231 200 in 55ms
+ ✓ Compiled in 2.5s (2251 modules)
+ GET /memory-timeline?trace_id=20260609_163231 200 in 128ms
+ GET /?trace_id=20260609_163540 200 in 38ms
+ GET /memory-timeline?trace_id=20260609_163343 200 in 186ms
+ GET /memory-timeline?trace_id=20260609_163343 200 in 45ms
+ GET / 200 in 205ms
+ GET /?trace_id=20260609_164938 200 in 49ms
+ GET /memory-timeline?trace_id=20260609_164938 200 in 28ms
+ GET /event-graph?trace_id=20260609_164938 200 in 43ms
+ GET /?trace_id=20260609_164938 200 in 37ms
+ GET /?trace_id=20260609_165157 200 in 33ms
+ GET /?trace_id=20260609_165157 200 in 170ms
+ GET /analysis?trace_id=20260609_165157 200 in 82ms
+ GET / 200 in 94ms
+ GET /?trace_id=20260609_165256 200 in 25ms
+ ✓ Compiled in 2.7s (2251 modules)
+ GET /?trace_id=20260609_165256 200 in 403ms
+ GET / 200 in 169ms
+ GET /?trace_id=20260609_172043 200 in 44ms
+ GET / 200 in 54ms
+ GET / 200 in 142ms
+ GET /?trace_id=20260609_172533 200 in 41ms

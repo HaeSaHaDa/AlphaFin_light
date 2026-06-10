@@ -1,0 +1,306 @@
+{
+  "query": "현대글로비스 086280",
+  "ticker": "086280",
+  "entities": [
+    {
+      "name": "삼성전자",
+      "entity_type": "company",
+      "ticker": "005930",
+      "event_type": null,
+      "created_at": "2026-06-09 16:52:08"
+    },
+    {
+      "name": "NVIDIA",
+      "entity_type": "company",
+      "ticker": "NVDA",
+      "event_type": null,
+      "created_at": "2026-06-09 16:52:08"
+    },
+    {
+      "name": "반도체",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-09 16:52:08"
+    },
+    {
+      "name": "AI",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-09 16:52:08"
+    },
+    {
+      "name": "서버",
+      "entity_type": "industry",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-09 16:52:08"
+    },
+    {
+      "name": "HBM",
+      "entity_type": "product",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-09 16:52:08"
+    },
+    {
+      "name": "AI 서버",
+      "entity_type": "product",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-09 16:52:08"
+    },
+    {
+      "name": "demand increase",
+      "entity_type": "market_event",
+      "ticker": null,
+      "event_type": "demand_increase",
+      "created_at": "2026-06-09 16:52:08"
+    },
+    {
+      "name": "investment expansion",
+      "entity_type": "market_event",
+      "ticker": null,
+      "event_type": "investment_expansion",
+      "created_at": "2026-06-09 16:52:08"
+    },
+    {
+      "name": "price increase",
+      "entity_type": "price_change",
+      "ticker": null,
+      "event_type": "price_increase",
+      "created_at": "2026-06-09 16:52:08"
+    },
+    {
+      "name": "공급망",
+      "entity_type": "supply_chain",
+      "ticker": null,
+      "event_type": null,
+      "created_at": "2026-06-09 16:52:08"
+    }
+  ],
+  "links": [
+    {
+      "source": "수요 증가",
+      "target": "HBM",
+      "relation_type": "demand_increase",
+      "impact_score": 0.8,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "시장 성장",
+      "target": "HBM",
+      "relation_type": "demand_increase",
+      "impact_score": 0.8,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "HBM",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "HBM",
+      "target": "엔비디아",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "가격 상승",
+      "target": "삼성전자",
+      "relation_type": "price_impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "가격 상승",
+      "target": "엔비디아",
+      "relation_type": "price_impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "경쟁 심화",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "경쟁 심화",
+      "target": "엔비디아",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "반도체",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "반도체",
+      "target": "엔비디아",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "AI",
+      "target": "엔비디아",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "서버",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "서버",
+      "target": "엔비디아",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "자동차",
+      "target": "삼성전자",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "자동차",
+      "target": "엔비디아",
+      "relation_type": "impact",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "삼성전자",
+      "target": "엔비디아",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "005930",
+      "target_ticker": "NVDA",
+      "from_event_graph": true
+    },
+    {
+      "source": "엔비디아",
+      "target": "삼성전자",
+      "relation_type": "competition",
+      "impact_score": 0.6,
+      "source_ticker": "NVDA",
+      "target_ticker": "005930",
+      "from_event_graph": true
+    },
+    {
+      "source": "현대차그룹의 로봇 밸류체인에 대한 집중 투자로 인한 시너지 효과",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "로봇 산업의 빠른 성장과 현대글로비스의 핵심 계열사 지분 보유로 인한 시",
+      "target": "삼성전자",
+      "relation_type": "benefit",
+      "impact_score": 0.75,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "글로벌 경제 둔화에 따른 수요 감소 리스크",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "경쟁 심화로 인한 시장 점유율 확대의 어려움",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.7,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "정책 변화에 따른 규제 리스크",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    },
+    {
+      "source": "기술 변화에 따른 시장 수요 변화 리스크",
+      "target": "삼성전자",
+      "relation_type": "risk_propagation",
+      "impact_score": 0.65,
+      "source_ticker": null,
+      "target_ticker": null,
+      "from_event_graph": true
+    }
+  ],
+  "metadata": {
+    "entity_count": 11,
+    "link_count": 24,
+    "created_at": "2026-06-09 16:52:08"
+  }
+}

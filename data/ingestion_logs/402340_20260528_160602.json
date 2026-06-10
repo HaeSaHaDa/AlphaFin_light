@@ -1,0 +1,13 @@
+{
+  "ticker": "402340",
+  "company_name": "SK스퀘어",
+  "corp_code": "01105153",
+  "status": "completed",
+  "documents": 76,
+  "chunks": 28,
+  "embeddings": 9,
+  "embeddings_created": 9,
+  "embeddings_skipped": 19,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

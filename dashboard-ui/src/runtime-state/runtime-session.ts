@@ -1,6 +1,8 @@
 /** 분석 실행 후 trace·종목을 sessionStorage에 유지 (서브페이지 검색 연동) */
 const KEY = "alphafin_runtime_session";
 
+export const RUNTIME_SESSION_EVENT = "alphafin-runtime-session";
+
 export interface RuntimeSession {
   traceId: string;
   ticker: string;
@@ -13,6 +15,7 @@ export function saveRuntimeSession(session: Omit<RuntimeSession, "updatedAt">) {
   if (typeof window === "undefined") return;
   const payload: RuntimeSession = { ...session, updatedAt: Date.now() };
   sessionStorage.setItem(KEY, JSON.stringify(payload));
+  window.dispatchEvent(new CustomEvent(RUNTIME_SESSION_EVENT));
 }
 
 export function loadRuntimeSession(): RuntimeSession | null {

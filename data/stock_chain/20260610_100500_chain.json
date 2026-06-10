@@ -1,0 +1,19 @@
+{
+  "query": "삼성전자 최신 뉴스와 공시 분석",
+  "ticker": "005930",
+  "entities": [
+    {
+      "name": "삼성전자",
+      "entity_type": "company",
+      "ticker": "005930",
+      "event_type": null,
+      "created_at": "2026-06-10 10:05:04"
+    }
+  ],
+  "links": [],
+  "metadata": {
+    "entity_count": 1,
+    "link_count": 0,
+    "created_at": "2026-06-10 10:05:04"
+  }
+}

@@ -134,7 +134,7 @@ def load_reflections_all() -> list[dict]:
     return load_reflections()
 
 
-def load_event_graphs_all(ticker: str = "005930") -> list[dict]:
+def load_event_graphs_all(ticker: str) -> list[dict]:
     """Event Graph를 로드한다."""
     import sys
     sys.path.insert(0, str(EVENT_GRAPH_MODULE))

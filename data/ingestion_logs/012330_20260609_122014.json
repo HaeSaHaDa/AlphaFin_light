@@ -1,0 +1,13 @@
+{
+  "ticker": "012330",
+  "company_name": "현대모비스",
+  "corp_code": "00164788",
+  "status": "partial",
+  "documents": 139,
+  "chunks": 20,
+  "embeddings": 0,
+  "embeddings_created": 0,
+  "embeddings_skipped": 20,
+  "skipped_collectors": [],
+  "presentation_mode": false
+}

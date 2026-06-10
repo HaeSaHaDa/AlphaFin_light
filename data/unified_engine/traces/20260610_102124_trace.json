@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260610_102124",
+  "query": "두산에너빌리티 034020",
+  "persona": "growth_investor",
+  "ticker": "034020",
+  "started_at": "2026-06-10 10:21:24",
+  "completed_at": "2026-06-10 10:21:37",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=11 disclosure=5",
+      "timestamp": "2026-06-10 10:21:24"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=5824",
+      "timestamp": "2026-06-10 10:21:24"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=3107",
+      "timestamp": "2026-06-10 10:21:24"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=3",
+      "timestamp": "2026-06-10 10:21:30"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-10 10:21:30"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "두산에너빌리티에 대한 분석은 성장 가능성을 강조하고 있지만, 전반적인 시장 약세와 글로벌 ",
+      "timestamp": "2026-06-10 10:21:37"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-10 10:21:37"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.80",
+      "timestamp": "2026-06-10 10:21:37"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-10 10:21:37"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=7 rels=22",
+      "timestamp": "2026-06-10 10:21:37"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=22",
+      "timestamp": "2026-06-10 10:21:37"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 11,
+    "max_score": 0.5973
+  },
+  "reflection_summary": "두산에너빌리티에 대한 분석은 성장 가능성을 강조하고 있지만, 전반적인 시장 약세와 글로벌 경제 불확실성 외에 추가적인 리스크가 누락되어 있다. 또한, 과도한 낙관이 감지되며, 더 많은 맥락이 필요하다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

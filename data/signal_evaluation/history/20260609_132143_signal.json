@@ -1,0 +1,33 @@
+{
+  "trace_id": "20260609_132143",
+  "query": "두산에너빌리티 034020",
+  "ticker": "034020",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [
+      "SMR 전용 공장 건설로 안전하고 안정적인 전력 생산 가능성 증가",
+      "글로벌 경쟁 심화로 인한 시장 점유율 확보의 어려움",
+      "기술 발전 속도에 따른 시장 변화"
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

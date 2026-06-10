@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260609_162133",
+  "query": "현대모비스 012330",
+  "persona": "growth_investor",
+  "ticker": "012330",
+  "started_at": "2026-06-09 16:21:33",
+  "completed_at": "2026-06-09 16:21:45",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=6 disclosure=0",
+      "timestamp": "2026-06-09 16:21:33"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=4354",
+      "timestamp": "2026-06-09 16:21:33"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=4595",
+      "timestamp": "2026-06-09 16:21:34"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-09 16:21:41"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-09 16:21:41"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 현대모비스의 성장 가능성과 리스크를 균형 있게 다루고 있으나, 일부 중요한 리스크가",
+      "timestamp": "2026-06-09 16:21:45"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-09 16:21:45"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.90",
+      "timestamp": "2026-06-09 16:21:45"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-09 16:21:45"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=15 rels=22",
+      "timestamp": "2026-06-09 16:21:45"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=22",
+      "timestamp": "2026-06-09 16:21:45"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 6,
+    "max_score": 0.328321
+  },
+  "reflection_summary": "분석은 현대모비스의 성장 가능성과 리스크를 균형 있게 다루고 있으나, 일부 중요한 리스크가 누락되어 있습니다. 또한, 전반적으로 긍정적인 전망이 강조되어 과도한 낙관이 감지됩니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

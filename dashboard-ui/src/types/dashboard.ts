@@ -1,10 +1,25 @@
+import type { CanonicalEvent } from "@/types/events";
+
 export interface RetrievalChunk {
   chunk_id?: number;
   document_type?: string;
   score?: number;
   ticker?: string;
+  title?: string;
   text?: string;
   source?: string;
+  url?: string;
+  published_at?: string;
+  chunk_preview?: string;
+  similarity_score?: number;
+  freshness_score?: number;
+}
+
+export interface RetrievalFreshnessSource {
+  data_as_of?: string;
+  last_collected_at?: string;
+  cache_status?: string;
+  ttl_hours?: number;
 }
 
 export interface RetrievalData {
@@ -13,10 +28,15 @@ export interface RetrievalData {
   ticker: string;
   chunk_count: number;
   chunks: RetrievalChunk[];
+  canonical_events?: CanonicalEvent[];
   retrieval_quality: Record<string, unknown>;
   context_usage: Record<string, unknown>;
   unified_context_length: number;
   retrieval_timestamp?: string;
+  freshness?: {
+    news?: RetrievalFreshnessSource;
+    disclosure?: RetrievalFreshnessSource;
+  };
   analysis?: Record<string, unknown>;
   context_layers?: Record<string, unknown>;
 }
@@ -37,6 +57,7 @@ export interface ReflectionData {
 export interface MemoryData {
   trace_id: string;
   query: string;
+  ticker: string;
   memory_updates: Record<string, unknown>;
   temporal_result: Record<string, unknown>;
   layered_memory: {
@@ -130,8 +151,52 @@ export interface DashboardData {
   reflection: ReflectionData | null;
   memory: MemoryData | null;
   stockChain: StockChainData | null;
+  disclosure?: DisclosureData | null;
   trace: TraceData | null;
   evaluation: EvaluationData | null;
 }
 
 export type LoadStatus = "idle" | "loading" | "success" | "error";
+
+export interface DisclosureItem {
+  document_id: number;
+  ticker: string;
+  company_name?: string;
+  report_name: string;
+  report_type: string;
+  report_date?: string;
+  source_type?: string;
+  document_url?: string;
+  summary?: string;
+}
+
+export interface DisclosureData {
+  ticker: string;
+  document_count: number;
+  documents: DisclosureItem[];
+}
+
+export interface DisclosureTimelineData {
+  ticker: string;
+  timeline: Array<{
+    report_date?: string;
+    report_type?: string;
+    title?: string;
+    summary?: string;
+  }>;
+}
+
+export interface DisclosureEvidenceData {
+  trace_id: string;
+  ticker: string;
+  query: string;
+  evidence: Array<{
+    chunk_id?: number;
+    report_name?: string;
+    report_type?: string;
+    report_date?: string;
+    section_name?: string;
+    score?: number;
+    text?: string;
+  }>;
+}

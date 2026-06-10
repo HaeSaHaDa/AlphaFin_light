@@ -17,6 +17,8 @@ from src.ingestion_pipeline.ticker_stats import get_ticker_stats
 from src.ingestion_pipeline.vector_index_manager import _db_embedding_count, is_ticker_ready
 
 from .dashboard_response_builder import build_dashboard_bundle
+from src.runtime_query.runtime_query_pipeline import run_disclosure_aware_query
+
 from .retrieval_executor import execute_retrieval
 from .runtime_context_builder import RuntimeContext
 from .runtime_logger import RuntimeLogger
@@ -68,30 +70,18 @@ def run_runtime_query_selected(
     else:
         ing = {}
 
-    chunks = execute_retrieval(runtime_query, ticker, top_k=8)
-    log.retrieval(len(chunks), ticker)
-
-    trace_id = ""
-    engine_status = "failed"
-    if run_engine:
-        engine_dir = str(ENGINE_DIR)
-        if engine_dir not in sys.path:
-            sys.path.insert(0, engine_dir)
-        from engine_runner import run_unified_pipeline  # type: ignore[import]
-
-        result = run_unified_pipeline(
-            query=runtime_query,
-            persona=persona,
-            ticker=ticker,
-        )
-        trace_id = result.get("trace_id", "")
-        chunk_n = int(result.get("retrieval_chunk_count", 0))
-        engine_status = "completed" if chunk_n > 0 else "partial"
-        if chunk_n > 0:
-            log.engine("runtime reasoning completed")
-        else:
-            log.engine("partial")
-        log.trace(trace_id)
+    pipeline = run_disclosure_aware_query(
+        runtime_query,
+        ticker,
+        persona=persona,
+        run_engine=run_engine,
+        log=log,
+        news_freshness=ing,
+        keywords=kw,
+    )
+    trace_id = pipeline.get("trace_id", "")
+    engine_status = pipeline.get("engine_status", "failed") if run_engine else "skipped"
+    runtime_context = pipeline.get("runtime_context") or {}
 
     stats = get_ticker_stats(ticker)
     return {
@@ -103,7 +93,12 @@ def run_runtime_query_selected(
         "keywords": kw,
         "corp_code": corp_code,
         "trace_id": trace_id,
-        "retrieval_chunk_count": len(chunks),
+        "retrieval_chunk_count": pipeline.get("retrieval_chunk_count", 0),
+        "news_chunk_count": pipeline.get("news_chunk_count", 0),
+        "disclosure_chunk_count": pipeline.get("disclosure_chunk_count", 0),
+        "disclosure_collect_status": pipeline.get("disclosure_collect_status", ""),
+        "freshness": pipeline.get("freshness", {}),
+        "runtime_context": runtime_context,
         "ingestion": ing if not skip_ingestion else {},
         "stats": stats,
         "runtime_logs": log.lines,
@@ -148,20 +143,24 @@ def run_runtime_query(
     else:
         log.ingestion("skipped", "skip_ingestion=true")
 
-    chunks = execute_retrieval(query, resolved.ticker, top_k=8)
-    ctx.retrieval_chunks = chunks
-    log.retrieval(len(chunks), resolved.ticker)
-
-    engine_dir = str(ENGINE_DIR)
-    if engine_dir not in sys.path:
-        sys.path.insert(0, engine_dir)
-    from engine_runner import run_unified_pipeline  # type: ignore[import]
-
-    ctx.engine_result = run_unified_pipeline(
-        query=query,
+    pipeline = run_disclosure_aware_query(
+        query,
+        resolved.ticker,
         persona=persona,
-        ticker=resolved.ticker,
+        run_engine=True,
+        log=log,
+        news_freshness=ctx.ingestion,
     )
+    ctx.retrieval_chunks = (pipeline.get("runtime_context") or {}).get("merged_evidence", [])
+    log.retrieval(len(ctx.retrieval_chunks), resolved.ticker)
+
+    ctx.engine_result = {"trace_id": pipeline.get("trace_id", "")}
+    if pipeline.get("trace_id"):
+        from .trace_manager import get_unified_result
+
+        full = get_unified_result(pipeline["trace_id"])
+        if full:
+            ctx.engine_result = full
     ctx.trace_id = ctx.engine_result.get("trace_id", "")
     chunk_n = int(ctx.engine_result.get("retrieval_chunk_count", 0))
     if chunk_n > 0:
@@ -184,6 +183,7 @@ def run_runtime_query(
         "retrieval_chunk_count": chunk_n,
         "ingestion": ctx.ingestion,
         "stats": stats,
+        "freshness": pipeline.get("freshness", {}),
         "runtime_logs": log.lines,
         "dashboard": bundle,
     }
@@ -195,7 +195,7 @@ def main() -> int:
         format="%(asctime)s [%(levelname)s] %(name)s - %(message)s",
     )
     parser = argparse.ArgumentParser(description="Runtime query runner")
-    parser.add_argument("query", nargs="?", default="현대자동차 전기차 전망")
+    parser.add_argument("query", help="회사명이 포함된 Runtime query")
     args = parser.parse_args()
 
     result = run_runtime_query(args.query)

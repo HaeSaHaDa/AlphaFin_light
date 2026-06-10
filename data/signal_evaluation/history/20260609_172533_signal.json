@@ -1,0 +1,33 @@
+{
+  "trace_id": "20260609_172533",
+  "query": "LG생활건강 051900",
+  "ticker": "051900",
+  "signal": {
+    "signal": "neutral",
+    "display_label": "중립",
+    "confidence": 0.55,
+    "reason": [
+      "LG생활건강은 가성비 화장품 시장에 진입하여 소비자들의 수요에 부합하는 제품을 출시하고 있어 시장 점유율 확대 가능성이 높음.",
+      "가성비 화장품의 급성장으로 인해 경쟁이 심화되고 있으며, 저가 브랜드의 시장 진입이 용이해져 LG생활건강의 가격 경쟁력이 약화될 수 있음.",
+      "고물가 상황이 지속될 경우 소비자들이 저가 제품으로 이동할 가능성이 높아 LG생활건강의 프리미엄 제품 판매에 부정적인 영향을 미칠 수 있음."
+    ],
+    "bullish_count": 2,
+    "bearish_count": 2
+  },
+  "market_outcome": {
+    "price_change_pct": 0.0,
+    "period_label": "실제 시장 결과 미연동",
+    "actual_direction": "unavailable",
+    "direction_correct": false
+  },
+  "confidence_evaluation": {},
+  "timeline": [],
+  "history": [],
+  "metrics": {
+    "direction_accuracy": 0.0,
+    "hit_ratio_pct": 0.0,
+    "total_signals": 0,
+    "correct_count": 0
+  },
+  "confidence_summary": {}
+}

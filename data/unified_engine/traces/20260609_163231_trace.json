@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260609_163231",
+  "query": "현대모비스 012330",
+  "persona": "growth_investor",
+  "ticker": "012330",
+  "started_at": "2026-06-09 16:32:31",
+  "completed_at": "2026-06-09 16:32:41",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=6 disclosure=0",
+      "timestamp": "2026-06-09 16:32:31"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=4354",
+      "timestamp": "2026-06-09 16:32:31"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=5408",
+      "timestamp": "2026-06-09 16:32:31"
+    },
+    {
+      "step": "character_analysis",
+      "status": "ok",
+      "summary": "bullish=2",
+      "timestamp": "2026-06-09 16:32:36"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=low",
+      "timestamp": "2026-06-09 16:32:36"
+    },
+    {
+      "step": "reflection",
+      "status": "ok",
+      "summary": "분석은 현대모비스의 성장 가능성을 잘 강조하고 있지만, 하락 요인과 리스크에 대한 깊이 있",
+      "timestamp": "2026-06-09 16:32:41"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-09 16:32:41"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.80",
+      "timestamp": "2026-06-09 16:32:41"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=promote",
+      "timestamp": "2026-06-09 16:32:41"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=15 rels=22",
+      "timestamp": "2026-06-09 16:32:41"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=22",
+      "timestamp": "2026-06-09 16:32:41"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 6,
+    "max_score": 0.328321
+  },
+  "reflection_summary": "분석은 현대모비스의 성장 가능성을 잘 강조하고 있지만, 하락 요인과 리스크에 대한 깊이 있는 논의가 부족합니다. 전반적으로 긍정적인 전망이지만, 일부 리스크가 간과되고 있습니다.",
+  "temporal_action": "promote",
+  "stock_chain_links": 0
+}

@@ -1,23 +1,23 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Alert } from "@/components/ui/alert";
-import { Skeleton } from "@/components/ui/skeleton";
-import { DashboardNav } from "@/components/layout/dashboard-nav";
 import { QueryExecutionPanel } from "@/components/company-selector/QueryExecutionPanel";
 import { MarketReportHeader } from "@/components/report-layout/MarketReportHeader";
 import { BullishFactorsPanel } from "@/components/report-layout/BullishFactorsPanel";
 import { RiskFactorsPanel } from "@/components/report-layout/RiskFactorsPanel";
-import { ExplainabilityAccordion } from "@/components/report-layout/ExplainabilityAccordion";
 import { RuntimeSignalPanel } from "@/components/runtime-panels/RuntimeSignalPanel";
 import { RuntimeNewsPanel } from "@/components/runtime-panels/RuntimeNewsPanel";
-import { RuntimeMarketGraphPanel } from "@/components/runtime-panels/RuntimeMarketGraphPanel";
+import { DisclosurePanel } from "@/components/disclosure/DisclosurePanel";
+import { EventSummaryPanel } from "@/components/events/EventSummaryPanel";
+import { RuntimeEvidencePanel } from "@/components/runtime/RuntimeEvidencePanel";
 import { StickyRuntimeHeader } from "@/components/runtime-header/StickyRuntimeHeader";
+import { EmptyStateCard } from "@/components/ui-cleanup/EmptyStateCard";
+import { LoadingStateCard } from "@/components/ui-cleanup/LoadingStateCard";
+import { SectionDivider } from "@/components/ui-cleanup/SectionDivider";
 import { useDashboardRuntime } from "@/runtime-state/runtime-query-context";
-import { traceQueryHref } from "@/runtime-state/runtime-trace-store";
-import { API_BASE, getRuntimeStatus } from "@/services/api";
+import { getRuntimeStatus } from "@/services/api";
+import { DASHBOARD_SPACING } from "@/ui/dashboard-spacing";
 import type { RuntimeStatusPayload } from "@/types/market-graph";
 
 function getAnalysisFactors(retrieval: { analysis?: Record<string, unknown> } | null) {
@@ -81,25 +81,7 @@ export function DashboardClient() {
     "";
 
   return (
-    <div className="dashboard-shell">
-      <div className="dashboard-nav-row">
-        <DashboardNav traceId={traceId} apiBase={API_BASE} showAnalysisLink={false} />
-        <div className="flex flex-wrap gap-2">
-          <Button variant="outline" size="sm" asChild>
-            <Link href={traceQueryHref("/analysis", traceId)}>상세 분석</Link>
-          </Button>
-          <Button variant="outline" size="sm" asChild>
-            <Link href={traceQueryHref("/event-graph", traceId)}>시장 연결 구조</Link>
-          </Button>
-          <Button variant="outline" size="sm" asChild>
-            <Link href={traceQueryHref("/memory-timeline", traceId)}>시장 기억</Link>
-          </Button>
-          <Button variant="outline" size="sm" asChild>
-            <Link href={traceQueryHref("/signal-evaluation", traceId)}>Signal 평가</Link>
-          </Button>
-        </div>
-      </div>
-
+    <div className={`dashboard-shell ${DASHBOARD_SPACING.section}`}>
       <StickyRuntimeHeader
         companyName={displayCompany}
         ticker={selectedTicker ?? runtimeStatus?.ticker ?? ""}
@@ -115,24 +97,17 @@ export function DashboardClient() {
         traceId={traceId}
         displayQuery={displayQuery}
         selectedTicker={selectedTicker}
+        companyName={displayCompany || companyName}
         companyContext={companyContext}
         onRunQuery={runQuerySelected}
         onLoadByTraceId={loadByTraceId}
       />
 
-      {loading && loadingMessage && (
-        <Alert className="border-primary/40 bg-primary/10">
-          <p className="text-sm font-medium">{loadingMessage}</p>
-          <p className="mt-1 text-xs text-muted-foreground">
-            모든 패널이 동일 traceId 기준으로 동기화됩니다.
-            {traceId && (
-              <span className="ml-2 font-mono">trace: {traceId}</span>
-            )}
-          </p>
-        </Alert>
+      {loading && (
+        <LoadingStateCard message={loadingMessage ?? "Runtime 분석 진행 중…"} />
       )}
 
-      {warning && (
+      {warning && !loading && (
         <Alert className="border-amber-500/50 bg-amber-500/10 text-amber-100">
           <p className="font-medium">분석 데이터 부족</p>
           <p className="mt-1 text-xs opacity-90">{warning}</p>
@@ -143,43 +118,33 @@ export function DashboardClient() {
         <Alert variant="destructive">
           <p className="font-medium">Runtime 오류</p>
           <p className="mt-1 text-xs opacity-90">{error}</p>
-          <p className="mt-1 text-xs opacity-75">
-            sample/latest fallback 없음 — trace_id 기준 payload만 표시합니다.
-          </p>
         </Alert>
       )}
 
-      {!traceId && phase === "idle" && (
-        <Alert className="border-border bg-muted/30">
-          <p className="text-sm">
-            자동완성에서 종목을 선택하고 키워드를 입력한 뒤{" "}
-            <strong>분석 실행</strong>을 누르세요.
-            실행 후 모든 패널이 동일 <strong>traceId</strong>로 갱신됩니다.
-          </p>
-        </Alert>
+      {!traceId && phase === "idle" && !loading && (
+        <EmptyStateCard />
       )}
 
       <div id="section-summary" className="scroll-mt-24">
         <MarketReportHeader query={displayQuery} traceId={traceId} />
       </div>
 
-      {loading ? (
-        <div className="dashboard-grid-3">
-          <Skeleton className="h-40 rounded-xl" />
-          <Skeleton className="h-40 rounded-xl" />
-          <Skeleton className="h-40 rounded-xl" />
-        </div>
-      ) : (
-        <>
-          <div className="dashboard-grid-3">
-            <RuntimeSignalPanel
-              traceId={traceId}
-              status={status}
-              signal={signal}
-            />
-            <BullishFactorsPanel factors={bullish} />
-            <RiskFactorsPanel risks={risks} bearishFactors={bearish} />
-          </div>
+      <>
+          {traceId && (
+            <>
+              <div className={DASHBOARD_SPACING.grid3}>
+                <RuntimeSignalPanel
+                  traceId={traceId}
+                  status={status}
+                  signal={signal}
+                />
+                <BullishFactorsPanel factors={bullish} />
+                <RiskFactorsPanel risks={risks} bearishFactors={bearish} />
+              </div>
+
+              <SectionDivider />
+            </>
+          )}
 
           <div id="section-news" className="scroll-mt-24">
             <RuntimeNewsPanel
@@ -189,16 +154,21 @@ export function DashboardClient() {
             />
           </div>
 
-          <RuntimeMarketGraphPanel traceId={traceId} status={status} />
+          <EventSummaryPanel
+            traceId={traceId}
+            ticker={selectedTicker ?? data.retrieval?.ticker ?? null}
+          />
 
-          <ExplainabilityAccordion
-            data={data}
-            signal={signal}
-            status={status}
+          <RuntimeEvidencePanel
+            traceId={traceId}
+            ticker={selectedTicker ?? data.retrieval?.ticker ?? null}
+          />
+
+          <DisclosurePanel
+            ticker={selectedTicker ?? data.retrieval?.ticker ?? null}
             traceId={traceId}
           />
-        </>
-      )}
+      </>
     </div>
   );
 }

@@ -1,0 +1,83 @@
+{
+  "trace_id": "20260610_100500",
+  "query": "삼성전자 최신 뉴스와 공시 분석",
+  "persona": "growth_investor",
+  "ticker": "005930",
+  "started_at": "2026-06-10 10:05:00",
+  "completed_at": "2026-06-10 10:05:04",
+  "steps": [
+    {
+      "step": "retrieval",
+      "status": "ok",
+      "summary": "unified_chunks=5 disclosure=5",
+      "timestamp": "2026-06-10 10:05:01"
+    },
+    {
+      "step": "context_assembly",
+      "status": "ok",
+      "summary": "len=5293",
+      "timestamp": "2026-06-10 10:05:01"
+    },
+    {
+      "step": "unified_context",
+      "status": "ok",
+      "summary": "len=3110",
+      "timestamp": "2026-06-10 10:05:01"
+    },
+    {
+      "step": "character_analysis",
+      "status": "warn",
+      "summary": "bullish=0",
+      "timestamp": "2026-06-10 10:05:02"
+    },
+    {
+      "step": "evaluation",
+      "status": "ok",
+      "summary": "hallucination=medium",
+      "timestamp": "2026-06-10 10:05:02"
+    },
+    {
+      "step": "reflection",
+      "status": "warn",
+      "summary": "",
+      "timestamp": "2026-06-10 10:05:04"
+    },
+    {
+      "step": "memory_save",
+      "status": "ok",
+      "summary": "layer=short_term",
+      "timestamp": "2026-06-10 10:05:04"
+    },
+    {
+      "step": "importance_update",
+      "status": "ok",
+      "summary": "score=0.30",
+      "timestamp": "2026-06-10 10:05:04"
+    },
+    {
+      "step": "temporal_tracking",
+      "status": "ok",
+      "summary": "action=keep",
+      "timestamp": "2026-06-10 10:05:04"
+    },
+    {
+      "step": "event_graph",
+      "status": "ok",
+      "summary": "nodes=1 rels=0",
+      "timestamp": "2026-06-10 10:05:04"
+    },
+    {
+      "step": "stock_chain",
+      "status": "ok",
+      "summary": "links=0",
+      "timestamp": "2026-06-10 10:05:04"
+    }
+  ],
+  "retrieval_summary": {
+    "chunk_count": 5,
+    "max_score": 0.6168
+  },
+  "reflection_summary": "",
+  "temporal_action": "keep",
+  "stock_chain_links": 0
+}

@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import logging
 import sys
+from datetime import datetime
 from pathlib import Path
 
 from src.company_resolver.company_resolver import ResolvedCompany, resolve_company
@@ -15,9 +16,14 @@ from .dart_ingestor import ingest_dart
 from .embedding_pipeline import run_embedding
 from .news_ingestor import ingest_news
 from .price_ingestor import ingest_prices
-from .ticker_stats import fetch_recent_disclosures, get_ticker_stats
+from .ticker_stats import (
+    fetch_recent_disclosures,
+    get_latest_news_published_at,
+    get_ticker_stats,
+)
 from .vector_index_manager import (
     append_log,
+    get_news_cache_status,
     is_ticker_ready,
     save_cache,
     _db_embedding_count,
@@ -47,6 +53,7 @@ def _enrich_result(company: ResolvedCompany, result: dict) -> dict:
     stats = get_ticker_stats(company.ticker)
     result["stats"] = stats
     result["recent_disclosures"] = fetch_recent_disclosures(company.ticker, 5)
+    result["news_data_as_of"] = get_latest_news_published_at(company.ticker)
     result["market"] = company.market
     return result
 
@@ -82,6 +89,7 @@ def run_ingestion_for_company(
     name = company.company_name
     stats = get_ticker_stats(ticker)
     cache_ready = is_ticker_ready(ticker)
+    news_cache = get_news_cache_status(ticker)
 
     if dry_run:
         return _enrich_result(company, {
@@ -93,6 +101,7 @@ def run_ingestion_for_company(
             "embeddings": stats["embedding_count"],
             "presentation_mode": is_presentation_mode(),
             "would_skip_ingestion": cache_ready and not force,
+            **news_cache,
         })
 
     if not force and cache_ready:
@@ -111,6 +120,7 @@ def run_ingestion_for_company(
             "embeddings_created": 0,
             "embeddings_skipped": stats["embedding_count"],
             "skipped_collectors": ["news", "dart", "price", "chunk", "embedding"],
+            **news_cache,
         })
 
     _upsert_company_record(
@@ -119,9 +129,12 @@ def run_ingestion_for_company(
 
     skipped_collectors: list[str] = []
     news_n = 0
-    if not skip_news and (force or stats["news_count"] == 0):
+    refresh_news = force or stats["news_count"] == 0 or not news_cache["cache_fresh"]
+    news_refresh_succeeded = not refresh_news
+    if not skip_news and refresh_news:
         try:
             news_n = ingest_news(name, ticker, max_pages=MAX_NEWS_PAGES)
+            news_refresh_succeeded = news_n > 0
         except Exception:
             logger.exception("뉴스 ingestion 실패")
     else:
@@ -166,6 +179,12 @@ def run_ingestion_for_company(
         skipped_collectors.append("embedding")
 
     status = "completed" if emb_total >= 1 else "partial"
+    cache_status = "REFRESHED" if news_refresh_succeeded else "STALE"
+    cache_updated_at = (
+        datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        if news_refresh_succeeded
+        else news_cache.get("cache_updated_at", "")
+    )
     result = {
         "ticker": ticker,
         "company_name": name,
@@ -178,16 +197,27 @@ def run_ingestion_for_company(
         "embeddings_skipped": embeddings_skipped,
         "skipped_collectors": skipped_collectors,
         "presentation_mode": is_presentation_mode(),
+        "cache_status": cache_status,
+        "cache_fresh": news_refresh_succeeded,
+        "cache_ttl_hours": news_cache["cache_ttl_hours"],
+        "cache_updated_at": cache_updated_at,
     }
 
-    save_cache(
-        ticker,
-        name,
-        status=status,
-        documents=documents,
-        chunks=chunks,
-        embeddings=emb_total,
-    )
+    if news_refresh_succeeded:
+        save_cache(
+            ticker,
+            name,
+            status=status,
+            documents=documents,
+            chunks=chunks,
+            embeddings=emb_total,
+        )
+    else:
+        logger.warning(
+            "뉴스 갱신 실패로 기존 cache 시각 유지  ticker=%s  updated_at=%s",
+            ticker,
+            cache_updated_at,
+        )
     append_log(ticker, result)
     logger.info("ingestion 완료  %s", result)
     return _enrich_result(company, result)

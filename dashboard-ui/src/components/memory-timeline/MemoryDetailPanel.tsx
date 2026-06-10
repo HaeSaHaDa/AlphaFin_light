@@ -32,6 +32,9 @@ export function MemoryDetailPanel({ node }: MemoryDetailPanelProps) {
   const barWidth = Math.round(score * 100);
   const barColor =
     score >= 0.8 ? "bg-green-500" : score >= 0.5 ? "bg-yellow-500" : "bg-red-500";
+  const disclosures = (node.evidence ?? []).filter(
+    (item) => item.document_type === "disclosure",
+  );
 
   return (
     <div className="space-y-4 rounded-lg border border-border bg-card/60 p-4 text-sm">
@@ -41,6 +44,54 @@ export function MemoryDetailPanel({ node }: MemoryDetailPanelProps) {
         <p className="text-xs text-muted-foreground">기억 내용</p>
         <p className="font-medium">{node.summary || node.query}</p>
       </div>
+
+      {disclosures.length > 0 && (
+        <div className="space-y-2 border-t border-border pt-3">
+          <p className="text-xs font-medium text-muted-foreground">
+            저장된 공시 근거 ({disclosures.length})
+          </p>
+          {disclosures.map((item, index) => {
+            const title =
+              item.title ||
+              item.report_name ||
+              item.text?.split("\n")[0] ||
+              item.chunk_text?.split("\n")[0] ||
+              `공시 근거 ${index + 1}`;
+            const content = item.text || item.chunk_text || "";
+            const url = item.url || item.document_url;
+            return (
+              <details
+                key={`${item.chunk_id ?? index}-${title}`}
+                className="rounded-md border border-border/70 bg-muted/15 px-3 py-2"
+              >
+                <summary className="cursor-pointer text-xs font-medium">
+                  {title}
+                </summary>
+                {(item.report_date || item.published_at) && (
+                  <p className="mt-2 text-[11px] text-muted-foreground">
+                    {item.report_date || item.published_at}
+                  </p>
+                )}
+                {content && (
+                  <p className="mt-2 whitespace-pre-wrap text-xs leading-relaxed text-foreground/90">
+                    {content}
+                  </p>
+                )}
+                {url && (
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-2 inline-block text-xs text-primary hover:underline"
+                  >
+                    공시 원문 열기
+                  </a>
+                )}
+              </details>
+            );
+          })}
+        </div>
+      )}
 
       <div className="grid grid-cols-2 gap-3">
         <div className="space-y-1">
